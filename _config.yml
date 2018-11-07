@@ -1,8 +1,6 @@
 collections:
   authors:
     output: true
-  texts:
-    output: true
 
 defaults:
   - scope:
@@ -19,7 +17,3 @@ defaults:
       path: ""
     values:
       layout: "default"
-  - scope:
-      path: ""
-    values:
-      layout: "text"
