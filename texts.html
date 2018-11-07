@@ -1,0 +1,15 @@
+---
+layout: default
+title: Texts
+---
+<h1>Texts</h1>
+
+<ul>
+  {% for text in site.texts %}
+    <li>
+      <h2><a href="{{ text.url }}">{{ text.name }}</a></h2>
+      <h3>{{ text.position }}</h3>
+      <p>{{ text.content | markdownify }}</p>
+    </li>
+  {% endfor %}
+</ul>
