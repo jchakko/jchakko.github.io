@@ -19,8 +19,5 @@ defaults:
       path: ""
     values:
       layout: "default"
-  - scope:
-      path: ""
-    values:
-      layout: "text"
+
 theme: jekyll-theme-hacker
