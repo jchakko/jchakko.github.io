@@ -17,3 +17,7 @@ defaults:
       path: ""
     values:
       layout: "default"
+      layout: "default"
+
+theme: jekyll-theme-hacker
+
