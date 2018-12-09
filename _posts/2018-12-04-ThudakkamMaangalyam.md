@@ -1,6 +1,6 @@
 ---
 layout: post
-author: lyrics
+author: bible
 ---
 
 പച്ച കിളിക്കൊരു കൂട്, പച്ച കരിമ്പഴിയുള്ള കൂട്..  
