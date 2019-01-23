@@ -15,9 +15,13 @@ defaults:
       layout: "post"
   - scope:
       path: ""
+      type: "adventures"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
     values:
       layout: "default"
       layout: "default"
 
-theme: jekyll-theme-hacker
 
