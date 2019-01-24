@@ -1,13 +1,15 @@
 ---
 layout: post
-author: ted
 category: adventures
 ---
-Kiwifruit (often abbreviated as kiwi), or Chinese gooseberry is the edible
-berry of several species of woody vines in the genus Actinidia.
+A very common method of storing text information is within .txt files. To process this information, Python has to open and read the text files.  
 
-The most common cultivar group of kiwifruit is oval, about the size of a large
-hen's egg (5–8 cm (2.0–3.1 in) in length and 4.5–5.5 cm (1.8–2.2 in) in
-diameter). It has a fibrous, dull greenish-brown skin and bright green or
-golden flesh with rows of tiny, black, edible seeds. The fruit has a soft
-texture, with a sweet and unique flavor.
+file = open(pathtofile, "r")
+data = file.read()
+
+The contents of the file are now in the data variable.
+
+Additionally we can append the contents of other files to the same data variable.
+
+file = open(pathtoanotherfile, "r")
+data.append(file.read())
