@@ -3,37 +3,83 @@
   <head>
     <meta charset="utf-8">
     <title>Adventures</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link href="/css/common.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <nav>
-  
-    <a href="/" >Home</a>
-  
-    <a href="/about.html" >About</a>
-  
-    <a href="/blog.html" >Blog</a>
-  
-    <a href="/staff.html" >Staff</a>
-  
-    <a href="/texts.html" >Texts</a>
-  
-    <a href="/adventures.html" class="current">Adventures</a>
-  
-</nav>
+    <html>
+<head>
+<style>
+.Navigation{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
 
-    <h1>Latest Adventures</h1>
+.Navigation li{
+  float: right;
+}
 
+.Navigation li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.Navigation > :first-child {
+  float: left;
+} 
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+</style>
+</head>
+
+<div class="navbar">
+  <ul class = "Navigation">
+  
+    <li><a href="/" >Adventures in Natural Language Processing</a></li>
+  
+    <li><a href="/about.html" >About Me!</a></li>
+  
+    <li><a href="/malayalam.html" >Malayalam</a></li>
+  
+    <li><a href="/adventures.html" class="current">Adventures</a></li>
+  
+  </ul>
+</div>
+</html>
+
+    <div class = "Intro">
+<h1>Latest Adventures</h1>
+</div>
+
+<div class = "PostListing">
 <ul>
   
     <li>
+      <h2><a href="/adventures/2019/01/23/importfiles.html">Importing Text Files with Python</a></h2>
+      <p><p>A very common method of storing text information is within .txt files. To process this information, Python has to open and read the text files.</p>
+
+</p>
+    </li>
+  
+    <li>
       <h2><a href="/adventures/2018/08/22/kiwifruit.html">Kiwifruit</a></h2>
-      <p><p>Kiwifruit (often abbreviated as kiwi), or Chinese gooseberry is the edible
-berry of several species of woody vines in the genus Actinidia.</p>
+      <p><p>A very common method of storing text information is within .txt files. To process this information, Python has to open and read the text files.</p>
 
 </p>
     </li>
   
 </ul>
+</div>
   </body>
 </html>

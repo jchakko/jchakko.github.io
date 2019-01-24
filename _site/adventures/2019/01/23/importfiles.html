@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Kiwifruit</title>
+    <title>Importing Text Files with Python</title>
     <link href="/css/common.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
@@ -62,16 +62,16 @@ li a:hover:not(.active) {
 
   <head>
     <meta charset="utf-8">
-    <title>Kiwifruit</title>
+    <title>Importing Text Files with Python</title>
     <link href="/css/common.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   
   <body>
-    <h1>Kiwifruit</h1>
+    <h1>Importing Text Files with Python</h1>
   
     <p>
-    22 Aug 2018
+    23 Jan 2019
     
     
     
@@ -89,6 +89,17 @@ data = file.read()</p>
 
 <p>file = open(pathtoanotherfile, “r”)
 data.append(file.read())</p>
+
+<p>Through the use of loops, we can rapidly give Python our text information, even if its spread out among many files.</p>
+
+<p>The function len(data) returns the number of characters in the variable. This information is interesting. We could analyze the frequency of letters, punctuation marks, and spaces. However, a lot of text analysis requires the data to be separated into words or sentences.</p>
+
+<p>Splitting raw text into words and sentences is harder than it initially seems. This is caused by the versatility of language. In most cases, a period signifies the end of a sentence but if we’re talking about Mt. Kilimanjaro it does not.</p>
+
+<p>Thankfully much of the heavy lifting has been done already. Libraries such as the Natural Language Toolkit have the capability to segment sentences with more accuracy than we could manage ourselves.</p>
+
+<p>This process is known as Tokenization.</p>
+
 
   </body>  
 

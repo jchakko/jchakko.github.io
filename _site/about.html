@@ -3,24 +3,60 @@
   <head>
     <meta charset="utf-8">
     <title>About</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link href="/css/common.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <nav>
+    <html>
+<head>
+<style>
+.Navigation{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.Navigation li{
+  float: right;
+}
+
+.Navigation li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.Navigation > :first-child {
+  float: left;
+} 
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+</style>
+</head>
+
+<div class="navbar">
+  <ul class = "Navigation">
   
-    <a href="/" >Home</a>
+    <li><a href="/" >Adventures in Natural Language Processing</a></li>
   
-    <a href="/about.html" class="current">About</a>
+    <li><a href="/about.html" class="current">About Me!</a></li>
   
-    <a href="/blog.html" >Blog</a>
+    <li><a href="/malayalam.html" >Malayalam</a></li>
   
-    <a href="/staff.html" >Staff</a>
+    <li><a href="/adventures.html" >Adventures</a></li>
   
-    <a href="/texts.html" >Texts</a>
-  
-    <a href="/adventures.html" >Adventures</a>
-  
-</nav>
+  </ul>
+</div>
+</html>
 
     <h1 id="about-page">About page</h1>
 

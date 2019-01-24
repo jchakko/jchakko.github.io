@@ -2,15 +2,15 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://localhost:4000/authors/bible.html</loc>
-<lastmod>2019-01-22T22:47:52-05:00</lastmod>
+<lastmod>2019-01-24T14:18:30-05:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/authors/nicki.html</loc>
-<lastmod>2019-01-22T22:47:52-05:00</lastmod>
+<lastmod>2019-01-24T14:18:30-05:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/authors/prayers.html</loc>
-<lastmod>2019-01-22T22:47:52-05:00</lastmod>
+<lastmod>2019-01-24T14:18:30-05:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/2018/08/20/Nanma.html</loc>
@@ -51,6 +51,10 @@
 <url>
 <loc>http://localhost:4000/2018/12/09/Conjugation.html</loc>
 <lastmod>2018-12-09T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/adventures/2019/01/23/importfiles.html</loc>
+<lastmod>2019-01-23T00:00:00-05:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/about.html</loc>

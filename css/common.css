@@ -13,12 +13,23 @@ body {
 
 h1 {
   color: white;
+  padding: 0% 5%;
 }
 
 .center {
   margin: auto;
   width: 60%;
+}
 
+.PostListing {
+  margin: auto;
+  width: 60%;
+}
+
+.PostListing li a{
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 
