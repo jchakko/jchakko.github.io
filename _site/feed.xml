@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-01-24T14:18:30-05:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Importing Text Files with Python</title><link href="http://localhost:4000/adventures/2019/01/23/importfiles.html" rel="alternate" type="text/html" title="Importing Text Files with Python" /><published>2019-01-23T00:00:00-05:00</published><updated>2019-01-23T00:00:00-05:00</updated><id>http://localhost:4000/adventures/2019/01/23/importfiles</id><content type="html" xml:base="http://localhost:4000/adventures/2019/01/23/importfiles.html">&lt;p&gt;A very common method of storing text information is within .txt files. To process this information, Python has to open and read the text files.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-02-04T11:34:29-05:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Lexical Diversity</title><link href="http://localhost:4000/english/2019/02/04/lexicaldiversity.html" rel="alternate" type="text/html" title="Lexical Diversity" /><published>2019-02-04T00:00:00-05:00</published><updated>2019-02-04T00:00:00-05:00</updated><id>http://localhost:4000/english/2019/02/04/lexicaldiversity</id><content type="html" xml:base="http://localhost:4000/english/2019/02/04/lexicaldiversity.html">&lt;div id = &quot;postContents&quot;&gt; 
+  &lt;h2&gt;What is Lexical Diversity?&lt;/h2&gt;
+  &lt;h3&gt;Lexical Diversity is the ratio between unique words and total number of words in a passage. This will yield a value between 0 and 1. The closer the value is to 1, the more diverse the passage is.&lt;/h3&gt;
+  
+  &lt;h2&gt;Highs and Lows&lt;/h2&gt;
+  &lt;h3&gt;It's easy to achieve a high lexical diversity score when the passage analyzed is short. I think a mark of good writing is that most sentences score 1 on the lexical diversity score. That means there are no words that appear more than once in the same sentence. In contrast the sentence I think might just have the lowest lexical diversity score is the famous &quot;Buffalo buffalo Buffalo buffalo buffalo buffalo Buffalo buffalo&quot;.&lt;/h3&gt; 
+  
+  &lt;h3&gt;Maintaining full lexical diversity in longer passages is quite the challenge. Additionally, calculating the value for a long work would be quite tedious. Luckily we can use Python and the NLTK to help us.&lt;/h3&gt;
+  
+  &lt;h2&gt;Computing Lexical Diversity&lt;/h2&gt;
+  &lt;h3&gt;There's only two values we need to calculate the lexical diversity: the number of unique words and the total number of words. After tokenizing the text to be analyzed, extracting these values is quite simple.&lt;/h3&gt;
+  &lt;h3&gt;The number of unique words = len(set(tokens)). This works because sets do not contain duplicate values. The total number of words = len(tokens). Divide those two values and there you have it.&lt;/h3&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</content><author><name>NLP</name></author><category term="english" /><summary type="html">Quantifying the uniqueness of words in a passage</summary></entry><entry><title type="html">Importing Text Files with Python</title><link href="http://localhost:4000/adventures/2019/01/23/importfiles.html" rel="alternate" type="text/html" title="Importing Text Files with Python" /><published>2019-01-23T00:00:00-05:00</published><updated>2019-01-23T00:00:00-05:00</updated><id>http://localhost:4000/adventures/2019/01/23/importfiles</id><content type="html" xml:base="http://localhost:4000/adventures/2019/01/23/importfiles.html">&lt;p&gt;A very common method of storing text information is within .txt files. To process this information, Python has to open and read the text files.&lt;/p&gt;
 
 &lt;p&gt;file = open(pathtofile, “r”)
 data = file.read()&lt;/p&gt;
@@ -18,7 +32,41 @@ data.append(file.read())&lt;/p&gt;
 
 &lt;p&gt;Thankfully much of the heavy lifting has been done already. Libraries such as the Natural Language Toolkit have the capability to segment sentences with more accuracy than we could manage ourselves.&lt;/p&gt;
 
-&lt;p&gt;This process is known as Tokenization.&lt;/p&gt;</content><author><name></name></author><category term="adventures" /><summary type="html">A very common method of storing text information is within .txt files. To process this information, Python has to open and read the text files.</summary></entry><entry><title type="html">Conjugation</title><link href="http://localhost:4000/2018/12/09/Conjugation.html" rel="alternate" type="text/html" title="Conjugation" /><published>2018-12-09T00:00:00-05:00</published><updated>2018-12-09T00:00:00-05:00</updated><id>http://localhost:4000/2018/12/09/Conjugation</id><content type="html" xml:base="http://localhost:4000/2018/12/09/Conjugation.html">&lt;!DOCTYPE html&gt;
+&lt;p&gt;This process is known as Tokenization.&lt;/p&gt;</content><author><name></name></author><category term="adventures" /><summary type="html">A very common method of storing text information is within .txt files. To process this information, Python has to open and read the text files.</summary></entry><entry><title type="html">3 Types of Probability</title><link href="http://localhost:4000/math/2019/01/23/probabilitytypes.html" rel="alternate" type="text/html" title="3 Types of Probability" /><published>2019-01-23T00:00:00-05:00</published><updated>2019-01-23T00:00:00-05:00</updated><id>http://localhost:4000/math/2019/01/23/probabilitytypes</id><content type="html" xml:base="http://localhost:4000/math/2019/01/23/probabilitytypes.html">&lt;div id = &quot;postContents&quot;&gt; 
+  &lt;h2&gt;Marginal Probability: P(A)&lt;/h2&gt;
+  &lt;h3&gt;The probability that an event will occur. It is not conditioned by another event. That's really it.&lt;/h3&gt;
+  
+  &lt;h2&gt;Joint Probability: P(A ∩ B)&lt;/h2&gt;
+  &lt;h3&gt;The probability that an event will occur AND another event will occur.&lt;/h3&gt;
+  
+  &lt;h2&gt;Conditional Probability: P(A | B)&lt;/h2&gt;
+  &lt;h3&gt;The probability that an event will occur given that we already know a different event has occured. The probability that A will occur given that we've witnessed B occur is P(A ∩ B) / P(B). That's the joint probability / marginal probability of the event we already witnessed. In plain english its the probability of events A and B happening divided by the chance of B happening in general.&lt;/h3&gt;
+  
+  &lt;h2&gt;Application&lt;/h2&gt;
+  &lt;h3&gt;These probabilities are the building blocks of Baye's Rule&lt;/h3&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</content><author><name>Statistics</name></author><category term="math" /><summary type="html">Simple explanation for Marginal, Joint, and Conditional probability</summary></entry><entry><title type="html">Importing Text Files with Python</title><link href="http://localhost:4000/math/2019/01/23/importfiles.html" rel="alternate" type="text/html" title="Importing Text Files with Python" /><published>2019-01-23T00:00:00-05:00</published><updated>2019-01-23T00:00:00-05:00</updated><id>http://localhost:4000/math/2019/01/23/importfiles</id><content type="html" xml:base="http://localhost:4000/math/2019/01/23/importfiles.html">&lt;p&gt;A very common method of storing text information is within .txt files. To process this information, Python has to open and read the text files.&lt;/p&gt;
+
+&lt;p&gt;file = open(pathtofile, “r”)
+data = file.read()&lt;/p&gt;
+
+&lt;p&gt;The contents of the file are now in the data variable.&lt;/p&gt;
+
+&lt;p&gt;Additionally we can append the contents of other files to the same data variable.&lt;/p&gt;
+
+&lt;p&gt;file = open(pathtoanotherfile, “r”)
+data.append(file.read())&lt;/p&gt;
+
+&lt;p&gt;Through the use of loops, we can rapidly give Python our text information, even if its spread out among many files.&lt;/p&gt;
+
+&lt;p&gt;The function len(data) returns the number of characters in the variable. This information is interesting. We could analyze the frequency of letters, punctuation marks, and spaces. However, a lot of text analysis requires the data to be separated into words or sentences.&lt;/p&gt;
+
+&lt;p&gt;Splitting raw text into words and sentences is harder than it initially seems. This is caused by the versatility of language. In most cases, a period signifies the end of a sentence but if we’re talking about Mt. Kilimanjaro it does not.&lt;/p&gt;
+
+&lt;p&gt;Thankfully much of the heavy lifting has been done already. Libraries such as the Natural Language Toolkit have the capability to segment sentences with more accuracy than we could manage ourselves.&lt;/p&gt;
+
+&lt;p&gt;This process is known as Tokenization.&lt;/p&gt;</content><author><name></name></author><category term="math" /><summary type="html">A very common method of storing text information is within .txt files. To process this information, Python has to open and read the text files.</summary></entry><entry><title type="html">Conjugation</title><link href="http://localhost:4000/2018/12/09/Conjugation.html" rel="alternate" type="text/html" title="Conjugation" /><published>2018-12-09T00:00:00-05:00</published><updated>2018-12-09T00:00:00-05:00</updated><id>http://localhost:4000/2018/12/09/Conjugation</id><content type="html" xml:base="http://localhost:4000/2018/12/09/Conjugation.html">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
 &lt;meta charset=&quot;UTF-8&quot;&gt;
@@ -275,21 +323,4 @@ Njangale parikshayil kadathathe dhushttangalninnu njangale viduvikename&lt;/p&gt
 Rajyavum, shakthiyum, mahathovum ennekkum ninakkaullathallo.&lt;/p&gt;
 
 &lt;p&gt;ആമേൻ.&lt;br /&gt;
-Amen.&lt;/p&gt;</content><author><name>prayer</name></author><summary type="html">സ്വർഗ്ഗസ്ഥനായ ഞങ്ങളുടെ പിതാവേ, നിന്റെ നാമം വിശുദ്ധീകരിക്കപ്പെടേണമേ; Sorgasthanaya njangalude pithave, Ninte naamam vishudhikarikkappedename</summary></entry><entry><title type="html">Kiwifruit</title><link href="http://localhost:4000/adventures/2018/08/22/kiwifruit.html" rel="alternate" type="text/html" title="Kiwifruit" /><published>2018-08-22T00:00:00-04:00</published><updated>2018-08-22T00:00:00-04:00</updated><id>http://localhost:4000/adventures/2018/08/22/kiwifruit</id><content type="html" xml:base="http://localhost:4000/adventures/2018/08/22/kiwifruit.html">&lt;p&gt;A very common method of storing text information is within .txt files. To process this information, Python has to open and read the text files.&lt;/p&gt;
-
-&lt;p&gt;file = open(pathtofile, “r”)
-data = file.read()&lt;/p&gt;
-
-&lt;p&gt;The contents of the file are now in the data variable.&lt;/p&gt;
-
-&lt;p&gt;Additionally we can append the contents of other files to the same data variable.&lt;/p&gt;
-
-&lt;p&gt;file = open(pathtoanotherfile, “r”)
-data.append(file.read())&lt;/p&gt;</content><author><name></name></author><category term="adventures" /><summary type="html">A very common method of storing text information is within .txt files. To process this information, Python has to open and read the text files.</summary></entry><entry><title type="html">Test</title><link href="http://localhost:4000/2018/08/22/test.html" rel="alternate" type="text/html" title="Test" /><published>2018-08-22T00:00:00-04:00</published><updated>2018-08-22T00:00:00-04:00</updated><id>http://localhost:4000/2018/08/22/test</id><content type="html" xml:base="http://localhost:4000/2018/08/22/test.html">&lt;p&gt;Wut?s&lt;/p&gt;</content><author><name></name></author><summary type="html">Wut?s</summary></entry><entry><title type="html">Kiwifruit</title><link href="http://localhost:4000/2018/08/22/kiwifruit.html" rel="alternate" type="text/html" title="Kiwifruit" /><published>2018-08-22T00:00:00-04:00</published><updated>2018-08-22T00:00:00-04:00</updated><id>http://localhost:4000/2018/08/22/kiwifruit</id><content type="html" xml:base="http://localhost:4000/2018/08/22/kiwifruit.html">&lt;p&gt;Kiwifruit (often abbreviated as kiwi), or Chinese gooseberry is the edible
-berry of several species of woody vines in the genus Actinidia.&lt;/p&gt;
-
-&lt;p&gt;The most common cultivar group of kiwifruit is oval, about the size of a large
-hen’s egg (5–8 cm (2.0–3.1 in) in length and 4.5–5.5 cm (1.8–2.2 in) in
-diameter). It has a fibrous, dull greenish-brown skin and bright green or
-golden flesh with rows of tiny, black, edible seeds. The fruit has a soft
-texture, with a sweet and unique flavor.&lt;/p&gt;</content><author><name>ted</name></author><summary type="html">Kiwifruit (often abbreviated as kiwi), or Chinese gooseberry is the edible berry of several species of woody vines in the genus Actinidia.</summary></entry></feed>
+Amen.&lt;/p&gt;</content><author><name>prayer</name></author><summary type="html">സ്വർഗ്ഗസ്ഥനായ ഞങ്ങളുടെ പിതാവേ, നിന്റെ നാമം വിശുദ്ധീകരിക്കപ്പെടേണമേ; Sorgasthanaya njangalude pithave, Ninte naamam vishudhikarikkappedename</summary></entry></feed>

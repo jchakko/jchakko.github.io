@@ -4,5 +4,7 @@
   link: /about.html
 - name: Malayalam
   link: /malayalam.html
-- name: Adventures
-  link: /adventures.html
+- name: English
+  link: /english.html
+- name: Math
+  link: /math.html
