@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-02-04T11:34:29-05:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Lexical Diversity</title><link href="http://localhost:4000/english/2019/02/04/lexicaldiversity.html" rel="alternate" type="text/html" title="Lexical Diversity" /><published>2019-02-04T00:00:00-05:00</published><updated>2019-02-04T00:00:00-05:00</updated><id>http://localhost:4000/english/2019/02/04/lexicaldiversity</id><content type="html" xml:base="http://localhost:4000/english/2019/02/04/lexicaldiversity.html">&lt;div id = &quot;postContents&quot;&gt; 
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-02-10T11:46:44-05:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Precision and Recall</title><link href="http://localhost:4000/math/2019/02/10/precisionrecall.html" rel="alternate" type="text/html" title="Precision and Recall" /><published>2019-02-10T00:00:00-05:00</published><updated>2019-02-10T00:00:00-05:00</updated><id>http://localhost:4000/math/2019/02/10/precisionrecall</id><content type="html" xml:base="http://localhost:4000/math/2019/02/10/precisionrecall.html">&lt;div id = &quot;postContents&quot;&gt; 
+  &lt;h2&gt;Precision&lt;/h2&gt;
+  &lt;h3&gt;What percentage of cases predicted to be positive are actually positive? This metric considers the accuracy of the model when it flags something. It is the ratio if True Postiives / (True Positives + False Positives)&lt;/h3&gt;
+  
+  &lt;h2&gt;Recall&lt;/h2&gt;
+  &lt;h3&gt;What percentage of flag worthy cases were actually marked by the model? This metric considers the model's ability to correctly identify positive cases. It is the ratio of True Positives / (True Positives + False Negatives)&lt;/h3&gt;
+  
+  &lt;h2&gt;The Significance&lt;/h2&gt;
+  &lt;h3&gt;These metrics are important because its possible to maintain a high raw accuracy without doing anything in certain cases. Imagine trying to detect meteors that only appear every hundred years. If the model simply said there was no meteor every night the accuracy and precision would be high. However, the recall would be terrible since it wouldn't declare meteors even if they were visible.&lt;/h3&gt;
+  
+  &lt;h2&gt;Application&lt;/h2&gt;
+  &lt;h3&gt;These metrics can be used to calculate F1 Score&lt;/h3&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</content><author><name>Statistics</name></author><category term="math" /><summary type="html">Additional metrics for asessing accuracy</summary></entry><entry><title type="html">Lexical Diversity</title><link href="http://localhost:4000/english/2019/02/04/lexicaldiversity.html" rel="alternate" type="text/html" title="Lexical Diversity" /><published>2019-02-04T00:00:00-05:00</published><updated>2019-02-04T00:00:00-05:00</updated><id>http://localhost:4000/english/2019/02/04/lexicaldiversity</id><content type="html" xml:base="http://localhost:4000/english/2019/02/04/lexicaldiversity.html">&lt;div id = &quot;postContents&quot;&gt; 
   &lt;h2&gt;What is Lexical Diversity?&lt;/h2&gt;
   &lt;h3&gt;Lexical Diversity is the ratio between unique words and total number of words in a passage. This will yield a value between 0 and 1. The closer the value is to 1, the more diverse the passage is.&lt;/h3&gt;
   
@@ -286,25 +300,6 @@ apekshikkanamey&lt;/p&gt;
 
 &lt;p&gt;ആമ്മേന്‍.&lt;br /&gt;
 Aa-mmeyn&lt;/p&gt;</content><author><name>prayer</name></author><summary type="html">നന്മ നിറഞ്ഞ മറിയമേ, സ്വസ്തി! Nanma niranja Mariyame, Swasthi!</summary></entry><entry><title type="html">Sorgasthanaya</title><link href="http://localhost:4000/2018/11/06/Sorgasthanaya.html" rel="alternate" type="text/html" title="Sorgasthanaya" /><published>2018-11-06T00:00:00-05:00</published><updated>2018-11-06T00:00:00-05:00</updated><id>http://localhost:4000/2018/11/06/Sorgasthanaya</id><content type="html" xml:base="http://localhost:4000/2018/11/06/Sorgasthanaya.html">&lt;p&gt;സ്വർഗ്ഗസ്ഥനായ ഞങ്ങളുടെ പിതാവേ, നിന്റെ നാമം വിശുദ്ധീകരിക്കപ്പെടേണമേ;&lt;br /&gt;
-Sorgasthanaya njangalude pithave, Ninte naamam vishudhikarikkappedename&lt;/p&gt;
-
-&lt;p&gt;നിന്റെ രാജ്യം വരേണമേ; നിന്റെ ഇഷ്ടം സ്വർഗ്ഗത്തിലെപ്പോലെ ഭൂമിയിലും ആകേണമേ;&lt;br /&gt;
-Ninte rajyam varename, ninte ishtam swargathilepole bumielum aakename&lt;/p&gt;
-
-&lt;p&gt;ഞങ്ങൾക്കു ആവശ്യമുള്ള ആഹാരം ഇന്നു തരേണമേ&lt;br /&gt;
-Njangalku aavashyamulla aakaram innu tharename&lt;/p&gt;
-
-&lt;p&gt;ഞങ്ങളുടെ കടക്കാരോടു ഞങ്ങൾ ക്ഷിമിച്ചിരിക്കുന്നതുപോലെ ഞങ്ങളുടെ കടങ്ങളെ ഞങ്ങളോടും ക്ഷമിക്കേണമേ;&lt;br /&gt;
-Njangalude kadakkarodu njangal shamichirikunnathupole njangalude kadangale njangalodum shaminkename&lt;/p&gt;
-
-&lt;p&gt;ഞങ്ങളെ പരീക്ഷയിൽ കടത്താതെ ദുഷ്ടങ്കൽനിന്നു ഞങ്ങളെ വിടുവിക്കേണമേ.&lt;br /&gt;
-Njangale parikshayil kadathathe dhushttangalninnu njangale viduvikename&lt;/p&gt;
-
-&lt;p&gt;രാജ്യവും ശക്തിയും മഹത്വവും എന്നേക്കും നിനക്കുള്ളതല്ലോ.&lt;br /&gt;
-Rajyavum, shakthiyum, mahathovum ennekkum ninakkaullathallo.&lt;/p&gt;
-
-&lt;p&gt;ആമേൻ.&lt;br /&gt;
-Amen.&lt;/p&gt;</content><author><name>prayer</name></author><summary type="html">സ്വർഗ്ഗസ്ഥനായ ഞങ്ങളുടെ പിതാവേ, നിന്റെ നാമം വിശുദ്ധീകരിക്കപ്പെടേണമേ; Sorgasthanaya njangalude pithave, Ninte naamam vishudhikarikkappedename</summary></entry><entry><title type="html">Swar</title><link href="http://localhost:4000/2018/08/22/Swar.html" rel="alternate" type="text/html" title="Swar" /><published>2018-08-22T00:00:00-04:00</published><updated>2018-08-22T00:00:00-04:00</updated><id>http://localhost:4000/2018/08/22/Swar</id><content type="html" xml:base="http://localhost:4000/2018/08/22/Swar.html">&lt;p&gt;സ്വർഗ്ഗസ്ഥനായ ഞങ്ങളുടെ പിതാവേ, നിന്റെ നാമം വിശുദ്ധീകരിക്കപ്പെടേണമേ;&lt;br /&gt;
 Sorgasthanaya njangalude pithave, Ninte naamam vishudhikarikkappedename&lt;/p&gt;
 
 &lt;p&gt;നിന്റെ രാജ്യം വരേണമേ; നിന്റെ ഇഷ്ടം സ്വർഗ്ഗത്തിലെപ്പോലെ ഭൂമിയിലും ആകേണമേ;&lt;br /&gt;
