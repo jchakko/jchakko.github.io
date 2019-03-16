@@ -1,4 +1,31 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-02-10T11:46:44-05:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Precision and Recall</title><link href="http://localhost:4000/math/2019/02/10/precisionrecall.html" rel="alternate" type="text/html" title="Precision and Recall" /><published>2019-02-10T00:00:00-05:00</published><updated>2019-02-10T00:00:00-05:00</updated><id>http://localhost:4000/math/2019/02/10/precisionrecall</id><content type="html" xml:base="http://localhost:4000/math/2019/02/10/precisionrecall.html">&lt;div id = &quot;postContents&quot;&gt; 
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-02-22T11:19:59-05:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Kodiya Venal Kalam</title><link href="http://localhost:4000/malayalam/2019/02/22/kodiyavenalkalam.html" rel="alternate" type="text/html" title="Kodiya Venal Kalam" /><published>2019-02-22T00:00:00-05:00</published><updated>2019-02-22T00:00:00-05:00</updated><id>http://localhost:4000/malayalam/2019/02/22/kodiyavenalkalam</id><content type="html" xml:base="http://localhost:4000/malayalam/2019/02/22/kodiyavenalkalam.html">&lt;div id = &quot;postContents&quot;&gt; 
+  &lt;h2&gt;First Part&lt;/h2&gt;
+  &lt;audio src=&quot;/media/kodiya_venal_0.mp3&quot; controls&gt; &lt;/audio&gt;
+  
+  &lt;h2&gt;Second Part&lt;/h2&gt;
+  &lt;audio src=&quot;/media/kodiya_venal_1.mp3&quot; controls&gt; &lt;/audio&gt;
+  
+  &lt;h2&gt;Third Part&lt;/h2&gt;
+  &lt;audio src=&quot;/media/kodiya_venal_2.mp3&quot; controls&gt; &lt;/audio&gt;
+
+  
+  
+&lt;/body&gt;
+&lt;/html&gt;</content><author><name>SpeakIn10Weeks</name></author><category term="malayalam" /><summary type="html">Audio excerpts from children's song</summary></entry><entry><title type="html">Logistic Regression</title><link href="http://localhost:4000/math/2019/02/12/logisticregression.html" rel="alternate" type="text/html" title="Logistic Regression" /><published>2019-02-12T00:00:00-05:00</published><updated>2019-02-12T00:00:00-05:00</updated><id>http://localhost:4000/math/2019/02/12/logisticregression</id><content type="html" xml:base="http://localhost:4000/math/2019/02/12/logisticregression.html">&lt;div id = &quot;postContents&quot;&gt; 
+  &lt;h2&gt;What is Logistic Regression?&lt;/h2&gt;
+  &lt;h3&gt;Logistic Regression is a classification technique that outputs a probability that an instance belongs to a class based on an observation or multiple observations. For example, the probability that its summer based on the number of cricket chirps.&lt;/h3&gt;
+  
+  &lt;h2&gt;The Math&lt;/h2&gt;
+  &lt;h3&gt;The Logistic Regression model probability can be represented by the equation 1/(1+e^-(a + bX)). The variable a represents the intercept coefficient. It will yield the probability of Summer when there are no chirps. The variable b is the observation coefficient. It is how much we believe that the observation contributes to the outcome. Finally X is amount of the observation.&lt;/h3&gt;
+  
+  &lt;h2&gt;The Significance&lt;/h2&gt;
+  &lt;h3&gt;Logistic Regression provides a relative quick and easy way to classify data. It can handle both quantitative and categorical predictors.&lt;/h3&gt;
+  
+  &lt;h2&gt;Further Reading&lt;/h2&gt;
+  &lt;h3&gt;Gradient Descent is a technique used to calculate the best estimate for this model.&lt;/h3&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</content><author><name>Statistics</name></author><category term="math" /><summary type="html">Model for classification by probability</summary></entry><entry><title type="html">Precision and Recall</title><link href="http://localhost:4000/math/2019/02/10/precisionrecall.html" rel="alternate" type="text/html" title="Precision and Recall" /><published>2019-02-10T00:00:00-05:00</published><updated>2019-02-10T00:00:00-05:00</updated><id>http://localhost:4000/math/2019/02/10/precisionrecall</id><content type="html" xml:base="http://localhost:4000/math/2019/02/10/precisionrecall.html">&lt;div id = &quot;postContents&quot;&gt; 
   &lt;h2&gt;Precision&lt;/h2&gt;
   &lt;h3&gt;What percentage of cases predicted to be positive are actually positive? This metric considers the accuracy of the model when it flags something. It is the ratio if True Postiives / (True Positives + False Positives)&lt;/h3&gt;
   
@@ -268,54 +295,4 @@ Kannalan kettunnundallo, Athu ninne koottanaanallo&lt;br /&gt;
 33 Kartthaave, njangalkku kannu thurannukittenam ennu avar paranju.&lt;/p&gt;
 
 &lt;p&gt;34 യേശു മനസ്സലിഞ്ഞു അവരുടെ കണ്ണു തൊട്ടു; ഉടനെ അവർ കാഴ്ച പ്രാപിച്ചു, അവനെ അനുഗമിച്ചു.&lt;br /&gt;
-34 Yeshu manasalinju avarute kannu thottu; utane avar kaazhcha praapicchu, avane anugamicchu.&lt;/p&gt;</content><author><name>bible</name></author><summary type="html">1 “സ്വർഗ്ഗരാജ്യം തന്റെ മുന്തിരിത്തോട്ടത്തിൽ വേലക്കാരെ വിളിച്ചാക്കേണ്ടതിന്നു പുലർച്ചെക്കു പുറപ്പെട്ട വീട്ടുടയവനോടു സദൃശം. 1 Svarggaraajyam thante munthirittheaattatthil velakkaare vilicchaakkendathinnu pularcchekku purappetta veettutayavaneaatu sadrusham.</summary></entry><entry><title type="html">Nanmaniranga</title><link href="http://localhost:4000/2018/11/07/Nanmaniranga.html" rel="alternate" type="text/html" title="Nanmaniranga" /><published>2018-11-07T00:00:00-05:00</published><updated>2018-11-07T00:00:00-05:00</updated><id>http://localhost:4000/2018/11/07/Nanmaniranga</id><content type="html" xml:base="http://localhost:4000/2018/11/07/Nanmaniranga.html">&lt;p&gt;നന്മ നിറഞ്ഞ മറിയമേ,  സ്വസ്തി!
-Nanma niranja Mariyame, Swasthi!&lt;/p&gt;
-
-&lt;p&gt;കര്‍ത്താവ് അങ്ങയോടുകൂടെ.
-Karthaav angayodu koode&lt;/p&gt;
-
-&lt;p&gt;സ്ത്രീകളില്‍ അങ്ങ്
-Sthreekalil Angu&lt;/p&gt;
-
-&lt;p&gt;അനുഗ്രഹിക്കപ്പെട്ടവളാകുന്നു. &lt;br /&gt;
-Anugrahikkappettaval aakunnu&lt;/p&gt;
-
-&lt;p&gt;അങ്ങയുടെ ഉദരത്തിന്‍ ഫലമായ ഈശോ&lt;br /&gt;
-Angey udaraththin phalamaaya Eeso&lt;/p&gt;
-
-&lt;p&gt;അനുഗ്രഹിക്കപ്പെട്ടവനാകുന്നു.&lt;br /&gt;
-anugrahikkappettavan aakunnu&lt;/p&gt;
-
-&lt;p&gt;പരിശുദ്ധ മറിയമേ, തമ്പുരാന്റെ അമ്മേ, &lt;br /&gt;
-Parishuddha Mariyame, Thampurante ammey&lt;/p&gt;
-
-&lt;p&gt;പാപികളായ ഞങ്ങള്‍ക്കുവേണ്ടി ഇപ്പോഴും ഞങ്ങളുടെ&lt;br /&gt;
-Paapikalaaya Njangalukku vendi ippozhum njangaludey&lt;/p&gt;
-
-&lt;p&gt;മരണസമയത്തും തമ്പുരാനോട്&lt;br /&gt;
-marana samayaththum Thampuraanodu&lt;/p&gt;
-
-&lt;p&gt;അപേക്ഷിച്ചുകൊള്ളേണമേ. &lt;br /&gt;
-apekshikkanamey&lt;/p&gt;
-
-&lt;p&gt;ആമ്മേന്‍.&lt;br /&gt;
-Aa-mmeyn&lt;/p&gt;</content><author><name>prayer</name></author><summary type="html">നന്മ നിറഞ്ഞ മറിയമേ, സ്വസ്തി! Nanma niranja Mariyame, Swasthi!</summary></entry><entry><title type="html">Sorgasthanaya</title><link href="http://localhost:4000/2018/11/06/Sorgasthanaya.html" rel="alternate" type="text/html" title="Sorgasthanaya" /><published>2018-11-06T00:00:00-05:00</published><updated>2018-11-06T00:00:00-05:00</updated><id>http://localhost:4000/2018/11/06/Sorgasthanaya</id><content type="html" xml:base="http://localhost:4000/2018/11/06/Sorgasthanaya.html">&lt;p&gt;സ്വർഗ്ഗസ്ഥനായ ഞങ്ങളുടെ പിതാവേ, നിന്റെ നാമം വിശുദ്ധീകരിക്കപ്പെടേണമേ;&lt;br /&gt;
-Sorgasthanaya njangalude pithave, Ninte naamam vishudhikarikkappedename&lt;/p&gt;
-
-&lt;p&gt;നിന്റെ രാജ്യം വരേണമേ; നിന്റെ ഇഷ്ടം സ്വർഗ്ഗത്തിലെപ്പോലെ ഭൂമിയിലും ആകേണമേ;&lt;br /&gt;
-Ninte rajyam varename, ninte ishtam swargathilepole bumielum aakename&lt;/p&gt;
-
-&lt;p&gt;ഞങ്ങൾക്കു ആവശ്യമുള്ള ആഹാരം ഇന്നു തരേണമേ&lt;br /&gt;
-Njangalku aavashyamulla aakaram innu tharename&lt;/p&gt;
-
-&lt;p&gt;ഞങ്ങളുടെ കടക്കാരോടു ഞങ്ങൾ ക്ഷിമിച്ചിരിക്കുന്നതുപോലെ ഞങ്ങളുടെ കടങ്ങളെ ഞങ്ങളോടും ക്ഷമിക്കേണമേ;&lt;br /&gt;
-Njangalude kadakkarodu njangal shamichirikunnathupole njangalude kadangale njangalodum shaminkename&lt;/p&gt;
-
-&lt;p&gt;ഞങ്ങളെ പരീക്ഷയിൽ കടത്താതെ ദുഷ്ടങ്കൽനിന്നു ഞങ്ങളെ വിടുവിക്കേണമേ.&lt;br /&gt;
-Njangale parikshayil kadathathe dhushttangalninnu njangale viduvikename&lt;/p&gt;
-
-&lt;p&gt;രാജ്യവും ശക്തിയും മഹത്വവും എന്നേക്കും നിനക്കുള്ളതല്ലോ.&lt;br /&gt;
-Rajyavum, shakthiyum, mahathovum ennekkum ninakkaullathallo.&lt;/p&gt;
-
-&lt;p&gt;ആമേൻ.&lt;br /&gt;
-Amen.&lt;/p&gt;</content><author><name>prayer</name></author><summary type="html">സ്വർഗ്ഗസ്ഥനായ ഞങ്ങളുടെ പിതാവേ, നിന്റെ നാമം വിശുദ്ധീകരിക്കപ്പെടേണമേ; Sorgasthanaya njangalude pithave, Ninte naamam vishudhikarikkappedename</summary></entry></feed>
+34 Yeshu manasalinju avarute kannu thottu; utane avar kaazhcha praapicchu, avane anugamicchu.&lt;/p&gt;</content><author><name>bible</name></author><summary type="html">1 “സ്വർഗ്ഗരാജ്യം തന്റെ മുന്തിരിത്തോട്ടത്തിൽ വേലക്കാരെ വിളിച്ചാക്കേണ്ടതിന്നു പുലർച്ചെക്കു പുറപ്പെട്ട വീട്ടുടയവനോടു സദൃശം. 1 Svarggaraajyam thante munthirittheaattatthil velakkaare vilicchaakkendathinnu pularcchekku purappetta veettutayavaneaatu sadrusham.</summary></entry></feed>
