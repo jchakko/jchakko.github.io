@@ -1,18 +1,14 @@
 html {
     font: normal 100%/1.4 Georgia,serif;
-    background: #000000;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #353535, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #353535, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
+    background: #eff4f0;
 }
 
 body {
-  color: #4caa05;
+  color: black;
 }
 
 h1 {
-  color: white;
+  color: black;
   padding: 0% 5%;
 }
 
@@ -27,7 +23,7 @@ h1 {
 }
 
 .PostListing li a{
-  color: white;
+  color: black;
   padding: 14px 16px;
   text-decoration: none;
 }

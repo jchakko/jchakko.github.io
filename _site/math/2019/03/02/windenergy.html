@@ -1,0 +1,246 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Wind Energy</title>
+    <link href="/css/common.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <html>
+<head>
+<style>
+.Navigation{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.Navigation li{
+  float: right;
+}
+
+.Navigation li a{
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.Navigation > :first-child {
+  float: left;
+} 
+
+li a:hover:not(.active) {
+  background-color: #c6d1c8;
+}
+
+.active {
+  background-color: #c6d1c8;
+}
+</style>
+</head>
+
+<div class="navbar">
+  <ul class = "Navigation">
+  
+    <li><a href="/" >Visualizations</a></li>
+  
+    <li><a href="/about.html" >About Me!</a></li>
+  
+    <li><a href="/malayalam.html" >Malayalam</a></li>
+  
+    <li><a href="/english.html" >English</a></li>
+  
+    <li><a href="/math.html" >Math</a></li>
+  
+  </ul>
+</div>
+</html>
+
+    <html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Wind Energy</title>
+    <link href="/css/common.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+  </head>
+  
+  <body>
+    <h1>Wind Energy</h1>
+    <div class="center">
+    <p>
+    02 Mar 2019
+    
+    
+    
+    </p>
+      <head>
+<script src="dotdensityfunction.js"></script>
+<script src="bargraphfunction.js"></script>
+<script src="linegraphfunction.js"></script>
+<script src="pictographfunction.js"></script>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<style>
+.line {
+  fill: none;
+  stroke: black;
+  stroke-width: 2px;
+}
+
+div.tooltip {	
+    position: absolute;			
+    text-align: center;			
+    width: 140px;					
+    height: 50px;					
+    padding: 2px;				
+    font: 12px sans-serif;		
+    background: lightsteelblue;	
+    border: 0px;		
+    border-radius: 8px;			
+    pointer-events: none;			
+}
+
+.happy {
+  stroke: black;
+  fill: green;
+  stroke-width: 0;
+}
+
+.smile {
+  stroke: black;
+  fill: blue;
+  stroke-width: 0;
+}
+
+.neutral {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: black;
+  fill: gray;
+}
+
+.sad {
+  stroke: black;
+  fill: orange;
+  stroke-width: 0;
+}
+
+.angry {
+  fill: red;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 75%;
+  height: 10px;
+  background: #d3d3d3;
+  outline: none;
+}
+
+.slidecontainer {
+  margin: auto;
+  width:90%;
+  padding-top: 25px;
+}
+
+.narration {
+  margin: auto;
+  width: 90%;
+  border: 3px solid green;
+  padding: 10px;
+}
+
+</style>
+
+</head>
+<body bgcolor = #f4f8ff>
+
+  <h1 align = "center">Wind Energy in the United States</h1>
+  
+  
+  
+  <div class="narration">
+  <h3>The first electricity generating wind turbine in America was built by Charles Brush in 1888. It stood in Ohio at 60 feet table and was capable of generating 12kW of electricity. </h3>
+  
+  <img src = "media/first_turbine.jpg" align = "middle">
+    
+  <h3>Fast forward 92 years and the world's first wind farm was constructed in Crotched Mountain, New Hampshire. Built in 1992, the wind farm consisted of 20 wind turbines with a capacity of 30 kilowatts each.</h3>
+  
+  <h3>Now there are over 50,000 wind turbines in the United States that can produce 90,000 megawatts in a year. This represents around 5% of the energy production in the country.</h3> 
+  
+  <h3>And tomorrow? WINDExchange believes the United States could produce 10,640,080MW.</h3>
+  </div>
+  
+  <h2 align = "center">Locations of Wind Turbines in the United States</h2>
+  <script>
+    let densityMap = dotDensity();  
+  </script>
+  
+  <div class="narration">
+  <h3>The United States Geologic Survey has released a dataset containing the location of every turbine in the country. Plotting this information reveals what regions are best suited for producing wind energy.</h3>
+  
+  <h3>This visualization shows us that a handful of regions contain the majority of wind turbines. Wind speeds must reach 6 miles per hour before electrical energy is produced. This makes the Great Plains ideal wind energy producers.</h3>
+  
+  <h3>This can be further shown by plotting each state's output individually. Source: WINDExchange</h3>
+  
+  <h3>Although it takes some years for Texas to take the lead, the state becomes the country's largest wind energy producer by a large margin. Additionally, many states do not meet the conditions to be high wind energy producers.</h3>  
+  </div>
+  
+ 
+  <h2 align = "center">Wind Energy Production by State</h2>
+  <script>
+    let bargraph = barGraph();
+  </script>
+
+  </br>
+  
+  <div class="slidecontainer">
+  <input type="range" min="1999" max="2017" value="1999" class="slider" id="myRange">
+  </div>
+  
+  <div class="narration">
+  <h3>For us to reach WINDExchange's goal of 10 million MegaWatts per year we have to multiply our current wind output by 10 times. This would mean having hundreds of thousands more turbines.</h3>
+  
+  <h3>Overall, there is a trend of increasing turbine efficiency but it isn't large enough. There must be a breakthrough in turbine efficiency that brings the number of turbines required to a reasonable amount. </h3> 
+  </div>
+  
+  <h2 align = "center">Total Production and Turbine Efficiency</h2>
+  <script>
+    let alinegraph = linegraph();
+  </script>
+
+  <div class="narration">
+  <h3>One of the benefits of wind energy is that once the turbine is installed, the energy it produces is free. But nothing is truly free. One concern is the feelings of residents who live near turbines. Source: Berkeley Lab's National Survey of Attitudes of Wind Power Project Neighbors</h3>
+  
+  <h3>For the most part, people do not have issues with living over a mile away from a turbine. However there is noticible discontent among residents who are within half a mile. As more turbines are built, and the trend towards larger turbines continues, this will became problematic for more people.</h3>
+  </div>
+
+  <h2 align = "center">Attitudes Towards Wind Projects by Distance</h2>
+    
+  <script>
+    let picto = pictograph();
+  </script>  
+
+    
+  
+  <div class="narration">
+  <h3>WINDExchange's potential estimate of 10 million MegaWatts seems lofty. Without major improvements to turbine efficiency, there probably isn't even enough space to fit the necessary turbines.</h3>
+  
+  <h3>Still, a lot of progress has been made since the first wind farms. We should be proud of the advances that allow for the level of production that exists today.</h3>
+  </div>
+
+</body>
+</html>
+    </div>
+  </body>  
+
+</html>
+  </body>
+</html>
