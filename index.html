@@ -9,21 +9,51 @@ layout: default
   <link href="{{site.baseurl}}/css/common.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <body>
-<h1>{{ "Welcome to my Blog!"}}</h1>
+
 
 <div class="center">
-  <p>I created this website to document what I've learned while studying language. My main focueses are analyzing English and learning Malayalam.</p>
+  <h1>{{"Look with your eyes, see with your mind"}}</h1>
+  
+  <p>Advances in computing power have given us the ability to analyze datasets larger than ever before. However, we also generate more data then we could ever possibly understand. Sometimes the smallest datasets can yield deep insights - if we have the patience to understand them.</p>
 </div>
 
 <div class = "PostListing">
-<ul>
   {% for post in site.categories.visualization %}
-    <li>
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      <p>{{ post.excerpt }}</p>
-    </li>
+    <a href="{{ post.url }}">
+      <div class = "tile">
+        <h2 align = "center">{{ post.title }}</h2>
+        <img src="{{ site.baseurl }}/images/{{ post.image }}">
+      </div>
+    </a>
   {% endfor %}
-</ul>
+  
+    
+<!--
+  {% for post in site.categories.visualization %}
+      {% assign loopindex = forloop.index | modulo: 2 %}
+      {% if loopindex == 1 %}
+        <div class="row">
+          <a href="{{ post.url }}">
+            <div class = "tile">
+              <h2 align = "center">{{ post.title }}</h2>
+              <img src="{{ site.baseurl }}/images/{{ post.image }}">
+            </div>
+          </a>
+          
+        {% else %}
+          <a href="{{ post.url }}">
+            <div class="tile">
+              <h2 align = "center">{{ post.title }}</h2>
+              <img src="{{ site.baseurl }}/images/{{ post.image }}">
+            </div>
+          </a>
+          
+          
+        </div>
+    
+    {% endif %}
+  {% endfor %}
+<!---->
 </div>
 </body>
 </html>

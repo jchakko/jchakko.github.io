@@ -1,10 +1,10 @@
-- name: Visualizations
+- name: Home
   link: /
-- name: About Me!
+- name: About Me
   link: /about.html
 - name: Malayalam
   link: /malayalam.html
-- name: English
+- name: Text Analysis
   link: /english.html
-- name: Math
+- name: Data Visualizations
   link: /math.html

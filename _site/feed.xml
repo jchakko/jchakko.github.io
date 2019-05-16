@@ -1,4 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-04-19T19:06:29-04:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Turbine Locations</title><link href="http://localhost:4000/visualization/2019/04/19/turbinelocations.html" rel="alternate" type="text/html" title="Turbine Locations" /><published>2019-04-19T00:00:00-04:00</published><updated>2019-04-19T00:00:00-04:00</updated><id>http://localhost:4000/visualization/2019/04/19/turbinelocations</id><content type="html" xml:base="http://localhost:4000/visualization/2019/04/19/turbinelocations.html">&lt;div id = &quot;postContents&quot;&gt; 
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-05-15T20:55:47-04:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Rice &amp;amp; Roti</title><link href="http://localhost:4000/visualization/2019/04/19/riceroti.html" rel="alternate" type="text/html" title="Rice &amp; Roti" /><published>2019-04-19T00:00:00-04:00</published><updated>2019-04-19T00:00:00-04:00</updated><id>http://localhost:4000/visualization/2019/04/19/riceroti</id><content type="html" xml:base="http://localhost:4000/visualization/2019/04/19/riceroti.html">&lt;div id = &quot;postContents&quot;&gt; 
+  &lt;h1&gt;Rice &amp; Roti&lt;/h1&gt;
+  
+  
+  &lt;h2&gt;Click here to see the interactive version&lt;/h2&gt;
+  
+  &lt;h3&gt;Carb choice is serious business in India. I colored in this map to understand which states eat rice and which eat roti. The results were not too surprising, basically the north west are the biggest consumers of wheat. There were a few neutral states in the center. Most of the states ate a combination, even if it was unbalanced. States in the north west were very polarized. This may caused by their physical and cultural connection to other Asian countries.&lt;/h3&gt;
+
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</content><author><name></name></author><category term="visualization" /><summary type="html">Comparison of rice and roti consumption by state</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/riceroti.png" /></entry><entry><title type="html">Turbine Locations</title><link href="http://localhost:4000/visualization/2019/04/19/turbinelocations.html" rel="alternate" type="text/html" title="Turbine Locations" /><published>2019-04-19T00:00:00-04:00</published><updated>2019-04-19T00:00:00-04:00</updated><id>http://localhost:4000/visualization/2019/04/19/turbinelocations</id><content type="html" xml:base="http://localhost:4000/visualization/2019/04/19/turbinelocations.html">&lt;div id = &quot;postContents&quot;&gt; 
   &lt;h2&gt;Locations of United States Wind Turbines&lt;/h2&gt;
   &lt;script&gt;
     console.log(&quot;Begin Dot Density&quot;);
@@ -86,7 +96,183 @@
   &lt;/script&gt;
   &lt;/div&gt;
 &lt;/body&gt;
-&lt;/html&gt;</content><author><name>Statistics</name></author><category term="visualization" /><summary type="html">Dot Density map of Wind Turbines in the United States</summary></entry><entry><title type="html">Windenergy</title><link href="http://localhost:4000/2019/04/15/WindEnergy.html" rel="alternate" type="text/html" title="Windenergy" /><published>2019-04-15T00:00:00-04:00</published><updated>2019-04-15T00:00:00-04:00</updated><id>http://localhost:4000/2019/04/15/WindEnergy</id><content type="html" xml:base="http://localhost:4000/2019/04/15/WindEnergy.html">&lt;!DOCTYPE html&gt;
+&lt;/html&gt;</content><author><name>Statistics</name></author><category term="visualization" /><summary type="html">Dot Density map of Wind Turbines in the United States</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/turbines.png" /></entry><entry><title type="html">Turbine Locations</title><link href="http://localhost:4000/visualization/2019/04/19/test3.html" rel="alternate" type="text/html" title="Turbine Locations" /><published>2019-04-19T00:00:00-04:00</published><updated>2019-04-19T00:00:00-04:00</updated><id>http://localhost:4000/visualization/2019/04/19/test3</id><content type="html" xml:base="http://localhost:4000/visualization/2019/04/19/test3.html">&lt;div id = &quot;postContents&quot;&gt; 
+  &lt;h2&gt;Locations of United States Wind Turbines&lt;/h2&gt;
+  &lt;script&gt;
+    console.log(&quot;Begin Dot Density&quot;);
+    let margin = {top: 20, right: 20, bottom: 30, left: 150};
+    let width = 1200 - margin.left - margin.right;
+    let height = 700 - margin.top - margin.bottom;
+    
+    let svg = d3.select(&quot;body&quot;).append(&quot;svg&quot;)
+      .attr(&quot;width&quot;, width + margin.left + margin.right)
+      .attr(&quot;height&quot;, height + margin.top + margin.bottom)
+      .append(&quot;g&quot;)
+        .attr(&quot;transform&quot;,
+          &quot;translate(&quot; + margin.left + &quot;,&quot; + margin.top + &quot;)&quot;);
+          
+    svg.append(&quot;rect&quot;)
+      .attr(&quot;width&quot;,width)
+      .attr(&quot;height&quot;,height)
+      .style(&quot;fill&quot;,&quot;green&quot;)
+      .style(&quot;opacity&quot;, 0); //Background best practice
+        
+    Promise.all([
+      d3.json(&quot;/datasets/geo/us-states.json&quot;),
+      d3.csv(&quot;/datasets/turbines/Turbine_Locations_80.csv&quot;),
+      d3.csv(&quot;/datasets/turbines/Turbine_Locations_90.csv&quot;),
+      d3.csv(&quot;/datasets/turbines/Turbine_Locations_00.csv&quot;),
+      d3.csv(&quot;/datasets/turbines/Turbine_Locations_10.csv&quot;)
+    ]).then(function(data){
+      let geoJsonData = data[0];
+      let windData80 = data[1];
+      let windData90 = data[2];
+      let windData00 = data[3];
+      let windData10 = data[4];
+      console.log(&quot;geoJsonData:&quot;)
+      console.log(geoJsonData);
+      console.log(&quot;windData:&quot;)
+      console.log(windData80); 
+
+      let projection = d3.geoAlbersUsa();
+      projection.fitHeight(height-100,geoJsonData);
+      let pathGenerator = d3.geoPath().projection(projection);
+      
+      &lt;!-- Append map of United States --&gt;
+      svg.append('g')
+        .selectAll('path')
+        .data(geoJsonData.features)
+        .enter()
+        .append('path')
+          .attr('d', pathGenerator)
+          .style(&quot;fill&quot;, &quot;black&quot;)
+          .style(&quot;stroke&quot;, &quot;white&quot;);
+          
+      function addturbines(g, data, projection, color) {
+        console.log(&quot;Add Turbines Function&quot;);
+        g.selectAll(&quot;circle&quot;)
+          .data(data)
+          .enter()
+          .append(&quot;circle&quot;)
+          .attr(&quot;cx&quot;, function(d,i) {
+            let coordinates = projection([d.xlong, d.ylat]);
+            return coordinates[0];
+          }) 
+		  .attr(&quot;cy&quot;, function(d,i) {
+            let coordinates = projection([d.xlong, d.ylat]);
+            return coordinates[1];
+          })        
+		  .attr(&quot;r&quot;, &quot;3px&quot;)
+		  .attr(&quot;fill&quot;, color)
+          .style(&quot;opacity&quot;, .5);          
+      }
+          
+      let dots80 = svg.append('g');
+      addturbines(dots80, windData80, projection, &quot;blue&quot;);
+          
+      let dots90 = svg.append('g');
+      addturbines(dots90, windData90, projection, &quot;red&quot;);
+      
+      let dots00 = svg.append('g');
+      addturbines(dots00, windData00, projection, &quot;yellow&quot;);
+      
+      let dots10 = svg.append('g');
+      addturbines(dots10, windData10, projection, &quot;green&quot;);
+          
+      
+    }) //End of Promise
+  &lt;/script&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</content><author><name>Statistics</name></author><category term="visualization" /><summary type="html">Dot Density map of Wind Turbines in the United States</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/measurements.jpg" /></entry><entry><title type="html">Turbine Locations</title><link href="http://localhost:4000/visualization/2019/04/19/test.html" rel="alternate" type="text/html" title="Turbine Locations" /><published>2019-04-19T00:00:00-04:00</published><updated>2019-04-19T00:00:00-04:00</updated><id>http://localhost:4000/visualization/2019/04/19/test</id><content type="html" xml:base="http://localhost:4000/visualization/2019/04/19/test.html">&lt;div id = &quot;postContents&quot;&gt; 
+  &lt;h2&gt;Locations of United States Wind Turbines&lt;/h2&gt;
+  &lt;script&gt;
+    console.log(&quot;Begin Dot Density&quot;);
+    let margin = {top: 20, right: 20, bottom: 30, left: 150};
+    let width = 1200 - margin.left - margin.right;
+    let height = 700 - margin.top - margin.bottom;
+    
+    let svg = d3.select(&quot;body&quot;).append(&quot;svg&quot;)
+      .attr(&quot;width&quot;, width + margin.left + margin.right)
+      .attr(&quot;height&quot;, height + margin.top + margin.bottom)
+      .append(&quot;g&quot;)
+        .attr(&quot;transform&quot;,
+          &quot;translate(&quot; + margin.left + &quot;,&quot; + margin.top + &quot;)&quot;);
+          
+    svg.append(&quot;rect&quot;)
+      .attr(&quot;width&quot;,width)
+      .attr(&quot;height&quot;,height)
+      .style(&quot;fill&quot;,&quot;green&quot;)
+      .style(&quot;opacity&quot;, 0); //Background best practice
+        
+    Promise.all([
+      d3.json(&quot;/datasets/geo/us-states.json&quot;),
+      d3.csv(&quot;/datasets/turbines/Turbine_Locations_80.csv&quot;),
+      d3.csv(&quot;/datasets/turbines/Turbine_Locations_90.csv&quot;),
+      d3.csv(&quot;/datasets/turbines/Turbine_Locations_00.csv&quot;),
+      d3.csv(&quot;/datasets/turbines/Turbine_Locations_10.csv&quot;)
+    ]).then(function(data){
+      let geoJsonData = data[0];
+      let windData80 = data[1];
+      let windData90 = data[2];
+      let windData00 = data[3];
+      let windData10 = data[4];
+      console.log(&quot;geoJsonData:&quot;)
+      console.log(geoJsonData);
+      console.log(&quot;windData:&quot;)
+      console.log(windData80); 
+
+      let projection = d3.geoAlbersUsa();
+      projection.fitHeight(height-100,geoJsonData);
+      let pathGenerator = d3.geoPath().projection(projection);
+      
+      &lt;!-- Append map of United States --&gt;
+      svg.append('g')
+        .selectAll('path')
+        .data(geoJsonData.features)
+        .enter()
+        .append('path')
+          .attr('d', pathGenerator)
+          .style(&quot;fill&quot;, &quot;black&quot;)
+          .style(&quot;stroke&quot;, &quot;white&quot;);
+          
+      function addturbines(g, data, projection, color) {
+        console.log(&quot;Add Turbines Function&quot;);
+        g.selectAll(&quot;circle&quot;)
+          .data(data)
+          .enter()
+          .append(&quot;circle&quot;)
+          .attr(&quot;cx&quot;, function(d,i) {
+            let coordinates = projection([d.xlong, d.ylat]);
+            return coordinates[0];
+          }) 
+		  .attr(&quot;cy&quot;, function(d,i) {
+            let coordinates = projection([d.xlong, d.ylat]);
+            return coordinates[1];
+          })        
+		  .attr(&quot;r&quot;, &quot;3px&quot;)
+		  .attr(&quot;fill&quot;, color)
+          .style(&quot;opacity&quot;, .5);          
+      }
+          
+      let dots80 = svg.append('g');
+      addturbines(dots80, windData80, projection, &quot;blue&quot;);
+          
+      let dots90 = svg.append('g');
+      addturbines(dots90, windData90, projection, &quot;red&quot;);
+      
+      let dots00 = svg.append('g');
+      addturbines(dots00, windData00, projection, &quot;yellow&quot;);
+      
+      let dots10 = svg.append('g');
+      addturbines(dots10, windData10, projection, &quot;green&quot;);
+          
+      
+    }) //End of Promise
+  &lt;/script&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</content><author><name>Statistics</name></author><category term="visualization" /><summary type="html">Dot Density map of Wind Turbines in the United States</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/turbines.png" /></entry><entry><title type="html">Windenergy</title><link href="http://localhost:4000/2019/04/15/WindEnergy.html" rel="alternate" type="text/html" title="Windenergy" /><published>2019-04-15T00:00:00-04:00</published><updated>2019-04-15T00:00:00-04:00</updated><id>http://localhost:4000/2019/04/15/WindEnergy</id><content type="html" xml:base="http://localhost:4000/2019/04/15/WindEnergy.html">&lt;!DOCTYPE html&gt;
 &lt;meta charset=&quot;utf-8&quot;/&gt;
 &lt;html&gt;
 &lt;header&gt;&lt;title&gt;Wind Energy&lt;/title&gt;&lt;/header&gt;
@@ -264,7 +450,22 @@ div.tooltip {
   
   
 &lt;/body&gt;
-&lt;/html&gt;</content><author><name>SpeakIn10Weeks</name></author><category term="malayalam" /><summary type="html">Audio excerpts from children's song</summary></entry><entry><title type="html">Wind Energy</title><link href="http://localhost:4000/math/2019/03/02/windenergy.html" rel="alternate" type="text/html" title="Wind Energy" /><published>2019-03-02T00:00:00-05:00</published><updated>2019-03-02T00:00:00-05:00</updated><id>http://localhost:4000/math/2019/03/02/windenergy</id><content type="html" xml:base="http://localhost:4000/math/2019/03/02/windenergy.html">&lt;head&gt;
+&lt;/html&gt;</content><author><name>SpeakIn10Weeks</name></author><category term="malayalam" /><summary type="html">Audio excerpts from children's song</summary></entry><entry><title type="html">The Bias-Variance Tradeoff</title><link href="http://localhost:4000/math/2019/03/02/biasvariance.html" rel="alternate" type="text/html" title="The Bias-Variance Tradeoff" /><published>2019-03-02T00:00:00-05:00</published><updated>2019-03-02T00:00:00-05:00</updated><id>http://localhost:4000/math/2019/03/02/biasvariance</id><content type="html" xml:base="http://localhost:4000/math/2019/03/02/biasvariance.html">&lt;div id = &quot;postContents&quot;&gt; 
+  &lt;h2&gt;What is Bias?&lt;/h2&gt;
+  &lt;h3&gt;Bias is how much the model predictions are off compared to the actual values. If the bias is low, the prediction was accurate. If the bias is high, the prediction was inaccurate.&lt;/h3&gt;
+  
+  &lt;h2&gt;What is Variance?&lt;/h2&gt;
+  &lt;h3&gt;Variance is the spread of the predictions. If the variance is low, the model is making predictions that are close to each other. If the variance is high, the model is making predictions that are far apart.&lt;/h3&gt;
+  
+  &lt;h2&gt;The Tradeoff&lt;/h2&gt;
+  &lt;h3&gt;The goal is to get a low bias and a low variance. That means the model is making accurate, consistent predictions. The bias can be decreased by increasing the variance. That means the model will predict more accurately if it is given more flexibility but that can be erratic. Variance can be decreased by incresing the bias. That means the model can predict more consistent values but they will be less accurate.&lt;/h3&gt;
+
+  &lt;h2&gt;Application&lt;/h2&gt;
+  &lt;h3&gt;This concept gives insight on overfitting. A high variance may not initially seem like an issue, after all, the model is predicting accurate values. However, this makes the model overly attached to the training data. Its important to minimize both the bias and variance.&lt;/h3&gt;
+  
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</content><author><name>Statistics</name></author><category term="math" /><summary type="html">A balancing act for making predictions</summary></entry><entry><title type="html">Wind Energy</title><link href="http://localhost:4000/math/2019/03/02/windenergy.html" rel="alternate" type="text/html" title="Wind Energy" /><published>2019-03-02T00:00:00-05:00</published><updated>2019-03-02T00:00:00-05:00</updated><id>http://localhost:4000/math/2019/03/02/windenergy</id><content type="html" xml:base="http://localhost:4000/math/2019/03/02/windenergy.html">&lt;head&gt;
 &lt;script src=&quot;dotdensityfunction.js&quot;&gt;&lt;/script&gt;
 &lt;script src=&quot;bargraphfunction.js&quot;&gt;&lt;/script&gt;
 &lt;script src=&quot;linegraphfunction.js&quot;&gt;&lt;/script&gt;
@@ -422,22 +623,7 @@ div.tooltip {
   &lt;/div&gt;
 
 &lt;/body&gt;
-&lt;/html&gt;</content><author><name>Statistics</name></author><category term="math" /><summary type="html">Visualizations</summary></entry><entry><title type="html">The Bias-Variance Tradeoff</title><link href="http://localhost:4000/math/2019/03/02/biasvariance.html" rel="alternate" type="text/html" title="The Bias-Variance Tradeoff" /><published>2019-03-02T00:00:00-05:00</published><updated>2019-03-02T00:00:00-05:00</updated><id>http://localhost:4000/math/2019/03/02/biasvariance</id><content type="html" xml:base="http://localhost:4000/math/2019/03/02/biasvariance.html">&lt;div id = &quot;postContents&quot;&gt; 
-  &lt;h2&gt;What is Bias?&lt;/h2&gt;
-  &lt;h3&gt;Bias is how much the model predictions are off compared to the actual values. If the bias is low, the prediction was accurate. If the bias is high, the prediction was inaccurate.&lt;/h3&gt;
-  
-  &lt;h2&gt;What is Variance?&lt;/h2&gt;
-  &lt;h3&gt;Variance is the spread of the predictions. If the variance is low, the model is making predictions that are close to each other. If the variance is high, the model is making predictions that are far apart.&lt;/h3&gt;
-  
-  &lt;h2&gt;The Tradeoff&lt;/h2&gt;
-  &lt;h3&gt;The goal is to get a low bias and a low variance. That means the model is making accurate, consistent predictions. The bias can be decreased by increasing the variance. That means the model will predict more accurately if it is given more flexibility but that can be erratic. Variance can be decreased by incresing the bias. That means the model can predict more consistent values but they will be less accurate.&lt;/h3&gt;
-
-  &lt;h2&gt;Application&lt;/h2&gt;
-  &lt;h3&gt;This concept gives insight on overfitting. A high variance may not initially seem like an issue, after all, the model is predicting accurate values. However, this makes the model overly attached to the training data. Its important to minimize both the bias and variance.&lt;/h3&gt;
-  
-  &lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;</content><author><name>Statistics</name></author><category term="math" /><summary type="html">A balancing act for making predictions</summary></entry><entry><title type="html">Kodiya Venal Kalam</title><link href="http://localhost:4000/malayalam/2019/02/22/kodiyavenalkalam.html" rel="alternate" type="text/html" title="Kodiya Venal Kalam" /><published>2019-02-22T00:00:00-05:00</published><updated>2019-02-22T00:00:00-05:00</updated><id>http://localhost:4000/malayalam/2019/02/22/kodiyavenalkalam</id><content type="html" xml:base="http://localhost:4000/malayalam/2019/02/22/kodiyavenalkalam.html">&lt;div id = &quot;postContents&quot;&gt; 
+&lt;/html&gt;</content><author><name>Statistics</name></author><category term="math" /><summary type="html">Visualizations</summary></entry><entry><title type="html">Kodiya Venal Kalam</title><link href="http://localhost:4000/malayalam/2019/02/22/kodiyavenalkalam.html" rel="alternate" type="text/html" title="Kodiya Venal Kalam" /><published>2019-02-22T00:00:00-05:00</published><updated>2019-02-22T00:00:00-05:00</updated><id>http://localhost:4000/malayalam/2019/02/22/kodiyavenalkalam</id><content type="html" xml:base="http://localhost:4000/malayalam/2019/02/22/kodiyavenalkalam.html">&lt;div id = &quot;postContents&quot;&gt; 
   &lt;h2&gt;First Part&lt;/h2&gt;
   &lt;audio src=&quot;/media/kodiya_venal_0.mp3&quot; controls&gt; &lt;/audio&gt;
   
@@ -462,46 +648,4 @@ div.tooltip {
   &lt;h3&gt;Gradient Descent is a technique used to calculate the best estimate for this model.&lt;/h3&gt;
   &lt;/div&gt;
 &lt;/body&gt;
-&lt;/html&gt;</content><author><name>Statistics</name></author><category term="math" /><summary type="html">Model for classification by probability</summary></entry><entry><title type="html">Precision and Recall</title><link href="http://localhost:4000/math/2019/02/10/precisionrecall.html" rel="alternate" type="text/html" title="Precision and Recall" /><published>2019-02-10T00:00:00-05:00</published><updated>2019-02-10T00:00:00-05:00</updated><id>http://localhost:4000/math/2019/02/10/precisionrecall</id><content type="html" xml:base="http://localhost:4000/math/2019/02/10/precisionrecall.html">&lt;div id = &quot;postContents&quot;&gt; 
-  &lt;h2&gt;Precision&lt;/h2&gt;
-  &lt;h3&gt;What percentage of cases predicted to be positive are actually positive? This metric considers the accuracy of the model when it flags something. It is the ratio if True Postiives / (True Positives + False Positives)&lt;/h3&gt;
-  
-  &lt;h2&gt;Recall&lt;/h2&gt;
-  &lt;h3&gt;What percentage of flag worthy cases were actually marked by the model? This metric considers the model's ability to correctly identify positive cases. It is the ratio of True Positives / (True Positives + False Negatives)&lt;/h3&gt;
-  
-  &lt;h2&gt;The Significance&lt;/h2&gt;
-  &lt;h3&gt;These metrics are important because its possible to maintain a high raw accuracy without doing anything in certain cases. Imagine trying to detect meteors that only appear every hundred years. If the model simply said there was no meteor every night the accuracy and precision would be high. However, the recall would be terrible since it wouldn't declare meteors even if they were visible.&lt;/h3&gt;
-  
-  &lt;h2&gt;Application&lt;/h2&gt;
-  &lt;h3&gt;These metrics can be used to calculate F1 Score&lt;/h3&gt;
-  &lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;</content><author><name>Statistics</name></author><category term="math" /><summary type="html">Additional metrics for asessing accuracy</summary></entry><entry><title type="html">Lexical Diversity</title><link href="http://localhost:4000/english/2019/02/04/lexicaldiversity.html" rel="alternate" type="text/html" title="Lexical Diversity" /><published>2019-02-04T00:00:00-05:00</published><updated>2019-02-04T00:00:00-05:00</updated><id>http://localhost:4000/english/2019/02/04/lexicaldiversity</id><content type="html" xml:base="http://localhost:4000/english/2019/02/04/lexicaldiversity.html">&lt;div id = &quot;postContents&quot;&gt; 
-  &lt;h2&gt;What is Lexical Diversity?&lt;/h2&gt;
-  &lt;h3&gt;Lexical Diversity is the ratio between unique words and total number of words in a passage. This will yield a value between 0 and 1. The closer the value is to 1, the more diverse the passage is.&lt;/h3&gt;
-  
-  &lt;h2&gt;Highs and Lows&lt;/h2&gt;
-  &lt;h3&gt;It's easy to achieve a high lexical diversity score when the passage analyzed is short. I think a mark of good writing is that most sentences score 1 on the lexical diversity score. That means there are no words that appear more than once in the same sentence. In contrast the sentence I think might just have the lowest lexical diversity score is the famous &quot;Buffalo buffalo Buffalo buffalo buffalo buffalo Buffalo buffalo&quot;.&lt;/h3&gt; 
-  
-  &lt;h3&gt;Maintaining full lexical diversity in longer passages is quite the challenge. Additionally, calculating the value for a long work would be quite tedious. Luckily we can use Python and the NLTK to help us.&lt;/h3&gt;
-  
-  &lt;h2&gt;Computing Lexical Diversity&lt;/h2&gt;
-  &lt;h3&gt;There's only two values we need to calculate the lexical diversity: the number of unique words and the total number of words. After tokenizing the text to be analyzed, extracting these values is quite simple.&lt;/h3&gt;
-  &lt;h3&gt;The number of unique words = len(set(tokens)). This works because sets do not contain duplicate values. The total number of words = len(tokens). Divide those two values and there you have it.&lt;/h3&gt;
-  &lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;</content><author><name>NLP</name></author><category term="english" /><summary type="html">Quantifying the uniqueness of words in a passage</summary></entry><entry><title type="html">3 Types of Probability</title><link href="http://localhost:4000/math/2019/01/23/probabilitytypes.html" rel="alternate" type="text/html" title="3 Types of Probability" /><published>2019-01-23T00:00:00-05:00</published><updated>2019-01-23T00:00:00-05:00</updated><id>http://localhost:4000/math/2019/01/23/probabilitytypes</id><content type="html" xml:base="http://localhost:4000/math/2019/01/23/probabilitytypes.html">&lt;div id = &quot;postContents&quot;&gt; 
-  &lt;h2&gt;Marginal Probability: P(A)&lt;/h2&gt;
-  &lt;h3&gt;The probability that an event will occur. It is not conditioned by another event. That's really it.&lt;/h3&gt;
-  
-  &lt;h2&gt;Joint Probability: P(A ∩ B)&lt;/h2&gt;
-  &lt;h3&gt;The probability that an event will occur AND another event will occur.&lt;/h3&gt;
-  
-  &lt;h2&gt;Conditional Probability: P(A | B)&lt;/h2&gt;
-  &lt;h3&gt;The probability that an event will occur given that we already know a different event has occured. The probability that A will occur given that we've witnessed B occur is P(A ∩ B) / P(B). That's the joint probability / marginal probability of the event we already witnessed. In plain english its the probability of events A and B happening divided by the chance of B happening in general.&lt;/h3&gt;
-  
-  &lt;h2&gt;Application&lt;/h2&gt;
-  &lt;h3&gt;These probabilities are the building blocks of Baye's Rule&lt;/h3&gt;
-  &lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;</content><author><name>Statistics</name></author><category term="math" /><summary type="html">Simple explanation for Marginal, Joint, and Conditional probability</summary></entry></feed>
+&lt;/html&gt;</content><author><name>Statistics</name></author><category term="math" /><summary type="html">Model for classification by probability</summary></entry></feed>
