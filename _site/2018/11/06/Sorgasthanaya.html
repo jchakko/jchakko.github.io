@@ -3,35 +3,76 @@
   <head>
     <meta charset="utf-8">
     <title>Sorgasthanaya</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link href="/css/common.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <nav>
-  
-    <a href="/" >Home</a>
-  
-    <a href="/about.html" >About</a>
-  
-    <a href="/blog.html" >Blog</a>
-  
-    <a href="/staff.html" >Staff</a>
-  
-    <a href="/texts.html" >Texts</a>
-  
-</nav>
+    <html>
+<head>
+<style>
+.Navigation{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
 
-    <h1>Sorgasthanaya</h1>
+.Navigation li{
+  float: right;
+}
 
-<p>
-  06 Nov 2018
-  
-  
-  
-    - <a href="/authors/prayers.html">Prayers</a>
-  
-</p>
+.Navigation li a{
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
 
-<p>സ്വർഗ്ഗസ്ഥനായ ഞങ്ങളുടെ പിതാവേ, നിന്റെ നാമം വിശുദ്ധീകരിക്കപ്പെടേണമേ;<br />
+.Navigation > :first-child {
+  float: left;
+} 
+
+li a:hover:not(.active) {
+  background-color: #c6d1c8;
+}
+
+.active {
+  background-color: #c6d1c8;
+}
+</style>
+</head>
+
+<div class="navbar">
+  <ul class = "Navigation">
+  
+    <li><a href="/" >Home</a></li>
+  
+    <li><a href="/about.html" >About Me</a></li>
+  
+    <li><a href="/malayalam.html" >Malayalam</a></li>
+  
+    <li><a href="/english.html" >Text Analysis</a></li>
+  
+    <li><a href="/WindEnergy.html" >Data Visualizations</a></li>
+  
+  </ul>
+</div>
+</html>
+
+    <html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Sorgasthanaya</title>
+    <link href="/css/common.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+  </head>
+  
+  <body>
+    <div class="center">
+    <p>സ്വർഗ്ഗസ്ഥനായ ഞങ്ങളുടെ പിതാവേ, നിന്റെ നാമം വിശുദ്ധീകരിക്കപ്പെടേണമേ;<br />
 Sorgasthanaya njangalude pithave, Ninte naamam vishudhikarikkappedename</p>
 
 <p>നിന്റെ രാജ്യം വരേണമേ; നിന്റെ ഇഷ്ടം സ്വർഗ്ഗത്തിലെപ്പോലെ ഭൂമിയിലും ആകേണമേ;<br />
@@ -52,5 +93,9 @@ Rajyavum, shakthiyum, mahathovum ennekkum ninakkaullathallo.</p>
 <p>ആമേൻ.<br />
 Amen.</p>
 
+    </div>
+  </body>  
+
+</html>
   </body>
 </html>

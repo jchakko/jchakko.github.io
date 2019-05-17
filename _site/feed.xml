@@ -1,298 +1,651 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-05-16T22:23:16-04:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Conjugation</title><link href="http://localhost:4000/2018/12/09/Conjugation.html" rel="alternate" type="text/html" title="Conjugation" /><published>2018-12-09T00:00:00-05:00</published><updated>2018-12-09T00:00:00-05:00</updated><id>http://localhost:4000/2018/12/09/Conjugation</id><content type="html" xml:base="http://localhost:4000/2018/12/09/Conjugation.html">&lt;!DOCTYPE html&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-05-16T22:24:27-04:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Rice &amp;amp; Roti</title><link href="http://localhost:4000/visualization/2019/04/19/riceroti.html" rel="alternate" type="text/html" title="Rice &amp; Roti" /><published>2019-04-19T00:00:00-04:00</published><updated>2019-04-19T00:00:00-04:00</updated><id>http://localhost:4000/visualization/2019/04/19/riceroti</id><content type="html" xml:base="http://localhost:4000/visualization/2019/04/19/riceroti.html">&lt;div id = &quot;postContents&quot;&gt; 
+  &lt;h1&gt;Rice &amp; Roti&lt;/h1&gt;
+  
+  
+  &lt;h2&gt;Click here to see the interactive version&lt;/h2&gt;
+  
+  &lt;h3&gt;Carb choice is serious business in India. I colored in this map to understand which states eat rice and which eat roti. The results were not too surprising, basically the north west are the biggest consumers of wheat. There were a few neutral states in the center. Most of the states ate a combination, even if it was unbalanced. States in the north west were very polarized. This may caused by their physical and cultural connection to other Asian countries.&lt;/h3&gt;
+
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</content><author><name></name></author><category term="visualization" /><summary type="html">Comparison of rice and roti consumption by state</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/riceroti.png" /></entry><entry><title type="html">Turbine Locations</title><link href="http://localhost:4000/visualization/2019/04/19/turbinelocations.html" rel="alternate" type="text/html" title="Turbine Locations" /><published>2019-04-19T00:00:00-04:00</published><updated>2019-04-19T00:00:00-04:00</updated><id>http://localhost:4000/visualization/2019/04/19/turbinelocations</id><content type="html" xml:base="http://localhost:4000/visualization/2019/04/19/turbinelocations.html">&lt;div id = &quot;postContents&quot;&gt; 
+  &lt;h2&gt;Locations of United States Wind Turbines&lt;/h2&gt;
+  &lt;script&gt;
+    console.log(&quot;Begin Dot Density&quot;);
+    let margin = {top: 20, right: 20, bottom: 30, left: 150};
+    let width = 1200 - margin.left - margin.right;
+    let height = 700 - margin.top - margin.bottom;
+    
+    let svg = d3.select(&quot;body&quot;).append(&quot;svg&quot;)
+      .attr(&quot;width&quot;, width + margin.left + margin.right)
+      .attr(&quot;height&quot;, height + margin.top + margin.bottom)
+      .append(&quot;g&quot;)
+        .attr(&quot;transform&quot;,
+          &quot;translate(&quot; + margin.left + &quot;,&quot; + margin.top + &quot;)&quot;);
+          
+    svg.append(&quot;rect&quot;)
+      .attr(&quot;width&quot;,width)
+      .attr(&quot;height&quot;,height)
+      .style(&quot;fill&quot;,&quot;green&quot;)
+      .style(&quot;opacity&quot;, 0); //Background best practice
+        
+    Promise.all([
+      d3.json(&quot;/datasets/geo/us-states.json&quot;),
+      d3.csv(&quot;/datasets/turbines/Turbine_Locations_80.csv&quot;),
+      d3.csv(&quot;/datasets/turbines/Turbine_Locations_90.csv&quot;),
+      d3.csv(&quot;/datasets/turbines/Turbine_Locations_00.csv&quot;),
+      d3.csv(&quot;/datasets/turbines/Turbine_Locations_10.csv&quot;)
+    ]).then(function(data){
+      let geoJsonData = data[0];
+      let windData80 = data[1];
+      let windData90 = data[2];
+      let windData00 = data[3];
+      let windData10 = data[4];
+      console.log(&quot;geoJsonData:&quot;)
+      console.log(geoJsonData);
+      console.log(&quot;windData:&quot;)
+      console.log(windData80); 
+
+      let projection = d3.geoAlbersUsa();
+      projection.fitHeight(height-100,geoJsonData);
+      let pathGenerator = d3.geoPath().projection(projection);
+      
+      &lt;!-- Append map of United States --&gt;
+      svg.append('g')
+        .selectAll('path')
+        .data(geoJsonData.features)
+        .enter()
+        .append('path')
+          .attr('d', pathGenerator)
+          .style(&quot;fill&quot;, &quot;black&quot;)
+          .style(&quot;stroke&quot;, &quot;white&quot;);
+          
+      function addturbines(g, data, projection, color) {
+        console.log(&quot;Add Turbines Function&quot;);
+        g.selectAll(&quot;circle&quot;)
+          .data(data)
+          .enter()
+          .append(&quot;circle&quot;)
+          .attr(&quot;cx&quot;, function(d,i) {
+            let coordinates = projection([d.xlong, d.ylat]);
+            return coordinates[0];
+          }) 
+		  .attr(&quot;cy&quot;, function(d,i) {
+            let coordinates = projection([d.xlong, d.ylat]);
+            return coordinates[1];
+          })        
+		  .attr(&quot;r&quot;, &quot;3px&quot;)
+		  .attr(&quot;fill&quot;, color)
+          .style(&quot;opacity&quot;, .5);          
+      }
+          
+      let dots80 = svg.append('g');
+      addturbines(dots80, windData80, projection, &quot;blue&quot;);
+          
+      let dots90 = svg.append('g');
+      addturbines(dots90, windData90, projection, &quot;red&quot;);
+      
+      let dots00 = svg.append('g');
+      addturbines(dots00, windData00, projection, &quot;yellow&quot;);
+      
+      let dots10 = svg.append('g');
+      addturbines(dots10, windData10, projection, &quot;green&quot;);
+          
+      
+    }) //End of Promise
+  &lt;/script&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</content><author><name>Statistics</name></author><category term="visualization" /><summary type="html">Dot Density map of Wind Turbines in the United States</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/turbines.png" /></entry><entry><title type="html">Turbine Locations</title><link href="http://localhost:4000/visualization/2019/04/19/test3.html" rel="alternate" type="text/html" title="Turbine Locations" /><published>2019-04-19T00:00:00-04:00</published><updated>2019-04-19T00:00:00-04:00</updated><id>http://localhost:4000/visualization/2019/04/19/test3</id><content type="html" xml:base="http://localhost:4000/visualization/2019/04/19/test3.html">&lt;div id = &quot;postContents&quot;&gt; 
+  &lt;h2&gt;Locations of United States Wind Turbines&lt;/h2&gt;
+  &lt;script&gt;
+    console.log(&quot;Begin Dot Density&quot;);
+    let margin = {top: 20, right: 20, bottom: 30, left: 150};
+    let width = 1200 - margin.left - margin.right;
+    let height = 700 - margin.top - margin.bottom;
+    
+    let svg = d3.select(&quot;body&quot;).append(&quot;svg&quot;)
+      .attr(&quot;width&quot;, width + margin.left + margin.right)
+      .attr(&quot;height&quot;, height + margin.top + margin.bottom)
+      .append(&quot;g&quot;)
+        .attr(&quot;transform&quot;,
+          &quot;translate(&quot; + margin.left + &quot;,&quot; + margin.top + &quot;)&quot;);
+          
+    svg.append(&quot;rect&quot;)
+      .attr(&quot;width&quot;,width)
+      .attr(&quot;height&quot;,height)
+      .style(&quot;fill&quot;,&quot;green&quot;)
+      .style(&quot;opacity&quot;, 0); //Background best practice
+        
+    Promise.all([
+      d3.json(&quot;/datasets/geo/us-states.json&quot;),
+      d3.csv(&quot;/datasets/turbines/Turbine_Locations_80.csv&quot;),
+      d3.csv(&quot;/datasets/turbines/Turbine_Locations_90.csv&quot;),
+      d3.csv(&quot;/datasets/turbines/Turbine_Locations_00.csv&quot;),
+      d3.csv(&quot;/datasets/turbines/Turbine_Locations_10.csv&quot;)
+    ]).then(function(data){
+      let geoJsonData = data[0];
+      let windData80 = data[1];
+      let windData90 = data[2];
+      let windData00 = data[3];
+      let windData10 = data[4];
+      console.log(&quot;geoJsonData:&quot;)
+      console.log(geoJsonData);
+      console.log(&quot;windData:&quot;)
+      console.log(windData80); 
+
+      let projection = d3.geoAlbersUsa();
+      projection.fitHeight(height-100,geoJsonData);
+      let pathGenerator = d3.geoPath().projection(projection);
+      
+      &lt;!-- Append map of United States --&gt;
+      svg.append('g')
+        .selectAll('path')
+        .data(geoJsonData.features)
+        .enter()
+        .append('path')
+          .attr('d', pathGenerator)
+          .style(&quot;fill&quot;, &quot;black&quot;)
+          .style(&quot;stroke&quot;, &quot;white&quot;);
+          
+      function addturbines(g, data, projection, color) {
+        console.log(&quot;Add Turbines Function&quot;);
+        g.selectAll(&quot;circle&quot;)
+          .data(data)
+          .enter()
+          .append(&quot;circle&quot;)
+          .attr(&quot;cx&quot;, function(d,i) {
+            let coordinates = projection([d.xlong, d.ylat]);
+            return coordinates[0];
+          }) 
+		  .attr(&quot;cy&quot;, function(d,i) {
+            let coordinates = projection([d.xlong, d.ylat]);
+            return coordinates[1];
+          })        
+		  .attr(&quot;r&quot;, &quot;3px&quot;)
+		  .attr(&quot;fill&quot;, color)
+          .style(&quot;opacity&quot;, .5);          
+      }
+          
+      let dots80 = svg.append('g');
+      addturbines(dots80, windData80, projection, &quot;blue&quot;);
+          
+      let dots90 = svg.append('g');
+      addturbines(dots90, windData90, projection, &quot;red&quot;);
+      
+      let dots00 = svg.append('g');
+      addturbines(dots00, windData00, projection, &quot;yellow&quot;);
+      
+      let dots10 = svg.append('g');
+      addturbines(dots10, windData10, projection, &quot;green&quot;);
+          
+      
+    }) //End of Promise
+  &lt;/script&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</content><author><name>Statistics</name></author><category term="visualization" /><summary type="html">Dot Density map of Wind Turbines in the United States</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/measurements.jpg" /></entry><entry><title type="html">Turbine Locations</title><link href="http://localhost:4000/visualization/2019/04/19/test.html" rel="alternate" type="text/html" title="Turbine Locations" /><published>2019-04-19T00:00:00-04:00</published><updated>2019-04-19T00:00:00-04:00</updated><id>http://localhost:4000/visualization/2019/04/19/test</id><content type="html" xml:base="http://localhost:4000/visualization/2019/04/19/test.html">&lt;div id = &quot;postContents&quot;&gt; 
+  &lt;h2&gt;Locations of United States Wind Turbines&lt;/h2&gt;
+  &lt;script&gt;
+    console.log(&quot;Begin Dot Density&quot;);
+    let margin = {top: 20, right: 20, bottom: 30, left: 150};
+    let width = 1200 - margin.left - margin.right;
+    let height = 700 - margin.top - margin.bottom;
+    
+    let svg = d3.select(&quot;body&quot;).append(&quot;svg&quot;)
+      .attr(&quot;width&quot;, width + margin.left + margin.right)
+      .attr(&quot;height&quot;, height + margin.top + margin.bottom)
+      .append(&quot;g&quot;)
+        .attr(&quot;transform&quot;,
+          &quot;translate(&quot; + margin.left + &quot;,&quot; + margin.top + &quot;)&quot;);
+          
+    svg.append(&quot;rect&quot;)
+      .attr(&quot;width&quot;,width)
+      .attr(&quot;height&quot;,height)
+      .style(&quot;fill&quot;,&quot;green&quot;)
+      .style(&quot;opacity&quot;, 0); //Background best practice
+        
+    Promise.all([
+      d3.json(&quot;/datasets/geo/us-states.json&quot;),
+      d3.csv(&quot;/datasets/turbines/Turbine_Locations_80.csv&quot;),
+      d3.csv(&quot;/datasets/turbines/Turbine_Locations_90.csv&quot;),
+      d3.csv(&quot;/datasets/turbines/Turbine_Locations_00.csv&quot;),
+      d3.csv(&quot;/datasets/turbines/Turbine_Locations_10.csv&quot;)
+    ]).then(function(data){
+      let geoJsonData = data[0];
+      let windData80 = data[1];
+      let windData90 = data[2];
+      let windData00 = data[3];
+      let windData10 = data[4];
+      console.log(&quot;geoJsonData:&quot;)
+      console.log(geoJsonData);
+      console.log(&quot;windData:&quot;)
+      console.log(windData80); 
+
+      let projection = d3.geoAlbersUsa();
+      projection.fitHeight(height-100,geoJsonData);
+      let pathGenerator = d3.geoPath().projection(projection);
+      
+      &lt;!-- Append map of United States --&gt;
+      svg.append('g')
+        .selectAll('path')
+        .data(geoJsonData.features)
+        .enter()
+        .append('path')
+          .attr('d', pathGenerator)
+          .style(&quot;fill&quot;, &quot;black&quot;)
+          .style(&quot;stroke&quot;, &quot;white&quot;);
+          
+      function addturbines(g, data, projection, color) {
+        console.log(&quot;Add Turbines Function&quot;);
+        g.selectAll(&quot;circle&quot;)
+          .data(data)
+          .enter()
+          .append(&quot;circle&quot;)
+          .attr(&quot;cx&quot;, function(d,i) {
+            let coordinates = projection([d.xlong, d.ylat]);
+            return coordinates[0];
+          }) 
+		  .attr(&quot;cy&quot;, function(d,i) {
+            let coordinates = projection([d.xlong, d.ylat]);
+            return coordinates[1];
+          })        
+		  .attr(&quot;r&quot;, &quot;3px&quot;)
+		  .attr(&quot;fill&quot;, color)
+          .style(&quot;opacity&quot;, .5);          
+      }
+          
+      let dots80 = svg.append('g');
+      addturbines(dots80, windData80, projection, &quot;blue&quot;);
+          
+      let dots90 = svg.append('g');
+      addturbines(dots90, windData90, projection, &quot;red&quot;);
+      
+      let dots00 = svg.append('g');
+      addturbines(dots00, windData00, projection, &quot;yellow&quot;);
+      
+      let dots10 = svg.append('g');
+      addturbines(dots10, windData10, projection, &quot;green&quot;);
+          
+      
+    }) //End of Promise
+  &lt;/script&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</content><author><name>Statistics</name></author><category term="visualization" /><summary type="html">Dot Density map of Wind Turbines in the United States</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/turbines.png" /></entry><entry><title type="html">Windenergy</title><link href="http://localhost:4000/2019/04/15/WindEnergy.html" rel="alternate" type="text/html" title="Windenergy" /><published>2019-04-15T00:00:00-04:00</published><updated>2019-04-15T00:00:00-04:00</updated><id>http://localhost:4000/2019/04/15/WindEnergy</id><content type="html" xml:base="http://localhost:4000/2019/04/15/WindEnergy.html">&lt;!DOCTYPE html&gt;
+&lt;meta charset=&quot;utf-8&quot;/&gt;
 &lt;html&gt;
+&lt;header&gt;&lt;title&gt;Wind Energy&lt;/title&gt;&lt;/header&gt;
 &lt;head&gt;
-&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;script src=&quot;dotdensityfunction.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;bargraphfunction.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;linegraphfunction.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;pictographfunction.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://d3js.org/d3.v5.min.js&quot;&gt;&lt;/script&gt;
+&lt;style&gt;
+.line {
+  fill: none;
+  stroke: black;
+  stroke-width: 2px;
+}
+
+div.tooltip {	
+    position: absolute;			
+    text-align: center;			
+    width: 140px;					
+    height: 50px;					
+    padding: 2px;				
+    font: 12px sans-serif;		
+    background: lightsteelblue;	
+    border: 0px;		
+    border-radius: 8px;			
+    pointer-events: none;			
+}
+
+.happy {
+  stroke: black;
+  fill: green;
+  stroke-width: 0;
+}
+
+.smile {
+  stroke: black;
+  fill: blue;
+  stroke-width: 0;
+}
+
+.neutral {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: black;
+  fill: gray;
+}
+
+.sad {
+  stroke: black;
+  fill: orange;
+  stroke-width: 0;
+}
+
+.angry {
+  fill: red;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 75%;
+  height: 10px;
+  background: #d3d3d3;
+  outline: none;
+}
+
+.slidecontainer {
+  margin: auto;
+  width:90%;
+  padding-top: 25px;
+}
+
+.narration {
+  margin: auto;
+  width: 90%;
+  border: 3px solid green;
+  padding: 10px;
+}
+
+&lt;/style&gt;
+
 &lt;/head&gt;
-&lt;body&gt;
+&lt;body bgcolor = #f4f8ff&gt;
 
-&lt;h2&gt;സംസാരിക്കുക (To Speak)&lt;/h2&gt;
+  &lt;h1 align = &quot;center&quot;&gt;Wind Energy in the United States&lt;/h1&gt;
+  
+  
+  
+  &lt;div class=&quot;narration&quot;&gt;
+  &lt;h3&gt;The first electricity generating wind turbine in America was built by Charles Brush in 1888. It stood in Ohio at 60 feet table and was capable of generating 12kW of electricity. &lt;/h3&gt;
+  
+  &lt;img src = &quot;media/first_turbine.jpg&quot; align = &quot;middle&quot;&gt;
+    
+  &lt;h3&gt;Fast forward 92 years and the world's first wind farm was constructed in Crotched Mountain, New Hampshire. Built in 1992, the wind farm consisted of 20 wind turbines with a capacity of 30 kilowatts each.&lt;/h3&gt;
+  
+  &lt;h3&gt;Now there are over 50,000 wind turbines in the United States that can produce 90,000 megawatts in a year. This represents around 5% of the energy production in the country.&lt;/h3&gt; 
+  
+  &lt;h3&gt;And tomorrow? WINDExchange believes the United States could produce 10,640,080MW.&lt;/h3&gt;
+  &lt;/div&gt;
+  
+  &lt;h2 align = &quot;center&quot;&gt;Locations of Wind Turbines in the United States&lt;/h2&gt;
+  &lt;script&gt;
+    let densityMap = dotDensity();  
+  &lt;/script&gt;
+  
+  &lt;div class=&quot;narration&quot;&gt;
+  &lt;h3&gt;The United States Geologic Survey has released a dataset containing the location of every turbine in the country. Plotting this information reveals what regions are best suited for producing wind energy.&lt;/h3&gt;
+  
+  &lt;h3&gt;This visualization shows us that a handful of regions contain the majority of wind turbines. Wind speeds must reach 6 miles per hour before electrical energy is produced. This makes the Great Plains ideal wind energy producers.&lt;/h3&gt;
+  
+  &lt;h3&gt;This can be further shown by plotting each state's output individually. Source: WINDExchange&lt;/h3&gt;
+  
+  &lt;h3&gt;Although it takes some years for Texas to take the lead, the state becomes the country's largest wind energy producer by a large margin. Additionally, many states do not meet the conditions to be high wind energy producers.&lt;/h3&gt;  
+  &lt;/div&gt;
+  
+ 
+  &lt;h2 align = &quot;center&quot;&gt;Wind Energy Production by State&lt;/h2&gt;
+  &lt;script&gt;
+    let bargraph = barGraph();
+  &lt;/script&gt;
 
-&lt;table&gt;
-  &lt;tr&gt;
-    &lt;th&gt;Past&lt;/th&gt;
-    &lt;th&gt;Present&lt;/th&gt;
-    &lt;th&gt;Future&lt;/th&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;സംസാരിച്ചു&lt;/td&gt;
-    &lt;td&gt;സംസാരിക്കുന്നു&lt;/td&gt;
-    &lt;td&gt;സംസാരിക്കും&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
+  &lt;/br&gt;
+  
+  &lt;div class=&quot;slidecontainer&quot;&gt;
+  &lt;input type=&quot;range&quot; min=&quot;1999&quot; max=&quot;2017&quot; value=&quot;1999&quot; class=&quot;slider&quot; id=&quot;myRange&quot;&gt;
+  &lt;/div&gt;
+  
+  &lt;div class=&quot;narration&quot;&gt;
+  &lt;h3&gt;For us to reach WINDExchange's goal of 10 million MegaWatts per year we have to multiply our current wind output by 10 times. This would mean having hundreds of thousands more turbines.&lt;/h3&gt;
+  
+  &lt;h3&gt;Overall, there is a trend of increasing turbine efficiency but it isn't large enough. There must be a breakthrough in turbine efficiency that brings the number of turbines required to a reasonable amount. &lt;/h3&gt; 
+  &lt;/div&gt;
+  
+  &lt;h2 align = &quot;center&quot;&gt;Total Production and Turbine Efficiency&lt;/h2&gt;
+  &lt;script&gt;
+    let alinegraph = linegraph();
+  &lt;/script&gt;
+
+  &lt;div class=&quot;narration&quot;&gt;
+  &lt;h3&gt;One of the benefits of wind energy is that once the turbine is installed, the energy it produces is free. But nothing is truly free. One concern is the feelings of residents who live near turbines. Source: Berkeley Lab's National Survey of Attitudes of Wind Power Project Neighbors&lt;/h3&gt;
+  
+  &lt;h3&gt;For the most part, people do not have issues with living over a mile away from a turbine. However there is noticible discontent among residents who are within half a mile. As more turbines are built, and the trend towards larger turbines continues, this will became problematic for more people.&lt;/h3&gt;
+  &lt;/div&gt;
+
+  &lt;h2 align = &quot;center&quot;&gt;Attitudes Towards Wind Projects by Distance&lt;/h2&gt;
     
-  &lt;/tr&gt;
-  &lt;tr&gt;
+  &lt;script&gt;
+    let picto = pictograph();
+  &lt;/script&gt;  
+
     
-  &lt;/tr&gt;
-&lt;/table&gt;
+  
+  &lt;div class=&quot;narration&quot;&gt;
+  &lt;h3&gt;WINDExchange's potential estimate of 10 million MegaWatts seems lofty. Without major improvements to turbine efficiency, there probably isn't even enough space to fit the necessary turbines.&lt;/h3&gt;
+  
+  &lt;h3&gt;Still, a lot of progress has been made since the first wind farms. We should be proud of the advances that allow for the level of production that exists today.&lt;/h3&gt;
+  &lt;/div&gt;
 
 &lt;/body&gt;
-&lt;/html&gt;</content><author><name>bible</name></author><summary type="html"></summary></entry><entry><title type="html">Thudakkammaangalyam</title><link href="http://localhost:4000/2018/12/04/ThudakkamMaangalyam.html" rel="alternate" type="text/html" title="Thudakkammaangalyam" /><published>2018-12-04T00:00:00-05:00</published><updated>2018-12-04T00:00:00-05:00</updated><id>http://localhost:4000/2018/12/04/ThudakkamMaangalyam</id><content type="html" xml:base="http://localhost:4000/2018/12/04/ThudakkamMaangalyam.html">&lt;p&gt;പച്ച കിളിക്കൊരു കൂട്, പച്ച കരിമ്പഴിയുള്ള കൂട്..&lt;br /&gt;
-Pachakilikoru koodu, Pacha karimbazhakulla koodu&lt;br /&gt;
-പച്ച കിളിക്കൊരു കൂട്, പച്ച കരിമ്പഴിയുള്ള കൂട്&lt;br /&gt;
-Pachakilikoru koodu, Pacha karimbazhakulla koodu..
-കണ്ണാളൻ കെട്ടുന്നുണ്ടല്ലോ, അത് നിന്നെ കൂട്ടാനാണല്ലോ,
-Kannalan kettunnundallo, athu ninne koottanaanallo…&lt;/p&gt;
-
-&lt;p&gt;തുടക്കം മാംഗല്ല്യം, തന്ദുനാനേനാ.&lt;br /&gt;
-Thudakkam mangalyam thanthananena, 
-പിന്നെ ജീവിതം, ദുംതനാനേനാ      &lt;br /&gt;
-Pinne jeevitham thumthananena&lt;/p&gt;
-
-&lt;p&gt;കണിയല്ലേ കണ്മണിയല്ലേ ആദ്യം ചൊല്ലും നിൻ കണവൻ,&lt;br /&gt;
-Kaniyalle, kanmaniyalle, Aadhyam chollum ninkanavan,&lt;br /&gt;
-കണ്ണാ നീ  വെയിൽകൊള്ളല്ലേ, നീയും ചൊല്ലും.
-Kanna nee veyil kollalle neeyum chollum&lt;br /&gt;
-കഥ മാറും ചേകവനാകും, ഉറുമിയെടുക്കും പടവീരൻ,
-kadhamaarum, chekavanaakum, urumiyedukkum padaveeran,&lt;br /&gt;
-ഹേ ഹേ.. പിന്നോതിരകടകം..&lt;br /&gt;
-Hai hai, pinnothirakadakam…&lt;br /&gt;
-ഹേ ഹേ.. എരിപൊടിയങ്കം..&lt;br /&gt;
-Hai hai, eripodiyangam…&lt;/p&gt;
-
-&lt;p&gt;കേട്ടോ നീ കേട്ടോ,  ഈ കൂട്ടിൽ പെട്ടാൽപ്പിന്നെ,&lt;br /&gt;
-Ketto, nee ketto, ee koottil pettal pinne,&lt;br /&gt;
-നീലാകാശം കണ്ടോരില്ലെന്നാരോ ചൊല്ലുന്നേ,&lt;br /&gt;
-Neelaakasham kandorillannaro chollunne&lt;br /&gt;
-കണ്ണാൽ എൻ കണ്ണാൽ, ഞാൻ കള്ളതാക്കോൽ തീർക്കും,
-Kannal, en kannal njan kallthakkol theerkkum,&lt;br /&gt;
-വെള്ളിൽ പക്ഷിക്കൊപ്പം മേലെ വിണ്ണിൽ പാറും ഞാനും..
-Velli pakshikkoppam mele vinnil paarum njaanum&lt;br /&gt;
-മിടുക്കിയെ മെരുക്കി, താലിക്കുരുക്കിലാക്കി, കുറുമ്പൊതുക്കി,
-Midukkiye merukki thali, kurukkilakki kurumbothokki, 
-തടങ്കലിൽ തളച്ചു കാണാൻ മനസിലുമൊരുകൊതിയുണ്ടല്ലോ..&lt;br /&gt;
-Thadankalil thalachu kaanan manassilumoru kothiyundallo…&lt;/p&gt;
-
-&lt;p&gt;കുറുമ്പ്, കട്ടുറുമ്പ് കൂട്ടം നുഴഞ്ഞുകേറാതടച്ചു കെട്ടി,
-kurumbu katturumbu koottam nuzhanjukerathadachuketti,
-എനിക്കവൻ ഒരുക്കി നൽകും ഒരു സ്വർഗം..      &lt;br /&gt;
-Enikkathinnurukki nalkum oru swargam…&lt;/p&gt;
-
-&lt;p&gt;തുടക്കം മാംഗല്ല്യം, തന്ദുനാനേനാ.
-Thudakkam mangalyam thanthananena,&lt;br /&gt;
-പിന്നെ ജീവിതം, ദുംതനാനേനാ…&lt;br /&gt;
-Pinne jeevitham thumthananena&lt;/p&gt;
-
-&lt;p&gt;പച്ച കിളിക്കൊരു കൂട്, പച്ച കരിമ്പഴിയുള്ള കൂട്..
-Pachakilikoru koodu, Pacha karimbazhakulla koodu &lt;br /&gt;
-പച്ച കിളിക്കൊരു കൂട്, പച്ച കരിമ്പഴിയുള്ള കൂട്..&lt;br /&gt;
-Pachakilikoru koodu, Pacha karimbazhakulla koodu&lt;br /&gt;
-കണ്ണാളൻ കെട്ടുന്നുണ്ടല്ലോ, അത് നിന്നെ കൂട്ടാനാണല്ലോ..&lt;br /&gt;
-Kannalan kettunnundallo, Athu ninne koottanaanallo&lt;br /&gt;
-(തുടക്കം മാംഗല്ല്യം….)&lt;br /&gt;
-(Thudakkam maangalyam…)&lt;/p&gt;
-
-&lt;p&gt;(2)
- Aaaa.. ho.. oo…
-…&lt;/p&gt;
-
-&lt;p&gt;(Thudakkam maangalyam..)&lt;/p&gt;</content><author><name>bible</name></author><summary type="html">പച്ച കിളിക്കൊരു കൂട്, പച്ച കരിമ്പഴിയുള്ള കൂട്.. Pachakilikoru koodu, Pacha karimbazhakulla koodu പച്ച കിളിക്കൊരു കൂട്, പച്ച കരിമ്പഴിയുള്ള കൂട് Pachakilikoru koodu, Pacha karimbazhakulla koodu.. കണ്ണാളൻ കെട്ടുന്നുണ്ടല്ലോ, അത് നിന്നെ കൂട്ടാനാണല്ലോ, Kannalan kettunnundallo, athu ninne koottanaanallo…</summary></entry><entry><title type="html">Matthew20</title><link href="http://localhost:4000/2018/11/10/Matthew20.html" rel="alternate" type="text/html" title="Matthew20" /><published>2018-11-10T00:00:00-05:00</published><updated>2018-11-10T00:00:00-05:00</updated><id>http://localhost:4000/2018/11/10/Matthew20</id><content type="html" xml:base="http://localhost:4000/2018/11/10/Matthew20.html">&lt;p&gt;1 “സ്വർഗ്ഗരാജ്യം തന്റെ മുന്തിരിത്തോട്ടത്തിൽ വേലക്കാരെ വിളിച്ചാക്കേണ്ടതിന്നു പുലർച്ചെക്കു പുറപ്പെട്ട വീട്ടുടയവനോടു സദൃശം. 
-1 Svarggaraajyam thante munthirittheaattatthil velakkaare vilicchaakkendathinnu pularcchekku purappetta veettutayavaneaatu sadrusham.&lt;/p&gt;
-
-&lt;p&gt;2 വേലക്കാരോടു അവൻ ദിവസത്തേക്കു ഓരോ വെള്ളിക്കാശു പറഞ്ഞൊത്തിട്ടു, അവരെ മുന്തിരിത്തോട്ടത്തിൽ അയച്ചു. 
-2 Velakkaareaatu avan divasatthekku oreaa vellikkaashu paranjotthittu, avare munthirittheaattatthil ayacchu.&lt;/p&gt;
-
-&lt;p&gt;3 മൂന്നാം മണിനേരത്തും പുറപ്പെട്ടു, മറ്റു ചിലർ ചന്തയിൽ മിനക്കെട്ടു നില്ക്കുന്നതു കണ്ടു: 
-3 Moonnaam manineratthum purappettu, mattu chilar chanthayil minakkettu nilkkunnathu kandu:&lt;/p&gt;
-
-&lt;p&gt;4 നിങ്ങളും മുന്തിരിത്തോട്ടത്തിൽ പോകുവിൻ; ന്യായമായതു തരാം എന്നു അവരോടു പറഞ്ഞു; അവർ പോയി. 
-4 ningalum munthirittheaattatthil peaakuvin; nyaayamaayathu tharaam ennu avareaatu paranju; avar peaayi.&lt;/p&gt;
-
-&lt;p&gt;5 അവൻ ആറാം മണിനേരത്തും ഒമ്പതാം മണി നേരത്തും ചെന്നു അങ്ങനെ തന്നേ ചെയ്തു. 
-5 Avan aaraam manineratthum ompathaam mani neratthum chennu angane thanne cheythu.&lt;/p&gt;
-
-&lt;p&gt;6 പതിനൊന്നാം മണി നേരത്തും ചെന്നു, മറ്റു ചിലർ നില്ക്കുന്നതു കണ്ടിട്ടു; നിങ്ങൾ ഇവിടെ പകൽ മുഴുവൻ മിനക്കെട്ടു നില്ക്കുന്നതു എന്തു എന്നു ചോദിച്ചു. 
-6 Pathinonnaam mani neratthum chennu, mattu chilar nilkkunnathu kandittu; ningal ivite pakal muzhuvan minakkettu nilkkunnathu enthu ennu cheaadicchu.&lt;/p&gt;
-
-&lt;p&gt;7 ഞങ്ങളെ ആരും കൂലിക്കു വിളിക്കായ്കകൊണ്ടത്രേ എന്നു അവർ പറഞ്ഞപ്പോൾ: നിങ്ങളും മുന്തിരിത്തോട്ടത്തിലേക്കു ചെല്ലുവിൻ എന്നു അവരോടു പറഞ്ഞു. 
-7 Njangale aarum koolikku vilikkaaykakondathre ennu avar paranjappeaal: ningalum munthirittheaattatthilekku chelluvin ennu avareaatu paranju.&lt;/p&gt;
-
-&lt;p&gt;8 സന്ധ്യയായപ്പോൾ മുന്തിരിത്തോട്ടത്തിന്റെ ഉടയവൻ തന്റെ വിചാരകനോടു: വേലക്കാരെ വിളിച്ചു, പിമ്പന്മാർ തുടങ്ങി മുമ്പന്മാർവരെ അവർക്കു കൂലി കൊടുക്ക എന്നു പറഞ്ഞു. 
-8 Sandhyayaayappeaal munthirittheaattatthinte utayavan thante vichaarakaneaatu: velakkaare vilicchu, pimpanmaar thutangi mumpanmaarvare avarkku kooli kotukka ennu paranju.&lt;/p&gt;
-
-&lt;p&gt;9 അങ്ങനെ പതിനൊന്നാം മണിനേരത്തു വന്നവർ ചെന്നു ഓരോ വെള്ളിക്കാശു വാങ്ങി. 
-9 Angane pathinonnaam manineratthu vannavar chennu oreaa vellikkaashu vaangi.&lt;/p&gt;
-
-&lt;p&gt;10 മുമ്പന്മാർ വന്നപ്പോൾ തങ്ങൾക്കു അധികം കിട്ടും എന്നു നിരൂപിച്ചു; അവർക്കും ഓരോ വെള്ളിക്കാശു കിട്ടി. 
-10 Mumpanmaar vannappeaal thangalkku adhikam kittum ennu niroopicchu; avarkkum oreaa vellikkaashu kitti.&lt;/p&gt;
-
-&lt;p&gt;11 അതു വാങ്ങീട്ടു അവർ വീട്ടുടയവന്റെ നേരെ പിറുപിറുത്തു: 
-11 Athu vaangeettu avar veettutayavante nere pirupirutthu:&lt;/p&gt;
-
-&lt;p&gt;12 ഈ പിമ്പന്മാർ ഒരു മണിനേരം മാത്രം വേല ചെയ്തിട്ടും നീ അവരെ പകലത്തെ ഭാരവും വെയിലും സഹിച്ച ഞങ്ങളോടു സമമാക്കിയല്ലോ എന്നു പറഞ്ഞു. 
-12 ee pimpanmaar oru manineram maathram vela cheythittum nee avare pakalatthe bhaaravum veyilum sahiccha njangaleaatu samamaakkiyallo ennu paranju.&lt;/p&gt;
-
-&lt;p&gt;13 അവരിൽ ഒരുത്തനോടു അവൻ ഉത്തരം പറഞ്ഞതു: സ്നേഹിതാ, ഞാൻ നിന്നോടു അന്യായം ചെയ്യുന്നില്ല; നീ എന്നോടു ഒരു പണം പറഞ്ഞൊത്തില്ലയോ?
-13 Avaril orutthaneaatu avan uttharam paranjathu: snehithaa, njaan ninneaatu anyaayam cheyyunnilla; nee enneaatu oru panam paranjotthillayeaa?&lt;/p&gt;
-
-&lt;p&gt;14 നിന്റേതു വാങ്ങി പൊയ്ക്കൊൾക; നിനക്കു തന്നതുപോലെ ഈ പിമ്പന്നും കൊടുപ്പാൻ എനിക്കു മനസ്സു. 
-14 Nintethu vaangi poykkolka; ninakku thannathupeaale ee pimpannum kotuppaan enikku manasu.&lt;/p&gt;
-
-&lt;p&gt;15 എനിക്കുള്ളതിനെക്കൊണ്ടു മനസ്സുപോലെ ചെയ്‍വാൻ എനിക്കു ന്യായമില്ലയോ? ഞാൻ നല്ലവൻ ആകകൊണ്ടു നിന്റെ കണ്ണു കടിക്കുന്നുവോ?
-15 Enikkullathinekkondu manasupeaale cheyvaan enikku nyaayamillayeaa? Njaan nallavan aakakondu ninte kannu katikkunnuveaa?&lt;/p&gt;
-
-&lt;p&gt;16 ഇങ്ങനെ പിമ്പന്മാർ മുമ്പൻ മാരും മുമ്പന്മാർ പിമ്പന്മാരും ആകും.” 
-16 Ingane pimpanmaar mumpan maarum mumpanmaar pimpanmaarum aakum.&lt;/p&gt;
-
-&lt;p&gt;17 യേശു യെരൂശലേമിലേക്കു യാത്രചെയ്യുമ്പോൾ പന്ത്രണ്ടു ശിഷ്യന്മാരെയും വേറിട്ടു കൂട്ടിക്കൊണ്ടു വഴിയിൽവെച്ചു അവരോടു പറഞ്ഞതു: 
-17 yeshu yerooshalemilekku yaathracheyyumpeaal panthurandu shishyanmaareyum verittu koottikkondu vazhiyilvecchu avareaatu paranjathu:&lt;/p&gt;
-
-&lt;p&gt;18 “നാം യെരൂശലേമിലേക്കു പോകുന്നുവല്ലോ; അവിടെ മനുഷ്യപുത്രൻ മഹാപുരോഹിതന്മാർക്കും ശാസ്ത്രിമാർക്കും ഏല്പിക്കപ്പെടും; 
-18 Naam yerooshalemilekku peaakunnuvallo; avite manushyaputhran mahaapureaahithanmaarkkum shaasthrimaarkkum elpikkappetum;&lt;/p&gt;
-
-&lt;p&gt;19 അവർ അവന്നു മരണശിക്ഷ കല്പിച്ചു, പരിഹസിപ്പാനും തല്ലുവാനും ക്രൂശിപ്പാനും അവനെ ജാതികൾക്കു ഏല്പിക്കും; എന്നാൽ മൂന്നാം നാൾ അവൻ ഉയിർത്തെഴുന്നേല്ക്കും.” 
-19 avar avannu maranashiksha kalpicchu, parihasippaanum thalluvaanum krooshippaanum avane jaathikalkku elpikkum; ennaal moonnaam naal avan uyirtthezhunnelkkum.&lt;/p&gt;
-
-&lt;p&gt;20 അന്നു സെബെദിപുത്രന്മാരുടെ അമ്മ പുത്രന്മാരുമായി അവന്റെ അടുക്കെ വന്നു നമസ്ക്കരിച്ചു അവനോടു ഒരു അപേക്ഷ കഴിച്ചു. 
-20 annu sebediputhranmaarute amma puthranmaarumaayi avante atukke vannu namaskkaricchu avaneaatu oru apeksha kazhicchu.&lt;/p&gt;
-
-&lt;p&gt;21 “നിനക്കു എന്തു വേണം” എന്നു അവൻ അവളോടു ചോദിച്ചു. അവൾ അവനോടു: ഈ എന്റെ പുത്രന്മാർ ഇരുവരും നിന്റെ രാജ്യത്തിൽ ഒരുത്തൻ നിന്റെ വലത്തും ഒരുത്തൻ ഇടത്തും ഇരിപ്പാൻ അരുളിച്ചെയ്യേണമേ എന്നു പറഞ്ഞു. 
-21 Ninakku enthu venamԠennu avan avaleaatu cheaadicchu. Aval avaneaatu: ee ente puthranmaar iruvarum ninte raajyatthil orutthan ninte valatthum orutthan itatthum irippaan aruliccheyyename ennu paranju.&lt;/p&gt;
-
-&lt;p&gt;22 അതിന്നു ഉത്തരമായി യേശു: “നിങ്ങൾ യാചിക്കുന്നതു ഇന്നതു എന്നു നിങ്ങൾ അറിയുന്നില്ല; ഞാൻ കുടിപ്പാനിരിക്കുന്ന പാനപാത്രം കുടിപ്പാൻ നിങ്ങൾക്കു കഴിയുമോ” എന്നു ചോദിച്ചു. കഴിയും എന്നു അവർ പറഞ്ഞു. 
-22 Athinnu uttharamaayi yeshu: Ԯingal yaachikkunnathu innathu ennu ningal ariyunnilla; njaan kutippaanirikkunna paanapaathram kutippaan ningalkku kazhiyumeaaԠennu cheaadicchu. Kazhiyum ennu avar paranju.&lt;/p&gt;
-
-&lt;p&gt;23 അവൻ അവരോടു: “എന്റെ പാനപാത്രം നിങ്ങൾ കുടിക്കും നിശ്ചയം; എങ്കിലും എന്റെ വലത്തും ഇടത്തും ഇരിപ്പാൻ വരം നല്കുന്നതു എന്റേതല്ല; എന്റെ പിതാവു ആർക്കു ഒരുക്കിയിരിക്കുന്നുവോ അവർക്കു കിട്ടും” എന്നു പറഞ്ഞു. 
-23 Avan avareaatu: ԥnte paanapaathram ningal kutikkum nishchayam; enkilum ente valatthum itatthum irippaan varam nalkunnathu entethalla; ente pithaavu aarkku orukkiyirikkunnuveaa avarkku kittumԠennu paranju.&lt;/p&gt;
-
-&lt;p&gt;24 ശേഷം പത്തുപേർ അതു കേട്ടിട്ടു ആ രണ്ടു സഹോദരന്മാരോടു നീരസപ്പെട്ടു. 
-24 Shesham patthuper athu kettittu aa randu saheaadaranmaareaatu neerasappettu.&lt;/p&gt;
-
-&lt;p&gt;25 യേശുവോ അവരെ അടുക്കെ വിളിച്ചു: “ജാതികളുടെ അധിപന്മാർ അവരിൽ കർത്തൃത്വം ചെയ്യുന്നു എന്നും മഹത്തുക്കൾ അവരുടെമേൽ അധികാരം നടത്തുന്നു എന്നും നിങ്ങൾ അറിയുന്നു. 
-25 Yeshuveaa avare atukke vilicchu: Ԫaathikalute adhipanmaar avaril kartthruthvam cheyyunnu ennum mahatthukkal avarutemel adhikaaram natatthunnu ennum ningal ariyunnu.&lt;/p&gt;
-
-&lt;p&gt;26 നിങ്ങളിൽ അങ്ങനെ അരുതു: നിങ്ങളിൽ മഹാൻ ആകുവാൻ ഇച്ഛിക്കുന്നവനെല്ലാം നിങ്ങളുടെ ശുശ്രൂഷക്കാരൻ ആകേണം. 
-26 Ningalil angane aruthu: ningalil mahaan aakuvaan ichchhikkunnavanellaam ningalute shushrooshakkaaran aakenam.&lt;/p&gt;
-
-&lt;p&gt;27 നിങ്ങളിൽ ഒന്നാമൻ ആകുവാൻ ഇചഛിക്കുന്നവനെല്ലാം നിങ്ങളുടെ ദാസൻ ആകേണം. 
-27 Ningalil onnaaman aakuvaan ichachhikkunnavanellaam ningalute daasan aakenam.&lt;/p&gt;
-
-&lt;p&gt;28 മനുഷ്യപുത്രൻ ശുശ്രൂഷ ചെയ്യിപ്പാനല്ല ശുശ്രൂഷിപ്പാനും അനേകർക്കു വേണ്ടി തന്റെ ജീവനെ മറുവിലയായി കൊടുപ്പാനും വന്നതുപോലെ തന്നേ” എന്നു പറഞ്ഞു. 
-28 Manushyaputhran shushroosha cheyyippaanalla shushrooshippaanum anekarkku vendi thante jeevane maruvilayaayi kotuppaanum vannathupeaale thanneԠennu paranju.&lt;/p&gt;
-
-&lt;p&gt;29 അവർ യെരീഹോവിൽ നിന്നു പുറപ്പെട്ടപ്പോൾ വലിയോരു പുരുഷാരം അവനെ അനുഗമിച്ചു. 
-29 Avar yereeheaavil ninnu purappettappeaal valiyeaaru purushaaram avane anugamicchu.&lt;/p&gt;
-
-&lt;p&gt;30 അപ്പോൾ വഴിയരികെ ഇരിക്കുന്ന രണ്ടു കുരുടന്മാർ യേശു കടന്നുപോകുന്നതു കേട്ടു: കർത്താവേ, ദാവീദ് പുത്രാ, ഞങ്ങളോടു കുരുണതോന്നേണമേ എന്നു നിലവിളിച്ചു. 
-30 Appeaal vazhiyarike irikkunna randu kurutanmaar yeshu katannupeaakunnathu kettu: kartthaave, daaveedu puthraa, njangaleaatu kurunatheaannename ennu nilavilicchu.&lt;/p&gt;
-
-&lt;p&gt;31 മിണ്ടാതിരിപ്പാൻ പുരുഷാരം അവരെ ശാസിച്ചപ്പോൾ അവർ: കർത്താവേ, ദാവീദ് പുത്രാ, ഞങ്ങളോടു കരുണ തോന്നേണമേ എന്നു അധികം നിലവിളിച്ചു. 
-31 Mindaathirippaan purushaaram avare shaasicchappeaal avar: kartthaave, daaveedu puthraa, njangaleaatu karuna theaannename ennu adhikam nilavilicchu.&lt;/p&gt;
-
-&lt;p&gt;32 യേശു നിന്നു അവരെ വിളിച്ചു: “ഞാൻ നിങ്ങൾക്കു എന്തു ചെയ്യേണമെന്നു നിങ്ങൾ ഇച്ഛിക്കുന്നു” എന്നു ചോദിച്ചു. 
-32 Yeshu ninnu avare vilicchu: Ԯjaan ningalkku enthu cheyyenamennu ningal ichchhikkunnuԠennu cheaadicchu.&lt;/p&gt;
-
-&lt;p&gt;33 കർത്താവേ, ഞങ്ങൾക്കു കണ്ണു തുറന്നുകിട്ടേണം എന്നു അവർ പറഞ്ഞു. 
-33 Kartthaave, njangalkku kannu thurannukittenam ennu avar paranju.&lt;/p&gt;
-
-&lt;p&gt;34 യേശു മനസ്സലിഞ്ഞു അവരുടെ കണ്ണു തൊട്ടു; ഉടനെ അവർ കാഴ്ച പ്രാപിച്ചു, അവനെ അനുഗമിച്ചു.
-34 Yeshu manasalinju avarute kannu thottu; utane avar kaazhcha praapicchu, avane anugamicchu.&lt;/p&gt;</content><author><name>bible</name></author><summary type="html">1 “സ്വർഗ്ഗരാജ്യം തന്റെ മുന്തിരിത്തോട്ടത്തിൽ വേലക്കാരെ വിളിച്ചാക്കേണ്ടതിന്നു പുലർച്ചെക്കു പുറപ്പെട്ട വീട്ടുടയവനോടു സദൃശം. 1 Svarggaraajyam thante munthirittheaattatthil velakkaare vilicchaakkendathinnu pularcchekku purappetta veettutayavaneaatu sadrusham.</summary></entry><entry><title type="html">Nanmaniranga</title><link href="http://localhost:4000/2018/11/07/Nanmaniranga.html" rel="alternate" type="text/html" title="Nanmaniranga" /><published>2018-11-07T00:00:00-05:00</published><updated>2018-11-07T00:00:00-05:00</updated><id>http://localhost:4000/2018/11/07/Nanmaniranga</id><content type="html" xml:base="http://localhost:4000/2018/11/07/Nanmaniranga.html">&lt;p&gt;നന്മ നിറഞ്ഞ മറിയമേ,  സ്വസ്തി!
-Nanma niranja Mariyame, Swasthi!&lt;/p&gt;
-
-&lt;p&gt;കര്‍ത്താവ് അങ്ങയോടുകൂടെ.
-Karthaav angayodu koode&lt;/p&gt;
-
-&lt;p&gt;സ്ത്രീകളില്‍ അങ്ങ്
-Sthreekalil Angu&lt;/p&gt;
-
-&lt;p&gt;അനുഗ്രഹിക്കപ്പെട്ടവളാകുന്നു. &lt;br /&gt;
-Anugrahikkappettaval aakunnu&lt;/p&gt;
-
-&lt;p&gt;അങ്ങയുടെ ഉദരത്തിന്‍ ഫലമായ ഈശോ&lt;br /&gt;
-Angey udaraththin phalamaaya Eeso&lt;/p&gt;
-
-&lt;p&gt;അനുഗ്രഹിക്കപ്പെട്ടവനാകുന്നു.&lt;br /&gt;
-anugrahikkappettavan aakunnu&lt;/p&gt;
-
-&lt;p&gt;പരിശുദ്ധ മറിയമേ, തമ്പുരാന്റെ അമ്മേ, &lt;br /&gt;
-Parishuddha Mariyame, Thampurante ammey&lt;/p&gt;
-
-&lt;p&gt;പാപികളായ ഞങ്ങള്‍ക്കുവേണ്ടി ഇപ്പോഴും ഞങ്ങളുടെ&lt;br /&gt;
-Paapikalaaya Njangalukku vendi ippozhum njangaludey&lt;/p&gt;
-
-&lt;p&gt;മരണസമയത്തും തമ്പുരാനോട്&lt;br /&gt;
-marana samayaththum Thampuraanodu&lt;/p&gt;
-
-&lt;p&gt;അപേക്ഷിച്ചുകൊള്ളേണമേ. &lt;br /&gt;
-apekshikkanamey&lt;/p&gt;
-
-&lt;p&gt;ആമ്മേന്‍.&lt;br /&gt;
-Aa-mmeyn&lt;/p&gt;</content><author><name>prayer</name></author><summary type="html">നന്മ നിറഞ്ഞ മറിയമേ, സ്വസ്തി! Nanma niranja Mariyame, Swasthi!</summary></entry><entry><title type="html">Sorgasthanaya</title><link href="http://localhost:4000/2018/11/06/Sorgasthanaya.html" rel="alternate" type="text/html" title="Sorgasthanaya" /><published>2018-11-06T00:00:00-05:00</published><updated>2018-11-06T00:00:00-05:00</updated><id>http://localhost:4000/2018/11/06/Sorgasthanaya</id><content type="html" xml:base="http://localhost:4000/2018/11/06/Sorgasthanaya.html">&lt;p&gt;സ്വർഗ്ഗസ്ഥനായ ഞങ്ങളുടെ പിതാവേ, നിന്റെ നാമം വിശുദ്ധീകരിക്കപ്പെടേണമേ;&lt;br /&gt;
-Sorgasthanaya njangalude pithave, Ninte naamam vishudhikarikkappedename&lt;/p&gt;
-
-&lt;p&gt;നിന്റെ രാജ്യം വരേണമേ; നിന്റെ ഇഷ്ടം സ്വർഗ്ഗത്തിലെപ്പോലെ ഭൂമിയിലും ആകേണമേ;&lt;br /&gt;
-Ninte rajyam varename, ninte ishtam swargathilepole bumielum aakename&lt;/p&gt;
-
-&lt;p&gt;ഞങ്ങൾക്കു ആവശ്യമുള്ള ആഹാരം ഇന്നു തരേണമേ&lt;br /&gt;
-Njangalku aavashyamulla aakaram innu tharename&lt;/p&gt;
-
-&lt;p&gt;ഞങ്ങളുടെ കടക്കാരോടു ഞങ്ങൾ ക്ഷിമിച്ചിരിക്കുന്നതുപോലെ ഞങ്ങളുടെ കടങ്ങളെ ഞങ്ങളോടും ക്ഷമിക്കേണമേ;&lt;br /&gt;
-Njangalude kadakkarodu njangal shamichirikunnathupole njangalude kadangale njangalodum shaminkename&lt;/p&gt;
-
-&lt;p&gt;ഞങ്ങളെ പരീക്ഷയിൽ കടത്താതെ ദുഷ്ടങ്കൽനിന്നു ഞങ്ങളെ വിടുവിക്കേണമേ.&lt;br /&gt;
-Njangale parikshayil kadathathe dhushttangalninnu njangale viduvikename&lt;/p&gt;
-
-&lt;p&gt;രാജ്യവും ശക്തിയും മഹത്വവും എന്നേക്കും നിനക്കുള്ളതല്ലോ.&lt;br /&gt;
-Rajyavum, shakthiyum, mahathovum ennekkum ninakkaullathallo.&lt;/p&gt;
-
-&lt;p&gt;ആമേൻ.&lt;br /&gt;
-Amen.&lt;/p&gt;</content><author><name>prayer</name></author><summary type="html">സ്വർഗ്ഗസ്ഥനായ ഞങ്ങളുടെ പിതാവേ, നിന്റെ നാമം വിശുദ്ധീകരിക്കപ്പെടേണമേ; Sorgasthanaya njangalude pithave, Ninte naamam vishudhikarikkappedename</summary></entry><entry><title type="html">Swar</title><link href="http://localhost:4000/2018/08/22/Swar.html" rel="alternate" type="text/html" title="Swar" /><published>2018-08-22T00:00:00-04:00</published><updated>2018-08-22T00:00:00-04:00</updated><id>http://localhost:4000/2018/08/22/Swar</id><content type="html" xml:base="http://localhost:4000/2018/08/22/Swar.html">&lt;p&gt;സ്വർഗ്ഗസ്ഥനായ ഞങ്ങളുടെ പിതാവേ, നിന്റെ നാമം വിശുദ്ധീകരിക്കപ്പെടേണമേ;&lt;br /&gt;
-Sorgasthanaya njangalude pithave, Ninte naamam vishudhikarikkappedename&lt;/p&gt;
-
-&lt;p&gt;നിന്റെ രാജ്യം വരേണമേ; നിന്റെ ഇഷ്ടം സ്വർഗ്ഗത്തിലെപ്പോലെ ഭൂമിയിലും ആകേണമേ;&lt;br /&gt;
-Ninte rajyam varename, ninte ishtam swargathilepole bumielum aakename&lt;/p&gt;
-
-&lt;p&gt;ഞങ്ങൾക്കു ആവശ്യമുള്ള ആഹാരം ഇന്നു തരേണമേ&lt;br /&gt;
-Njangalku aavashyamulla aakaram innu tharename&lt;/p&gt;
-
-&lt;p&gt;ഞങ്ങളുടെ കടക്കാരോടു ഞങ്ങൾ ക്ഷിമിച്ചിരിക്കുന്നതുപോലെ ഞങ്ങളുടെ കടങ്ങളെ ഞങ്ങളോടും ക്ഷമിക്കേണമേ;&lt;br /&gt;
-Njangalude kadakkarodu njangal shamichirikunnathupole njangalude kadangale njangalodum shaminkename&lt;/p&gt;
-
-&lt;p&gt;ഞങ്ങളെ പരീക്ഷയിൽ കടത്താതെ ദുഷ്ടങ്കൽനിന്നു ഞങ്ങളെ വിടുവിക്കേണമേ.&lt;br /&gt;
-Njangale parikshayil kadathathe dhushttangalninnu njangale viduvikename&lt;/p&gt;
-
-&lt;p&gt;രാജ്യവും ശക്തിയും മഹത്വവും എന്നേക്കും നിനക്കുള്ളതല്ലോ.&lt;br /&gt;
-Rajyavum, shakthiyum, mahathovum ennekkum ninakkaullathallo.&lt;/p&gt;
-
-&lt;p&gt;ആമേൻ.&lt;br /&gt;
-Amen.&lt;/p&gt;</content><author><name>prayer</name></author><summary type="html">സ്വർഗ്ഗസ്ഥനായ ഞങ്ങളുടെ പിതാവേ, നിന്റെ നാമം വിശുദ്ധീകരിക്കപ്പെടേണമേ; Sorgasthanaya njangalude pithave, Ninte naamam vishudhikarikkappedename</summary></entry><entry><title type="html">Test</title><link href="http://localhost:4000/2018/08/22/test.html" rel="alternate" type="text/html" title="Test" /><published>2018-08-22T00:00:00-04:00</published><updated>2018-08-22T00:00:00-04:00</updated><id>http://localhost:4000/2018/08/22/test</id><content type="html" xml:base="http://localhost:4000/2018/08/22/test.html">&lt;p&gt;Wut?s&lt;/p&gt;</content><author><name></name></author><summary type="html">Wut?s</summary></entry><entry><title type="html">Kiwifruit</title><link href="http://localhost:4000/2018/08/22/kiwifruit.html" rel="alternate" type="text/html" title="Kiwifruit" /><published>2018-08-22T00:00:00-04:00</published><updated>2018-08-22T00:00:00-04:00</updated><id>http://localhost:4000/2018/08/22/kiwifruit</id><content type="html" xml:base="http://localhost:4000/2018/08/22/kiwifruit.html">&lt;p&gt;Kiwifruit (often abbreviated as kiwi), or Chinese gooseberry is the edible
-berry of several species of woody vines in the genus Actinidia.&lt;/p&gt;
-
-&lt;p&gt;The most common cultivar group of kiwifruit is oval, about the size of a large
-hen’s egg (5–8 cm (2.0–3.1 in) in length and 4.5–5.5 cm (1.8–2.2 in) in
-diameter). It has a fibrous, dull greenish-brown skin and bright green or
-golden flesh with rows of tiny, black, edible seeds. The fruit has a soft
-texture, with a sweet and unique flavor.&lt;/p&gt;</content><author><name>ted</name></author><summary type="html">Kiwifruit (often abbreviated as kiwi), or Chinese gooseberry is the edible berry of several species of woody vines in the genus Actinidia.</summary></entry><entry><title type="html">Nanma</title><link href="http://localhost:4000/2018/08/20/Nanma.html" rel="alternate" type="text/html" title="Nanma" /><published>2018-08-20T00:00:00-04:00</published><updated>2018-08-20T00:00:00-04:00</updated><id>http://localhost:4000/2018/08/20/Nanma</id><content type="html" xml:base="http://localhost:4000/2018/08/20/Nanma.html">&lt;p&gt;How do you?&lt;/p&gt;
-
-&lt;p&gt;നന്മ നിറഞ്ഞ മറിയമേ,  സ്വസ്തി!
-Nanma niranja Mariyame, Swasthi!&lt;/p&gt;
-
-&lt;p&gt;കര്‍ത്താവ് അങ്ങയോടുകൂടെ.
-Karthaav angayodu koode&lt;/p&gt;
-
-&lt;p&gt;സ്ത്രീകളില്‍ അങ്ങ്
-Sthreekalil Angu&lt;/p&gt;
-
-&lt;p&gt;അനുഗ്രഹിക്കപ്പെട്ടവളാകുന്നു. 
-Anugrahikkappettaval aakunnu&lt;/p&gt;
-
-&lt;p&gt;അങ്ങയുടെ ഉദരത്തിന്‍ ഫലമായ ഈശോ
-Angey udaraththin phalamaaya Eeso&lt;/p&gt;
-
-&lt;p&gt;അനുഗ്രഹിക്കപ്പെട്ടവനാകുന്നു.
-anugrahikkappettavan aakunnu&lt;/p&gt;
-
-&lt;p&gt;പരിശുദ്ധ മറിയമേ, തമ്പുരാന്റെ അമ്മേ, 
-Parishuddha Mariyame, Thampurante ammey&lt;/p&gt;
-
-&lt;p&gt;പാപികളായ ഞങ്ങള്‍ക്കുവേണ്ടി ഇപ്പോഴും ഞങ്ങളുടെ
-Paapikalaaya Njangalukku vendi ippozhum njangaludey&lt;/p&gt;
-
-&lt;p&gt;മരണസമയത്തും തമ്പുരാനോട്
-marana samayaththum Thampuraanodu&lt;/p&gt;
-
-&lt;p&gt;അപേക്ഷിച്ചുകൊള്ളേണമേ. 
-apekshikkanamey&lt;/p&gt;
-
-&lt;p&gt;ആമ്മേന്‍.
-Aa-mmeyn&lt;/p&gt;</content><author><name>prayer</name></author><summary type="html">How do you?</summary></entry></feed>
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Wind Energy .line { fill: none; stroke: black; stroke-width: 2px; }</summary></entry><entry><title type="html">Pathu Pathungi</title><link href="http://localhost:4000/malayalam/2019/03/29/pathupathungi.html" rel="alternate" type="text/html" title="Pathu Pathungi" /><published>2019-03-29T00:00:00-04:00</published><updated>2019-03-29T00:00:00-04:00</updated><id>http://localhost:4000/malayalam/2019/03/29/pathupathungi</id><content type="html" xml:base="http://localhost:4000/malayalam/2019/03/29/pathupathungi.html">&lt;div id = &quot;postContents&quot;&gt; 
+  &lt;h2&gt;First Part&lt;/h2&gt;
+  &lt;audio src=&quot;/media/pathu_pathungi_0.mp3&quot; controls&gt; &lt;/audio&gt;
+  
+  &lt;h2&gt;Second Part&lt;/h2&gt;
+  &lt;audio src=&quot;/media/pathu_pathungi_1.mp3&quot; controls&gt; &lt;/audio&gt;
+  
+  &lt;h2&gt;Third Part&lt;/h2&gt;
+  &lt;audio src=&quot;/media/pathu_pathungi_2.mp3&quot; controls&gt; &lt;/audio&gt;
+  
+  &lt;h2&gt;Fourth Part&lt;/h2&gt;
+  &lt;audio src=&quot;/media/pathu_pathungi_3.mp3&quot; controls&gt; &lt;/audio&gt;
+
+  
+  
+&lt;/body&gt;
+&lt;/html&gt;</content><author><name>SpeakIn10Weeks</name></author><category term="malayalam" /><summary type="html">Audio excerpts from children's song</summary></entry><entry><title type="html">The Bias-Variance Tradeoff</title><link href="http://localhost:4000/math/2019/03/02/biasvariance.html" rel="alternate" type="text/html" title="The Bias-Variance Tradeoff" /><published>2019-03-02T00:00:00-05:00</published><updated>2019-03-02T00:00:00-05:00</updated><id>http://localhost:4000/math/2019/03/02/biasvariance</id><content type="html" xml:base="http://localhost:4000/math/2019/03/02/biasvariance.html">&lt;div id = &quot;postContents&quot;&gt; 
+  &lt;h2&gt;What is Bias?&lt;/h2&gt;
+  &lt;h3&gt;Bias is how much the model predictions are off compared to the actual values. If the bias is low, the prediction was accurate. If the bias is high, the prediction was inaccurate.&lt;/h3&gt;
+  
+  &lt;h2&gt;What is Variance?&lt;/h2&gt;
+  &lt;h3&gt;Variance is the spread of the predictions. If the variance is low, the model is making predictions that are close to each other. If the variance is high, the model is making predictions that are far apart.&lt;/h3&gt;
+  
+  &lt;h2&gt;The Tradeoff&lt;/h2&gt;
+  &lt;h3&gt;The goal is to get a low bias and a low variance. That means the model is making accurate, consistent predictions. The bias can be decreased by increasing the variance. That means the model will predict more accurately if it is given more flexibility but that can be erratic. Variance can be decreased by incresing the bias. That means the model can predict more consistent values but they will be less accurate.&lt;/h3&gt;
+
+  &lt;h2&gt;Application&lt;/h2&gt;
+  &lt;h3&gt;This concept gives insight on overfitting. A high variance may not initially seem like an issue, after all, the model is predicting accurate values. However, this makes the model overly attached to the training data. Its important to minimize both the bias and variance.&lt;/h3&gt;
+  
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</content><author><name>Statistics</name></author><category term="math" /><summary type="html">A balancing act for making predictions</summary></entry><entry><title type="html">Wind Energy</title><link href="http://localhost:4000/math/2019/03/02/windenergy.html" rel="alternate" type="text/html" title="Wind Energy" /><published>2019-03-02T00:00:00-05:00</published><updated>2019-03-02T00:00:00-05:00</updated><id>http://localhost:4000/math/2019/03/02/windenergy</id><content type="html" xml:base="http://localhost:4000/math/2019/03/02/windenergy.html">&lt;head&gt;
+&lt;script src=&quot;dotdensityfunction.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;bargraphfunction.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;linegraphfunction.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;pictographfunction.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://d3js.org/d3.v5.min.js&quot;&gt;&lt;/script&gt;
+&lt;style&gt;
+.line {
+  fill: none;
+  stroke: black;
+  stroke-width: 2px;
+}
+
+div.tooltip {	
+    position: absolute;			
+    text-align: center;			
+    width: 140px;					
+    height: 50px;					
+    padding: 2px;				
+    font: 12px sans-serif;		
+    background: lightsteelblue;	
+    border: 0px;		
+    border-radius: 8px;			
+    pointer-events: none;			
+}
+
+.happy {
+  stroke: black;
+  fill: green;
+  stroke-width: 0;
+}
+
+.smile {
+  stroke: black;
+  fill: blue;
+  stroke-width: 0;
+}
+
+.neutral {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: black;
+  fill: gray;
+}
+
+.sad {
+  stroke: black;
+  fill: orange;
+  stroke-width: 0;
+}
+
+.angry {
+  fill: red;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 75%;
+  height: 10px;
+  background: #d3d3d3;
+  outline: none;
+}
+
+.slidecontainer {
+  margin: auto;
+  width:90%;
+  padding-top: 25px;
+}
+
+.narration {
+  margin: auto;
+  width: 90%;
+  border: 3px solid green;
+  padding: 10px;
+}
+
+&lt;/style&gt;
+
+&lt;/head&gt;
+&lt;body bgcolor = #f4f8ff&gt;
+
+  &lt;h1 align = &quot;center&quot;&gt;Wind Energy in the United States&lt;/h1&gt;
+  
+  
+  
+  &lt;div class=&quot;narration&quot;&gt;
+  &lt;h3&gt;The first electricity generating wind turbine in America was built by Charles Brush in 1888. It stood in Ohio at 60 feet table and was capable of generating 12kW of electricity. &lt;/h3&gt;
+  
+  &lt;img src = &quot;media/first_turbine.jpg&quot; align = &quot;middle&quot;&gt;
+    
+  &lt;h3&gt;Fast forward 92 years and the world's first wind farm was constructed in Crotched Mountain, New Hampshire. Built in 1992, the wind farm consisted of 20 wind turbines with a capacity of 30 kilowatts each.&lt;/h3&gt;
+  
+  &lt;h3&gt;Now there are over 50,000 wind turbines in the United States that can produce 90,000 megawatts in a year. This represents around 5% of the energy production in the country.&lt;/h3&gt; 
+  
+  &lt;h3&gt;And tomorrow? WINDExchange believes the United States could produce 10,640,080MW.&lt;/h3&gt;
+  &lt;/div&gt;
+  
+  &lt;h2 align = &quot;center&quot;&gt;Locations of Wind Turbines in the United States&lt;/h2&gt;
+  &lt;script&gt;
+    let densityMap = dotDensity();  
+  &lt;/script&gt;
+  
+  &lt;div class=&quot;narration&quot;&gt;
+  &lt;h3&gt;The United States Geologic Survey has released a dataset containing the location of every turbine in the country. Plotting this information reveals what regions are best suited for producing wind energy.&lt;/h3&gt;
+  
+  &lt;h3&gt;This visualization shows us that a handful of regions contain the majority of wind turbines. Wind speeds must reach 6 miles per hour before electrical energy is produced. This makes the Great Plains ideal wind energy producers.&lt;/h3&gt;
+  
+  &lt;h3&gt;This can be further shown by plotting each state's output individually. Source: WINDExchange&lt;/h3&gt;
+  
+  &lt;h3&gt;Although it takes some years for Texas to take the lead, the state becomes the country's largest wind energy producer by a large margin. Additionally, many states do not meet the conditions to be high wind energy producers.&lt;/h3&gt;  
+  &lt;/div&gt;
+  
+ 
+  &lt;h2 align = &quot;center&quot;&gt;Wind Energy Production by State&lt;/h2&gt;
+  &lt;script&gt;
+    let bargraph = barGraph();
+  &lt;/script&gt;
+
+  &lt;/br&gt;
+  
+  &lt;div class=&quot;slidecontainer&quot;&gt;
+  &lt;input type=&quot;range&quot; min=&quot;1999&quot; max=&quot;2017&quot; value=&quot;1999&quot; class=&quot;slider&quot; id=&quot;myRange&quot;&gt;
+  &lt;/div&gt;
+  
+  &lt;div class=&quot;narration&quot;&gt;
+  &lt;h3&gt;For us to reach WINDExchange's goal of 10 million MegaWatts per year we have to multiply our current wind output by 10 times. This would mean having hundreds of thousands more turbines.&lt;/h3&gt;
+  
+  &lt;h3&gt;Overall, there is a trend of increasing turbine efficiency but it isn't large enough. There must be a breakthrough in turbine efficiency that brings the number of turbines required to a reasonable amount. &lt;/h3&gt; 
+  &lt;/div&gt;
+  
+  &lt;h2 align = &quot;center&quot;&gt;Total Production and Turbine Efficiency&lt;/h2&gt;
+  &lt;script&gt;
+    let alinegraph = linegraph();
+  &lt;/script&gt;
+
+  &lt;div class=&quot;narration&quot;&gt;
+  &lt;h3&gt;One of the benefits of wind energy is that once the turbine is installed, the energy it produces is free. But nothing is truly free. One concern is the feelings of residents who live near turbines. Source: Berkeley Lab's National Survey of Attitudes of Wind Power Project Neighbors&lt;/h3&gt;
+  
+  &lt;h3&gt;For the most part, people do not have issues with living over a mile away from a turbine. However there is noticible discontent among residents who are within half a mile. As more turbines are built, and the trend towards larger turbines continues, this will became problematic for more people.&lt;/h3&gt;
+  &lt;/div&gt;
+
+  &lt;h2 align = &quot;center&quot;&gt;Attitudes Towards Wind Projects by Distance&lt;/h2&gt;
+    
+  &lt;script&gt;
+    let picto = pictograph();
+  &lt;/script&gt;  
+
+    
+  
+  &lt;div class=&quot;narration&quot;&gt;
+  &lt;h3&gt;WINDExchange's potential estimate of 10 million MegaWatts seems lofty. Without major improvements to turbine efficiency, there probably isn't even enough space to fit the necessary turbines.&lt;/h3&gt;
+  
+  &lt;h3&gt;Still, a lot of progress has been made since the first wind farms. We should be proud of the advances that allow for the level of production that exists today.&lt;/h3&gt;
+  &lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</content><author><name>Statistics</name></author><category term="math" /><summary type="html">Visualizations</summary></entry><entry><title type="html">Kodiya Venal Kalam</title><link href="http://localhost:4000/malayalam/2019/02/22/kodiyavenalkalam.html" rel="alternate" type="text/html" title="Kodiya Venal Kalam" /><published>2019-02-22T00:00:00-05:00</published><updated>2019-02-22T00:00:00-05:00</updated><id>http://localhost:4000/malayalam/2019/02/22/kodiyavenalkalam</id><content type="html" xml:base="http://localhost:4000/malayalam/2019/02/22/kodiyavenalkalam.html">&lt;div id = &quot;postContents&quot;&gt; 
+  &lt;h2&gt;First Part&lt;/h2&gt;
+  &lt;audio src=&quot;/media/kodiya_venal_0.mp3&quot; controls&gt; &lt;/audio&gt;
+  
+  &lt;h2&gt;Second Part&lt;/h2&gt;
+  &lt;audio src=&quot;/media/kodiya_venal_1.mp3&quot; controls&gt; &lt;/audio&gt;
+  
+  &lt;h2&gt;Third Part&lt;/h2&gt;
+  &lt;audio src=&quot;/media/kodiya_venal_2.mp3&quot; controls&gt; &lt;/audio&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</content><author><name>SpeakIn10Weeks</name></author><category term="malayalam" /><summary type="html">Audio excerpts from children's song</summary></entry><entry><title type="html">Logistic Regression</title><link href="http://localhost:4000/math/2019/02/12/logisticregression.html" rel="alternate" type="text/html" title="Logistic Regression" /><published>2019-02-12T00:00:00-05:00</published><updated>2019-02-12T00:00:00-05:00</updated><id>http://localhost:4000/math/2019/02/12/logisticregression</id><content type="html" xml:base="http://localhost:4000/math/2019/02/12/logisticregression.html">&lt;div id = &quot;postContents&quot;&gt; 
+  &lt;h2&gt;What is Logistic Regression?&lt;/h2&gt;
+  &lt;h3&gt;Logistic Regression is a classification technique that outputs a probability that an instance belongs to a class based on an observation or multiple observations. For example, the probability that its summer based on the number of cricket chirps.&lt;/h3&gt;
+  
+  &lt;h2&gt;The Math&lt;/h2&gt;
+  &lt;h3&gt;The Logistic Regression model probability can be represented by the equation 1/(1+e^-(a + bX)). The variable a represents the intercept coefficient. It will yield the probability of Summer when there are no chirps. The variable b is the observation coefficient. It is how much we believe that the observation contributes to the outcome. Finally X is amount of the observation.&lt;/h3&gt;
+  
+  &lt;h2&gt;The Significance&lt;/h2&gt;
+  &lt;h3&gt;Logistic Regression provides a relative quick and easy way to classify data. It can handle both quantitative and categorical predictors.&lt;/h3&gt;
+  
+  &lt;h2&gt;Further Reading&lt;/h2&gt;
+  &lt;h3&gt;Gradient Descent is a technique used to calculate the best estimate for this model.&lt;/h3&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</content><author><name>Statistics</name></author><category term="math" /><summary type="html">Model for classification by probability</summary></entry></feed>

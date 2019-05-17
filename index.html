@@ -1,12 +1,59 @@
 ---
-title: GetStuckIn
+title: Visualize Me, Captain
 layout: default
 ---
 
 <!DOCTYPE html>
 <html>
+<head>
+  <link href="{{site.baseurl}}/css/common.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <body>
-<h1>{{ "Ok.... Welcome to the Carter" | downcase}}</h1>
-<p>Like I'm waving flag.</p>
+
+
+<div class="center">
+  <h1>{{"Look with your eyes, see with your mind"}}</h1>
+  
+  <p>Advances in computing power have given us the ability to analyze datasets larger than ever before. However, we also generate more data then we could ever possibly understand. Sometimes the smallest datasets can yield deep insights - if we have the patience to understand them.</p>
+</div>
+
+<div class = "PostListing">
+  {% for post in site.categories.visualization %}
+    <a href="{{ post.url }}">
+      <div class = "tile">
+        <h2 align = "center">{{ post.title }}</h2>
+        <img src="{{ site.baseurl }}/images/{{ post.image }}">
+      </div>
+    </a>
+  {% endfor %}
+  
+    
+<!--
+  {% for post in site.categories.visualization %}
+      {% assign loopindex = forloop.index | modulo: 2 %}
+      {% if loopindex == 1 %}
+        <div class="row">
+          <a href="{{ post.url }}">
+            <div class = "tile">
+              <h2 align = "center">{{ post.title }}</h2>
+              <img src="{{ site.baseurl }}/images/{{ post.image }}">
+            </div>
+          </a>
+          
+        {% else %}
+          <a href="{{ post.url }}">
+            <div class="tile">
+              <h2 align = "center">{{ post.title }}</h2>
+              <img src="{{ site.baseurl }}/images/{{ post.image }}">
+            </div>
+          </a>
+          
+          
+        </div>
+    
+    {% endif %}
+  {% endfor %}
+<!---->
+</div>
 </body>
 </html>

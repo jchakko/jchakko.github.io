@@ -1,10 +1,10 @@
 - name: Home
   link: /
-- name: About
+- name: About Me
   link: /about.html
-- name: Blog
-  link: /blog.html
-- name: Staff
-  link: /staff.html
-- name: Texts
-  link: /texts.html
+- name: Malayalam
+  link: /malayalam.html
+- name: Text Analysis
+  link: /english.html
+- name: Data Visualizations
+  link: /WindEnergy.html
