@@ -43,5 +43,17 @@ h1 {
    margin: auto;
 }
 
+.narration {
+  margin: auto;
+  width: 75%;
+  text-align: center;
+  border: 3px solid green;
+  padding: 10px;
+}
+
+img {
+    max-width:100%;
+    height:auto;
+}
 
 

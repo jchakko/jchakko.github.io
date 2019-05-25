@@ -11,10 +11,10 @@ layout: default
 <body>
 
 
-<div class="center">
+<div class="narration">
   <h1>{{"Look with your eyes, see with your mind"}}</h1>
   
-  <p>Advances in computing power have given us the ability to analyze datasets larger than ever before. However, we also generate more data then we could ever possibly understand. Sometimes the smallest datasets can yield deep insights - if we have the patience to understand them.</p>
+  <h3>Advances in computing power have given us the ability to analyze datasets larger than ever before. However, we also generate more data then we could ever possibly understand. Sometimes the smallest datasets can yield deep insights - if we have the patience to understand them.</h3>
 </div>
 
 <div class = "PostListing">
@@ -26,34 +26,7 @@ layout: default
       </div>
     </a>
   {% endfor %}
-  
-    
-<!--
-  {% for post in site.categories.visualization %}
-      {% assign loopindex = forloop.index | modulo: 2 %}
-      {% if loopindex == 1 %}
-        <div class="row">
-          <a href="{{ post.url }}">
-            <div class = "tile">
-              <h2 align = "center">{{ post.title }}</h2>
-              <img src="{{ site.baseurl }}/images/{{ post.image }}">
-            </div>
-          </a>
-          
-        {% else %}
-          <a href="{{ post.url }}">
-            <div class="tile">
-              <h2 align = "center">{{ post.title }}</h2>
-              <img src="{{ site.baseurl }}/images/{{ post.image }}">
-            </div>
-          </a>
-          
-          
-        </div>
-    
-    {% endif %}
-  {% endfor %}
-<!---->
+      
 </div>
 </body>
 </html>
