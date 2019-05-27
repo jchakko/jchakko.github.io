@@ -1,4 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-05-25T16:37:22-04:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Matthew Chapter 20</title><link href="http://localhost:4000/malayalam/2019/05/24/Matthew20.html" rel="alternate" type="text/html" title="Matthew Chapter 20" /><published>2019-05-24T00:00:00-04:00</published><updated>2019-05-24T00:00:00-04:00</updated><id>http://localhost:4000/malayalam/2019/05/24/Matthew20</id><content type="html" xml:base="http://localhost:4000/malayalam/2019/05/24/Matthew20.html">&lt;div id = &quot;postContents&quot;&gt; 
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-05-27T15:22:35-04:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Attitudes Towards Turbines</title><link href="http://localhost:4000/visualization/2019/05/26/pictogram.html" rel="alternate" type="text/html" title="Attitudes Towards Turbines" /><published>2019-05-26T00:00:00-04:00</published><updated>2019-05-26T00:00:00-04:00</updated><id>http://localhost:4000/visualization/2019/05/26/pictogram</id><content type="html" xml:base="http://localhost:4000/visualization/2019/05/26/pictogram.html">&lt;div class=&quot;narration&quot;&gt; 
+    &lt;h1&gt;Attitudes Towards Wind Energy by Distance to Nearest Turbine&lt;/h1&gt;
+   
+    &lt;img src=&quot;/images/pictogram.png&quot;&gt;
+    
+    &lt;a href=&quot;https://bl.ocks.org/jchakko/raw/7dbae43a245516b0e4a35a4a34e23647/&quot;&gt;
+    &lt;h2&gt;Click here to see the interactive version&lt;h2&gt;
+    &lt;/a&gt;
+    
+    &lt;h3&gt;Pictograms utilize icons to convey information. Each icon represents an equal value of data. They add more personality to the visualization and can be easier to understand. D3 has limited built in elements but custom svg art can be used. SVG icons are widely available online on websites like &lt;a href=&quot;https://icomoon.io/&quot;&gt;IcoMoon&lt;/a&gt;.&lt;/h3&gt;
+           
+    &lt;h3&gt;
+    This pictogram is an alternate take on the survey results found in Berkeley Lab's
+    &lt;a href=&quot;https://emp.lbl.gov/projects/wind-neighbor-survey&quot;&gt;National Survey of Attitudes of Wind Power Project Neighbors&lt;/a&gt;. The report contains five bargraphs that depict the spread of people's attitude towards wind projects based on the distance of their home to the nearest wind turbine. Unsurpisingly, residents are less content the closer they live to a wind energy project.&lt;/h3&gt;
+    
+    &lt;h3&gt;Utilizing interaction effects, this information can be conveyed in a single, updating chart. All five survey distance results are included in the HTML file. At first the overall results are displayed. When the mouse is placed near text, the data will be changed to the corresponding survey results and the visualization is updated. This effect was achieved by placing invisible rectangles over the text that contain the mouseover interaction instructions.&lt;/h3&gt;
+  
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</content><author><name></name></author><category term="visualization" /><summary type="html">Survey results of feelings about wind energy</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/pictogram_thumbnail.png" /></entry><entry><title type="html">Matthew Chapter 20</title><link href="http://localhost:4000/malayalam/2019/05/24/Matthew20.html" rel="alternate" type="text/html" title="Matthew Chapter 20" /><published>2019-05-24T00:00:00-04:00</published><updated>2019-05-24T00:00:00-04:00</updated><id>http://localhost:4000/malayalam/2019/05/24/Matthew20</id><content type="html" xml:base="http://localhost:4000/malayalam/2019/05/24/Matthew20.html">&lt;div id = &quot;postContents&quot;&gt; 
 1 “സ്വർഗ്ഗരാജ്യം തന്റെ മുന്തിരിത്തോട്ടത്തിൽ വേലക്കാരെ വിളിച്ചാക്കേണ്ടതിന്നു പുലർച്ചെക്കു പുറപ്പെട്ട വീട്ടുടയവനോടു സദൃശം.  
 1 Svarggaraajyam thante munthirittheaattatthil velakkaare vilicchaakkendathinnu pularcchekku purappetta veettutayavaneaatu sadrusham.
 
@@ -18,7 +37,7 @@
 6 Pathinonnaam mani neratthum chennu, mattu chilar nilkkunnathu kandittu; നിങ്ങൾ ivite pakal muzhuvan minakkettu nilkkunnathu enthu ennu cheaadicchu.
 
 7 ഞങ്ങളെ ആരും കൂലിക്കു വിളിക്കായ്കകൊണ്ടത്രേ എന്നു അവർ പറഞ്ഞപ്പോൾ: നിങ്ങളും മുന്തിരിത്തോട്ടത്തിലേക്കു ചെല്ലുവിൻ എന്നു അവരോടു പറഞ്ഞു.  
-7 Njangale aarum koolikku vilikkaaykakondathre ennu അവർ paranjappeaal: ningalum munthirittheaattatthilekku chelluvin ennu avareaatu paranju.
+7 ഞങ്ങളെ aarum koolikku vilikkaaykakondathre ennu അവർ paranjappeaal: ningalum munthirittheaattatthilekku chelluvin ennu avareaatu paranju.
 
 8 സന്ധ്യയായപ്പോൾ മുന്തിരിത്തോട്ടത്തിന്റെ ഉടയവൻ തന്റെ വിചാരകനോടു: വേലക്കാരെ വിളിച്ചു, പിമ്പന്മാർ തുടങ്ങി മുമ്പന്മാർവരെ അവർക്കു കൂലി കൊടുക്ക എന്നു പറഞ്ഞു.  
 8 Sandhyayaayappeaal munthirittheaattatthinte utayavan thante vichaarakaneaatu: velakkaare vilicchu, pimpanmaar thutangi mumpanmaarvare avarkku kooli kotukka ennu പറഞ്ഞു.
@@ -52,8 +71,7 @@
 &lt;/body&gt;
 &lt;/html&gt;</content><author><name>SpeakIn10Weeks</name></author><category term="malayalam" /><summary type="html">Bible Transliteration</summary></entry><entry><title type="html">Turbine Production/Efficiency</title><link href="http://localhost:4000/visualization/2019/05/23/linechart.html" rel="alternate" type="text/html" title="Turbine Production/Efficiency" /><published>2019-05-23T00:00:00-04:00</published><updated>2019-05-23T00:00:00-04:00</updated><id>http://localhost:4000/visualization/2019/05/23/linechart</id><content type="html" xml:base="http://localhost:4000/visualization/2019/05/23/linechart.html">&lt;div class=&quot;narration&quot;&gt; 
     &lt;h1&gt;United States Wind Energy Production&lt;/h1&gt;
-
-    
+   
     &lt;img src=&quot;/images/linechart.png&quot;&gt;
     
     &lt;a href=&quot;https://bl.ocks.org/jchakko/raw/d6f56f8ddc5aaea786273e6cda0424fb/&quot;&gt;
@@ -166,95 +184,7 @@
   &lt;/script&gt;
   &lt;/div&gt;
 &lt;/body&gt;
-&lt;/html&gt;</content><author><name>Statistics</name></author><category term="visualization" /><summary type="html">Dot Density map of Wind Turbines in the United States</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/turbines.png" /></entry><entry><title type="html">Turbine Locations</title><link href="http://localhost:4000/visualization/2019/04/19/test3.html" rel="alternate" type="text/html" title="Turbine Locations" /><published>2019-04-19T00:00:00-04:00</published><updated>2019-04-19T00:00:00-04:00</updated><id>http://localhost:4000/visualization/2019/04/19/test3</id><content type="html" xml:base="http://localhost:4000/visualization/2019/04/19/test3.html">&lt;div id = &quot;postContents&quot;&gt; 
-  &lt;h2&gt;Locations of United States Wind Turbines&lt;/h2&gt;
-  &lt;script&gt;
-    console.log(&quot;Begin Dot Density&quot;);
-    let margin = {top: 20, right: 20, bottom: 30, left: 150};
-    let width = 1200 - margin.left - margin.right;
-    let height = 700 - margin.top - margin.bottom;
-    
-    let svg = d3.select(&quot;body&quot;).append(&quot;svg&quot;)
-      .attr(&quot;width&quot;, width + margin.left + margin.right)
-      .attr(&quot;height&quot;, height + margin.top + margin.bottom)
-      .append(&quot;g&quot;)
-        .attr(&quot;transform&quot;,
-          &quot;translate(&quot; + margin.left + &quot;,&quot; + margin.top + &quot;)&quot;);
-          
-    svg.append(&quot;rect&quot;)
-      .attr(&quot;width&quot;,width)
-      .attr(&quot;height&quot;,height)
-      .style(&quot;fill&quot;,&quot;green&quot;)
-      .style(&quot;opacity&quot;, 0); //Background best practice
-        
-    Promise.all([
-      d3.json(&quot;/datasets/geo/us-states.json&quot;),
-      d3.csv(&quot;/datasets/turbines/Turbine_Locations_80.csv&quot;),
-      d3.csv(&quot;/datasets/turbines/Turbine_Locations_90.csv&quot;),
-      d3.csv(&quot;/datasets/turbines/Turbine_Locations_00.csv&quot;),
-      d3.csv(&quot;/datasets/turbines/Turbine_Locations_10.csv&quot;)
-    ]).then(function(data){
-      let geoJsonData = data[0];
-      let windData80 = data[1];
-      let windData90 = data[2];
-      let windData00 = data[3];
-      let windData10 = data[4];
-      console.log(&quot;geoJsonData:&quot;)
-      console.log(geoJsonData);
-      console.log(&quot;windData:&quot;)
-      console.log(windData80); 
-
-      let projection = d3.geoAlbersUsa();
-      projection.fitHeight(height-100,geoJsonData);
-      let pathGenerator = d3.geoPath().projection(projection);
-      
-      &lt;!-- Append map of United States --&gt;
-      svg.append('g')
-        .selectAll('path')
-        .data(geoJsonData.features)
-        .enter()
-        .append('path')
-          .attr('d', pathGenerator)
-          .style(&quot;fill&quot;, &quot;black&quot;)
-          .style(&quot;stroke&quot;, &quot;white&quot;);
-          
-      function addturbines(g, data, projection, color) {
-        console.log(&quot;Add Turbines Function&quot;);
-        g.selectAll(&quot;circle&quot;)
-          .data(data)
-          .enter()
-          .append(&quot;circle&quot;)
-          .attr(&quot;cx&quot;, function(d,i) {
-            let coordinates = projection([d.xlong, d.ylat]);
-            return coordinates[0];
-          }) 
-		  .attr(&quot;cy&quot;, function(d,i) {
-            let coordinates = projection([d.xlong, d.ylat]);
-            return coordinates[1];
-          })        
-		  .attr(&quot;r&quot;, &quot;3px&quot;)
-		  .attr(&quot;fill&quot;, color)
-          .style(&quot;opacity&quot;, .5);          
-      }
-          
-      let dots80 = svg.append('g');
-      addturbines(dots80, windData80, projection, &quot;blue&quot;);
-          
-      let dots90 = svg.append('g');
-      addturbines(dots90, windData90, projection, &quot;red&quot;);
-      
-      let dots00 = svg.append('g');
-      addturbines(dots00, windData00, projection, &quot;yellow&quot;);
-      
-      let dots10 = svg.append('g');
-      addturbines(dots10, windData10, projection, &quot;green&quot;);
-          
-      
-    }) //End of Promise
-  &lt;/script&gt;
-  &lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;</content><author><name>Statistics</name></author><category term="visualization" /><summary type="html">Dot Density map of Wind Turbines in the United States</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/measurements.jpg" /></entry><entry><title type="html">Turbine Locations</title><link href="http://localhost:4000/visualization/2019/04/19/test.html" rel="alternate" type="text/html" title="Turbine Locations" /><published>2019-04-19T00:00:00-04:00</published><updated>2019-04-19T00:00:00-04:00</updated><id>http://localhost:4000/visualization/2019/04/19/test</id><content type="html" xml:base="http://localhost:4000/visualization/2019/04/19/test.html">&lt;div id = &quot;postContents&quot;&gt; 
+&lt;/html&gt;</content><author><name>Statistics</name></author><category term="visualization" /><summary type="html">Dot Density map of Wind Turbines in the United States</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/turbines.png" /></entry><entry><title type="html">Turbine Locations</title><link href="http://localhost:4000/visualization/2019/04/19/test.html" rel="alternate" type="text/html" title="Turbine Locations" /><published>2019-04-19T00:00:00-04:00</published><updated>2019-04-19T00:00:00-04:00</updated><id>http://localhost:4000/visualization/2019/04/19/test</id><content type="html" xml:base="http://localhost:4000/visualization/2019/04/19/test.html">&lt;div id = &quot;postContents&quot;&gt; 
   &lt;h2&gt;Locations of United States Wind Turbines&lt;/h2&gt;
   &lt;script&gt;
     console.log(&quot;Begin Dot Density&quot;);
