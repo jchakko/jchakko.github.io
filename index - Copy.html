@@ -1,6 +1,6 @@
 ---
-title: Make it happen, Captain
-layout: landing
+title: Visualize Me, Captain
+layout: default
 ---
 
 <!DOCTYPE html>
@@ -15,26 +15,18 @@ layout: landing
   <h1>{{"Look with your eyes, see with your mind"}}</h1>
   
   <h3>Advances in computing power have given us the ability to analyze datasets larger than ever before. However, we also generate more data then we could ever possibly understand. Sometimes the smallest datasets can yield deep insights - if we have the patience to understand them.</h3>
-  
-  <h3>https://bl.ocks.org/jchakko</h3>
-  <h3>RPubs</h3>
-  <h3>PyTorch</h3>
-  <h3>Lua</h3>
-  <h3>Spark Installation</h3>
-  <h3>Pandas</h3>
-  
 </div>
 
 <div class = "PostListing">
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      <p>{{ post.excerpt }}</p>
-    </li>
+  {% for post in site.categories.visualization %}
+    <a href="{{ post.url }}">
+      <div class = "tile">
+        <h2 align = "center">{{ post.title }}</h2>
+        <img src="{{ site.baseurl }}/images/{{ post.image }}">
+      </div>
+    </a>
   {% endfor %}
-</ul>
+      
 </div>
-
 </body>
 </html>
