@@ -1,0 +1,69 @@
+---
+title: Make it happen, Captain
+layout: landing
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="{{site.baseurl}}/css/common.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body>
+
+
+<h1>Interactive Visualizations with D3</h1>
+<div class="postcategory">
+<div class = "PostListing">
+<ul>
+  {% for post in site.categories.d3 %}
+    <li>
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    </li>
+  {% endfor %}
+</ul>
+</div>
+</div>
+
+<h1>Machine Learning with Python</h1>
+<div class="postcategory">
+<div class = "PostListing">
+<ul>
+  {% for post in site.categories.python %}
+    <li>
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    </li>
+  {% endfor %}
+</ul>
+</div>
+</div>
+
+<h1>Statistical Analysis with R</h1>
+<div class="postcategory">
+<div class = "PostListing">
+<ul>
+  {% for post in site.categories.python %}
+    <li>
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    </li>
+  {% endfor %}
+</ul>
+</div>
+</div>
+
+<h1>Distributed Analytics with Spark</h1>
+<div class="postcategory">
+<div class = "PostListing">
+<ul>
+  {% for post in site.categories.python %}
+    <li>
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    </li>
+  {% endfor %}
+</ul>
+</div>  
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+html {
+    font: normal 100%/1.4 Georgia,serif;
+    background: #eff4f0;
+}
+
+body {
+  color: black;
+}
+
+h1 {
+  color: black;
+  padding: 0% 5%;
+}
+/*
+.center {
+  text-align: center;
+}
+*/
+.PostListing {
+  display: flex;
+  flex-wrap: wrap;
+
+  
+}
+
+.PostListing li {
+    list-style-type: lower-greek;
+}
+
+.PostListing li a{
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  width: 100vh;
+}
+
+.tile {
+  border-style: solid;
+  border-color: green;
+  margin: 25px;
+  text-align: center;
+  
+}
+
+.row {
+   margin: auto;
+}
+
+.postcategory {
+  margin: auto;
+  width: 45%;
+  border: 3px solid green;
+  padding: 10px;    
+}
+
+.narration {
+  margin: auto;
+  width: 75%;
+  text-align: center;
+  border: 3px solid green;
+  padding: 10px;
+}
+
+img {
+    max-width:100%;
+    height:auto;
+}
+
+
