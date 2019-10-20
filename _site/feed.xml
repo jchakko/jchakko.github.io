@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-10-16T11:18:11-04:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Text Feature Extraction through Pandas</title><link href="http://localhost:4000/python/2019/10/16/World_Cities.html" rel="alternate" type="text/html" title="Text Feature Extraction through Pandas" /><published>2019-10-16T00:00:00-04:00</published><updated>2019-10-16T00:00:00-04:00</updated><id>http://localhost:4000/python/2019/10/16/World_Cities</id><content type="html" xml:base="http://localhost:4000/python/2019/10/16/World_Cities.html">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;
@@ -13687,6 +13688,9 @@ if (IPython.notebook.kernel != null) {
 
 
 &lt;/html&gt;</content><author><name></name></author><category term="python" /><summary type="html">Create new features from the names of cities</summary></entry><entry><title type="html">Minion or da bob</title><link href="http://localhost:4000/english/2019/10/01/Test.html" rel="alternate" type="text/html" title="Minion or da bob" /><published>2019-10-01T00:00:00-04:00</published><updated>2019-10-01T00:00:00-04:00</updated><id>http://localhost:4000/english/2019/10/01/Test</id><content type="html" xml:base="http://localhost:4000/english/2019/10/01/Test.html">&lt;!DOCTYPE html&gt;
+=======
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-10-03T14:26:24-04:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Minion or da bob</title><link href="http://localhost:4000/english/2019/10/01/Test.html" rel="alternate" type="text/html" title="Minion or da bob" /><published>2019-10-01T00:00:00-04:00</published><updated>2019-10-01T00:00:00-04:00</updated><id>http://localhost:4000/english/2019/10/01/Test</id><content type="html" xml:base="http://localhost:4000/english/2019/10/01/Test.html">&lt;!DOCTYPE html&gt;
+>>>>>>> b5d6bffe9e58a22bcda57b9e39246d4fbcd7d8d7
 &lt;html&gt;
 &lt;head&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;
 &lt;title&gt;Lexical_Diversity&lt;/title&gt;&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js&quot;&gt;&lt;/script&gt;
@@ -37514,7 +37518,11 @@ Lexical Diversity Measure: 0.47840531561461797
  
 
 
+<<<<<<< HEAD
 &lt;/html&gt;</content><author><name></name></author><category term="python" /><summary type="html">Quantifying the uniqueness of words in a passage</summary></entry><entry><title type="html">Melee Major Wins</title><link href="http://localhost:4000/d3/2019/06/09/stackedarea.html" rel="alternate" type="text/html" title="Melee Major Wins" /><published>2019-06-09T00:00:00-04:00</published><updated>2019-06-09T00:00:00-04:00</updated><id>http://localhost:4000/d3/2019/06/09/stackedarea</id><content type="html" xml:base="http://localhost:4000/d3/2019/06/09/stackedarea.html">&lt;div class=&quot;narration&quot;&gt; 
+=======
+&lt;/html&gt;</content><author><name>NLP</name></author><category term="python" /><summary type="html">Quantifying the uniqueness of words in a passage</summary></entry><entry><title type="html">Melee Major Wins</title><link href="http://localhost:4000/d3/2019/06/09/stackedarea.html" rel="alternate" type="text/html" title="Melee Major Wins" /><published>2019-06-09T00:00:00-04:00</published><updated>2019-06-09T00:00:00-04:00</updated><id>http://localhost:4000/d3/2019/06/09/stackedarea</id><content type="html" xml:base="http://localhost:4000/d3/2019/06/09/stackedarea.html">&lt;div class=&quot;narration&quot;&gt; 
+>>>>>>> b5d6bffe9e58a22bcda57b9e39246d4fbcd7d8d7
     &lt;h1&gt;Melee Tournament Wins by Player&lt;/h1&gt;
    
     &lt;img src=&quot;/images/stackedarea.png&quot;&gt;
@@ -37805,4 +37813,170 @@ Lexical Diversity Measure: 0.47840531561461797
   &lt;/script&gt;
   &lt;/div&gt;
 &lt;/body&gt;
+<<<<<<< HEAD
 &lt;/html&gt;</content><author><name>Statistics</name></author><category term="visualization" /><summary type="html">Dot Density map of Wind Turbines in the United States</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/turbines.png" /></entry></feed>
+=======
+&lt;/html&gt;</content><author><name>Statistics</name></author><category term="visualization" /><summary type="html">Dot Density map of Wind Turbines in the United States</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/turbines.png" /></entry><entry><title type="html">Windenergy</title><link href="http://localhost:4000/2019/04/15/WindEnergy.html" rel="alternate" type="text/html" title="Windenergy" /><published>2019-04-15T00:00:00-04:00</published><updated>2019-04-15T00:00:00-04:00</updated><id>http://localhost:4000/2019/04/15/WindEnergy</id><content type="html" xml:base="http://localhost:4000/2019/04/15/WindEnergy.html">&lt;!DOCTYPE html&gt;
+&lt;meta charset=&quot;utf-8&quot;/&gt;
+&lt;html&gt;
+&lt;header&gt;&lt;title&gt;Wind Energy&lt;/title&gt;&lt;/header&gt;
+&lt;head&gt;
+&lt;script src=&quot;dotdensityfunction.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;bargraphfunction.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;linegraphfunction.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;pictographfunction.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://d3js.org/d3.v5.min.js&quot;&gt;&lt;/script&gt;
+&lt;style&gt;
+.line {
+  fill: none;
+  stroke: black;
+  stroke-width: 2px;
+}
+
+div.tooltip {	
+    position: absolute;			
+    text-align: center;			
+    width: 140px;					
+    height: 50px;					
+    padding: 2px;				
+    font: 12px sans-serif;		
+    background: lightsteelblue;	
+    border: 0px;		
+    border-radius: 8px;			
+    pointer-events: none;			
+}
+
+.happy {
+  stroke: black;
+  fill: green;
+  stroke-width: 0;
+}
+
+.smile {
+  stroke: black;
+  fill: blue;
+  stroke-width: 0;
+}
+
+.neutral {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: black;
+  fill: gray;
+}
+
+.sad {
+  stroke: black;
+  fill: orange;
+  stroke-width: 0;
+}
+
+.angry {
+  fill: red;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 75%;
+  height: 10px;
+  background: #d3d3d3;
+  outline: none;
+}
+
+.slidecontainer {
+  margin: auto;
+  width:90%;
+  padding-top: 25px;
+}
+
+.narration {
+  margin: auto;
+  width: 90%;
+  border: 3px solid green;
+  padding: 10px;
+}
+
+&lt;/style&gt;
+
+&lt;/head&gt;
+&lt;body bgcolor = #f4f8ff&gt;
+
+  &lt;h1 align = &quot;center&quot;&gt;Wind Energy in the United States&lt;/h1&gt;
+  
+  
+  
+  &lt;div class=&quot;narration&quot;&gt;
+  &lt;h3&gt;The first electricity generating wind turbine in America was built by Charles Brush in 1888. It stood in Ohio at 60 feet table and was capable of generating 12kW of electricity. &lt;/h3&gt;
+  
+  &lt;img src = &quot;media/first_turbine.jpg&quot; align = &quot;middle&quot;&gt;
+    
+  &lt;h3&gt;Fast forward 92 years and the world's first wind farm was constructed in Crotched Mountain, New Hampshire. Built in 1992, the wind farm consisted of 20 wind turbines with a capacity of 30 kilowatts each.&lt;/h3&gt;
+  
+  &lt;h3&gt;Now there are over 50,000 wind turbines in the United States that can produce 90,000 megawatts in a year. This represents around 5% of the energy production in the country.&lt;/h3&gt; 
+  
+  &lt;h3&gt;And tomorrow? WINDExchange believes the United States could produce 10,640,080MW.&lt;/h3&gt;
+  &lt;/div&gt;
+  
+  &lt;h2 align = &quot;center&quot;&gt;Locations of Wind Turbines in the United States&lt;/h2&gt;
+  &lt;script&gt;
+    let densityMap = dotDensity();  
+  &lt;/script&gt;
+  
+  &lt;div class=&quot;narration&quot;&gt;
+  &lt;h3&gt;The United States Geologic Survey has released a dataset containing the location of every turbine in the country. Plotting this information reveals what regions are best suited for producing wind energy.&lt;/h3&gt;
+  
+  &lt;h3&gt;This visualization shows us that a handful of regions contain the majority of wind turbines. Wind speeds must reach 6 miles per hour before electrical energy is produced. This makes the Great Plains ideal wind energy producers.&lt;/h3&gt;
+  
+  &lt;h3&gt;This can be further shown by plotting each state's output individually. Source: WINDExchange&lt;/h3&gt;
+  
+  &lt;h3&gt;Although it takes some years for Texas to take the lead, the state becomes the country's largest wind energy producer by a large margin. Additionally, many states do not meet the conditions to be high wind energy producers.&lt;/h3&gt;  
+  &lt;/div&gt;
+  
+ 
+  &lt;h2 align = &quot;center&quot;&gt;Wind Energy Production by State&lt;/h2&gt;
+  &lt;script&gt;
+    let bargraph = barGraph();
+  &lt;/script&gt;
+
+  &lt;/br&gt;
+  
+  &lt;div class=&quot;slidecontainer&quot;&gt;
+  &lt;input type=&quot;range&quot; min=&quot;1999&quot; max=&quot;2017&quot; value=&quot;1999&quot; class=&quot;slider&quot; id=&quot;myRange&quot;&gt;
+  &lt;/div&gt;
+  
+  &lt;div class=&quot;narration&quot;&gt;
+  &lt;h3&gt;For us to reach WINDExchange's goal of 10 million MegaWatts per year we have to multiply our current wind output by 10 times. This would mean having hundreds of thousands more turbines.&lt;/h3&gt;
+  
+  &lt;h3&gt;Overall, there is a trend of increasing turbine efficiency but it isn't large enough. There must be a breakthrough in turbine efficiency that brings the number of turbines required to a reasonable amount. &lt;/h3&gt; 
+  &lt;/div&gt;
+  
+  &lt;h2 align = &quot;center&quot;&gt;Total Production and Turbine Efficiency&lt;/h2&gt;
+  &lt;script&gt;
+    let alinegraph = linegraph();
+  &lt;/script&gt;
+
+  &lt;div class=&quot;narration&quot;&gt;
+  &lt;h3&gt;One of the benefits of wind energy is that once the turbine is installed, the energy it produces is free. But nothing is truly free. One concern is the feelings of residents who live near turbines. Source: Berkeley Lab's National Survey of Attitudes of Wind Power Project Neighbors&lt;/h3&gt;
+  
+  &lt;h3&gt;For the most part, people do not have issues with living over a mile away from a turbine. However there is noticible discontent among residents who are within half a mile. As more turbines are built, and the trend towards larger turbines continues, this will became problematic for more people.&lt;/h3&gt;
+  &lt;/div&gt;
+
+  &lt;h2 align = &quot;center&quot;&gt;Attitudes Towards Wind Projects by Distance&lt;/h2&gt;
+    
+  &lt;script&gt;
+    let picto = pictograph();
+  &lt;/script&gt;  
+
+    
+  
+  &lt;div class=&quot;narration&quot;&gt;
+  &lt;h3&gt;WINDExchange's potential estimate of 10 million MegaWatts seems lofty. Without major improvements to turbine efficiency, there probably isn't even enough space to fit the necessary turbines.&lt;/h3&gt;
+  
+  &lt;h3&gt;Still, a lot of progress has been made since the first wind farms. We should be proud of the advances that allow for the level of production that exists today.&lt;/h3&gt;
+  &lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Wind Energy .line { fill: none; stroke: black; stroke-width: 2px; }</summary></entry></feed>
+>>>>>>> b5d6bffe9e58a22bcda57b9e39246d4fbcd7d8d7

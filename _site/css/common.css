@@ -19,6 +19,7 @@ h1 {
 .PostListing {
   display: flex;
   flex-wrap: wrap;
+<<<<<<< HEAD
 
   
 }
@@ -27,6 +28,13 @@ h1 {
     list-style-type: lower-greek;
 }
 
+=======
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+
+>>>>>>> b5d6bffe9e58a22bcda57b9e39246d4fbcd7d8d7
 .PostListing li a{
   color: black;
   padding: 14px 16px;
@@ -46,6 +54,7 @@ h1 {
    margin: auto;
 }
 
+<<<<<<< HEAD
 .postcategory {
   margin: auto;
   width: 45%;
@@ -53,6 +62,8 @@ h1 {
   padding: 10px;    
 }
 
+=======
+>>>>>>> b5d6bffe9e58a22bcda57b9e39246d4fbcd7d8d7
 .narration {
   margin: auto;
   width: 75%;
