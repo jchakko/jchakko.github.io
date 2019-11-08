@@ -7,69 +7,66 @@ body {
   color: black;
 }
 
-h1 {
+.landing {
+  margin: auto;
+  width: 50%;
+  text-align: center;   
+}
+
+.landing h1 {
   color: black;
-  padding: 0% 5%;
+  text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15);
+  font-size: 4.5em;
 }
-/*
-.center {
-  text-align: center;
+
+.landing a {
+  text-decoration: none;
+  color: black;
 }
-*/
+
 .PostListing {
-  display: flex;
+  margin: auto;
+  width: 50%;
   flex-wrap: wrap;
-<<<<<<< HEAD
-
-  
 }
 
-.PostListing li {
-    list-style-type: lower-greek;
+.PostListing p {
+  text-align: right;
 }
 
-=======
-  justify-content: space-evenly;
-  align-items: center;
-  
+.PostListing a {
+    display: block;
 }
 
->>>>>>> b5d6bffe9e58a22bcda57b9e39246d4fbcd7d8d7
-.PostListing li a{
+.PostListing a:link {
+  text-decoration: none;
   color: black;
+}
+
+.PostListing a:visited {
+  color: gray;
+}
+
+.PostListing li:hover {
+  color: blue;
+}
+
+.PostListing ol {
+  list-style-type: upper-roman; 
+}
+
+.PostListing li a{
+  color: blue;
   padding: 14px 16px;
   text-decoration: none;
   width: 100vh;
 }
 
-.tile {
-  border-style: solid;
-  border-color: green;
-  margin: 25px;
-  text-align: center;
-  
-}
-
-.row {
-   margin: auto;
-}
-
-<<<<<<< HEAD
-.postcategory {
-  margin: auto;
-  width: 45%;
-  border: 3px solid green;
-  padding: 10px;    
-}
-
-=======
->>>>>>> b5d6bffe9e58a22bcda57b9e39246d4fbcd7d8d7
 .narration {
   margin: auto;
-  width: 75%;
+  width: 55%;
   text-align: center;
   border: 3px solid green;
-  padding: 10px;
 }
 
 img {

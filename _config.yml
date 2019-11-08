@@ -23,5 +23,7 @@ defaults:
     values:
       layout: "default"
       layout: "default"
+      
+permalink: /:categories/:title:output_ext
 
 

@@ -1,0 +1,18 @@
+---
+layout: blog
+title: Blog
+---
+
+<div class = "PostListing">
+<h1>My Blog Posts</h1>
+<ol reversed>
+  {% for post in site.posts %}
+    <a href="{{ post.url }}">
+    <li>
+      <h2>{{ post.title }}</h2>
+      <p>{{ post.date | date: "%-d %B %Y" }}</p>
+    </li>
+    </a>
+  {% endfor %}
+</ol>
+</div>
