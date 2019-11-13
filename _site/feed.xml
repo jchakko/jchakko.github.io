@@ -1,4 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-08T12:08:31-05:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">PySpark Word Count</title><link href="http://localhost:4000/blog/2019/10/20/PySparkWordCount.html" rel="alternate" type="text/html" title="PySpark Word Count" /><published>2019-10-20T00:00:00-04:00</published><updated>2019-10-20T00:00:00-04:00</updated><id>http://localhost:4000/blog/2019/10/20/PySparkWordCount</id><content type="html" xml:base="http://localhost:4000/blog/2019/10/20/PySparkWordCount.html">&lt;!DOCTYPE html&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-13T11:57:56-05:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">D3 Multi-Line Plot</title><link href="http://localhost:4000/blog/D3_MultiLine_Plot.html" rel="alternate" type="text/html" title="D3 Multi-Line Plot" /><published>2019-11-08T00:00:00-05:00</published><updated>2019-11-08T00:00:00-05:00</updated><id>http://localhost:4000/blog/D3_MultiLine_Plot</id><content type="html" xml:base="http://localhost:4000/blog/D3_MultiLine_Plot.html">&lt;figure&gt;
+  &lt;img src=&quot;/media/D3_MultiLine/00_Plot.png&quot;&gt;
+  &lt;figcaption&gt;Figure 1: Aggregate score of cricketers multi-line chart&lt;/figcaption&gt;
+&lt;/figure&gt;
+    
+&lt;h3&gt;Line graphs are tricky to implement in D3. Even though they are one of the oldest and most simple visualizations it took me a while to create one. Other visualizations like scatterplots and bar charts expect the data in a row format which is easily stored in a CSV file. This is an intuitive and easy to understand format for humans. My original intuition was that drawing a line plot would be as simple as telling D3 to connect the circles made in a scatterplot.&lt;/h3&gt;
+    
+    
+&lt;h3&gt;However, D3 line graphs utilize SVG paths which take an array of coordinate pairs as input. This format can not be realized in a csv format. One solution is to convert the CSV to a JSON which is capable of handling the array format. I found this conversion process tricky. Additionally, the data stored in an array format is much less interpretable for humans and I am one.&lt;/h3&gt;
+    
+&lt;figure&gt;
+  &lt;img src=&quot;/media/D3_MultiLine/01_CSV.png&quot;&gt;
+  &lt;figcaption&gt;Figure 2: Intuitive data storage format that works for other D3 plots&lt;/figcaption&gt;
+&lt;/figure&gt;
+    
+&lt;h3&gt;It is possible to create a multi-line plot from a CSV file using the D3 Nest function. This function takes in a dataset and organizes it by keys. In this case I passed in a dataset of aggregated cricket scores for multiple cricketers and specified that their names are the keys. Nest returns a JSON object that contains the array format for each player. Now creating the lines is a simple as passing the nested data to the line generators.&lt;/h3&gt;
+    
+    
+&lt;a href=&quot;https://bl.ocks.org/jchakko/0c02c339c9550fc338e10237da635795&quot;&gt;Interactive Version&lt;/a&gt;
+&lt;a href=&quot;https://github.com/d3/d3-collection#nests&quot;&gt;D3 Nest Source Code&lt;/a&gt;</content><author><name></name></author><category term="blog" /><summary type="html">Figure 1: Aggregate score of cricketers multi-line chart Line graphs are tricky to implement in D3. Even though they are one of the oldest and most simple visualizations it took me a while to create one. Other visualizations like scatterplots and bar charts expect the data in a row format which is easily stored in a CSV file. This is an intuitive and easy to understand format for humans. My original intuition was that drawing a line plot would be as simple as telling D3 to connect the circles made in a scatterplot. However, D3 line graphs utilize SVG paths which take an array of coordinate pairs as input. This format can not be realized in a csv format. One solution is to convert the CSV to a JSON which is capable of handling the array format. I found this conversion process tricky. Additionally, the data stored in an array format is much less interpretable for humans and I am one. Figure 2: Intuitive data storage format that works for other D3 plots It is possible to create a multi-line plot from a CSV file using the D3 Nest function. This function takes in a dataset and organizes it by keys. In this case I passed in a dataset of aggregated cricket scores for multiple cricketers and specified that their names are the keys. Nest returns a JSON object that contains the array format for each player. Now creating the lines is a simple as passing the nested data to the line generators. Interactive Version D3 Nest Source Code</summary></entry><entry><title type="html">PySpark Word Count</title><link href="http://localhost:4000/blog/PySparkWordCount.html" rel="alternate" type="text/html" title="PySpark Word Count" /><published>2019-10-20T00:00:00-04:00</published><updated>2019-10-20T00:00:00-04:00</updated><id>http://localhost:4000/blog/PySparkWordCount</id><content type="html" xml:base="http://localhost:4000/blog/PySparkWordCount.html">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;
 &lt;title&gt;PySpark_WordCount&lt;/title&gt;&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js&quot;&gt;&lt;/script&gt;
@@ -11827,7 +11846,7 @@ div#notebook {
  
 
 
-&lt;/html&gt;</content><author><name></name></author><category term="blog" /><summary type="html">PySpark_WordCount</summary></entry><entry><title type="html">PySpark Word Count</title><link href="http://localhost:4000/spark/2019/10/20/PySparkWordCount.html" rel="alternate" type="text/html" title="PySpark Word Count" /><published>2019-10-20T00:00:00-04:00</published><updated>2019-10-20T00:00:00-04:00</updated><id>http://localhost:4000/spark/2019/10/20/PySparkWordCount</id><content type="html" xml:base="http://localhost:4000/spark/2019/10/20/PySparkWordCount.html">&lt;!DOCTYPE html&gt;
+&lt;/html&gt;</content><author><name></name></author><category term="blog" /><summary type="html">PySpark_WordCount</summary></entry><entry><title type="html">PySpark Word Count</title><link href="http://localhost:4000/spark/PySparkWordCount.html" rel="alternate" type="text/html" title="PySpark Word Count" /><published>2019-10-20T00:00:00-04:00</published><updated>2019-10-20T00:00:00-04:00</updated><id>http://localhost:4000/spark/PySparkWordCount</id><content type="html" xml:base="http://localhost:4000/spark/PySparkWordCount.html">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;
 &lt;title&gt;PySpark_WordCount&lt;/title&gt;&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js&quot;&gt;&lt;/script&gt;
@@ -23656,7 +23675,7 @@ div#notebook {
  
 
 
-&lt;/html&gt;</content><author><name></name></author><category term="spark" /><summary type="html">Distributed computation in PySpark</summary></entry><entry><title type="html">Text Feature Extraction through Pandas</title><link href="http://localhost:4000/python/2019/10/16/World_Cities.html" rel="alternate" type="text/html" title="Text Feature Extraction through Pandas" /><published>2019-10-16T00:00:00-04:00</published><updated>2019-10-16T00:00:00-04:00</updated><id>http://localhost:4000/python/2019/10/16/World_Cities</id><content type="html" xml:base="http://localhost:4000/python/2019/10/16/World_Cities.html">&lt;!DOCTYPE html&gt;
+&lt;/html&gt;</content><author><name></name></author><category term="spark" /><summary type="html">Distributed computation in PySpark</summary></entry><entry><title type="html">Text Feature Extraction through Pandas</title><link href="http://localhost:4000/notebook/World_Cities.html" rel="alternate" type="text/html" title="Text Feature Extraction through Pandas" /><published>2019-10-16T00:00:00-04:00</published><updated>2019-10-16T00:00:00-04:00</updated><id>http://localhost:4000/notebook/World_Cities</id><content type="html" xml:base="http://localhost:4000/notebook/World_Cities.html">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;
 &lt;title&gt;WorldCities&lt;/title&gt;&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js&quot;&gt;&lt;/script&gt;
@@ -37344,7 +37363,7 @@ if (IPython.notebook.kernel != null) {
  
 
 
-&lt;/html&gt;</content><author><name></name></author><category term="python" /><summary type="html">Create new features from the names of cities</summary></entry><entry><title type="html">Lexical Diversity in Python with NLTK</title><link href="http://localhost:4000/python/2019/10/01/Lexical_Diversity.html" rel="alternate" type="text/html" title="Lexical Diversity in Python with NLTK" /><published>2019-10-01T00:00:00-04:00</published><updated>2019-10-01T00:00:00-04:00</updated><id>http://localhost:4000/python/2019/10/01/Lexical_Diversity</id><content type="html" xml:base="http://localhost:4000/python/2019/10/01/Lexical_Diversity.html">&lt;!DOCTYPE html&gt;
+&lt;/html&gt;</content><author><name></name></author><category term="notebook" /><summary type="html">Create new features from the names of cities</summary></entry><entry><title type="html">Lexical Diversity in Python with NLTK</title><link href="http://localhost:4000/python/Lexical_Diversity.html" rel="alternate" type="text/html" title="Lexical Diversity in Python with NLTK" /><published>2019-10-01T00:00:00-04:00</published><updated>2019-10-01T00:00:00-04:00</updated><id>http://localhost:4000/python/Lexical_Diversity</id><content type="html" xml:base="http://localhost:4000/python/Lexical_Diversity.html">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;
 &lt;title&gt;Lexical_Diversity&lt;/title&gt;&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js&quot;&gt;&lt;/script&gt;
@@ -49258,7 +49277,7 @@ Lexical Diversity Measure: 0.47840531561461797
  
 
 
-&lt;/html&gt;</content><author><name></name></author><category term="python" /><summary type="html">Quantifying the uniqueness of words in a passage</summary></entry><entry><title type="html">Minion or da bob</title><link href="http://localhost:4000/english/2019/10/01/Test.html" rel="alternate" type="text/html" title="Minion or da bob" /><published>2019-10-01T00:00:00-04:00</published><updated>2019-10-01T00:00:00-04:00</updated><id>http://localhost:4000/english/2019/10/01/Test</id><content type="html" xml:base="http://localhost:4000/english/2019/10/01/Test.html">&lt;!DOCTYPE html&gt;
+&lt;/html&gt;</content><author><name></name></author><category term="python" /><summary type="html">Quantifying the uniqueness of words in a passage</summary></entry><entry><title type="html">Minion or da bob</title><link href="http://localhost:4000/english/Test.html" rel="alternate" type="text/html" title="Minion or da bob" /><published>2019-10-01T00:00:00-04:00</published><updated>2019-10-01T00:00:00-04:00</updated><id>http://localhost:4000/english/Test</id><content type="html" xml:base="http://localhost:4000/english/Test.html">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;
 &lt;title&gt;Lexical_Diversity&lt;/title&gt;&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js&quot;&gt;&lt;/script&gt;
@@ -61172,7 +61191,7 @@ Lexical Diversity Measure: 0.47840531561461797
  
 
 
-&lt;/html&gt;</content><author><name>NLP</name></author><category term="english" /><summary type="html">Quantifying the uniqueness of words in a passage</summary></entry><entry><title type="html">Stacked Area Chart with mouseover effects</title><link href="http://localhost:4000/d3/2019/06/09/stackedarea.html" rel="alternate" type="text/html" title="Stacked Area Chart with mouseover effects" /><published>2019-06-09T00:00:00-04:00</published><updated>2019-06-09T00:00:00-04:00</updated><id>http://localhost:4000/d3/2019/06/09/stackedarea</id><content type="html" xml:base="http://localhost:4000/d3/2019/06/09/stackedarea.html">&lt;div class=&quot;narration&quot;&gt; 
+&lt;/html&gt;</content><author><name>NLP</name></author><category term="english" /><summary type="html">Quantifying the uniqueness of words in a passage</summary></entry><entry><title type="html">Stacked Area Chart with mouseover effects</title><link href="http://localhost:4000/d3/stackedarea.html" rel="alternate" type="text/html" title="Stacked Area Chart with mouseover effects" /><published>2019-06-09T00:00:00-04:00</published><updated>2019-06-09T00:00:00-04:00</updated><id>http://localhost:4000/d3/stackedarea</id><content type="html" xml:base="http://localhost:4000/d3/stackedarea.html">&lt;div class=&quot;narration&quot;&gt; 
     &lt;h1&gt;Melee Tournament Wins by Player&lt;/h1&gt;
    
     &lt;img src=&quot;/images/stackedarea.png&quot;&gt;
@@ -61189,7 +61208,7 @@ Lexical Diversity Measure: 0.47840531561461797
                     
   &lt;/div&gt;
 &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><category term="d3" /><summary type="html">Stacked area chart depicting Melee tournament wins</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/stackedarea_thumbnail.png" /></entry><entry><title type="html">Attitudes Towards Turbines</title><link href="http://localhost:4000/visualization/2019/05/26/pictogram.html" rel="alternate" type="text/html" title="Attitudes Towards Turbines" /><published>2019-05-26T00:00:00-04:00</published><updated>2019-05-26T00:00:00-04:00</updated><id>http://localhost:4000/visualization/2019/05/26/pictogram</id><content type="html" xml:base="http://localhost:4000/visualization/2019/05/26/pictogram.html">&lt;div class=&quot;narration&quot;&gt; 
+&lt;/html&gt;</content><author><name></name></author><category term="d3" /><summary type="html">Stacked area chart depicting Melee tournament wins</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/stackedarea_thumbnail.png" /></entry><entry><title type="html">Attitudes Towards Turbines</title><link href="http://localhost:4000/visualization/pictogram.html" rel="alternate" type="text/html" title="Attitudes Towards Turbines" /><published>2019-05-26T00:00:00-04:00</published><updated>2019-05-26T00:00:00-04:00</updated><id>http://localhost:4000/visualization/pictogram</id><content type="html" xml:base="http://localhost:4000/visualization/pictogram.html">&lt;div class=&quot;narration&quot;&gt; 
     &lt;h1&gt;Attitudes Towards Wind Energy by Distance to Nearest Turbine&lt;/h1&gt;
    
     &lt;img src=&quot;/images/pictogram.png&quot;&gt;
@@ -61208,7 +61227,7 @@ Lexical Diversity Measure: 0.47840531561461797
   
   &lt;/div&gt;
 &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><category term="visualization" /><summary type="html">Survey results of feelings about wind energy</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/pictogram_thumbnail.png" /></entry><entry><title type="html">Matthew Chapter 20</title><link href="http://localhost:4000/malayalam/2019/05/24/Matthew20.html" rel="alternate" type="text/html" title="Matthew Chapter 20" /><published>2019-05-24T00:00:00-04:00</published><updated>2019-05-24T00:00:00-04:00</updated><id>http://localhost:4000/malayalam/2019/05/24/Matthew20</id><content type="html" xml:base="http://localhost:4000/malayalam/2019/05/24/Matthew20.html">&lt;div id = &quot;postContents&quot;&gt; 
+&lt;/html&gt;</content><author><name></name></author><category term="visualization" /><summary type="html">Survey results of feelings about wind energy</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/pictogram_thumbnail.png" /></entry><entry><title type="html">Matthew Chapter 20</title><link href="http://localhost:4000/malayalam/Matthew20.html" rel="alternate" type="text/html" title="Matthew Chapter 20" /><published>2019-05-24T00:00:00-04:00</published><updated>2019-05-24T00:00:00-04:00</updated><id>http://localhost:4000/malayalam/Matthew20</id><content type="html" xml:base="http://localhost:4000/malayalam/Matthew20.html">&lt;div id = &quot;postContents&quot;&gt; 
 1 “സ്വർഗ്ഗരാജ്യം തന്റെ മുന്തിരിത്തോട്ടത്തിൽ വേലക്കാരെ വിളിച്ചാക്കേണ്ടതിന്നു പുലർച്ചെക്കു പുറപ്പെട്ട വീട്ടുടയവനോടു സദൃശം.  
 1 Svarggaraajyam thante munthirittheaattatthil velakkaare vilicchaakkendathinnu pularcchekku purappetta veettutayavaneaatu sadrusham.
 
@@ -61260,7 +61279,7 @@ Lexical Diversity Measure: 0.47840531561461797
   
   
 &lt;/body&gt;
-&lt;/html&gt;</content><author><name>SpeakIn10Weeks</name></author><category term="malayalam" /><summary type="html">Bible Transliteration</summary></entry><entry><title type="html">Turbine Production/Efficiency</title><link href="http://localhost:4000/visualization/2019/05/23/linechart.html" rel="alternate" type="text/html" title="Turbine Production/Efficiency" /><published>2019-05-23T00:00:00-04:00</published><updated>2019-05-23T00:00:00-04:00</updated><id>http://localhost:4000/visualization/2019/05/23/linechart</id><content type="html" xml:base="http://localhost:4000/visualization/2019/05/23/linechart.html">&lt;div class=&quot;narration&quot;&gt; 
+&lt;/html&gt;</content><author><name>SpeakIn10Weeks</name></author><category term="malayalam" /><summary type="html">Bible Transliteration</summary></entry><entry><title type="html">Turbine Production/Efficiency</title><link href="http://localhost:4000/visualization/linechart.html" rel="alternate" type="text/html" title="Turbine Production/Efficiency" /><published>2019-05-23T00:00:00-04:00</published><updated>2019-05-23T00:00:00-04:00</updated><id>http://localhost:4000/visualization/linechart</id><content type="html" xml:base="http://localhost:4000/visualization/linechart.html">&lt;div class=&quot;narration&quot;&gt; 
     &lt;h1&gt;United States Wind Energy Production&lt;/h1&gt;
    
     &lt;img src=&quot;/images/linechart.png&quot;&gt;
@@ -61277,92 +61296,4 @@ Lexical Diversity Measure: 0.47840531561461797
   
   &lt;/div&gt;
 &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><category term="visualization" /><summary type="html">D3 line graph interactive</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/linechart_thumbnail.png" /></entry><entry><title type="html">Turbine Locations</title><link href="http://localhost:4000/visualization/2019/04/19/turbinelocations.html" rel="alternate" type="text/html" title="Turbine Locations" /><published>2019-04-19T00:00:00-04:00</published><updated>2019-04-19T00:00:00-04:00</updated><id>http://localhost:4000/visualization/2019/04/19/turbinelocations</id><content type="html" xml:base="http://localhost:4000/visualization/2019/04/19/turbinelocations.html">&lt;div id = &quot;postContents&quot;&gt; 
-  &lt;h2&gt;Locations of United States Wind Turbines&lt;/h2&gt;
-  &lt;script&gt;
-    console.log(&quot;Begin Dot Density&quot;);
-    let margin = {top: 20, right: 20, bottom: 30, left: 150};
-    let width = 1200 - margin.left - margin.right;
-    let height = 700 - margin.top - margin.bottom;
-    
-    let svg = d3.select(&quot;body&quot;).append(&quot;svg&quot;)
-      .attr(&quot;width&quot;, width + margin.left + margin.right)
-      .attr(&quot;height&quot;, height + margin.top + margin.bottom)
-      .append(&quot;g&quot;)
-        .attr(&quot;transform&quot;,
-          &quot;translate(&quot; + margin.left + &quot;,&quot; + margin.top + &quot;)&quot;);
-          
-    svg.append(&quot;rect&quot;)
-      .attr(&quot;width&quot;,width)
-      .attr(&quot;height&quot;,height)
-      .style(&quot;fill&quot;,&quot;green&quot;)
-      .style(&quot;opacity&quot;, 0); //Background best practice
-        
-    Promise.all([
-      d3.json(&quot;/datasets/geo/us-states.json&quot;),
-      d3.csv(&quot;/datasets/turbines/Turbine_Locations_80.csv&quot;),
-      d3.csv(&quot;/datasets/turbines/Turbine_Locations_90.csv&quot;),
-      d3.csv(&quot;/datasets/turbines/Turbine_Locations_00.csv&quot;),
-      d3.csv(&quot;/datasets/turbines/Turbine_Locations_10.csv&quot;)
-    ]).then(function(data){
-      let geoJsonData = data[0];
-      let windData80 = data[1];
-      let windData90 = data[2];
-      let windData00 = data[3];
-      let windData10 = data[4];
-      console.log(&quot;geoJsonData:&quot;)
-      console.log(geoJsonData);
-      console.log(&quot;windData:&quot;)
-      console.log(windData80); 
-
-      let projection = d3.geoAlbersUsa();
-      projection.fitHeight(height-100,geoJsonData);
-      let pathGenerator = d3.geoPath().projection(projection);
-      
-      &lt;!-- Append map of United States --&gt;
-      svg.append('g')
-        .selectAll('path')
-        .data(geoJsonData.features)
-        .enter()
-        .append('path')
-          .attr('d', pathGenerator)
-          .style(&quot;fill&quot;, &quot;black&quot;)
-          .style(&quot;stroke&quot;, &quot;white&quot;);
-          
-      function addturbines(g, data, projection, color) {
-        console.log(&quot;Add Turbines Function&quot;);
-        g.selectAll(&quot;circle&quot;)
-          .data(data)
-          .enter()
-          .append(&quot;circle&quot;)
-          .attr(&quot;cx&quot;, function(d,i) {
-            let coordinates = projection([d.xlong, d.ylat]);
-            return coordinates[0];
-          }) 
-		  .attr(&quot;cy&quot;, function(d,i) {
-            let coordinates = projection([d.xlong, d.ylat]);
-            return coordinates[1];
-          })        
-		  .attr(&quot;r&quot;, &quot;3px&quot;)
-		  .attr(&quot;fill&quot;, color)
-          .style(&quot;opacity&quot;, .5);          
-      }
-          
-      let dots80 = svg.append('g');
-      addturbines(dots80, windData80, projection, &quot;blue&quot;);
-          
-      let dots90 = svg.append('g');
-      addturbines(dots90, windData90, projection, &quot;red&quot;);
-      
-      let dots00 = svg.append('g');
-      addturbines(dots00, windData00, projection, &quot;yellow&quot;);
-      
-      let dots10 = svg.append('g');
-      addturbines(dots10, windData10, projection, &quot;green&quot;);
-          
-      
-    }) //End of Promise
-  &lt;/script&gt;
-  &lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;</content><author><name>Statistics</name></author><category term="visualization" /><summary type="html">Dot Density map of Wind Turbines in the United States</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/turbines.png" /></entry></feed>
+&lt;/html&gt;</content><author><name></name></author><category term="visualization" /><summary type="html">D3 line graph interactive</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/linechart_thumbnail.png" /></entry></feed>

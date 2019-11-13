@@ -1,0 +1,27 @@
+---
+title: D3 Multi-Line Plot
+layout: post
+category: blog
+---
+
+<figure>
+  <img src="/media/D3_MultiLine/00_Plot.png">
+  <figcaption>Figure 1: Aggregate score of cricketers multi-line chart</figcaption>
+</figure>
+    
+<h3>Line graphs are tricky to implement in D3. Even though they are one of the oldest and most simple visualizations it took me a while to create one. Other visualizations like scatterplots and bar charts expect the data in a row format which is easily stored in a CSV file. This is an intuitive and easy to understand format for humans. My original intuition was that drawing a line plot would be as simple as telling D3 to connect the circles made in a scatterplot.</h3>
+    
+    
+<h3>However, D3 line graphs utilize SVG paths which take an array of coordinate pairs as input. This format can not be realized in a csv format. One solution is to convert the CSV to a JSON which is capable of handling the array format. I found this conversion process tricky. Additionally, the data stored in an array format is much less interpretable for humans and I am one.</h3>
+    
+<figure>
+  <img src="/media/D3_MultiLine/01_CSV.png">
+  <figcaption>Figure 2: Intuitive data storage format that works for other D3 plots</figcaption>
+</figure>
+    
+<h3>It is possible to create a multi-line plot from a CSV file using the D3 Nest function. This function takes in a dataset and organizes it by keys. In this case I passed in a dataset of aggregated cricket scores for multiple cricketers and specified that their names are the keys. Nest returns a JSON object that contains the array format for each player. Now creating the lines is a simple as passing the nested data to the line generators.</h3>
+    
+    
+<a href="https://bl.ocks.org/jchakko/0c02c339c9550fc338e10237da635795">Interactive Version</a>
+<a href="https://github.com/d3/d3-collection#nests">D3 Nest Source Code</a>
+    
