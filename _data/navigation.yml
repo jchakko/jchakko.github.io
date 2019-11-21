@@ -1,6 +1,3 @@
-- name: Home
-  link: /
-  
-- name: Tool Box
-  link: /toolbox.html
+- name: <- Blog
+  link: /blog.html
 

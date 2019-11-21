@@ -1,0 +1,44 @@
+<html>
+<head>
+<style>
+.Navigation{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.Navigation li{
+  float: right;
+}
+
+.Navigation li a{
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.Navigation > :first-child {
+  float: left;
+} 
+
+li a:hover:not(.active) {
+  background-color: #c6d1c8;
+}
+
+.active {
+  background-color: #c6d1c8;
+}
+</style>
+</head>
+
+<div class="navbar">
+  <ul class = "Navigation">
+  {% for item in site.data.navigation %}
+    <li><a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a></li>
+  {% endfor %}
+  </ul>
+</div>
+</html>
