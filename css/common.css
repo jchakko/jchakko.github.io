@@ -7,6 +7,10 @@ body {
   color: black;
 }
 
+.jumbotron {
+    font: normal 100%/1.4 Georgia,serif;
+}
+
 .landing {
   margin: auto;
   width: 45%;
@@ -19,13 +23,20 @@ body {
   font-size: 4.5em;
 }
 
+.jumbotron h1 {
+  font: normal 100%/1.4 Georgia,serif;  
+  color: red;
+  text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15);
+  font-size: 4.5em;
+}
+
 .landing a {
   text-decoration: none;
   color: black;
 }
 
 .landing img {
-    width: 8%;
+    max-width: 100%;
     vertical-align: middle;
 }
 

@@ -73,4 +73,12 @@
 <loc>http://localhost:4000/WindEnergy.html</loc>
 <lastmod>2019-10-20T13:24:12-04:00</lastmod>
 </url>
+<url>
+<loc>http://localhost:4000/skid.html</loc>
+<lastmod>2019-12-09T13:01:13-05:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/skid2.html</loc>
+<lastmod>2019-12-09T13:45:50-05:00</lastmod>
+</url>
 </urlset>

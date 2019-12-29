@@ -1,35 +1,231 @@
----
-title: Make it happen, Captain
-layout: landing
----
-
 <!DOCTYPE html>
-<html>
-<head>
-  <link href="{{site.baseurl}}/css/common.css" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Make it happen, Captain</title>
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/flexslider.css" rel="stylesheet" >
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/queries.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+      </head>
+      <body id="top">
+        <header id="home">
+          <nav>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+                  <nav class="pull">
+                    <ul class="top-nav">
+                      <li><a href="#intro">Introduction <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                      <li><a href="#features">Features <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                      <li><a href="#responsive">Responsive Design <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                      <li><a href="#portfolio">Portfolio <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                      <li><a href="#team">Team <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                      <li><a href="#contact">Get in Touch <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <section class="hero" id="hero">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 text-right navicon">
+                  <a id="nav-toggle" class="nav_slide_button" href="#"><span></span></a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center inner">
+                  <h1 class="animated fadeInDown">JOSEPH<span>CHAKKO</span></h1>
+                  <h3 class="animated fadeInUp delay-05s"><em>Data Scientist</em></h3>
+                </div>
+              </div>
+
+            </div>
+          </section>
+        </header>
+        <section class="intro text-center section-padding" id="intro">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2 wp1">
+                <h1 class="arrow">Welcome to my website!</h1>
+                <img src="img/team-00.png" alt="Team Member">
+                <p>I mean what could I say?</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="features text-center section-padding" id="features">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h1 class="arrow">Love what you do, and you'll do it well</h1>
+                <div class="features-wrapper">
+                  <div class="col-md-4 wp2">
+                    <div class="icon">
+                      <i class="fa fa-cubes shadow"></i>
+                    </div>
+                    <h2>Machine Learning</h2>
+                    <p>This one is creating and deploying models using frameworks like Flask. I focus on Natural Language Processing tasks.</p>
+                  </div>
+                  <div class="col-md-4 wp2 delay-05s">
+                    <div class="icon">
+                      <i class="fa fa-paper-plane-o shadow"></i>
+                    </div>
+                    <h2>Narration</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum
+                    primis in faucibus.</p>
+                  </div>
+                  <div class="col-md-4 wp2 delay-1s">
+                    <div class="icon">
+                      <i class="fa fa-balance-scale shadow"></i>
+                    </div>
+                    <h2>Data Mining</h2>
+                    <p>This one is finding patterns within data sets and creating visualizations and narratives based on it. Investigative research</p>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="swag text-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2">
+                <h1>See how I think</h1>
+                <a href="#portfolio" class="down-arrow-btn"><i class="fa fa-chevron-down"></i></a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="portfolio text-center section-padding" id="portfolio">
+          <div class="container">
+            <div class="row">
+              <div id="portfolioSlider">
+                <ul class="slides">
+                  <li>
+                    <div class="col-md-4 wp4">
+                      <div class="overlay-effect effects clearfix">
+                        <div class="img">
+                          <img src="img/portfolio-01.jpg" alt="Portfolio Item">
+                          <div class="overlay">
+                            <a href="#" class="expand"><i class="fa fa-search"></i><br>View More</a>
+                            <a class="close-overlay hidden">x</a>
+                          </div>
+                        </div>
+                      </div>
+                      <h2>Creative Minds</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+                    </div>
+                    <div class="col-md-4 wp4 delay-05s">
+                      <div class="overlay-effect effects clearfix">
+                        <div class="img">
+                          <img src="img/portfolio-02.jpg" alt="Portfolio Item">
+                          <div class="overlay">
+                            <a href="#" class="expand"><i class="fa fa-search"></i><br>View More</a>
+                            <a class="close-overlay hidden">x</a>
+                          </div>
+                        </div>
+                      </div>
+                      <h2>Creative Hearts</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+                    </div>
+                    <div class="col-md-4 wp4 delay-1s">
+                      <div class="overlay-effect effects clearfix">
+                        <div class="img">
+                          <img src="img/portfolio-03.jpg" alt="Portfolio Item">
+                          <div class="overlay">
+                            <a href="#" class="expand"><i class="fa fa-search"></i><br>View More</a>
+                            <a class="close-overlay hidden">x</a>
+                          </div>
+                        </div>
+                      </div>
+                      <h2>Creative Ideas</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="col-md-4 wp4">
+                      <div class="overlay-effect effects clearfix">
+                        <div class="img">
+                          <img src="img/portfolio-01.jpg" alt="Portfolio Item">
+                          <div class="overlay">
+                            <a href="#" class="expand"><i class="fa fa-search"></i><br>View More</a>
+                            <a class="close-overlay hidden">x</a>
+                          </div>
+                        </div>
+                      </div>
+                      <h2>Creative Minds</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+                    </div>
+                    <div class="col-md-4 wp4 delay-05s">
+                      <div class="overlay-effect effects clearfix">
+                        <div class="img">
+                          <img src="img/portfolio-02.jpg" alt="Portfolio Item">
+                          <div class="overlay">
+                            <a href="#" class="expand"><i class="fa fa-search"></i><br>View More</a>
+                            <a class="close-overlay hidden">x</a>
+                          </div>
+                        </div>
+                      </div>
+                      <h2>Creative Hearts</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+                    </div>
+                    <div class="col-md-4 wp4 delay-1s">
+                      <div class="overlay-effect effects clearfix">
+                        <div class="img">
+                          <img src="img/portfolio-03.jpg" alt="Portfolio Item">
+                          <div class="overlay">
+                            <a href="#" class="expand"><i class="fa fa-search"></i><br>View More</a>
+                            <a class="close-overlay hidden">x</a>
+                          </div>
+                        </div>
+                      </div>
+                      <h2>Creative Ideas</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
 
 
-<div class="landing">
+        
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
 
-  <h1>ജോ ചാക്കോ</h1>
-  
-  <h2>Hey welcome to my website. I code up data visualizations. My favorites use text and geographical information.</h2>
-
-  <a href="/blog.html">
-    <h2><img src="media/crow.svg">Blog</h2>
-  </a>
-  
-  <a href="/notebooks.html">
-    <h2><img src="media/sushi.svg"> Notebooks</h2>
-  </a>
-  
-  <a href="/gitgitgit.html">
-    <h2><img src="media/island.svg"> GitHub</h2>
-  </a>
-</div>
-
-
-</body>
-</html>
+              </div>
+              <div class="col-md-6 credit">
+                <p>A free website template created exclusively for <a href="http://tympanus.net/codrops/"><em>Codrops</em></a></p>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/waypoints.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <script src="js/jquery.flexslider.js"></script>
+        <script src="js/modernizr.js"></script>
+      </body>
+    </html>
