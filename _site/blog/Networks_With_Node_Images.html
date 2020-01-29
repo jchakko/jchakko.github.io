@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Networks with Node Images</title>
+    
+    <link href="/css/common.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <html>
+<head>
+<style>
+.Navigation{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.Navigation li{
+  float: right;
+}
+
+.Navigation li a{
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.Navigation > :first-child {
+  float: left;
+} 
+
+li a:hover:not(.active) {
+  background-color: #c6d1c8;
+}
+
+.active {
+  background-color: #c6d1c8;
+}
+</style>
+</head>
+
+<div class="navbar">
+  <ul class = "Navigation">
+  
+    <li><a href="/blog.html" ><- Blog</a></li>
+  
+  </ul>
+</div>
+</html>
+
+    <div class = "titledate">
+    <h1>Networks with Node Images</h1>
+    <h2>9 January 2020</h2>
+    </div>
+    <div class = "narration">
+      <figure>
+  <img src="/media/Ultimate_Finals/GrandFinals_Network2.png">
+</figure>
+
+<h3>Graph data is a visual medium. Since nodes do not have a fixed position in space and edges often do not have defined lengths, it's up to the artist to determine the arrangement. I like looking at social networks which would be much more compelling with the use of images to represent the characters. I couldn't find a straightforward way to add images in Gephi which is the software I use when analyzing networks. Looking up solutions in Python and R graphing libraries didn't help much either.</h3>
+    
+<h3>Eventually I decided to do it manually with the help of Inkscape, a SVG editing software. After exporting the network as an SVG file, I imported the official character art for each character and placed it on top of their nodes. The images had transparency beyond the character so they do not interfere with the edge lines.</h3> 
+
+<h3>This process made me realize that automating the image handling isn't a good idea. One common graph visualization technique is to increase the size of nodes that have a high degree. That works well when every node is a circle. However characters have different poses and physiques. Sometimes images had dimensions 100+ pixels bigger but still looked smaller than others. In this case, the perception of images is more important than their absolute sizes.</h3>
+    
+    
+<h3>If you think this process sounds tedious, it was. There were many times where a weapon obscured an edge or a character cluttered the network by reaching out too far. I went back to Gephi many times to rearrange the nodes to get a new SVG export. The good news is that Inkscape preserved the sizes of each image so each time I reconstructed it was a little faster. Ultimately, this version is way cooler than text over circles.</h3>
+    
+    
+<a href="https://github.com/jchakko/Ultimate_Finals">Get the GML file from my Git Hub</a>
+    </div>
+  </body>
+</html>

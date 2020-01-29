@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-12-09T13:45:51-05:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Web Scraping Shoryuken Data</title><link href="http://localhost:4000/blog/WebScraping_Shoryuken_Data.html" rel="alternate" type="text/html" title="Web Scraping Shoryuken Data" /><published>2019-11-17T00:00:00-05:00</published><updated>2019-11-17T00:00:00-05:00</updated><id>http://localhost:4000/blog/WebScraping_Shoryuken_Data</id><content type="html" xml:base="http://localhost:4000/blog/WebScraping_Shoryuken_Data.html">&lt;!DOCTYPE html&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-01-29T11:22:12-05:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Networks with Node Images</title><link href="http://localhost:4000/blog/Networks_With_Node_Images.html" rel="alternate" type="text/html" title="Networks with Node Images" /><published>2020-01-09T00:00:00-05:00</published><updated>2020-01-09T00:00:00-05:00</updated><id>http://localhost:4000/blog/Networks_With_Node_Images</id><content type="html" xml:base="http://localhost:4000/blog/Networks_With_Node_Images.html">&lt;figure&gt;
+  &lt;img src=&quot;/media/Ultimate_Finals/GrandFinals_Network2.png&quot;&gt;
+&lt;/figure&gt;
+
+&lt;h3&gt;Graph data is a visual medium. Since nodes do not have a fixed position in space and edges often do not have defined lengths, it's up to the artist to determine the arrangement. I like looking at social networks which would be much more compelling with the use of images to represent the characters. I couldn't find a straightforward way to add images in Gephi which is the software I use when analyzing networks. Looking up solutions in Python and R graphing libraries didn't help much either.&lt;/h3&gt;
+    
+&lt;h3&gt;Eventually I decided to do it manually with the help of Inkscape, a SVG editing software. After exporting the network as an SVG file, I imported the official character art for each character and placed it on top of their nodes. The images had transparency beyond the character so they do not interfere with the edge lines.&lt;/h3&gt; 
+
+&lt;h3&gt;This process made me realize that automating the image handling isn't a good idea. One common graph visualization technique is to increase the size of nodes that have a high degree. That works well when every node is a circle. However characters have different poses and physiques. Sometimes images had dimensions 100+ pixels bigger but still looked smaller than others. In this case, the perception of images is more important than their absolute sizes.&lt;/h3&gt;
+    
+    
+&lt;h3&gt;If you think this process sounds tedious, it was. There were many times where a weapon obscured an edge or a character cluttered the network by reaching out too far. I went back to Gephi many times to rearrange the nodes to get a new SVG export. The good news is that Inkscape preserved the sizes of each image so each time I reconstructed it was a little faster. Ultimately, this version is way cooler than text over circles.&lt;/h3&gt;
+    
+    
+&lt;a href=&quot;https://github.com/jchakko/Ultimate_Finals&quot;&gt;Get the GML file from my Git Hub&lt;/a&gt;</content><author><name></name></author><category term="blog" /><summary type="html"></summary></entry><entry><title type="html">Web Scraping Shoryuken Data</title><link href="http://localhost:4000/blog/WebScraping_Shoryuken_Data.html" rel="alternate" type="text/html" title="Web Scraping Shoryuken Data" /><published>2019-11-17T00:00:00-05:00</published><updated>2019-11-17T00:00:00-05:00</updated><id>http://localhost:4000/blog/WebScraping_Shoryuken_Data</id><content type="html" xml:base="http://localhost:4000/blog/WebScraping_Shoryuken_Data.html">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;
 &lt;title&gt;Web Scraping Shoryuken Data&lt;/title&gt;&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js&quot;&gt;&lt;/script&gt;
@@ -63521,59 +63535,7 @@ Lexical Diversity Measure: 0.47840531561461797
                     
   &lt;/div&gt;
 &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><category term="d3" /><summary type="html">Stacked area chart depicting Melee tournament wins</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/stackedarea_thumbnail.png" /></entry><entry><title type="html">Matthew Chapter 20</title><link href="http://localhost:4000/malayalam/Matthew20.html" rel="alternate" type="text/html" title="Matthew Chapter 20" /><published>2019-05-24T00:00:00-04:00</published><updated>2019-05-24T00:00:00-04:00</updated><id>http://localhost:4000/malayalam/Matthew20</id><content type="html" xml:base="http://localhost:4000/malayalam/Matthew20.html">&lt;div id = &quot;postContents&quot;&gt; 
-1 “സ്വർഗ്ഗരാജ്യം തന്റെ മുന്തിരിത്തോട്ടത്തിൽ വേലക്കാരെ വിളിച്ചാക്കേണ്ടതിന്നു പുലർച്ചെക്കു പുറപ്പെട്ട വീട്ടുടയവനോടു സദൃശം.  
-1 Svarggaraajyam thante munthirittheaattatthil velakkaare vilicchaakkendathinnu pularcchekku purappetta veettutayavaneaatu sadrusham.
-
-2 വേലക്കാരോടു അവൻ ദിവസത്തേക്കു ഓരോ വെള്ളിക്കാശു പറഞ്ഞൊത്തിട്ടു, അവരെ മുന്തിരിത്തോട്ടത്തിൽ അയച്ചു.  
-2 Velakkaareaatu അവൻ divasatthekku oreaa vellikkaashu paranjotthittu, avare munthirittheaattatthil ayacchu.
-
-3 മൂന്നാം മണിനേരത്തും പുറപ്പെട്ടു, മറ്റു ചിലർ ചന്തയിൽ മിനക്കെട്ടു നില്ക്കുന്നതു കണ്ടു:  
-3 Moonnaam manineratthum purappettu, mattu chilar chanthayil minakkettu nilkkunnathu കണ്ടു:
-
-4 നിങ്ങളും മുന്തിരിത്തോട്ടത്തിൽ പോകുവിൻ; ന്യായമായതു തരാം എന്നു അവരോടു പറഞ്ഞു; അവർ പോയി.  
-4 ningalum munthirittheaattatthil peaakuvin; nyaayamaayathu tharaam ennu avareaatu paranju; അവർ പോയി.
-
-5 അവൻ ആറാം മണിനേരത്തും ഒമ്പതാം മണി നേരത്തും ചെന്നു അങ്ങനെ തന്നേ ചെയ്തു.  
-5 അവൻ aaraam manineratthum ompathaam mani neratthum chennu angane thanne cheythu.
-
-6 പതിനൊന്നാം മണി നേരത്തും ചെന്നു, മറ്റു ചിലർ നില്ക്കുന്നതു കണ്ടിട്ടു; നിങ്ങൾ ഇവിടെ പകൽ മുഴുവൻ മിനക്കെട്ടു നില്ക്കുന്നതു എന്തു എന്നു ചോദിച്ചു.  
-6 Pathinonnaam mani neratthum chennu, mattu chilar nilkkunnathu kandittu; നിങ്ങൾ ivite pakal muzhuvan minakkettu nilkkunnathu enthu ennu cheaadicchu.
-
-7 ഞങ്ങളെ ആരും കൂലിക്കു വിളിക്കായ്കകൊണ്ടത്രേ എന്നു അവർ പറഞ്ഞപ്പോൾ: നിങ്ങളും മുന്തിരിത്തോട്ടത്തിലേക്കു ചെല്ലുവിൻ എന്നു അവരോടു പറഞ്ഞു.  
-7 ഞങ്ങളെ aarum koolikku vilikkaaykakondathre ennu അവർ paranjappeaal: ningalum munthirittheaattatthilekku chelluvin ennu avareaatu paranju.
-
-8 സന്ധ്യയായപ്പോൾ മുന്തിരിത്തോട്ടത്തിന്റെ ഉടയവൻ തന്റെ വിചാരകനോടു: വേലക്കാരെ വിളിച്ചു, പിമ്പന്മാർ തുടങ്ങി മുമ്പന്മാർവരെ അവർക്കു കൂലി കൊടുക്ക എന്നു പറഞ്ഞു.  
-8 Sandhyayaayappeaal munthirittheaattatthinte utayavan thante vichaarakaneaatu: velakkaare vilicchu, pimpanmaar thutangi mumpanmaarvare avarkku kooli kotukka ennu പറഞ്ഞു.
-
-9 അങ്ങനെ പതിനൊന്നാം മണിനേരത്തു വന്നവർ ചെന്നു ഓരോ വെള്ളിക്കാശു വാങ്ങി.  
-9 Angane pathinonnaam manineratthu vannavar chennu oreaa vellikkaashu vaangi.
-
-10 മുമ്പന്മാർ വന്നപ്പോൾ തങ്ങൾക്കു അധികം കിട്ടും എന്നു നിരൂപിച്ചു; അവർക്കും ഓരോ വെള്ളിക്കാശു കിട്ടി.  
-10 Mumpanmaar vannappeaal thangalkku adhikam kittum ennu niroopicchu; avarkkum oreaa vellikkaashu കിട്ടി.
-
-11 അതു വാങ്ങീട്ടു അവർ വീട്ടുടയവന്റെ നേരെ പിറുപിറുത്തു:  
-11 Athu vaangeettu അവർ veettutayavante nere pirupirutthu:
-
-12 ഈ പിമ്പന്മാർ ഒരു മണിനേരം മാത്രം വേല ചെയ്തിട്ടും നീ അവരെ പകലത്തെ ഭാരവും വെയിലും സഹിച്ച ഞങ്ങളോടു സമമാക്കിയല്ലോ എന്നു പറഞ്ഞു.   
-12 ee pimpanmaar oru manineram maathram vela cheythittum നീ avare pakalatthe bhaaravum veyilum sahiccha njangaleaatu samamaakkiyallo ennu paranju.
-
-13 അവരിൽ ഒരുത്തനോടു അവൻ ഉത്തരം പറഞ്ഞതു: സ്നേഹിതാ, ഞാൻ നിന്നോടു അന്യായം ചെയ്യുന്നില്ല; നീ എന്നോടു ഒരു പണം പറഞ്ഞൊത്തില്ലയോ?  
-13 Avaril orutthaneaatu avan uttharam paranjathu: snehithaa, ഞാൻ ninneaatu anyaayam cheyyunnilla; നീ enneaatu oru panam paranjotthillayeaa?
- 
-14 നിന്റേതു വാങ്ങി പൊയ്ക്കൊൾക; നിനക്കു തന്നതുപോലെ ഈ പിമ്പന്നും കൊടുപ്പാൻ എനിക്കു മനസ്സു.  
-14 Nintethu vaangi poykkolka; ninakku thannathupeaale ee pimpannum kotuppaan enikku manasu.
-
-15 എനിക്കുള്ളതിനെക്കൊണ്ടു മനസ്സുപോലെ ചെയ്‍വാൻ എനിക്കു ന്യായമില്ലയോ? ഞാൻ നല്ലവൻ ആകകൊണ്ടു നിന്റെ കണ്ണു കടിക്കുന്നുവോ?  
-15 Enikkullathinekkondu manasupeaale cheyvaan enikku nyaayamillayeaa? ഞാൻ nallavan aakakondu ninte kannu katikkunnuveaa?
- 
-16 ഇങ്ങനെ പിമ്പന്മാർ മുമ്പൻ മാരും മുമ്പന്മാർ പിമ്പന്മാരും ആകും.”  
-16 Ingane pimpanmaar mumpan maarum mumpanmaar pimpanmaarum ആകും.
-&lt;/div&gt;
-  
-  
-&lt;/body&gt;
-&lt;/html&gt;</content><author><name>SpeakIn10Weeks</name></author><category term="malayalam" /><summary type="html">Bible Transliteration</summary></entry><entry><title type="html">Pathu Pathungi</title><link href="http://localhost:4000/malayalam/pathupathungi.html" rel="alternate" type="text/html" title="Pathu Pathungi" /><published>2019-03-29T00:00:00-04:00</published><updated>2019-03-29T00:00:00-04:00</updated><id>http://localhost:4000/malayalam/pathupathungi</id><content type="html" xml:base="http://localhost:4000/malayalam/pathupathungi.html">&lt;div id = &quot;postContents&quot;&gt; 
+&lt;/html&gt;</content><author><name></name></author><category term="d3" /><summary type="html">Stacked area chart depicting Melee tournament wins</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/stackedarea_thumbnail.png" /><media:content medium="image" url="http://localhost:4000/stackedarea_thumbnail.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Pathu Pathungi</title><link href="http://localhost:4000/malayalam/pathupathungi.html" rel="alternate" type="text/html" title="Pathu Pathungi" /><published>2019-03-29T00:00:00-04:00</published><updated>2019-03-29T00:00:00-04:00</updated><id>http://localhost:4000/malayalam/pathupathungi</id><content type="html" xml:base="http://localhost:4000/malayalam/pathupathungi.html">&lt;div id = &quot;postContents&quot;&gt; 
   &lt;h2&gt;First Part&lt;/h2&gt;
   &lt;audio src=&quot;/media/pathu_pathungi_0.mp3&quot; controls&gt; &lt;/audio&gt;
   

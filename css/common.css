@@ -1,6 +1,6 @@
 html {
     font: normal 100%/1.4 Georgia,serif;
-    background: #eff4f0;
+    background: #f3f5f8;
 }
 
 body {
@@ -47,7 +47,7 @@ body {
 }
 
 .PostListing p {
-  text-align: right;
+  text-align: center;
 }
 
 .PostListing a {
@@ -63,19 +63,12 @@ body {
   color: gray;
 }
 
-.PostListing li:hover {
-  color: blue;
+.PostListing a:hover {
+  color: green;
 }
 
 .PostListing ol {
   list-style-type: upper-roman; 
-}
-
-.PostListing li a{
-  color: blue;
-  padding: 14px 16px;
-  text-decoration: none;
-  width: 100vh;
 }
 
 .blog {
@@ -92,13 +85,15 @@ body {
 
 .narration {
   margin: auto;
-  width: 45%;
+  width: 49%;
   text-align: left;
   text: justify;
 }
 
-.narration figure {
-    align: center;
+.narration img {
+  max-width:100%;
+  max-height:100%;
+  border:2px solid black;
 }
 
 
