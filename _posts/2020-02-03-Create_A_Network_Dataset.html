@@ -1,0 +1,23 @@
+---
+title: Create A Network Dataset
+layout: post
+category: blog
+blurb: I use web scraping and Gephi to create a network dataset for fun
+---
+
+<figure>
+  <img src="/media/Ultimate_Finals/GrandFinals_Network2.png">
+</figure>
+
+<h3>Network datasets create awesome visualizations. I like seeing the networks created by characters in books and TV shows. When I first started looking for datasets I found they were hard to come by. This is probably because determining what counts as a connection between characters is difficult. Mechanically the only thing to do is create a CSV file where characters that are connected appear on the same row. But to consume the media and attempt to record all the interactions between characters would be painful and probably make you dislike the show you were trying to visualize in the first place.</h3>
+
+<h3>I think the challenge comes from finding preexisting data that is suitable to be transformed into a network. One of the 'Hello World' networks to analyze is the Les Misérables (pronounce it like lay miz-er-ah) dataset. The principle behind the network creation is simple. If two characters appear in the same chapter, they are given an edge. This simplifies a lot because its possible for a machine to do this computation. Now, there may be connections between two characters who never interact if they happen to be in the same chapter. This is a necessary tradeoff because its too difficult to judge what counts as an interaction.</h3>
+
+<h3>My first idea was to create a network of Star Wars. I couldn't get my footing. The problem was there is no unified collection of Star Wars characters. Looking up characters I already know about is easy but to find characters that I don't know was too difficult. If I only used the movies as separators there would not be enough of them to draw interesting distinctions. The second idea was to do The Office. Separating by episode isn't strict enough but I did find a website that groups interactions by scene. I ended up not doing this because there weren't enough characters and the characters interact with each other far too often.</h3>
+
+<h3>So to create a good network we need a lot of separations and a lot of characters. This led me to the anime Naruto which I watched a lot in middle school. Despite watching it a lot I didn't get very far. Thanks to the pace new episodes were broadcasted over the course of 2 years I made it to episode 70 or so and there are 500 in total. Anyways this fits the criteria because there are hundreds of characters and hundreds of separations. I easily found a listing of episodes from Narutopedia. I wrote a web scraper that visits each page and grans the characters listed in the credits. Let me not gloss over that part, the credit listing on each episode was the make or break for this project. I originally started working with the Manga which also has an webpage for each chapter but there was no simple way for me to determine which characters appeared in each chapter.</h3>
+
+<h3>The web scraper created put the credits for each episode in a list. I then used itertools to create combinations for each list. Finally I wrote them into a csv to be loaded by Gephi. Overall the coding was not too dificult because the information was already stored in a format that could be transformed into the csv file. If I stuck with the manga I would have had to parse the chapter summaries and extract the character names.</h3>    
+    
+    
+<a href="https://github.com/jchakko/Ultimate_Finals">Get the GML file from my Git Hub</a>

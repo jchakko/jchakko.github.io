@@ -1,48 +1,21 @@
 html {
     font: normal 100%/1.4 Georgia,serif;
-    background: #f3f5f8;
+background: #2193b0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+
 }
 
 body {
   color: black;
 }
 
-.jumbotron {
-    font: normal 100%/1.4 Georgia,serif;
-}
-
-.landing {
-  margin: auto;
-  width: 45%;
-  text-align: center;   
-}
-
-.landing h1 {
-  color: black;
-  text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15);
-  font-size: 4.5em;
-}
-
-.jumbotron h1 {
-  font: normal 100%/1.4 Georgia,serif;  
-  color: red;
-  text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15);
-  font-size: 4.5em;
-}
-
-.landing a {
-  text-decoration: none;
-  color: black;
-}
-
-.landing img {
-    max-width: 100%;
-    vertical-align: middle;
-}
-
 .PostListing {
   margin: auto;
-  width: 50%;
+  width: 80%;
   flex-wrap: wrap;
 }
 
@@ -71,9 +44,22 @@ body {
   list-style-type: upper-roman; 
 }
 
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.flex-container > div {
+  width: 50%;
+  margin: 5px;
+  background-color: white;
+}
+
 .blog {
   margin: auto;
-  width: 50%;
+  width: 80%;
   text-align: center;   
 }
 
@@ -85,7 +71,7 @@ body {
 
 .narration {
   margin: auto;
-  width: 49%;
+  width: 69%;
   text-align: left;
   text: justify;
 }
