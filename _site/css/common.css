@@ -1,8 +1,13 @@
 html {
     font: normal 100%/1.4 Georgia,serif;
-background: #2193b0;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to bottom, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+/*background: #2193b0;  /* fallback for old browsers */
+/*background: -webkit-linear-gradient(to bottom, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+/*background: linear-gradient(to bottom, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+background: #348F50;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #56B4D3, #44bd69);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #56B4D3, #44bd69); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 
 
@@ -49,12 +54,18 @@ body {
   flex-wrap: nowrap;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 15px;
 }
 
-.flex-container > div {
-  width: 50%;
+.thumbnail {
+  width: 20%;
   margin: 5px;
-  background-color: white;
+}
+
+.description {
+  width: 80%;
+  margin: 5px;
+  background-color: black;
 }
 
 .blog {
@@ -71,9 +82,10 @@ body {
 
 .narration {
   margin: auto;
-  width: 69%;
+  width: 79%;
   text-align: left;
-  text: justify;
+  padding: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .narration img {
