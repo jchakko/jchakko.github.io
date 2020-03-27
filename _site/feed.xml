@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-02-23T13:34:57-05:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Create A Network Dataset</title><link href="http://localhost:4000/blog/2020/02/03/Create_A_Network_Dataset.html" rel="alternate" type="text/html" title="Create A Network Dataset" /><published>2020-02-03T00:00:00-05:00</published><updated>2020-02-03T00:00:00-05:00</updated><id>http://localhost:4000/blog/2020/02/03/Create_A_Network_Dataset</id><content type="html" xml:base="http://localhost:4000/blog/2020/02/03/Create_A_Network_Dataset.html">&lt;figure&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-03-22T00:21:34-04:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Create A Network Dataset</title><link href="http://localhost:4000/blog/2020/02/03/Create_A_Network_Dataset-Copy.html" rel="alternate" type="text/html" title="Create A Network Dataset" /><published>2020-02-03T00:00:00-05:00</published><updated>2020-02-03T00:00:00-05:00</updated><id>http://localhost:4000/blog/2020/02/03/Create_A_Network_Dataset%20-%20Copy</id><content type="html" xml:base="http://localhost:4000/blog/2020/02/03/Create_A_Network_Dataset-Copy.html">&lt;figure&gt;
   &lt;img src=&quot;/media/Ultimate_Finals/GrandFinals_Network2.png&quot;&gt;
 &lt;/figure&gt;
 
@@ -13,7 +13,25 @@
 &lt;h3&gt;The web scraper created put the credits for each episode in a list. I then used itertools to create combinations for each list. Finally I wrote them into a csv to be loaded by Gephi. Overall the coding was not too dificult because the information was already stored in a format that could be transformed into the csv file. If I stuck with the manga I would have had to parse the chapter summaries and extract the character names.&lt;/h3&gt;    
     
     
-&lt;a href=&quot;https://github.com/jchakko/Ultimate_Finals&quot;&gt;Get the GML file from my Git Hub&lt;/a&gt;</content><author><name></name></author><category term="blog" /><summary type="html"></summary></entry><entry><title type="html">Networks with Node Images</title><link href="http://localhost:4000/blog/2020/01/09/Networks_With_Node_Images-Copy.html" rel="alternate" type="text/html" title="Networks with Node Images" /><published>2020-01-09T00:00:00-05:00</published><updated>2020-01-09T00:00:00-05:00</updated><id>http://localhost:4000/blog/2020/01/09/Networks_With_Node_Images%20-%20Copy</id><content type="html" xml:base="http://localhost:4000/blog/2020/01/09/Networks_With_Node_Images-Copy.html">&lt;figure&gt;
+&lt;a href=&quot;https://github.com/jchakko/Ultimate_Finals&quot;&gt;Get the GML file from my Git Hub&lt;/a&gt;</content><author><name></name></author><category term="blog" /><summary type="html"></summary></entry><entry><title type="html">Render Maps in Browser Using D3.JS</title><link href="http://localhost:4000/blog/2020/01/15/D3_Maps.html" rel="alternate" type="text/html" title="Render Maps in Browser Using D3.JS" /><published>2020-01-15T00:00:00-05:00</published><updated>2020-01-15T00:00:00-05:00</updated><id>http://localhost:4000/blog/2020/01/15/D3_Maps</id><content type="html" xml:base="http://localhost:4000/blog/2020/01/15/D3_Maps.html">&lt;figure&gt;
+  &lt;img src=&quot;/media/D3_Maps/Germany_Roads.png&quot;&gt;
+&lt;/figure&gt;
+
+&lt;h2&gt; &lt;/h2&gt;
+
+&lt;p&gt;D3.js is a powerful data visualization library that displays graphics right in your browser. It can consume geographic information which is widely available these days. With some additional data, D3 can make compelling geovisualizations like choropleths, and dot density maps.&lt;/p&gt;
+
+&lt;h2&gt;Preparing the Data&lt;/h2&gt;
+
+&lt;p&gt;There is a lot of spatial data that is free to use on the internet. For this post I am using the free country level data provided by &lt;a href=&quot;https://www.diva-gis.org/gdata&quot;&gt;DIVA-GIS.&lt;/a&gt; Spatial data is often separated into a few components then compressed into a zip file. D3 cannot work with the data in this format.&lt;/p&gt;
+
+&lt;p&gt;Thankfully there are tools online that convert spatial data zip files to GeoJSON, a format that is D3 friendly. My go to is &lt;a href=&quot;https://mapshaper.org/&quot;&gt;Mapshaper&lt;/a&gt;. Import the entire zip file. Mapshaper has a simplify feature which makes the file smaller but the lines less precise. I like to play with it and pretend I'm making minimalist art or something. Anyways when you're finished export the data as a GeoJSON file.&lt;/p&gt;
+
+&lt;h2&gt;Display the Spatial Data&lt;/h2&gt;   
+
+&lt;p&gt;Projections make it possible to display a 3D object on a 2D surface. There are a handful of projections each with their strengths and differences. GeoJSON coordinates can be transformed by a projection function then displayed using a line generator.&lt;/p&gt;
+     
+&lt;a href=&quot;https://github.com/jchakko/Ultimate_Finals&quot;&gt;Get the GML file from my Git Hub&lt;/a&gt;</content><author><name></name></author><category term="blog" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/media/D3_Maps/Germany_Roads.png" /><media:content medium="image" url="http://localhost:4000/media/D3_Maps/Germany_Roads.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Networks with Node Images</title><link href="http://localhost:4000/blog/2020/01/09/Networks_With_Node_Images-Copy.html" rel="alternate" type="text/html" title="Networks with Node Images" /><published>2020-01-09T00:00:00-05:00</published><updated>2020-01-09T00:00:00-05:00</updated><id>http://localhost:4000/blog/2020/01/09/Networks_With_Node_Images%20-%20Copy</id><content type="html" xml:base="http://localhost:4000/blog/2020/01/09/Networks_With_Node_Images-Copy.html">&lt;figure&gt;
   &lt;img src=&quot;/media/Ultimate_Finals/GrandFinals_Network2.png&quot;&gt;
 &lt;/figure&gt;
 
@@ -63550,20 +63568,4 @@ Lexical Diversity Measure: 0.47840531561461797
                     
   &lt;/div&gt;
 &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><category term="d3" /><summary type="html">Stacked area chart depicting Melee tournament wins</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/stackedarea_thumbnail.png" /><media:content medium="image" url="http://localhost:4000/stackedarea_thumbnail.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Pathu Pathungi</title><link href="http://localhost:4000/malayalam/2019/03/29/pathupathungi.html" rel="alternate" type="text/html" title="Pathu Pathungi" /><published>2019-03-29T00:00:00-04:00</published><updated>2019-03-29T00:00:00-04:00</updated><id>http://localhost:4000/malayalam/2019/03/29/pathupathungi</id><content type="html" xml:base="http://localhost:4000/malayalam/2019/03/29/pathupathungi.html">&lt;div id = &quot;postContents&quot;&gt; 
-  &lt;h2&gt;First Part&lt;/h2&gt;
-  &lt;audio src=&quot;/media/pathu_pathungi_0.mp3&quot; controls&gt; &lt;/audio&gt;
-  
-  &lt;h2&gt;Second Part&lt;/h2&gt;
-  &lt;audio src=&quot;/media/pathu_pathungi_1.mp3&quot; controls&gt; &lt;/audio&gt;
-  
-  &lt;h2&gt;Third Part&lt;/h2&gt;
-  &lt;audio src=&quot;/media/pathu_pathungi_2.mp3&quot; controls&gt; &lt;/audio&gt;
-  
-  &lt;h2&gt;Fourth Part&lt;/h2&gt;
-  &lt;audio src=&quot;/media/pathu_pathungi_3.mp3&quot; controls&gt; &lt;/audio&gt;
-
-  
-  
-&lt;/body&gt;
-&lt;/html&gt;</content><author><name>SpeakIn10Weeks</name></author><category term="malayalam" /><summary type="html">Audio excerpts from children's song</summary></entry></feed>
+&lt;/html&gt;</content><author><name></name></author><category term="d3" /><summary type="html">Stacked area chart depicting Melee tournament wins</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/stackedarea_thumbnail.png" /><media:content medium="image" url="http://localhost:4000/stackedarea_thumbnail.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

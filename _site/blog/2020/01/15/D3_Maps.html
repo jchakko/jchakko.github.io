@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Render Maps in Browser Using D3.JS</title>
+    
+    <link href="/css/common.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <html>
+<head>
+<style>
+.Navigation{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.Navigation li{
+  float: right;
+}
+
+.Navigation li a{
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.Navigation > :first-child {
+  float: left;
+} 
+
+li a:hover:not(.active) {
+  background-color: #c6d1c8;
+}
+
+.active {
+  background-color: #c6d1c8;
+}
+</style>
+</head>
+
+<div class="navbar">
+  <ul class = "Navigation">
+  
+    <li><a href="/blog.html" ><- Blog</a></li>
+  
+  </ul>
+</div>
+</html>
+
+    <div class = "titledate">
+    <h1>Render Maps in Browser Using D3.JS</h1>
+    <h2>15 January 2020</h2>
+    </div>
+    <div class = "narration">
+      <figure>
+  <img src="/media/D3_Maps/Germany_Roads.png">
+</figure>
+
+<h2> </h2>
+
+<p>D3.js is a powerful data visualization library that displays graphics right in your browser. It can consume geographic information which is widely available these days. With some additional data, D3 can make compelling geovisualizations like choropleths, and dot density maps.</p>
+
+<h2>Preparing the Data</h2>
+
+<p>There is a lot of spatial data that is free to use on the internet. For this post I am using the free country level data provided by <a href="https://www.diva-gis.org/gdata">DIVA-GIS.</a> Spatial data is often separated into a few components then compressed into a zip file. D3 cannot work with the data in this format.</p>
+
+<p>Thankfully there are tools online that convert spatial data zip files to GeoJSON, a format that is D3 friendly. My go to is <a href="https://mapshaper.org/">Mapshaper</a>. Import the entire zip file. Mapshaper has a simplify feature which makes the file smaller but the lines less precise. I like to play with it and pretend I'm making minimalist art or something. Anyways when you're finished export the data as a GeoJSON file.</p>
+
+<h2>Display the Spatial Data</h2>   
+
+<p>Projections make it possible to display a 3D object on a 2D surface. There are a handful of projections each with their strengths and differences. GeoJSON coordinates can be transformed by a projection function then displayed using a line generator.</p>
+     
+<a href="https://github.com/jchakko/Ultimate_Finals">Get the GML file from my Git Hub</a>
+    </div>
+  </body>
+</html>
