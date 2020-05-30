@@ -9,8 +9,7 @@ html {
 /*background: -webkit-linear-gradient(to bottom, #56B4D3, #44bd69);  /* Chrome 10-25, Safari 5.1-6 */
 /*background: linear-gradient(to bottom, #56B4D3, #44bd69); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-background: #bcd2e3
-;
+background: #fffcfc; /*#bcd2e3;#f2fafa;*/
 
 }
 
@@ -64,8 +63,6 @@ li {
   flex-wrap: wrap;
 }
 
-
-
 .PostListing a {
     display: block;
 }
@@ -95,15 +92,6 @@ li {
   border-radius: 15px;
 }
 
-.thumbnail {
-  margin: 20px;
-}
-
-.thumbnail img{
-    display:block;
-    margin:auto;
-}
-
 .description {
   margin: 5px;
   background-color: white;
@@ -115,24 +103,30 @@ li {
   text-align: center;   
 }
 
-.titledate {
-  margin: auto;
-  width: 50%;
-  text-align: right;
-}
-
 .narration {
   margin: auto;
-  width: 79%;
-  text-align: left;
+  max-width: 650px;
+  text-align: justify;
   padding: 5px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .narration img {
   max-width:100%;
   max-height:100%;
   border:2px solid black;
+}
+
+.narration p {
+  font-size: x-large;	
+}
+
+.banner {
+  width: 100%;
+  padding:60px 0;
+  text-align: center;
+  background: #403b3b;
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 

@@ -39,11 +39,7 @@ body, html {
 	color: white;
 }
 
-img {
-  width:200px;
-  height:150px;
-  margin: auto;
-}
+
 
 .Post {
   object-fit: contain;
@@ -67,8 +63,6 @@ img {
   
   <div class="hero-text">
     <h1 style="font-size:50px">Welcome to the Chakko</h1>
-    <p>And I'm a Photographer</p>
-    <button>Hire me</button>
   </div>
   
 </div>
@@ -79,6 +73,26 @@ img {
 </div>
 
 <a name="blog"></a>
+
+<div class = "PostListing">
+  {% for post in site.categories.blog %}
+    <a href="{{ post.url }}">
+  
+	<hr>
+	  <h1>{{ post.title }}</h1>
+	  <h2>{{ post.date | date: "%-d %B %Y" }}</h2>
+      <p>{{ post.blurb }}</p>
+	  
+	  <!-- <img src="{{ site.baseurl }}{{ post.image }}"> -->
+
+    </hr>
+	
+	</a>
+	<br>
+  {% endfor %}
+</div>
+
+
 <div class = "PostListing">
   {% for post in site.categories.blog %}
     <a href="{{ post.url }}">
