@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-05-30T00:43:39-04:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Cleric Spells</title><link href="http://localhost:4000/blog/2020/05/06/Cleric_Spells.html" rel="alternate" type="text/html" title="Cleric Spells" /><published>2020-05-06T00:00:00-04:00</published><updated>2020-05-06T00:00:00-04:00</updated><id>http://localhost:4000/blog/2020/05/06/Cleric_Spells</id><content type="html" xml:base="http://localhost:4000/blog/2020/05/06/Cleric_Spells.html">&lt;figure&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-06-02T12:15:11-04:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Cleric Spells</title><link href="http://localhost:4000/blog/2020/05/06/Cleric_Spells.html" rel="alternate" type="text/html" title="Cleric Spells" /><published>2020-05-06T00:00:00-04:00</published><updated>2020-05-06T00:00:00-04:00</updated><id>http://localhost:4000/blog/2020/05/06/Cleric_Spells</id><content type="html" xml:base="http://localhost:4000/blog/2020/05/06/Cleric_Spells.html">&lt;figure&gt;
   &lt;img src=&quot;/media/D3_Maps/Manhattan.png&quot;&gt;
 &lt;/figure&gt;
 
@@ -13,13 +13,13 @@
 
 &lt;h2&gt;Proaction Over Reaction&lt;/h2&gt;
 
-&lt;h4&gt;Like I said earlier, healing damage that has already been dealt is not a good use of time. Its better to prevent the damage from happening in the first place. This makes Bless a very powerful cleric spell. It grants 3 creatures an extra d4 dice on attack rolls and saving throws. Simply put it makes the party more accurate when attacking and more likely to avoid harmful effects. This spell stands head and shoulder over the other level one options for a few reasons. It works on 3 players, it doesn't have some prerequesite for the d4 to be rolled, and it does not disappear when the target attacks. Bless is so powerful that I built my strategy around this spell.&lt;/h4&gt;
+&lt;p&gt;Like I said earlier, healing damage that has already been dealt is not a good use of time. Its better to prevent the damage from happening in the first place. This makes Bless a very powerful cleric spell. It grants 3 creatures an extra d4 dice on attack rolls and saving throws. Simply put it makes the party more accurate when attacking and more likely to avoid harmful effects. This spell stands head and shoulder over the other level one options for a few reasons. It works on 3 players, it doesn't have some prerequesite for the d4 to be rolled, and it does not disappear when the target attacks. Bless is so powerful that I build my strategy around this spell.&lt;/p&gt;
 
 &lt;h2&gt;Focus Your Mind&lt;/h2&gt;
 
-&lt;h4&gt;There are a few different spell cast types. Bless is concentration. Concentration spells break when casting another concentration spell or failing a constitution save after taking damage. Since I want bless up all the time I stay strapped with non concentration spells. &lt;/h4&gt;
-     
-&lt;a href=&quot;https://github.com/jchakko/D3_Manhattan&quot;&gt;GitHub Repo&lt;/a&gt;</content><author><name></name></author><category term="blog" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/media/D3_Maps/Manhattan.png" /><media:content medium="image" url="http://localhost:4000/media/D3_Maps/Manhattan.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Blazing a Trail with D3 Coordinate Projections</title><link href="http://localhost:4000/blog/2020/04/22/D3_Map_Coordinates.html" rel="alternate" type="text/html" title="Blazing a Trail with D3 Coordinate Projections" /><published>2020-04-22T00:00:00-04:00</published><updated>2020-04-22T00:00:00-04:00</updated><id>http://localhost:4000/blog/2020/04/22/D3_Map_Coordinates</id><content type="html" xml:base="http://localhost:4000/blog/2020/04/22/D3_Map_Coordinates.html">&lt;figure&gt;
+&lt;p&gt;There are a few different spell cast types. Bless is concentration. Concentration spells break when casting another concentration spell or failing a constitution save after taking damage. Since I want bless up all the time I stay strapped with non concentration spells. Some good options are Healing Word, , and . Then there's Spiritual Weapon.&lt;/p&gt;
+
+&lt;p&gt;Spiritual Weapon is a bonus cast spell that creats a floating, movable weapon.&lt;/p&gt;</content><author><name></name></author><category term="blog" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/media/D3_Maps/Manhattan.png" /><media:content medium="image" url="http://localhost:4000/media/D3_Maps/Manhattan.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Blazing a Trail with D3 Coordinate Projections</title><link href="http://localhost:4000/blog/2020/04/22/D3_Map_Coordinates.html" rel="alternate" type="text/html" title="Blazing a Trail with D3 Coordinate Projections" /><published>2020-04-22T00:00:00-04:00</published><updated>2020-04-22T00:00:00-04:00</updated><id>http://localhost:4000/blog/2020/04/22/D3_Map_Coordinates</id><content type="html" xml:base="http://localhost:4000/blog/2020/04/22/D3_Map_Coordinates.html">&lt;figure&gt;
   &lt;img src=&quot;/media/D3_Maps/Manhattan.png&quot;&gt;
 &lt;/figure&gt;
 
@@ -82,17 +82,11 @@
 
 &lt;h2&gt; &lt;/h2&gt;
 
-&lt;p&gt;D3.js is a powerful data visualization library that displays graphics right in your browser. It can consume geographic information which is widely available these days. With some additional data, D3 can make compelling geovisualizations like choropleths, and dot density maps.&lt;/p&gt;
+&lt;p&gt;Oh Yahoo Answers. The home of calculus students looking for the answers to the odd numbered problems in the textbook and people trying to understand the miracle of life. Its a gaze into the national consciousness. They questions are reminiscent of newspaper headlines which gave me the idea to apply machine learning algorithms.&lt;/p&gt;
 
-&lt;h2&gt;Preparing the Data&lt;/h2&gt;
+&lt;h2&gt;Building the Dataset&lt;/h2&gt;
 
-&lt;p&gt;There is a lot of spatial data that is free to use on the internet. For this post I am using the free country level data provided by &lt;a href=&quot;https://www.diva-gis.org/gdata&quot;&gt;DIVA-GIS.&lt;/a&gt; Spatial data is often separated into a few components then compressed into a zip file. D3 cannot work with the data in this format.&lt;/p&gt;
-
-&lt;p&gt;Thankfully there are tools online that convert spatial data zip files to GeoJSON, a format that is D3 friendly. My go to is &lt;a href=&quot;https://mapshaper.org/&quot;&gt;Mapshaper&lt;/a&gt;. Import the entire zip file. Mapshaper has a simplify feature which makes the file smaller but the lines less precise. I like to play with it and pretend I'm making minimalist art or something. Anyways when you're finished export the data as a GeoJSON file.&lt;/p&gt;
-
-&lt;h2&gt;Display the Spatial Data&lt;/h2&gt;   
-
-&lt;p&gt;Projections make it possible to display a 3D object on a 2D surface. There are a handful of projections each with their strengths and differences. GeoJSON coordinates can be transformed by a projection function then displayed using a line generator.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
      
 &lt;a href=&quot;https://github.com/jchakko/Ultimate_Finals&quot;&gt;Get the GML file from my Git Hub&lt;/a&gt;</content><author><name></name></author><category term="blog" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/media/D3_Maps/Germany_Roads.png" /><media:content medium="image" url="http://localhost:4000/media/D3_Maps/Germany_Roads.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Create A Network Dataset</title><link href="http://localhost:4000/blog/2020/02/03/Create_A_Network_Dataset-Copy.html" rel="alternate" type="text/html" title="Create A Network Dataset" /><published>2020-02-03T00:00:00-05:00</published><updated>2020-02-03T00:00:00-05:00</updated><id>http://localhost:4000/blog/2020/02/03/Create_A_Network_Dataset%20-%20Copy</id><content type="html" xml:base="http://localhost:4000/blog/2020/02/03/Create_A_Network_Dataset-Copy.html">&lt;figure&gt;
   &lt;img src=&quot;/media/Ultimate_Finals/GrandFinals_Network2.png&quot;&gt;
