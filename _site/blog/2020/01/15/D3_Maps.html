@@ -75,12 +75,36 @@ li a:hover:not(.active) {
 
 <p>Projections make it possible to display a 3D object on a 2D surface. There are a handful of projections each with their strengths and weaknesses. GeoJSON coordinates can be transformed by a projection function then drawn using a line generator. I created a template that can take GeoJSON data and render a map with Mercator projection.</p>
 
+<a href="https://bl.ocks.org/jchakko/ecd02b26162df338128c5b455e58c074">Check out the code here</a>
+
 <h2>The Application</h2>
 
-<p>This seems like a lot of work to simply look at a map of Switzerland but it's only the foundation. The key power behind D3 is interactivity and binding data to elements. Depending on the data I can color in regions of the map, mark the locations of major cities, and react to user mouse activity. Its very manual but allows for some truly compelling visualizations.</p>
+<p>This was a lot of work to look at a map of Switzerland but it's only the foundation. The key power behind D3 is interactivity and binding data to elements. Depending on the data I can color in regions of the map, mark the locations of major cities, and react to user mouse activity. Its very manual but allows for some truly compelling visualizations.</p>
 
-     
-<a href="https://bl.ocks.org/jchakko/ecd02b26162df338128c5b455e58c074">Check out the code here</a>
+<h2>The Art of Not Taking Notes</h2>
+
+<p>I joined a Call of Cthullu campaign as if I don't spend enough time role playing already. One aspect of the game I appreciate is how its based on real locations; after a quick stint in Peru and a time skip my party ends up in New York. I wanted a visual way to keep track of our progres and decided to go with marking the locations we've visited on a D3 map.</p>
+
+<h2>Making The Map</h2>
+
+<p>The first step was to find an appropriate GeoJSON of Manhattan. NYC OpenData has a lot of publicly available GIS files including the<a href= "https://data.cityofnewyork.us/City-Government/Neighborhood-Tabulation-Areas-NTA-/cpf4-rkhq"> Neighborhood Tabulation Areas</a> This draws the visualization I want but also every other borough in New York. To subset the spatial file I used <a href= "https://geopandas.org/">GeoPandas</a>. The library lets me import the spatial file as a dataframe. After a quick peek at the metadata I selected only the rows that contain Manhattan's borough code and exported the selection to a JSON file.</p>
+
+<p>Now that the map is up, I need to create markings on the map to show where the team has visited. Evidently the Cthullu handbook has the intersections for each place of interest and my patient Keeper Andriy passed it along to me. Call of Cthullu is in the 1920's so some of the street names have changed. Still, when I pass the information into Google Maps it takes it like a champ and gives me the coordinate information back. I apply the projection function to the coordinates and plot the output on top of the map of Manhattan.</p>
+
+<h2>I jotted a few key facts</h2>
+<p>The map needed some additional information to explain the relevance of the marked points. I added a mouseover effect that displays a tooltip with the name of the location, the game provided address, and quick description of what we did there. Adding points to the map gives the story a feeling of progression.</p>
+
+<a href="https://github.com/jchakko/D3_Manhattan">GitHub Repo</a>
+
+<h2>Choropleths and Cenus Data</h2>
+
+<p>One of the most common forms of geographic data is census information. It can show how different parts of a region think, feel, and behave about a myriad of topics. A powerful way to convey this information is with a Choropleth. This visualization colors in sections of a map based on the data provided. I got my hands on census data from India to settle a very important question. Who's eating rice and who's eating roti?</p>
+
+<p>The census had a section about the per capita rice and wheat consumption in every state of India. I extracted the data to a CSV file and found an accompanying GeoJSON file. Its important that the number of entries in both files are the same so D3 knows where to color. With some simple arithmatic and color scales I created a map thats more green when a state eats rice and more saffron when roti is the carb of choice. Mousing over a state shows the original information.</p>
+
+<h2>What else?</h2>
+
+<p>These examples are so random which shows</p>
     </div>
 	
   </body>
