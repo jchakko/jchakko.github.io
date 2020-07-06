@@ -6,16 +6,23 @@ image: /media/D3_Maps/Germany_Roads.png
 blurb: I use web scraping and Gephi to create a network dataset for fun
 ---
 
-<figure>
-  <img src="/media/D3_Maps/Germany_Roads.png">
-</figure>
+<p>LDA PIC HERE</p>
 
-<h2> </h2>
-
-<p>Oh Yahoo Answers. The home of calculus students looking for the answers to the odd numbered problems in the textbook and people trying to understand the miracle of life. Its a gaze into the national consciousness. They questions are reminiscent of newspaper headlines which gave me the idea to apply machine learning algorithms.</p>
+<p>Oh Yahoo Answers. The home of calculus students looking for the answers to the odd numbered problems in the textbook and people trying to understand the miracle of life. Its a gaze into the national consciousness. I wanted to see what the askers of this website are wondering so I decided to build a dataset and do some exploratory data analysis.</p>
 
 <h2>Building the Dataset</h2>
+<p>The first step is to build a dataset containing thousands of questions at least. I accomplished this with a Python script that acesses the Yahoo api and pulls the ten most recent answers. I converted the script into an exe file and scheduled it to run every hour  with Task Scheduler. The script appends the reuslts of the query to a csv file and after a few months I had enough entries to begint he analysis. MORE INFO HERE</p>
 
-<p></p>
+<p>The first idea was to do a simple frequency distribution based on the category of question. This won't be completely accurate because questions are sometimes listed under an unrelated category. I can already tell you that the most common categories will be politics and religion, two topics that Yahoo Answers is completely unprepared to handle so of course its going to happen constantly.</p>
+
+<p>Adding to the frequency distribution, I can find the most common words that appear in each category. There is an unsupervised machine learning algorithm that does something like this. Its called Latent Dirichlet Allocation, a technique created by David Blei, Andrew Ng, and Michael Jordan. Yes, that Andrew Ng, but no not that Michael Jordan. You can find the original paper HERE http://www.jmlr.org/papers/volume3/blei03a/blei03a.pdf</p>
+
+<p>The algorithm has one main hyperparamter, the number of categories it should create. Based on that value, LDA groups documents into topics by word usage. Each topic is composed of words that occur together in documents and that are not prevalant in other documents. There are many implementations of LDA. I decided to use the one from Gensim LINK HERE.</p>
+
+<p>Each question is stored as an entry in a CSV file and read into a list. Here's a quick rundown of the preprocessing. Every document is converted into lower case and tokenized using the NLTK. The list is then transformed into a Gensim Dictionary. These dictionaries have a function that removes words that appear rarely or frequently which minimizes random noise. Finally, a corpus is created by creating a bag-of-words representation of the documents.</p>
+
+<p>Alright, time to train the model. Besides choosing a number of topics, the input is knowing what parameters the model accepts. I've linked a viewable version of the final model HERE. After the model runs it can print the top topics. From the preliminary results, the topics are full of stop words with some distinct references to politics and religion. Called it. Hopefully the model will perform better after I filter out the stop words using a simple list comprehension.</p>
+
+<p>I enjoyed seeing the topics became more interpretable as I filtered out more stop words. Almost every topic had some political aspect to it which makes sense since its the most common type of question to ask. </p>
      
 <a href="https://github.com/jchakko/Ultimate_Finals">Get the GML file from my Git Hub</a>

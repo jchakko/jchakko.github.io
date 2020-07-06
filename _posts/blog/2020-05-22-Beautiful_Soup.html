@@ -1,37 +1,120 @@
 ---
-title: A Few BeautifulSoup Examples
+title: A Simple BeautifulSoup Example
 layout: post
 category: blog
 blurb: SAMPLE TEXT
 ---
 
-<h2>Let's have a go at it</h2>
+<p>There is so much data available on the internet - even if it isn't always in an analysis friendly format. The results of any modern sports tournament are hosted somewhere. Countless blog posts and movie reviews are available to the public free of charge. This information can be extracted programmatically allowing researchers to build large datasets without tedious manual input.</p>
 
-<p>There is so much data available on the internet. I'm sure you already know that. The results of any modern sports tournament are hosted somewhere. Countless blog posts and movie reviews are available to the public free of charge. Often, the questions that I want answered need a dataset that hasn't been built yet. No problem. I've seen what a dataset looks like, I can certainly build one myself.</p>
+<p><a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/">BeautifulSoup</a> is a web scraper Python library that makes it a snap to request HTML pages and parse the information on them. With a few short loops, information hosted on a web page is organized into a luxurious CSV or JSON file. Scraping a set of web pages has 2 parts: how do I extract the information on an individual page and how do I get the set of pages to parse from?</p>
 
-<p><a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/">BeautifulSoup</a> is a Python library that makes it a snap to request HTML pages and parse the information on them. With a few short loops web pages are transformed into a luxurious CSV or JSON file. BeautifulSoup is web scraper as opposed to a web crawler. Web crawlers can be programmed to traverse pages on their own when they encounter a link while web scrapers must be told which pages to parse.</p>
-
-<p>Scraping a set of web pages has 2 parts: how do I extract the information on an individual page and how do I get the set of pages to parse from? It comes down to pattern recognition and using the element inspector. The user score could have its own div. The URLs of each page may only differ by a date or city name. Better yet there could be a page that contains the URL for every episode. Each situation is going to be different so let's take a look at some examples.</p>
+<p> It comes down to pattern recognition and using the element inspector. The user score could have its own div. The URLs of each page may only differ by a date or city name. Better yet, there could be a page that contains the URL for every episode of a TV series. Each situation is going to be different so let's take a look at a simple use case.</p>
 
 <h2>Collecting a list of National Parks</h2>
 
-<p>In this example I start with the individual page for Florida's National Parks. The code below requests the page html and prints the names and links of the parks. I manually found the div that contains the park information and manually chose to search for the h3 tags because thats how the page chose to display the names. </p>
+<p>For this example I am going to scrape the <a href="https://www.nps.gov">National Park Service</a> website to create a dictionary of all listed parks and their individual URLs. I start by extracting the information from a single page with the assumption that most of the pages will have the same format.</p>
+
+<figure>
+  <img src="/media/BeautifulSoup/Vermont.png">
+  <figcaption>Vermont's Park Service Page</figcaption>
+</figure>
+
+<p>The orange boxes show the indvidual entries and the green box is a container that holds all of them. Now its time to use the page inspector to find a way for BeautifulSoup to parse these locations. The green box has id="parkListResultsArea". The orange boxes are links surrounded by h3 tags within the parkListResultsArea.</p>
+
+<h3>Extract parks from Vermont's page</h3>
 
 <pre>
   <code>
     from bs4 import BeautifulSoup
     import requests
 
-    url = "https://www.nps.gov/state/fl/index.htm"
+    url = "https://www.nps.gov/state/vt/index.htm"
     soup = BeautifulSoup(requests.get(url).content)
 
-    florida = soup.find(id = "parkListResultsArea")
-    parks = florida.find_all('h3')
+    vermont = soup.find(id = "parkListResultsArea")
+    parks = vermont.find_all('h3')
 
     for park in parks:
         link = park.find('a')
-        print(link)
+        print(link.get_text())
   </code>
 </pre>
+
+<h3>Output</h3>
+<pre>
+  <code>
+    Appalachian
+    Marsh - Billings - Rockefeller
+    North Country
+  </code>
+</pre>
+
+<p>The scraper returns the desired information from a single page. Now let's expand the code to retrieve information from multiple pages. I created a function that takes a url and executes the scraping logic. With a simple loop I can call the function for multiple states. I also added a function that takes the information from each park and transforms it into a dictionary.</p>
+
+<h3>Helper Functions</h3>
+<pre>
+  <code>
+    # Retrieve all parks from a state's page
+    def parse_state(url):
+        soup = BeautifulSoup(requests.get(url).content)
+        state = soup.find(id = "parkListResultsArea")
+        parks = state.find_all('h3')
+        return parks
+
+    # Transfrom a BeautifulSoup tag to a dictionary of park information
+    def parse_park(park, state):
+        tag = park.find('a')
+        url = tag['href']
+        name = tag.get_text()
+        park_dict = {"Name": name, "State": state, "URL": url}
+        return park_dict
+  </code>
+</pre>
+
+<h3>Main</h3>
+<pre>
+  <code>	
+
+    # Full results container
+    results = []
+
+    url = "https://www.nps.gov/state/PLACEHOLDER/index.htm"
+    states = ["vt", "de", "wi"]
+
+    # For every state in the above list
+    for state in states:
+        # Retrieve all parks from the state's page
+        state_url = url.replace("PLACEHOLDER", state)
+        state_results = parse_state(state_url)
+    
+        # For every park in the state's page
+        for park in state_results:
+            # Transform the BeautifulSoup tag to a dictionary of park information
+            park_result = parse_park(park, state)
+            results.append(park_result)
+  </code>
+</pre>
+
+<p>Each state park on the Vermont, Delaware, and Wisconsin pages have been recorded in a dictionary. All such dictionaries are stored in a list called results. This is a format that is easy to transform into a CSV.</p>
+
+<h3>Write list of dictionaries to CSV</h3>
+<pre>
+  <code>
+    import csv
+    with open('export.csv', 'w', encoding='utf-8', newline='') as output_file:
+        writer = csv.DictWriter(output_file, fieldnames=results[0].keys())
+        writer.writeheader()
+        writer.writerows(results)  
+  </code>
+</pre>
+
+<figure>
+  <img src="/media/BeautifulSoup/Export.png">
+  <figcaption>Huzzah! A Comma Separated Values file!</figcaption>
+</figure>
+
+<p>BeautifulSoup is a great tool for pulling information from HTML files. Often, the questions that I want answered need a dataset that hasn't been organized so I should get used to building them myself.</p>
+
      
 <a href="https://github.com/jchakko/D3_Manhattan">Link's up!</a>

@@ -9,7 +9,7 @@ html {
 /*background: -webkit-linear-gradient(to bottom, #56B4D3, #44bd69);  /* Chrome 10-25, Safari 5.1-6 */
 /*background: linear-gradient(to bottom, #56B4D3, #44bd69); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-background: #fffcfc; /*#bcd2e3;#f2fafa;*/
+background: #fcfcfc; /*#bcd2e3;#f2fafa;*/
 
 }
 
@@ -105,7 +105,7 @@ li {
 
 .narration {
   margin: auto;
-  max-width: 650px;
+  max-width: 850px;
   text-align: justify;
   padding: 5px;
 }
@@ -116,6 +116,12 @@ li {
   border:2px solid black;
 }
 
+figcaption {
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+
 .narration p {
   font-size: x-large;	
 }
@@ -124,8 +130,8 @@ li {
   width: 100%;
   padding:60px 0;
   text-align: center;
-  background: #403b3b;
-  color: white;
+  background: #033c8c;
+  color: gold;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -133,7 +139,8 @@ pre code {
   background-color: #eee;
   border: 1px solid #999;
   display: block;
-  padding: 20px;
+  padding: 5px;
+  font-size: large;
 }
 
 
