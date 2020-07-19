@@ -59,13 +59,17 @@ li a:hover:not(.active) {
 </html>
 
     <div class = "narration">
-      <figure>
-  <img src="/media/D3_Maps/Germany_Roads.png">
-</figure>
+      <p>Image here</p>
 
-<h2>The Line Between Honor and Vengence</h2>
+<p>I am prefacing this post by saying this is all from the Dungeons and Dragons campaign I am playing and not in real life. Someone blew up the side of the tavern I sleep at and killed about a dozen people in the process. I had my doubts that the city's law enforcement would be able to handle this case so I took it into my own hands. The main question is who did this? Waterdeep is a big city with a colorful cast of characters. They have friendly and strained relations with each other. </p>
 
-<p>I am prefacing this post by saying this is all from the Dungeons and Dragons campaign I am playing and not in real life. Someone blew up the side of the tavern I sleep at and killed about a dozen people in the process. I had my doubts that the city's law enforcement would be able to handle this case so I took it into my own hands.</p>
+<p>A great way to visualize how all of this connects is to create a graph. There are two data types in a graph file: nodes and edges. Nodes are an entity like a person or an organization. There is an edge between two nodes if there is a connection between them. I feel like there is a lack of graph files which is a shame because they are fun to use and easy to create. I wrote one from scratch for the purpose of this visualization.</p>
+
+<p>The straightforward way to build a graph is with an adjacency list. This is typically a two column format where every pair of entries are nodes connected by an edge. Adjacency lists can be imported by popular graph analysis tools like Gephi and NetworkX and exported as a standard graph file format. I wanted the output to be easily sharable so I opted to use D3.js, a browser based visualization library.</p>
+
+<p>As with all new D3 visualizations there was trial and error in discovering the intended data input format.</p>
+
+<p>D3 has graph capabilities but it seems like it is intended to display data that has already been organized and finalized.</p>
 
      
 <a href="https://github.com/jchakko/Ultimate_Finals">Stock Text</a>
