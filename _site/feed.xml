@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-07-12T11:08:59-04:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Tips for Typing in Malayalam</title><link href="http://localhost:4000/blog/2020/06/14/Malayalam_Keyboarding.html" rel="alternate" type="text/html" title="Tips for Typing in Malayalam" /><published>2020-06-14T00:00:00-04:00</published><updated>2020-06-14T00:00:00-04:00</updated><id>http://localhost:4000/blog/2020/06/14/Malayalam_Keyboarding</id><content type="html" xml:base="http://localhost:4000/blog/2020/06/14/Malayalam_Keyboarding.html">&lt;figure&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-10-18T11:58:40-04:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Tips for Typing in Malayalam</title><link href="http://localhost:4000/blog/2020/06/14/Malayalam_Keyboarding.html" rel="alternate" type="text/html" title="Tips for Typing in Malayalam" /><published>2020-06-14T00:00:00-04:00</published><updated>2020-06-14T00:00:00-04:00</updated><id>http://localhost:4000/blog/2020/06/14/Malayalam_Keyboarding</id><content type="html" xml:base="http://localhost:4000/blog/2020/06/14/Malayalam_Keyboarding.html">&lt;figure&gt;
   &lt;img src=&quot;/media/D3_Maps/Manhattan.png&quot;&gt;
 &lt;/figure&gt;
 
@@ -206,7 +206,27 @@ https://jilljuck.com/funny-malayalam-jokes
 
 &lt;p&gt;The straightforward way to build a graph is with an adjacency list. This is typically a two column format where every pair of entries are nodes connected by an edge. Adjacency lists can be imported by popular graph analysis tools like Gephi and NetworkX and exported as a standard graph file format. I wanted the output to be easily sharable so I opted to use D3.js, a browser based visualization library.&lt;/p&gt;
 
-&lt;p&gt;As with all new D3 visualizations there was trial and error in discovering the intended data input format.&lt;/p&gt;
+&lt;p&gt;D3 uses force direction to organize graph data. I find this to be a little hokey since the whole thing rotates and wobbles constantly. I opted to go with a static approach and was able to get it working with Gilsha's post on StackOverflow. As with all new D3 visualizations there was trial and error in discovering the intended data input format. Essentially I stored the nodes and links in separate arrays of objects. The node can hold all sorts of data like a name, the position within the graph, and size or color.&lt;/p&gt;
+
+&lt;h3&gt;Input JSON Format&lt;/h3&gt;
+&lt;pre&gt;
+  &lt;code&gt;
+{
+  &quot;nodes&quot;:[
+      {&quot;id&quot;: 0, &quot;name&quot;:&quot;Explosion&quot;,&quot;x&quot;: 163, &quot;y&quot;: 116},
+      {&quot;id&quot;: 1, &quot;name&quot;:&quot;Jesra&quot;,&quot;x&quot;:86, &quot;y&quot;: 52},
+      {&quot;id&quot;: 2, &quot;name&quot;:&quot;Fleeing Figure&quot;,&quot;x&quot;:166, &quot;y&quot;: 182},
+      {&quot;id&quot;: 3, &quot;name&quot;:&quot;Barnaby Blastwind&quot;,&quot;x&quot;:24, &quot;y&quot;: 144}
+		
+   ],
+  &quot;links&quot;:[
+      {&quot;source&quot;:0,&quot;target&quot;:1,&quot;weight&quot;:1},
+      {&quot;source&quot;:0,&quot;target&quot;:2,&quot;weight&quot;:1},
+      {&quot;source&quot;:0,&quot;target&quot;:3,&quot;weight&quot;:1}
+   ]
+}
+  &lt;/code&gt;
+&lt;/pre&gt;
 
 &lt;p&gt;D3 has graph capabilities but it seems like it is intended to display data that has already been organized and finalized.&lt;/p&gt;
 
@@ -248,6 +268,18 @@ https://jilljuck.com/funny-malayalam-jokes
 &lt;a href=&quot;https://github.com/jchakko/Ultimate_Finals&quot;&gt;Get the GML file from my Git Hub&lt;/a&gt;</content><author><name></name></author><category term="blog" /><summary type="html"></summary></entry><entry><title type="html">Render Maps in Browser Using D3.JS</title><link href="http://localhost:4000/blog/2020/01/15/D3_Maps.html" rel="alternate" type="text/html" title="Render Maps in Browser Using D3.JS" /><published>2020-01-15T00:00:00-05:00</published><updated>2020-01-15T00:00:00-05:00</updated><id>http://localhost:4000/blog/2020/01/15/D3_Maps</id><content type="html" xml:base="http://localhost:4000/blog/2020/01/15/D3_Maps.html">&lt;figure&gt;
   &lt;img src=&quot;/media/D3_Maps/Switzerland.png&quot;&gt;
 &lt;/figure&gt;
+
+
+&lt;h3&gt;
+Introduction: Talk about how GeoViz is a map plus data. This can be displayed with interaction effects using D3
+Base Layer: How to go from shapefile to GeoJSON + Projections
+Choropleth:
+Dot Density:
+Florida Roads:
+Points of Interest + Custom Map Slicing:
+Flow Map:
+Bubble Map
+&lt;/h3&gt;
 
 &lt;h2&gt;Welcome to GIS&lt;/h2&gt;
 

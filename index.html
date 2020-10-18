@@ -55,8 +55,8 @@ body, html {
   <div class="container">
     <div class="topnav">
       <a href="#home">ജോ ചാക്കോ</a>
-      <a href="#about">About</a>
-      <a href="#blog">Blog</a>
+      <a href="/about">About</a>
+      <a href="/blog">Blog</a>
       <a href="#about">?</a>
     </div>
   </div>
@@ -67,30 +67,6 @@ body, html {
   
 </div>
 
-<a name="about"></a>
-<div>
-  <h1>Hey hows it going? This is a website I created to organize my thoughts and experiments. It started with posts about natural language processing, then it was expanded to my host my code samples and soon after I realized it was best if I stored anything I need quick access to so you can also find my recipe for buffalo wings here. Thank you for stopping by =].</h1>
-</div>
-
-<a name="blog"></a>
-
-<div class = "PostListing">
-  {% for post in site.categories.blog %}
-    <a href="{{ post.url }}">
-  
-	<hr>
-	  <h1>{{ post.title }}</h1>
-	  <h2>{{ post.date | date: "%-d %B %Y" }}</h2>
-      <p>{{ post.blurb }}</p>
-	  
-	  <!-- <img src="{{ site.baseurl }}{{ post.image }}"> -->
-
-    </hr>
-	
-	</a>
-	<br>
-  {% endfor %}
-</div>
 
 
 </body>

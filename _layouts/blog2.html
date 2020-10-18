@@ -1,7 +1,16 @@
----
-layout: blog
-title: Blog
----
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    
+    <link href="{{site.baseurl}}/css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    {{ content }}
+  </body>
+</html>
 
 <div class = "PostListing">
 <h1>Joseph Chakko</h1>
@@ -9,19 +18,18 @@ title: Blog
 	
 <div class = "PostListing">
   {% for post in site.categories.blog %}
-    <hr>
     <a href="{{ post.url }}">
-    <div class = "entry">
-
+  
+	<hr>
 	  <h1>{{ post.title }}</h1>
 	  <h2>{{ post.date | date: "%-d %B %Y" }}</h2>
       <p>{{ post.blurb }}</p>
 	  
 	  <!-- <img src="{{ site.baseurl }}{{ post.image }}"> -->
 
-
-	</div>
+    </hr>
+	
 	</a>
-	</hr>
+	<br>
   {% endfor %}
 </div>

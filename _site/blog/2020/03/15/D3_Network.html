@@ -67,7 +67,27 @@ li a:hover:not(.active) {
 
 <p>The straightforward way to build a graph is with an adjacency list. This is typically a two column format where every pair of entries are nodes connected by an edge. Adjacency lists can be imported by popular graph analysis tools like Gephi and NetworkX and exported as a standard graph file format. I wanted the output to be easily sharable so I opted to use D3.js, a browser based visualization library.</p>
 
-<p>As with all new D3 visualizations there was trial and error in discovering the intended data input format.</p>
+<p>D3 uses force direction to organize graph data. I find this to be a little hokey since the whole thing rotates and wobbles constantly. I opted to go with a static approach and was able to get it working with Gilsha's post on StackOverflow. As with all new D3 visualizations there was trial and error in discovering the intended data input format. Essentially I stored the nodes and links in separate arrays of objects. The node can hold all sorts of data like a name, the position within the graph, and size or color.</p>
+
+<h3>Input JSON Format</h3>
+<pre>
+  <code>
+{
+  "nodes":[
+      {"id": 0, "name":"Explosion","x": 163, "y": 116},
+      {"id": 1, "name":"Jesra","x":86, "y": 52},
+      {"id": 2, "name":"Fleeing Figure","x":166, "y": 182},
+      {"id": 3, "name":"Barnaby Blastwind","x":24, "y": 144}
+		
+   ],
+  "links":[
+      {"source":0,"target":1,"weight":1},
+      {"source":0,"target":2,"weight":1},
+      {"source":0,"target":3,"weight":1}
+   ]
+}
+  </code>
+</pre>
 
 <p>D3 has graph capabilities but it seems like it is intended to display data that has already been organized and finalized.</p>
 

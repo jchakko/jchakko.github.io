@@ -9,7 +9,7 @@ html {
 /*background: -webkit-linear-gradient(to bottom, #56B4D3, #44bd69);  /* Chrome 10-25, Safari 5.1-6 */
 /*background: linear-gradient(to bottom, #56B4D3, #44bd69); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-background: #fcfcfc; /*#bcd2e3;#f2fafa;*/
+background: white;/*#bcd2e3;#f2fafa;#fcfcfc;*/
 
 }
 
@@ -103,6 +103,7 @@ li {
   text-align: center;   
 }
 
+
 .narration {
   margin: auto;
   max-width: 850px;
@@ -128,10 +129,10 @@ figcaption {
 
 .banner {
   width: 100%;
-  padding:60px 0;
+  padding:30px 0;
   text-align: center;
-  background: #033c8c;
-  color: gold;
+  background: #2CAE66;
+  color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 

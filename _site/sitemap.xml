@@ -77,7 +77,13 @@
 <lastmod>2020-06-14T00:00:00-04:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/about.html</loc>
+</url>
+<url>
 <loc>http://localhost:4000/blog.html</loc>
+</url>
+<url>
+<loc>http://localhost:4000/reference/food.html</loc>
 </url>
 <url>
 <loc>http://localhost:4000/</loc>
@@ -87,6 +93,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/notebooks.html</loc>
+</url>
+<url>
+<loc>http://localhost:4000/reference/pandas.html</loc>
 </url>
 <url>
 <loc>http://localhost:4000/reference/python.html</loc>
