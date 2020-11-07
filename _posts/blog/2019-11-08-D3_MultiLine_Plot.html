@@ -4,21 +4,24 @@ layout: post
 category: blog
 ---
 
+<p>Line graphs are one of the oldest and simplest visualizations. Draw a dot at every data point and connect them. Despite the ease of creation on paper, line graphs are tricky to implement with D3. I started learning D3 with scatter plots and bar charts. Those visualizations expect each data point to be represented by a row in a CSV file. However, to draw a line, D3 uses the SVG path element which is one continuous path derived from an array of coordinate pairs. In this case, each row of the CSV would have to contain every data point associated with a line which is unwieldy. This is where the D3 Nest function comes in handy. It takes in a vertically oriented dataset and groups it by key.</p>
+
 <figure>
   <img src="/media/D3_MultiLine/00_Plot.png">
-  <figcaption>Figure 1: Aggregate score of cricketers multi-line chart</figcaption>
+  <figcaption>Figure 1: A multiline chart created with D3</figcaption>
 </figure>
  
-<p>Line graphs are one of the oldest and simplest visualizations. Draw a dot at every data point and connect them. Repeat for as many lines I want on the plot. Despite the ease of creation on paper, line graphs are tricky to implement with D3. D3 uses the SVG path element which is simply one continuous line that takes an array of coordinate pairs as input. </p>
+<p>Let's say I want to plot the number of tropical depressions, tropical storms, and hurricanes in the Atlantic ocean each year. I only need 3 data columns. The year signifies where on the x-axis the data point will appear. The severity is the key which maps the data point to a line. The count is the y-axis complement to the year. This vertical organization pattern is more efficient for a computer to process and follows the <a href="https://vita.had.co.nz/papers/tidy-data.pdf">Tidy Data</a> principles.</p>
 
-<p>Let's say I want to plot the number of runs cricket players have accumulated over time. I store this data using 3 columns: the player name, the date, and the aggregate number of runs. As a human I would gather all of the entries for one player, then make a point at every date and draw a line to show the change over time. D3 works in a similar fashion but needs a helper function to group the entries for each player.</p> 
+<p>Before I plot the line graph, I want to explain the result of invoking D3 Nest. The function returns a JSON object that has keys of type String and values of type Array. In this case there is a key for each storm severity. Each corresponding array has the entire row of data from the CSV file. D3 uses information from the array when generating the path.</p>
+
+<p>Creating a multi line plot is remarkably similar to a single line plot once the data has been organized. Instead of providing data for a single line, I simply pass the entire nested data object to the line generator. The line generator draws a line for each key in the nest; they are separate SVG objects that can be interacted with individually.</p>
+
             
 <figure>
   <img src="/media/D3_MultiLine/01_CSV.png">
   <figcaption>Figure 2: Common data storage format</figcaption>
 </figure>
-    
-<h3>This is where the D3 Nest function comes in handy. It takes in a dataset and groups it by keys, in this case the name of each player. Nest returns a JSON object that contains an array of coordinate pairs for each player. Now D3 can draw all of the lines as separate SVG elements by passing the nested data to a path generator.</h3>
     
     
 <a href="https://bl.ocks.org/jchakko/0c02c339c9550fc338e10237da635795">Interactive Version</a>

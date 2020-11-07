@@ -14,27 +14,37 @@ blurb: Cartography right in your browser!
 <h3>
 Introduction: Talk about how GeoViz is a map plus data. This can be displayed with interaction effects using D3
 Base Layer: How to go from shapefile to GeoJSON + Projections
+Custom Map Slicing
 Choropleth:
 Dot Density:
 Florida Roads:
-Points of Interest + Custom Map Slicing:
+Points of Interest
 Flow Map:
 Bubble Map
 </h3>
 
-<h2>Welcome to GIS</h2>
+<h3>Geovisualizations are one of my favorite modes of data visualization. You've probably seen geovisualizations used to convey information on weather, traffic, and population size. At their core, they are a combination of two types of data, the spatial data that renders the map, and the information the designer wants to convey to the audience. I like to create geovisualizations using D3.js, a library that supports in browser rendering and user interaction.</h3>
 
-<p>Spatial data is becoming all the rage. There's been plenty of research done on Geographic Information System (GIS) and the data is becoming more publicly available. Cities are incresingly making their spatial data available for free to anyone who can access their websites. This data can be used by D3 to create interactive maps that are easily sharable.</p>
+<h3>Geographic Information Studies (GIS) is a widely studied field and as a result, spatial data is increasingly available to the public. There are multiple <a href="https://gisgeography.com/gis-formats/">geographic data formats</a>. Universities and local governments will often host spatial data in a zipped package called a shapefile. D3 cannot render a map from a shapefile but there are free tools available that can shape the displayed map and convert the data into a supported format.</h3>
 
-<h2>Preparing the Data</h2>
+<h2>Shapefiles and GeoJSON</h2>
+<h3>The first thing I do after finding shapefile is to render it on <a href="https://mapshaper.org/">mapshaper</a>. After uploading the entire zipfile, the website will project the boundary information. Now the data can be exported to the D3 friendly GeoJSON format. The resulting file will often be too large to be supported by web browsers so I first use mapshaper's simplify function which makes the file smaller but the lines less precise. At this point D3 can use the GeoJSON data to project the preview shown in mapshaper.</h3> 
 
-<p>For this post I am using the free country level data provided by <a href="https://www.diva-gis.org/gdata">DIVA-GIS.</a> Spatial data is often separated into a few components then compressed into a zip file. D3 cannot work with the data in this format. Thankfully there are tools online that convert spatial data zip files to GeoJSON, a format that is D3 friendly. My go to is <a href="https://mapshaper.org/">Mapshaper</a>. Import the entire zip file. Mapshaper has a simplify feature which makes the file smaller but the lines less precise. I like to play with it and pretend I'm making minimalist art or something. Anyways when you're finished export the data as a GeoJSON file.</p>
+<p>Sometimes I have trouble finding the exact spatial data I am looking for. Once I wanted to create a projection of Manhattan. NYC OpenData freely distributes the <a href= "https://data.cityofnewyork.us/City-Government/Neighborhood-Tabulation-Areas-NTA-/cpf4-rkhq"> Neighborhood Tabulation Areas</a>. The file shows the boundaries for Manhattan, but also includes the other boroughs of New York. The GeoJSON file retains metadata, like the associated borough code for each path in the file. I used to the open source Python library <a href= "https://geopandas.org/">GeoPandas</a> to select the relevent paths. GeoPandas opens the GeoJSON file as a pandas dataframe. I created a Manhattan GeoJSON file by exporting a dataframe that only contains rows with a Manhattan borough code.</p>
 
-<h2>Display the Spatial Data</h2>   
+<p>For this post I am using the free country level data provided by <a href="https://www.diva-gis.org/gdata">DIVA-GIS.</a> Spatial data is often separated into a few components then compressed into a zip file.
 
-<p>Projections make it possible to display a 3D object on a 2D surface. There are a handful of projections each with their strengths and weaknesses. GeoJSON coordinates can be transformed by a projection function then drawn using a line generator. I created a template that can take GeoJSON data and render a map with Mercator projection.</p>
+<h2>Projecting GeoJSON with D3</h2>
 
-<a href="https://bl.ocks.org/jchakko/ecd02b26162df338128c5b455e58c074">Check out the code here</a>
+<p>Whenever I create something with D3 I start with an existing visualization. After gutting and rewriting my own code a few times I wrote a <a href="https://bl.ocks.org/jchakko/ecd02b26162df338128c5b455e58c074">map projection template</a>. My goal was to make it as concise and straightforward as possible but it will still confuse newcomers to the library. I am going to explain the use of a projection since it plays a large role in the world of cartography.</p>   
+
+<p>The Earth has been drawn on countless flat surfaces thanks to map projections. Projections make it possible to translate the coordinates of a 3D object to a 2D surface although there will be distortion. There are a handful of projections each with their strengths and weaknesses. The template I created uses the commonly seen Mercator projection. Now that the base layer is in place, its time to add data and interactive effects.</p>
+
+<h2></h2>
+
+<h2>Choropleths</h2>
+
+<p>Choropleths are a type of geovisualization that use color to convey numerical values. Darker color mean a higher value and lighter colors depict lower values. Choropleths are often used to show census data.</p>
 
 <h2>The Application</h2>
 
