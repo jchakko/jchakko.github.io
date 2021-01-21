@@ -1,4 +1,134 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-11-06T21:41:03-05:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Tips for Typing in Malayalam</title><link href="http://localhost:4000/blog/2020/06/14/Malayalam_Keyboarding.html" rel="alternate" type="text/html" title="Tips for Typing in Malayalam" /><published>2020-06-14T00:00:00-04:00</published><updated>2020-06-14T00:00:00-04:00</updated><id>http://localhost:4000/blog/2020/06/14/Malayalam_Keyboarding</id><content type="html" xml:base="http://localhost:4000/blog/2020/06/14/Malayalam_Keyboarding.html">&lt;figure&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-01-21T11:45:51-05:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Playing with Graph Files</title><link href="http://localhost:4000/blog/2020/11/25/Graph_Files.html" rel="alternate" type="text/html" title="Playing with Graph Files" /><published>2020-11-25T00:00:00-05:00</published><updated>2020-11-25T00:00:00-05:00</updated><id>http://localhost:4000/blog/2020/11/25/Graph_Files</id><content type="html" xml:base="http://localhost:4000/blog/2020/11/25/Graph_Files.html">&lt;figure&gt;
+  &lt;img src=&quot;/media/D3_Maps/Manhattan.png&quot;&gt;
+&lt;/figure&gt;
+
+&lt;h2&gt;Let's have a go at it&lt;/h2&gt;
+
+&lt;p&gt;Network Science is the study of two components: nodes and edges. Related nodes are connected by edges and these combinations form a graph. The base of network science is easy to understand but don't be fooled, it is a deeply mathematical field. Network Science PhD programs and deep learning graph libraries have already arrived and there is plenty of room for advances in the field.&lt;/p&gt;
+
+&lt;p&gt;When I studied this discipline I had difficulty finding datasets to play with and analyze. This surprised me because a graph files are simple to create and can model a variety of fun relationships. I use Gephi to create graph files by importing a CSV and exporting the resulting output in a format like ___. Data in this format can be accessed by other graph analysis software. The input CSV file is straightforward to create. The cell entries are nodes. Nodes that appear in the same row will have an edge that connects them.&lt;/p&gt;
+
+&lt;p&gt;Image&lt;/p&gt;
+
+&lt;p&gt;The main hurdle with making a graph file that is suitable for analysis is not the technical aspect. It lies in finding a subject that lends itself well to the graph format. One of the classic examples is a graph that depicts the relationships between the characters in Victor Hugo's Les Miz. When two characters appear in the same chapter, they are connected by an edge. This works well as a graph file because there are many characters and chapters to create separation. In my first attempts at creating a analyzable graph file there were either too few nodes overall or they all interacted too often so there was no meaningful separations in the graph.&lt;/p&gt;
+
+&lt;p&gt;After some thought I remembered a subject I believed would make for an interesting graph file: the documents of link FOUNDERSLINK. The website archives NUMBER writings of historical American figures from the ____ to ____ era. For the purpose of creating a graph file, I want the correspondance between the founders. This will be a directed graph where the source node is the author and the target node is the recipient.&lt;/p&gt;
+
+&lt;p&gt;The API page provided a good starting point with the full metadata in JSON format. From here I have creative freedom to extract the relevevant entries and transform them into the CSV format to be used by Gephi.&lt;p&gt;
+     
+&lt;a href=&quot;https://github.com/jchakko/D3_Manhattan&quot;&gt;Link's up!&lt;/a&gt;</content><author><name></name></author><category term="blog" /><summary type="html"></summary></entry><entry><title type="html">Twinkling</title><link href="http://localhost:4000/piano/2020/11/11/Twinkling.html" rel="alternate" type="text/html" title="Twinkling" /><published>2020-11-11T00:00:00-05:00</published><updated>2020-11-11T00:00:00-05:00</updated><id>http://localhost:4000/piano/2020/11/11/Twinkling</id><content type="html" xml:base="http://localhost:4000/piano/2020/11/11/Twinkling.html">&lt;h3&gt;Db&lt;/h3&gt;
+
+&lt;h3&gt;  F&lt;/h3&gt;
+
+&lt;h3&gt;    Ab&lt;/h3&gt;
+
+&lt;h3&gt;      C&lt;/h3&gt;
+
+&lt;h3&gt;        Db&lt;/h3&gt;
+
+&lt;h3&gt;          F&lt;/h3&gt;
+
+&lt;h3&gt;            Ab&lt;/h3&gt;
+
+&lt;h3&gt;              C&lt;/h3&gt;
+
+&lt;h3&gt;                Db&lt;/h3&gt;
+
+&lt;h3&gt;              C&lt;/h3&gt;
+
+&lt;h3&gt;            A♭&lt;/h3&gt;
+
+&lt;h3&gt;          F&lt;/h3&gt;
+
+&lt;h3&gt;        Db&lt;/h3&gt;
+
+&lt;h3&gt;      C&lt;/h3&gt;
+
+&lt;h3&gt;   Ab&lt;/h3&gt;
+
+&lt;h3&gt;  F&lt;/h3&gt;
+
+&lt;h3&gt;C&lt;/h3&gt;
+
+&lt;h3&gt;  F&lt;/h3&gt;
+
+&lt;h3&gt;    A♭&lt;/h3&gt;
+
+&lt;h3&gt;      C&lt;/h3&gt;
+
+&lt;h3&gt;        E♭&lt;/h3&gt;
+
+&lt;h3&gt;          F&lt;/h3&gt;
+
+&lt;h3&gt;            A♭&lt;/h3&gt;
+
+&lt;h3&gt;              C&lt;/h3&gt;
+
+&lt;h3&gt;                D♭&lt;/h3&gt;
+
+&lt;h3&gt;              C&lt;/h3&gt;
+
+&lt;h3&gt;            A♭&lt;/h3&gt;
+
+&lt;h3&gt;          F&lt;/h3&gt;
+
+&lt;h3&gt;        E♭&lt;/h3&gt;
+
+&lt;h3&gt;      C&lt;/h3&gt;
+
+&lt;h3&gt;    A♭&lt;/h3&gt;
+
+&lt;h3&gt;  F&lt;/h3&gt;
+
+&lt;h3&gt;B♭&lt;/h3&gt;
+
+&lt;h3&gt;  F&lt;/h3&gt;
+
+&lt;h3&gt;    A♭&lt;/h3&gt;
+
+&lt;h3&gt;      C&lt;/h3&gt;
+
+&lt;h3&gt;        D♭&lt;/h3&gt;
+
+&lt;h3&gt;          F&lt;/h3&gt;
+
+&lt;h3&gt;            A♭&lt;/h3&gt;
+
+&lt;h3&gt;              C&lt;/h3&gt;
+
+&lt;h3&gt;                E♭&lt;/h3&gt;
+
+&lt;h3&gt;              C&lt;/h3&gt;
+
+&lt;h3&gt;            A♭&lt;/h3&gt;
+
+&lt;h3&gt;          F&lt;/h3&gt;
+
+&lt;h3&gt;        D♭&lt;/h3&gt;
+
+&lt;h3&gt;      C&lt;/h3&gt;
+
+&lt;h3&gt;    A♭&lt;/h3&gt;
+
+&lt;h3&gt;  F&lt;/h3&gt;
+
+&lt;h3&gt;A♭&lt;/h3&gt;
+
+&lt;h3&gt;  F&lt;/h3&gt;
+
+&lt;h3&gt;    A♭&lt;/h3&gt;
+
+&lt;h3&gt;      C&lt;/h3&gt;
+
+&lt;h3&gt;        D♭&lt;/h3&gt;
+
+&lt;h3&gt;          E♭&lt;/h3&gt;
+
+&lt;h3&gt;            F&lt;/h3&gt;
+
+&lt;h3&gt;              A♭&lt;/h3&gt;
+
+&lt;h3&gt;                C&lt;/h3&gt;</content><author><name></name></author><category term="piano" /><summary type="html">Db</summary></entry><entry><title type="html">Tips for Typing in Malayalam</title><link href="http://localhost:4000/blog/2020/06/14/Malayalam_Keyboarding.html" rel="alternate" type="text/html" title="Tips for Typing in Malayalam" /><published>2020-06-14T00:00:00-04:00</published><updated>2020-06-14T00:00:00-04:00</updated><id>http://localhost:4000/blog/2020/06/14/Malayalam_Keyboarding</id><content type="html" xml:base="http://localhost:4000/blog/2020/06/14/Malayalam_Keyboarding.html">&lt;figure&gt;
   &lt;img src=&quot;/media/D3_Maps/Manhattan.png&quot;&gt;
 &lt;/figure&gt;
 
@@ -250,86 +380,4 @@ https://jilljuck.com/funny-malayalam-jokes
 
 &lt;p&gt;I enjoyed seeing the topics became more interpretable as I filtered out more stop words. Almost every topic had some political aspect to it which makes sense since its the most common type of question to ask. &lt;/p&gt;
      
-&lt;a href=&quot;https://github.com/jchakko/Ultimate_Finals&quot;&gt;Get the GML file from my Git Hub&lt;/a&gt;</content><author><name></name></author><category term="blog" /><summary type="html">LDA PIC HERE</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/media/D3_Maps/Germany_Roads.png" /><media:content medium="image" url="http://localhost:4000/media/D3_Maps/Germany_Roads.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Create A Network Dataset</title><link href="http://localhost:4000/blog/2020/02/03/Create_A_Network_Dataset-Copy.html" rel="alternate" type="text/html" title="Create A Network Dataset" /><published>2020-02-03T00:00:00-05:00</published><updated>2020-02-03T00:00:00-05:00</updated><id>http://localhost:4000/blog/2020/02/03/Create_A_Network_Dataset%20-%20Copy</id><content type="html" xml:base="http://localhost:4000/blog/2020/02/03/Create_A_Network_Dataset-Copy.html">&lt;figure&gt;
-  &lt;img src=&quot;/media/Ultimate_Finals/GrandFinals_Network2.png&quot;&gt;
-&lt;/figure&gt;
-
-&lt;h3&gt;Network datasets create awesome visualizations. I like seeing the networks created by characters in books and TV shows. When I first started looking for datasets I found they were hard to come by. This is probably because determining what counts as a connection between characters is difficult. Mechanically the only thing to do is create a CSV file where characters that are connected appear on the same row. But to consume the media and attempt to record all the interactions between characters would be painful and probably make you dislike the show you were trying to visualize in the first place.&lt;/h3&gt;
-
-&lt;h3&gt;I think the challenge comes from finding preexisting data that is suitable to be transformed into a network. One of the 'Hello World' networks to analyze is the Les Misérables (pronounce it like lay miz-er-ah) dataset. The principle behind the network creation is simple. If two characters appear in the same chapter, they are given an edge. This simplifies a lot because its possible for a machine to do this computation. Now, there may be connections between two characters who never interact if they happen to be in the same chapter. This is a necessary tradeoff because its too difficult to judge what counts as an interaction.&lt;/h3&gt;
-
-&lt;h3&gt;My first idea was to create a network of Star Wars. I couldn't get my footing. The problem was there is no unified collection of Star Wars characters. Looking up characters I already know about is easy but to find characters that I don't know was too difficult. If I only used the movies as separators there would not be enough of them to draw interesting distinctions. The second idea was to do The Office. Separating by episode isn't strict enough but I did find a website that groups interactions by scene. I ended up not doing this because there weren't enough characters and the characters interact with each other far too often.&lt;/h3&gt;
-
-&lt;h3&gt;So to create a good network we need a lot of separations and a lot of characters. This led me to the anime Naruto which I watched a lot in middle school. Despite watching it a lot I didn't get very far. Thanks to the pace new episodes were broadcasted over the course of 2 years I made it to episode 70 or so and there are 500 in total. Anyways this fits the criteria because there are hundreds of characters and hundreds of separations. I easily found a listing of episodes from Narutopedia. I wrote a web scraper that visits each page and grans the characters listed in the credits. Let me not gloss over that part, the credit listing on each episode was the make or break for this project. I originally started working with the Manga which also has an webpage for each chapter but there was no simple way for me to determine which characters appeared in each chapter.&lt;/h3&gt;
-
-&lt;h3&gt;The web scraper created put the credits for each episode in a list. I then used itertools to create combinations for each list. Finally I wrote them into a csv to be loaded by Gephi. Overall the coding was not too dificult because the information was already stored in a format that could be transformed into the csv file. If I stuck with the manga I would have had to parse the chapter summaries and extract the character names.&lt;/h3&gt;    
-    
-    
-&lt;a href=&quot;https://github.com/jchakko/Ultimate_Finals&quot;&gt;Get the GML file from my Git Hub&lt;/a&gt;</content><author><name></name></author><category term="blog" /><summary type="html"></summary></entry><entry><title type="html">Render Maps in Browser Using D3.JS</title><link href="http://localhost:4000/blog/2020/01/15/D3_Maps.html" rel="alternate" type="text/html" title="Render Maps in Browser Using D3.JS" /><published>2020-01-15T00:00:00-05:00</published><updated>2020-01-15T00:00:00-05:00</updated><id>http://localhost:4000/blog/2020/01/15/D3_Maps</id><content type="html" xml:base="http://localhost:4000/blog/2020/01/15/D3_Maps.html">&lt;figure&gt;
-  &lt;img src=&quot;/media/D3_Maps/Switzerland.png&quot;&gt;
-&lt;/figure&gt;
-
-
-&lt;h3&gt;
-Introduction: Talk about how GeoViz is a map plus data. This can be displayed with interaction effects using D3
-Base Layer: How to go from shapefile to GeoJSON + Projections
-Custom Map Slicing
-Choropleth:
-Dot Density:
-Florida Roads:
-Points of Interest
-Flow Map:
-Bubble Map
-&lt;/h3&gt;
-
-&lt;h3&gt;Geovisualizations are one of my favorite modes of data visualization. You've probably seen geovisualizations used to convey information on weather, traffic, and population size. At their core, they are a combination of two types of data, the spatial data that renders the map, and the information the designer wants to convey to the audience. I like to create geovisualizations using D3.js, a library that supports in browser rendering and user interaction.&lt;/h3&gt;
-
-&lt;h3&gt;Geographic Information Studies (GIS) is a widely studied field and as a result, spatial data is increasingly available to the public. There are multiple &lt;a href=&quot;https://gisgeography.com/gis-formats/&quot;&gt;geographic data formats&lt;/a&gt;. Universities and local governments will often host spatial data in a zipped package called a shapefile. D3 cannot render a map from a shapefile but there are free tools available that can shape the displayed map and convert the data into a supported format.&lt;/h3&gt;
-
-&lt;h2&gt;Shapefiles and GeoJSON&lt;/h2&gt;
-&lt;h3&gt;The first thing I do after finding shapefile is to render it on &lt;a href=&quot;https://mapshaper.org/&quot;&gt;mapshaper&lt;/a&gt;. After uploading the entire zipfile, the website will project the boundary information. Now the data can be exported to the D3 friendly GeoJSON format. The resulting file will often be too large to be supported by web browsers so I first use mapshaper's simplify function which makes the file smaller but the lines less precise. At this point D3 can use the GeoJSON data to project the preview shown in mapshaper.&lt;/h3&gt; 
-
-&lt;p&gt;Sometimes I have trouble finding the exact spatial data I am looking for. Once I wanted to create a projection of Manhattan. NYC OpenData freely distributes the &lt;a href= &quot;https://data.cityofnewyork.us/City-Government/Neighborhood-Tabulation-Areas-NTA-/cpf4-rkhq&quot;&gt; Neighborhood Tabulation Areas&lt;/a&gt;. The file shows the boundaries for Manhattan, but also includes the other boroughs of New York. The GeoJSON file retains metadata, like the associated borough code for each path in the file. I used to the open source Python library &lt;a href= &quot;https://geopandas.org/&quot;&gt;GeoPandas&lt;/a&gt; to select the relevent paths. GeoPandas opens the GeoJSON file as a pandas dataframe. I created a Manhattan GeoJSON file by exporting a dataframe that only contains rows with a Manhattan borough code.&lt;/p&gt;
-
-&lt;p&gt;For this post I am using the free country level data provided by &lt;a href=&quot;https://www.diva-gis.org/gdata&quot;&gt;DIVA-GIS.&lt;/a&gt; Spatial data is often separated into a few components then compressed into a zip file.
-
-&lt;h2&gt;Projecting GeoJSON with D3&lt;/h2&gt;
-
-&lt;p&gt;Whenever I create something with D3 I start with an existing visualization. After gutting and rewriting my own code a few times I wrote a &lt;a href=&quot;https://bl.ocks.org/jchakko/ecd02b26162df338128c5b455e58c074&quot;&gt;map projection template&lt;/a&gt;. My goal was to make it as concise and straightforward as possible but it will still confuse newcomers to the library. I am going to explain the use of a projection since it plays a large role in the world of cartography.&lt;/p&gt;   
-
-&lt;p&gt;The Earth has been drawn on countless flat surfaces thanks to map projections. Projections make it possible to translate the coordinates of a 3D object to a 2D surface although there will be distortion. There are a handful of projections each with their strengths and weaknesses. The template I created uses the commonly seen Mercator projection. Now that the base layer is in place, its time to add data and interactive effects.&lt;/p&gt;
-
-&lt;h2&gt;&lt;/h2&gt;
-
-&lt;h2&gt;Choropleths&lt;/h2&gt;
-
-&lt;p&gt;Choropleths are a type of geovisualization that use color to convey numerical values. Darker color mean a higher value and lighter colors depict lower values. Choropleths are often used to show census data.&lt;/p&gt;
-
-&lt;h2&gt;The Application&lt;/h2&gt;
-
-&lt;p&gt;This was a lot of work to look at a map of Switzerland but it's only the foundation. The key power behind D3 is interactivity and binding data to elements. Depending on the data I can color in regions of the map, mark the locations of major cities, and react to user mouse activity. Its very manual but allows for some truly compelling visualizations.&lt;/p&gt;
-
-&lt;h2&gt;The Art of Not Taking Notes&lt;/h2&gt;
-
-&lt;p&gt;I joined a Call of Cthullu campaign as if I don't spend enough time role playing already. One aspect of the game I appreciate is how its based on real locations; after a quick stint in Peru and a time skip my party ends up in New York. I wanted a visual way to keep track of our progres and decided to go with marking the locations we've visited on a D3 map.&lt;/p&gt;
-
-&lt;h2&gt;Making The Map&lt;/h2&gt;
-
-&lt;p&gt;The first step was to find an appropriate GeoJSON of Manhattan. NYC OpenData has a lot of publicly available GIS files including the&lt;a href= &quot;https://data.cityofnewyork.us/City-Government/Neighborhood-Tabulation-Areas-NTA-/cpf4-rkhq&quot;&gt; Neighborhood Tabulation Areas&lt;/a&gt; This draws the visualization I want but also every other borough in New York. To subset the spatial file I used &lt;a href= &quot;https://geopandas.org/&quot;&gt;GeoPandas&lt;/a&gt;. The library lets me import the spatial file as a dataframe. After a quick peek at the metadata I selected only the rows that contain Manhattan's borough code and exported the selection to a JSON file.&lt;/p&gt;
-
-&lt;p&gt;Now that the map is up, I need to create markings on the map to show where the team has visited. Evidently the Cthullu handbook has the intersections for each place of interest and my patient Keeper Andriy passed it along to me. Call of Cthullu is in the 1920's so some of the street names have changed. Still, when I pass the information into Google Maps it takes it like a champ and gives me the coordinate information back. I apply the projection function to the coordinates and plot the output on top of the map of Manhattan.&lt;/p&gt;
-
-&lt;h2&gt;I jotted a few key facts&lt;/h2&gt;
-&lt;p&gt;The map needed some additional information to explain the relevance of the marked points. I added a mouseover effect that displays a tooltip with the name of the location, the game provided address, and quick description of what we did there. Adding points to the map gives the story a feeling of progression.&lt;/p&gt;
-
-&lt;a href=&quot;https://github.com/jchakko/D3_Manhattan&quot;&gt;GitHub Repo&lt;/a&gt;
-
-&lt;h2&gt;Choropleths and Cenus Data&lt;/h2&gt;
-
-&lt;p&gt;One of the most common forms of geographic data is census information. It can show how different parts of a region think, feel, and behave about a myriad of topics. A powerful way to convey this information is with a Choropleth. This visualization colors in sections of a map based on the data provided. I got my hands on census data from India to settle a very important question. Who's eating rice and who's eating roti?&lt;/p&gt;
-
-&lt;p&gt;The census had a section about the per capita rice and wheat consumption in every state of India. I extracted the data to a CSV file and found an accompanying GeoJSON file. Its important that the number of entries in both files are the same so D3 knows where to color. With some simple arithmatic and color scales I created a map thats more green when a state eats rice and more saffron when roti is the carb of choice. Mousing over a state shows the original information.&lt;/p&gt;
-
-&lt;h2&gt;What else?&lt;/h2&gt;
-
-&lt;p&gt;These examples are so random which shows&lt;/p&gt;</content><author><name></name></author><category term="blog" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/media/D3_Maps/Switzerland.png" /><media:content medium="image" url="http://localhost:4000/media/D3_Maps/Switzerland.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+&lt;a href=&quot;https://github.com/jchakko/Ultimate_Finals&quot;&gt;Get the GML file from my Git Hub&lt;/a&gt;</content><author><name></name></author><category term="blog" /><summary type="html">LDA PIC HERE</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/media/D3_Maps/Germany_Roads.png" /><media:content medium="image" url="http://localhost:4000/media/D3_Maps/Germany_Roads.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

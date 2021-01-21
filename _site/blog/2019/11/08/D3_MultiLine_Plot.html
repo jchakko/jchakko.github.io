@@ -59,29 +59,47 @@ li a:hover:not(.active) {
 </html>
 
     <div class = "narration">
-      <p>Line graphs are one of the oldest and simplest visualizations. Draw a dot at every data point and connect them. Despite the ease of creation on paper, line graphs are tricky to implement with D3. I started learning D3 with scatter plots and bar charts. Those visualizations expect each data point to be represented by a row in a CSV file. However, to draw a line, D3 uses the SVG path element which is one continuous path derived from an array of coordinate pairs. In this case, each row of the CSV would have to contain every data point associated with a line which is unwieldy. This is where the D3 Nest function comes in handy. It takes in a vertically oriented dataset and groups it by key.</p>
-
-<figure>
+      <figure>
   <img src="/media/D3_MultiLine/00_Plot.png">
   <figcaption>Figure 1: A multiline chart created with D3</figcaption>
 </figure>
+
+<p>Line graphs are one of the oldest and simplest visualizations. Draw a dot at every data point and connect them. Despite the ease of creation on paper, line graphs are tricky to implement with D3. I started learning D3 with scatter plots and bar charts. Those visualizations expect each data point to be represented by a row in a CSV file. However, to draw a line, D3 uses the SVG path element which is one continuous path derived from an array of coordinate pairs. In this case, each row of the CSV would have to contain every data point associated with a line which is unwieldy. This is where the D3 Nest function comes in handy. It takes in a vertically oriented dataset and groups it by key.</p>
  
 <p>Let's say I want to plot the number of tropical depressions, tropical storms, and hurricanes in the Atlantic ocean each year. I only need 3 data columns. The year signifies where on the x-axis the data point will appear. The severity is the key which maps the data point to a line. The count is the y-axis complement to the year. This vertical organization pattern is more efficient for a computer to process and follows the <a href="https://vita.had.co.nz/papers/tidy-data.pdf">Tidy Data</a> principles.</p>
 
-<p>Before I plot the line graph, I want to explain the result of invoking D3 Nest. The function returns a JSON object that has keys of type String and values of type Array. In this case there is a key for each storm severity. Each corresponding array has the entire row of data from the CSV file. D3 uses information from the array when generating the path.</p>
-
-<p>Creating a multi line plot is remarkably similar to a single line plot once the data has been organized. Instead of providing data for a single line, I simply pass the entire nested data object to the line generator. The line generator draws a line for each key in the nest; they are separate SVG objects that can be interacted with individually.</p>
-
-            
 <figure>
-  <img src="/media/D3_MultiLine/01_CSV.png">
-  <figcaption>Figure 2: Common data storage format</figcaption>
+  <img src="/media/D3_MultiLine/01_Transform.png">
+  <figcaption>Figure 2: Input and output format of d3.nest()</figcaption>
 </figure>
-    
-    
-<a href="https://bl.ocks.org/jchakko/0c02c339c9550fc338e10237da635795">Interactive Version</a>
-<a href="https://github.com/d3/d3-collection#nests">D3 Nest Source Code</a>
-    
+
+<p>Before I plot the line graph, I want to explain the result of invoking D3 Nest. The function returns a JSON object that has keys of type String for each storm severity. Each corresponding value is an Array of Arrays. The inner arrays each contain an entire row of data from the CSV file. D3 will traverse the Array of Arrays and use the data within to draw the path.</p>
+
+<p>Creating a multi line plot is remarkably similar to a single line plot once the data has been organized. Instead of providing data for a single line, I simply pass the entire nested data object to the line generator as shown in the below code excerpt. The line generator draws a line for each key in the nest; they are separate SVG objects that can be interacted with individually.</p>
+
+
+
+<pre>
+  <code>
+    lines.selectAll(".line")
+        .data(nestedData)
+        .enter()
+        .append("path")
+        .attr("class", "line")
+        .attr("d", function(d,i) {
+          return lineGenerator(d.values);
+        })
+        .style("fill","none")
+        .style("stroke", function(d,i) {
+          return colors[i];
+        })
+        .style("opacity", .9)
+        .style("stroke-width",4);
+  </code>
+</pre>
+
+
+<p>In the end, the data refuted my belief that the number of hurricanes per year has increased over time and that's ok! I continued working on the visualization and added labels and formatted the axis ticks. Check out my <a href="https://gist.github.com/jchakko/32ddb6b5966e9a65d1ac99801ff7bab4">gist</a> if you are interested in seeing the source code.</p>
     </div>
 	
   </body>

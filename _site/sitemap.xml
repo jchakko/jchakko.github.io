@@ -77,6 +77,14 @@
 <lastmod>2020-06-14T00:00:00-04:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/piano/2020/11/11/Twinkling.html</loc>
+<lastmod>2020-11-11T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/2020/11/25/Graph_Files.html</loc>
+<lastmod>2020-11-25T00:00:00-05:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/about.html</loc>
 </url>
 <url>
@@ -96,6 +104,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/reference/pandas.html</loc>
+</url>
+<url>
+<loc>http://localhost:4000/reference/piano.html</loc>
 </url>
 <url>
 <loc>http://localhost:4000/reference/python.html</loc>

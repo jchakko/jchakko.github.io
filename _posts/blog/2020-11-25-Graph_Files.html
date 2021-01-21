@@ -1,0 +1,25 @@
+---
+title: Playing with Graph Files
+layout: post
+category: blog
+---
+
+<figure>
+  <img src="/media/D3_Maps/Manhattan.png">
+</figure>
+
+<h2>Let's have a go at it</h2>
+
+<p>Network Science is the study of two components: nodes and edges. Related nodes are connected by edges and these combinations form a graph. The base of network science is easy to understand but don't be fooled, it is a deeply mathematical field. Network Science PhD programs and deep learning graph libraries have already arrived and there is plenty of room for advances in the field.</p>
+
+<p>When I studied this discipline I had difficulty finding datasets to play with and analyze. This surprised me because a graph files are simple to create and can model a variety of fun relationships. I use Gephi to create graph files by importing a CSV and exporting the resulting output in a format like ___. Data in this format can be accessed by other graph analysis software. The input CSV file is straightforward to create. The cell entries are nodes. Nodes that appear in the same row will have an edge that connects them.</p>
+
+<p>Image</p>
+
+<p>The main hurdle with making a graph file that is suitable for analysis is not the technical aspect. It lies in finding a subject that lends itself well to the graph format. One of the classic examples is a graph that depicts the relationships between the characters in Victor Hugo's Les Miz. When two characters appear in the same chapter, they are connected by an edge. This works well as a graph file because there are many characters and chapters to create separation. In my first attempts at creating a analyzable graph file there were either too few nodes overall or they all interacted too often so there was no meaningful separations in the graph.</p>
+
+<p>After some thought I remembered a subject I believed would make for an interesting graph file: the documents of link FOUNDERSLINK. The website archives NUMBER writings of historical American figures from the ____ to ____ era. For the purpose of creating a graph file, I want the correspondance between the founders. This will be a directed graph where the source node is the author and the target node is the recipient.</p>
+
+<p>The API page provided a good starting point with the full metadata in JSON format. From here I have creative freedom to extract the relevevant entries and transform them into the CSV format to be used by Gephi.<p>
+     
+<a href="https://github.com/jchakko/D3_Manhattan">Link's up!</a>
