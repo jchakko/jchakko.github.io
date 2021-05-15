@@ -1,0 +1,28 @@
+---
+layout: blog
+title: Piano
+category: reference
+---
+
+<div class = "PostListing">
+<h1>Joseph Chakko</h1>
+	
+	
+<div class = "PostListing">
+  {% for post in site.categories.piano %}
+    <hr>
+    <a href="{{ post.url }}">
+    <div class = "entry">
+
+	  <h1>{{ post.title }}</h1>
+	  <h2>{{ post.date | date: "%-d %B %Y" }}</h2>
+      <p>{{ post.blurb }}</p>
+	  
+	  <!-- <img src="{{ site.baseurl }}{{ post.image }}"> -->
+
+
+	</div>
+	</a>
+	</hr>
+  {% endfor %}
+</div>

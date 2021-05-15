@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-02-07T11:06:17-05:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">All of the Lights</title><link href="http://localhost:4000/piano/2021/02/01/All_of_the_Lights.html" rel="alternate" type="text/html" title="All of the Lights" /><published>2021-02-01T00:00:00-05:00</published><updated>2021-02-01T00:00:00-05:00</updated><id>http://localhost:4000/piano/2021/02/01/All_of_the_Lights</id><content type="html" xml:base="http://localhost:4000/piano/2021/02/01/All_of_the_Lights.html">&lt;table&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-04-17T12:15:06-04:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">All of the Lights</title><link href="http://localhost:4000/piano/2021/02/01/All_of_the_Lights.html" rel="alternate" type="text/html" title="All of the Lights" /><published>2021-02-01T00:00:00-05:00</published><updated>2021-02-01T00:00:00-05:00</updated><id>http://localhost:4000/piano/2021/02/01/All_of_the_Lights</id><content type="html" xml:base="http://localhost:4000/piano/2021/02/01/All_of_the_Lights.html">&lt;table&gt;
   &lt;tr&gt;
     &lt;th&gt;Left&lt;/th&gt;
     &lt;th&gt;Right&lt;/th&gt;
@@ -88,346 +88,515 @@
     &lt;td&gt;&lt;/td&gt;
     &lt;td&gt;&lt;/td&gt;
   &lt;/tr&gt;
-&lt;/table&gt;</content><author><name></name></author><category term="piano" /><summary type="html">Left Right B♭ B♭ F F F♯ B♭ C♯ F♯ B♭ B♭ C♯ G♯ B♭ C♯ F♯ B♭ C♯ F C E♭ G♯ C E♭</summary></entry><entry><title type="html">Tainted Love</title><link href="http://localhost:4000/piano/2021/01/26/Tainted_Love.html" rel="alternate" type="text/html" title="Tainted Love" /><published>2021-01-26T00:00:00-05:00</published><updated>2021-01-26T00:00:00-05:00</updated><id>http://localhost:4000/piano/2021/01/26/Tainted_Love</id><content type="html" xml:base="http://localhost:4000/piano/2021/01/26/Tainted_Love.html">&lt;h3&gt;Db&lt;/h3&gt;
+&lt;/table&gt;</content><author><name></name></author><category term="piano" /><summary type="html">Left Right B♭ B♭ F F F♯ B♭ C♯ F♯ B♭ B♭ C♯ G♯ B♭ C♯ F♯ B♭ C♯ F C E♭ G♯ C E♭</summary></entry><entry><title type="html">All of the Lights</title><link href="http://localhost:4000/piano/2021/02/01/All_of_the_Lights.html" rel="alternate" type="text/html" title="All of the Lights" /><published>2021-02-01T00:00:00-05:00</published><updated>2021-02-01T00:00:00-05:00</updated><id>http://localhost:4000/piano/2021/02/01/All_of_the_Lights</id><content type="html" xml:base="http://localhost:4000/piano/2021/02/01/All_of_the_Lights.html">&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Left&lt;/th&gt;
+    &lt;th&gt;Right&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;B♭&lt;/td&gt;
+    &lt;td&gt;B♭&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;F&lt;/td&gt;
+    &lt;td&gt;F&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;F♯ B♭ C♯&lt;/td&gt;
+    &lt;td&gt;F♯&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;B♭&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;B♭ C♯ G♯&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;/td&gt;
+	&lt;td&gt;B♭ C♯ F♯&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;/td&gt;
+	&lt;td&gt;B♭ C♯ F&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;C E♭&lt;/td&gt;
+	&lt;td&gt;G♯ C E♭&lt;/td&gt;
+  &lt;/tr&gt;
 
-&lt;h3&gt;  F&lt;/h3&gt;
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Left&lt;/th&gt;
+    &lt;th&gt;Right&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;B♭      B♭&lt;/td&gt;
+	&lt;td&gt;C♯ F B♭&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
 
-&lt;h3&gt;    Ab&lt;/h3&gt;
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Left&lt;/th&gt;
+    &lt;th&gt;Right&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;F♯ B♭ C♯&lt;/td&gt;
+	&lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;/td&gt;
+	&lt;td&gt;C♯, F, G♯&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;F♯ A♯ C♯&lt;/td&gt;
+	&lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;F A♯ C♯&lt;/td&gt;
+	&lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;C♯&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</content><author><name></name></author><category term="piano" /><summary type="html">Left Right B♭ B♭ F F F♯ B♭ C♯ F♯ B♭ B♭ C♯ G♯ B♭ C♯ F♯ B♭ C♯ F C E♭ G♯ C E♭</summary></entry><entry><title type="html">Tainted Love</title><link href="http://localhost:4000/piano/2021/01/26/Tainted_Love.html" rel="alternate" type="text/html" title="Tainted Love" /><published>2021-01-26T00:00:00-05:00</published><updated>2021-01-26T00:00:00-05:00</updated><id>http://localhost:4000/piano/2021/01/26/Tainted_Love</id><content type="html" xml:base="http://localhost:4000/piano/2021/01/26/Tainted_Love.html">&lt;h3&gt;Baseline&lt;/h3&gt;
+&lt;h3&gt;G G B♭ B♭ E♭ E♭ B♭ C&lt;/h3&gt;
 
-&lt;h3&gt;      C&lt;/h3&gt;
+&lt;h3&gt;Melody (Starts at end of baseline)&lt;/h3&gt;
+&lt;h3&gt;C D G B♭ G G B♭ C G G&lt;h3&gt;</content><author><name></name></author><category term="piano" /><summary type="html">Baseline G G B♭ B♭ E♭ E♭ B♭ C</summary></entry><entry><title type="html">Tainted Love</title><link href="http://localhost:4000/piano/2021/01/26/Tainted_Love.html" rel="alternate" type="text/html" title="Tainted Love" /><published>2021-01-26T00:00:00-05:00</published><updated>2021-01-26T00:00:00-05:00</updated><id>http://localhost:4000/piano/2021/01/26/Tainted_Love</id><content type="html" xml:base="http://localhost:4000/piano/2021/01/26/Tainted_Love.html">&lt;h3&gt;Baseline&lt;/h3&gt;
+&lt;h3&gt;G G B♭ B♭ E♭ E♭ B♭ C&lt;/h3&gt;
 
-&lt;h3&gt;        Db&lt;/h3&gt;
-
-&lt;h3&gt;          F&lt;/h3&gt;
-
-&lt;h3&gt;            Ab&lt;/h3&gt;
-
-&lt;h3&gt;              C&lt;/h3&gt;
-
-&lt;h3&gt;                Db&lt;/h3&gt;
-
-&lt;h3&gt;              C&lt;/h3&gt;
-
-&lt;h3&gt;            A♭&lt;/h3&gt;
-
-&lt;h3&gt;          F&lt;/h3&gt;
-
-&lt;h3&gt;        Db&lt;/h3&gt;
-
-&lt;h3&gt;      C&lt;/h3&gt;
-
-&lt;h3&gt;   Ab&lt;/h3&gt;
-
-&lt;h3&gt;  F&lt;/h3&gt;
-
-&lt;h3&gt;C&lt;/h3&gt;
-
-&lt;h3&gt;  F&lt;/h3&gt;
-
-&lt;h3&gt;    A♭&lt;/h3&gt;
-
-&lt;h3&gt;      C&lt;/h3&gt;
-
-&lt;h3&gt;        E♭&lt;/h3&gt;
-
-&lt;h3&gt;          F&lt;/h3&gt;
-
-&lt;h3&gt;            A♭&lt;/h3&gt;
-
-&lt;h3&gt;              C&lt;/h3&gt;
-
-&lt;h3&gt;                D♭&lt;/h3&gt;
-
-&lt;h3&gt;              C&lt;/h3&gt;
-
-&lt;h3&gt;            A♭&lt;/h3&gt;
-
-&lt;h3&gt;          F&lt;/h3&gt;
-
-&lt;h3&gt;        E♭&lt;/h3&gt;
-
-&lt;h3&gt;      C&lt;/h3&gt;
-
-&lt;h3&gt;    A♭&lt;/h3&gt;
-
-&lt;h3&gt;  F&lt;/h3&gt;
-
-&lt;h3&gt;B♭&lt;/h3&gt;
-
-&lt;h3&gt;  F&lt;/h3&gt;
-
-&lt;h3&gt;    A♭&lt;/h3&gt;
-
-&lt;h3&gt;      C&lt;/h3&gt;
-
-&lt;h3&gt;        D♭&lt;/h3&gt;
-
-&lt;h3&gt;          F&lt;/h3&gt;
-
-&lt;h3&gt;            A♭&lt;/h3&gt;
-
-&lt;h3&gt;              C&lt;/h3&gt;
-
-&lt;h3&gt;                E♭&lt;/h3&gt;
-
-&lt;h3&gt;              C&lt;/h3&gt;
-
-&lt;h3&gt;            A♭&lt;/h3&gt;
-
-&lt;h3&gt;          F&lt;/h3&gt;
-
-&lt;h3&gt;        D♭&lt;/h3&gt;
-
-&lt;h3&gt;      C&lt;/h3&gt;
-
-&lt;h3&gt;    A♭&lt;/h3&gt;
-
-&lt;h3&gt;  F&lt;/h3&gt;
-
-&lt;h3&gt;A♭&lt;/h3&gt;
-
-&lt;h3&gt;  F&lt;/h3&gt;
-
-&lt;h3&gt;    A♭&lt;/h3&gt;
-
-&lt;h3&gt;      C&lt;/h3&gt;
-
-&lt;h3&gt;        D♭&lt;/h3&gt;
-
-&lt;h3&gt;          E♭&lt;/h3&gt;
-
-&lt;h3&gt;            F&lt;/h3&gt;
-
-&lt;h3&gt;              A♭&lt;/h3&gt;
-
-&lt;h3&gt;                C&lt;/h3&gt;</content><author><name></name></author><category term="piano" /><summary type="html">Db</summary></entry><entry><title type="html">Playing with Graph Files</title><link href="http://localhost:4000/blog/2020/11/25/Graph_Files.html" rel="alternate" type="text/html" title="Playing with Graph Files" /><published>2020-11-25T00:00:00-05:00</published><updated>2020-11-25T00:00:00-05:00</updated><id>http://localhost:4000/blog/2020/11/25/Graph_Files</id><content type="html" xml:base="http://localhost:4000/blog/2020/11/25/Graph_Files.html">&lt;figure&gt;
-  &lt;img src=&quot;/media/D3_Maps/Manhattan.png&quot;&gt;
+&lt;h3&gt;Melody (Starts at end of baseline)&lt;/h3&gt;
+&lt;h3&gt;C D G B♭ G G B♭ C G G&lt;h3&gt;</content><author><name></name></author><category term="piano" /><summary type="html">Baseline G G B♭ B♭ E♭ E♭ B♭ C</summary></entry><entry><title type="html">How to Create a Network Science File</title><link href="http://localhost:4000/blog/2020/11/25/Graph_Files.html" rel="alternate" type="text/html" title="How to Create a Network Science File" /><published>2020-11-25T00:00:00-05:00</published><updated>2020-11-25T00:00:00-05:00</updated><id>http://localhost:4000/blog/2020/11/25/Graph_Files</id><content type="html" xml:base="http://localhost:4000/blog/2020/11/25/Graph_Files.html">&lt;figure&gt;
+  &lt;img src=&quot;/media/Founders_Network/Founders_Network.png&quot;&gt;
 &lt;/figure&gt;
 
-&lt;h2&gt;Let's have a go at it&lt;/h2&gt;
+
+2. simple csv to graph image
+4. Network description for kaggle
+8. And vice versa
+
 
 &lt;p&gt;Network Science is the study of two components: nodes and edges. Related nodes are connected by edges and these combinations form a graph. The base of network science is easy to understand but don't be fooled, it is a deeply mathematical field. Network Science PhD programs and deep learning graph libraries have already arrived and there is plenty of room for advances in the field.&lt;/p&gt;
 
-&lt;p&gt;When I studied this discipline I had difficulty finding datasets to play with and analyze. This surprised me because a graph files are simple to create and can model a variety of fun relationships. I use Gephi to create graph files by importing a CSV and exporting the resulting output in a format like ___. Data in this format can be accessed by other graph analysis software. The input CSV file is straightforward to create. The cell entries are nodes. Nodes that appear in the same row will have an edge that connects them.&lt;/p&gt;
+&lt;p&gt;When I studied this discipline I had difficulty finding datasets to play with and analyze. This surprised me because a graph files are simple to create and can model a variety of fun relationships. I use Gephi to create graph files by importing a CSV and exporting the resulting output in a format like Graph Modeling Language (GML). Data in this format can be accessed by other graph analysis software. The input CSV file is straightforward to create. The cell entries are nodes. Nodes that appear in the same row will have an edge that connects them.&lt;/p&gt;
 
 &lt;p&gt;Image&lt;/p&gt;
 
-&lt;p&gt;The main hurdle with making a graph file that is suitable for analysis is not the technical aspect. It lies in finding a subject that lends itself well to the graph format. One of the classic examples is a graph that depicts the relationships between the characters in Victor Hugo's Les Miz. When two characters appear in the same chapter, they are connected by an edge. This works well as a graph file because there are many characters and chapters to create separation. In my first attempts at creating a analyzable graph file there were either too few nodes overall or they all interacted too often so there was no meaningful separations in the graph.&lt;/p&gt;
-
-&lt;p&gt;After some thought I remembered a subject I believed would make for an interesting graph file: the documents of link FOUNDERSLINK. The website archives NUMBER writings of historical American figures from the ____ to ____ era. For the purpose of creating a graph file, I want the correspondance between the founders. This will be a directed graph where the source node is the author and the target node is the recipient.&lt;/p&gt;
-
-&lt;p&gt;The API page provided a good starting point with the full metadata in JSON format. From here I have creative freedom to extract the relevevant entries and transform them into the CSV format to be used by Gephi.&lt;p&gt;
-     
-&lt;a href=&quot;https://github.com/jchakko/D3_Manhattan&quot;&gt;Link's up!&lt;/a&gt;</content><author><name></name></author><category term="blog" /><summary type="html"></summary></entry><entry><title type="html">Twinkling</title><link href="http://localhost:4000/piano/2020/11/11/Twinkling.html" rel="alternate" type="text/html" title="Twinkling" /><published>2020-11-11T00:00:00-05:00</published><updated>2020-11-11T00:00:00-05:00</updated><id>http://localhost:4000/piano/2020/11/11/Twinkling</id><content type="html" xml:base="http://localhost:4000/piano/2020/11/11/Twinkling.html">&lt;h3&gt;D♭ F A♭ C D♭ F A♭ C D♭&lt;/h3&gt;
-
-&lt;h3&gt;C A♭ F D♭ C A♭ F C&lt;/h3&gt;
-
-&lt;h3&gt;F A♭ C E♭ F A♭ C D♭&lt;/h3&gt;
-
-&lt;h3&gt;C A♭ F E♭ C A♭ F B♭&lt;/h3&gt;
-
-&lt;h3&gt;F A♭ C D♭ F A♭ C E♭&lt;/h3&gt;
-
-&lt;h3&gt;C A♭ F D♭ C A♭ F A♭&lt;/h3&gt;
-
-&lt;h3&gt;F A♭ C D♭ E♭ F A♭ C&lt;/h3&gt;</content><author><name></name></author><category term="piano" /><summary type="html">D♭ F A♭ C D♭ F A♭ C D♭</summary></entry><entry><title type="html">Tips for Typing in Malayalam</title><link href="http://localhost:4000/blog/2020/06/14/Malayalam_Keyboarding.html" rel="alternate" type="text/html" title="Tips for Typing in Malayalam" /><published>2020-06-14T00:00:00-04:00</published><updated>2020-06-14T00:00:00-04:00</updated><id>http://localhost:4000/blog/2020/06/14/Malayalam_Keyboarding</id><content type="html" xml:base="http://localhost:4000/blog/2020/06/14/Malayalam_Keyboarding.html">&lt;figure&gt;
-  &lt;img src=&quot;/media/D3_Maps/Manhattan.png&quot;&gt;
-&lt;/figure&gt;
-
-&lt;h2&gt;Let's have a go at it&lt;/h2&gt;
-
-&lt;p&gt;Malayalam has an elegant alphabet that cannot be confined to a single keyboard. A triple keyboard gets close but even then there are characters that are not inputtable with a single button press. When I first started typing in Malayalam I struggled to find many characters and didn't realize that a lot of them aren't on the keyboard at all. Even with the progress I've made it is still a time consuming process. I can't type with all my fingers, rather I click on characters individually.&lt;/p&gt;
-
-&lt;p&gt;I use a few websites to speed up the process. The first is GOOGLE TRANSLATE which uses a sequence to sequence model to translate betweeen English. It can be fairly reliable for finding the base version of a verb and simple phrase combinations when given an English input. The more accurate method is to provide a Malayalam input and verify that the English translate is reasonable. For that I use OLAM, an English to Malayalam dictionary.&lt;/p&gt;
-
-&lt;p&gt;There will always be an adverb or phrase combination thats too difficult for me to express to a computer. For these cases I turn to manually typing. My keyboard of choice is BRANAH MALAYALAM. I'm sure that native speakers can zip through with this but I was confused as heck the first time I used it.&lt;/p&gt;
-
-&lt;p&gt;The keyboard has 3 layers. The first layer has vowels on the top left and consonants. The second layer is accessed by clicking shift and the third is accessed by clicking control. A fourth layer can be accessed by clicking shift and control but its empty for Malayalam. This leads me to believe there are languages that have even more characters and I wish their speakers all the best.&lt;p&gt;
-
-&lt;p&gt;Stressed consonants and vowels&lt;/p&gt;
-
-https://jilljuck.com/funny-malayalam-jokes
-     
-&lt;a href=&quot;https://github.com/jchakko/D3_Manhattan&quot;&gt;Link's up!&lt;/a&gt;</content><author><name></name></author><category term="blog" /><summary type="html"></summary></entry><entry><title type="html">Cleric Spells</title><link href="http://localhost:4000/blog/2020/06/06/Selenium.html" rel="alternate" type="text/html" title="Cleric Spells" /><published>2020-06-06T00:00:00-04:00</published><updated>2020-06-06T00:00:00-04:00</updated><id>http://localhost:4000/blog/2020/06/06/Selenium</id><content type="html" xml:base="http://localhost:4000/blog/2020/06/06/Selenium.html">&lt;p&gt;Clerics are awesome. They can fill many roles and playstyles from backline to the front. I had trouble finding my footing when I first started playing because I had some misconceptions about what a cleric should do. While clerics have the ability to heal it isn't a good use of tempo. On one turn I can heal about 8 HP which isn't helpful when my paladin is getting hit for 26 damage. Once I realized what the better spells are I realized how powerful clerics truly are.&lt;/p&gt;
-
-&lt;h2&gt;Cantrips&lt;/h2&gt;
-&lt;p&gt;Cantrips can be cast an unlimited number of times. They can't be changed so its very easy to get stuck with a bunch of bad ones. Even if thats the situation you're stuck in, eventually you'll get a 4th one and you can pick up Guidance. It's too powerful to pass up. Guidance lets people roll a d4 when doing an ability check. A lot of things require ability checks like jumping chasms, lockpicking, persuasion. I spam guidance out of combat because.&lt;/p&gt;
-
-&lt;p&gt;I like the idea of Thaumaturgy but it rarely sees use. My DM Ricardo runs a flavorful campaign and I always look for opportunities to act a fool and even then its hard to find usage for it. Spare the Dying is outclassed by a level 1 spell called Healing Word. The last cantrip I have is Sacred Flame which is basically a normal hit.&lt;/p&gt;
-
-&lt;h2&gt;Proaction Over Reaction&lt;/h2&gt;
-
-&lt;p&gt;Like I said earlier, healing damage that has already been dealt is not a good use of time. Its better to prevent the damage from happening in the first place. This makes Bless a very powerful cleric spell. It grants 3 creatures an extra d4 dice on attack rolls and saving throws. Simply put it makes the party more accurate when attacking and more likely to avoid harmful effects. This spell stands head and shoulder over the other level one options for a few reasons. It works on 3 players, it doesn't have some prerequesite for the d4 to be rolled, and it does not disappear when the target attacks. Bless is so powerful that I build my strategy around this spell.&lt;/p&gt;
-
-&lt;h2&gt;Focus Your Mind&lt;/h2&gt;
-
-&lt;p&gt;There are a few different spell cast types. Bless is concentration. Concentration spells break when casting another concentration spell or failing a constitution save after taking damage. Since I want bless up all the time I stay strapped with non concentration spells. Some good options are Healing Word, Guiding Bolt, Inflict Wounds, Aid, and Sanctuary. Healing Word is as bonus action that can ressurect people from a distance. Guiding Bolt deals damage and makes the next hit against the same target more accurate. Inflict wounds is 3d10s of nectrotic damage and Aid gives a session long HP increase to multiple party members. Sanctuary makes an ally harder to hit which in theory can be combined with other dodge improvements to make a friend unhittable. Then there's Spiritual Weapon.&lt;/p&gt;
-
-&lt;p&gt;Spiritual Weapon is a bonus cast spell that creats a floating, movable weapon as a bonus action. It only takes one spell slot to cast then it can be used to melee attack from long range as a bonus action. It does not interfere with Bless, its empowered by it. This combined with ordinary attacking puts out some real damage. It also makes playing more fun. My party does not have a strong front line. Discovering this spell made me realize that I can stand in the front and fight. After the mace comes the spiritual mace and with Bless, both are going to hit.&lt;/p&gt;
-
-&lt;h2&gt;A Life Beyond Bless&lt;/h2&gt;
-
-&lt;p&gt;Bless is not the end all be all Cleric spell. Even if it was it would get boring to cast all of the time. In future sessions I'm looking cast Silence and Spirit Guardians as soon as I get 3rd Level Spells. Silence wrecks other spellcasters because most spells have a speaking component. Spirit Guardians slows and batters enemies around the caster. There was a time when I healed as a Cleric, now I don't have the time.&lt;/p&gt;</content><author><name></name></author><category term="blog" /><summary type="html">Clerics are awesome. They can fill many roles and playstyles from backline to the front. I had trouble finding my footing when I first started playing because I had some misconceptions about what a cleric should do. While clerics have the ability to heal it isn't a good use of tempo. On one turn I can heal about 8 HP which isn't helpful when my paladin is getting hit for 26 damage. Once I realized what the better spells are I realized how powerful clerics truly are.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/media/D3_Maps/Manhattan.png" /><media:content medium="image" url="http://localhost:4000/media/D3_Maps/Manhattan.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">A Simple BeautifulSoup Example</title><link href="http://localhost:4000/blog/2020/05/22/Beautiful_Soup.html" rel="alternate" type="text/html" title="A Simple BeautifulSoup Example" /><published>2020-05-22T00:00:00-04:00</published><updated>2020-05-22T00:00:00-04:00</updated><id>http://localhost:4000/blog/2020/05/22/Beautiful_Soup</id><content type="html" xml:base="http://localhost:4000/blog/2020/05/22/Beautiful_Soup.html">&lt;p&gt;There is so much data available on the internet - even if it isn't always in an analysis friendly format. The results of any modern sports tournament are hosted somewhere. Countless blog posts and movie reviews are available to the public free of charge. This information can be extracted programmatically allowing researchers to build large datasets without tedious manual input.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.crummy.com/software/BeautifulSoup/bs4/doc/&quot;&gt;BeautifulSoup&lt;/a&gt; is a web scraper Python library that makes it a snap to request HTML pages and parse the information on them. With a few short loops, information hosted on a web page is organized into a luxurious CSV or JSON file. Scraping a set of web pages has 2 parts: how do I extract the information on an individual page and how do I get the set of pages to parse from?&lt;/p&gt;
-
-&lt;p&gt; It comes down to pattern recognition and using the element inspector. The user score could have its own div. The URLs of each page may only differ by a date or city name. Better yet, there could be a page that contains the URL for every episode of a TV series. Each situation is going to be different so let's take a look at a simple use case.&lt;/p&gt;
-
-&lt;h2&gt;Collecting a list of National Parks&lt;/h2&gt;
-
-&lt;p&gt;For this example I am going to scrape the &lt;a href=&quot;https://www.nps.gov&quot;&gt;National Park Service&lt;/a&gt; website to create a dictionary of all listed parks and their individual URLs. I start by extracting the information from a single page with the assumption that most of the pages will have the same format.&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img src=&quot;/media/BeautifulSoup/Vermont.png&quot;&gt;
-  &lt;figcaption&gt;Vermont's Park Service Page&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;The orange boxes show the indvidual entries and the green box is a container that holds all of them. Now its time to use the page inspector to find a way for BeautifulSoup to parse these locations. The green box has id=&quot;parkListResultsArea&quot;. The orange boxes are links surrounded by h3 tags within the parkListResultsArea.&lt;/p&gt;
-
-&lt;h3&gt;Extract parks from Vermont's page&lt;/h3&gt;
-
-&lt;pre&gt;
-  &lt;code&gt;
-    from bs4 import BeautifulSoup
-    import requests
-
-    url = &quot;https://www.nps.gov/state/vt/index.htm&quot;
-    soup = BeautifulSoup(requests.get(url).content)
-
-    vermont = soup.find(id = &quot;parkListResultsArea&quot;)
-    parks = vermont.find_all('h3')
-
-    for park in parks:
-        link = park.find('a')
-        print(link.get_text())
-  &lt;/code&gt;
-&lt;/pre&gt;
-
-&lt;h3&gt;Output&lt;/h3&gt;
-&lt;pre&gt;
-  &lt;code&gt;
-    Appalachian
-    Marsh - Billings - Rockefeller
-    North Country
-  &lt;/code&gt;
-&lt;/pre&gt;
-
-&lt;p&gt;The scraper returns the desired information from a single page. Now let's expand the code to retrieve information from multiple pages. I created a function that takes a url and executes the scraping logic. With a simple loop I can call the function for multiple states. I also added a function that takes the information from each park and transforms it into a dictionary.&lt;/p&gt;
-
-&lt;h3&gt;Helper Functions&lt;/h3&gt;
-&lt;pre&gt;
-  &lt;code&gt;
-    # Retrieve all parks from a state's page
-    def parse_state(url):
-        soup = BeautifulSoup(requests.get(url).content)
-        state = soup.find(id = &quot;parkListResultsArea&quot;)
-        parks = state.find_all('h3')
-        return parks
-
-    # Transfrom a BeautifulSoup tag to a dictionary of park information
-    def parse_park(park, state):
-        tag = park.find('a')
-        url = tag['href']
-        name = tag.get_text()
-        park_dict = {&quot;Name&quot;: name, &quot;State&quot;: state, &quot;URL&quot;: url}
-        return park_dict
-  &lt;/code&gt;
-&lt;/pre&gt;
-
-&lt;h3&gt;Main&lt;/h3&gt;
-&lt;pre&gt;
-  &lt;code&gt;	
-
-    # Full results container
-    results = []
-
-    url = &quot;https://www.nps.gov/state/PLACEHOLDER/index.htm&quot;
-    states = [&quot;vt&quot;, &quot;de&quot;, &quot;wi&quot;]
-
-    # For every state in the above list
-    for state in states:
-        # Retrieve all parks from the state's page
-        state_url = url.replace(&quot;PLACEHOLDER&quot;, state)
-        state_results = parse_state(state_url)
-    
-        # For every park in the state's page
-        for park in state_results:
-            # Transform the BeautifulSoup tag to a dictionary of park information
-            park_result = parse_park(park, state)
-            results.append(park_result)
-  &lt;/code&gt;
-&lt;/pre&gt;
-
-&lt;p&gt;Each state park on the Vermont, Delaware, and Wisconsin pages have been recorded in a dictionary. All such dictionaries are stored in a list called results. This is a format that is easy to transform into a CSV.&lt;/p&gt;
-
-&lt;h3&gt;Write list of dictionaries to CSV&lt;/h3&gt;
-&lt;pre&gt;
-  &lt;code&gt;
-    import csv
-    with open('export.csv', 'w', encoding='utf-8', newline='') as output_file:
-        writer = csv.DictWriter(output_file, fieldnames=results[0].keys())
-        writer.writeheader()
-        writer.writerows(results)  
-  &lt;/code&gt;
-&lt;/pre&gt;
-
-&lt;figure&gt;
-  &lt;img src=&quot;/media/BeautifulSoup/Export.png&quot;&gt;
-  &lt;figcaption&gt;Huzzah! A Comma Separated Values file!&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;BeautifulSoup is a great tool for pulling information from HTML files. Often, the questions that I want answered need a dataset that hasn't been organized so I should get used to building them myself.&lt;/p&gt;
-
-&lt;h2&gt;Resources&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.crummy.com/software/BeautifulSoup/bs4/doc/&quot;&gt;BeautifulSoup Documentation&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/jchakko/BeautifulSoup&quot;&gt;GitHub Repository&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="blog" /><summary type="html">There is so much data available on the internet - even if it isn't always in an analysis friendly format. The results of any modern sports tournament are hosted somewhere. Countless blog posts and movie reviews are available to the public free of charge. This information can be extracted programmatically allowing researchers to build large datasets without tedious manual input.</summary></entry><entry><title type="html">Cleric Spells</title><link href="http://localhost:4000/blog/2020/05/06/Cleric_Spells.html" rel="alternate" type="text/html" title="Cleric Spells" /><published>2020-05-06T00:00:00-04:00</published><updated>2020-05-06T00:00:00-04:00</updated><id>http://localhost:4000/blog/2020/05/06/Cleric_Spells</id><content type="html" xml:base="http://localhost:4000/blog/2020/05/06/Cleric_Spells.html">&lt;p&gt;Clerics are awesome. They can fill many roles and playstyles from backline to the front. I had trouble finding my footing when I first started playing because I had some misconceptions about what a cleric should do. While clerics have the ability to heal it isn't a good use of tempo. On one turn I can heal about 8 HP which isn't helpful when my paladin is getting hit for 26 damage. Once I realized what the better spells are I realized how powerful clerics truly are.&lt;/p&gt;
-
-&lt;h2&gt;Cantrips&lt;/h2&gt;
-&lt;p&gt;Cantrips can be cast an unlimited number of times. They can't be changed so its very easy to get stuck with a bunch of bad ones. Even if thats the situation you're stuck in, eventually you'll get a 4th one and you can pick up Guidance. It's too powerful to pass up. Guidance lets people roll a d4 when doing an ability check. A lot of things require ability checks like jumping chasms, lockpicking, persuasion. I spam guidance out of combat because.&lt;/p&gt;
-
-&lt;p&gt;I like the idea of Thaumaturgy but it rarely sees use. My DM Ricardo runs a flavorful campaign and I always look for opportunities to act a fool and even then its hard to find usage for it. Spare the Dying is outclassed by a level 1 spell called Healing Word. The last cantrip I have is Sacred Flame which is basically a normal hit.&lt;/p&gt;
-
-&lt;h2&gt;Proaction Over Reaction&lt;/h2&gt;
-
-&lt;p&gt;Like I said earlier, healing damage that has already been dealt is not a good use of time. Its better to prevent the damage from happening in the first place. This makes Bless a very powerful cleric spell. It grants 3 creatures an extra d4 dice on attack rolls and saving throws. Simply put it makes the party more accurate when attacking and more likely to avoid harmful effects. This spell stands head and shoulder over the other level one options for a few reasons. It works on 3 players, it doesn't have some prerequesite for the d4 to be rolled, and it does not disappear when the target attacks. Bless is so powerful that I build my strategy around this spell.&lt;/p&gt;
-
-&lt;h2&gt;Focus Your Mind&lt;/h2&gt;
-
-&lt;p&gt;There are a few different spell cast types. Bless is concentration. Concentration spells break when casting another concentration spell or failing a constitution save after taking damage. Since I want bless up all the time I stay strapped with non concentration spells. Some good options are Healing Word, Guiding Bolt, Inflict Wounds, Aid, and Sanctuary. Healing Word is as bonus action that can ressurect people from a distance. Guiding Bolt deals damage and makes the next hit against the same target more accurate. Inflict wounds is 3d10s of nectrotic damage and Aid gives a session long HP increase to multiple party members. Sanctuary makes an ally harder to hit which in theory can be combined with other dodge improvements to make a friend unhittable. Then there's Spiritual Weapon.&lt;/p&gt;
-
-&lt;p&gt;Spiritual Weapon is a bonus cast spell that creats a floating, movable weapon as a bonus action. It only takes one spell slot to cast then it can be used to melee attack from long range as a bonus action. It does not interfere with Bless, its empowered by it. This combined with ordinary attacking puts out some real damage. It also makes playing more fun. My party does not have a strong front line. Discovering this spell made me realize that I can stand in the front and fight. After the mace comes the spiritual mace and with Bless, both are going to hit.&lt;/p&gt;
-
-&lt;h2&gt;A Life Beyond Bless&lt;/h2&gt;
-
-&lt;p&gt;Bless is not the end all be all Cleric spell. Even if it was it would get boring to cast all of the time. In future sessions I'm looking cast Silence and Spirit Guardians as soon as I get 3rd Level Spells. Silence wrecks other spellcasters because most spells have a speaking component. Spirit Guardians slows and batters enemies around the caster. There was a time when I healed as a Cleric, now I don't have the time.&lt;/p&gt;</content><author><name></name></author><category term="blog" /><summary type="html">Clerics are awesome. They can fill many roles and playstyles from backline to the front. I had trouble finding my footing when I first started playing because I had some misconceptions about what a cleric should do. While clerics have the ability to heal it isn't a good use of tempo. On one turn I can heal about 8 HP which isn't helpful when my paladin is getting hit for 26 damage. Once I realized what the better spells are I realized how powerful clerics truly are.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/media/D3_Maps/Manhattan.png" /><media:content medium="image" url="http://localhost:4000/media/D3_Maps/Manhattan.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Automating the Pipeline for a Slowly Evolving Network</title><link href="http://localhost:4000/blog/2020/04/12/Automating_Network_Pipline.html" rel="alternate" type="text/html" title="Automating the Pipeline for a Slowly Evolving Network" /><published>2020-04-12T00:00:00-04:00</published><updated>2020-04-12T00:00:00-04:00</updated><id>http://localhost:4000/blog/2020/04/12/Automating_Network_Pipline</id><content type="html" xml:base="http://localhost:4000/blog/2020/04/12/Automating_Network_Pipline.html">&lt;figure&gt;
-  &lt;img src=&quot;/media/D3_Maps/Germany_Roads.png&quot;&gt;
-&lt;/figure&gt;
-
-&lt;h2&gt;Piece of Me&lt;/h2&gt;
-
-&lt;p&gt;Update the adjacency list&lt;/p&gt;
-&lt;p&gt;Create the new layout using Gephi&lt;/p&gt;
-&lt;p&gt;Add new nodes to data.json&lt;/p&gt;
-&lt;p&gt;Add new links to data.json&lt;/p&gt;
-&lt;p&gt;Use D3 to drag and drop new layout&lt;/p&gt;
-&lt;p&gt;Use SVG element to update data.json&lt;/p&gt;
-     
-&lt;a href=&quot;https://github.com/jchakko/Ultimate_Finals&quot;&gt;Skid&lt;/a&gt;</content><author><name></name></author><category term="blog" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/media/D3_Maps/Germany_Roads.png" /><media:content medium="image" url="http://localhost:4000/media/D3_Maps/Germany_Roads.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Let’s Natural Language Process an Agglutinative Language</title><link href="http://localhost:4000/blog/2020/03/15/D3_Malayalam_Word_Frequency.html" rel="alternate" type="text/html" title="Let's Natural Language Process an Agglutinative Language" /><published>2020-03-15T00:00:00-04:00</published><updated>2020-03-15T00:00:00-04:00</updated><id>http://localhost:4000/blog/2020/03/15/D3_Malayalam_Word_Frequency</id><content type="html" xml:base="http://localhost:4000/blog/2020/03/15/D3_Malayalam_Word_Frequency.html">&lt;figure&gt;
-  &lt;img src=&quot;/media/D3_Maps/Germany_Roads.png&quot;&gt;
-&lt;/figure&gt;
-
-&lt;h2&gt; &lt;/h2&gt;
-
-&lt;p&gt;D3.js is a powerful data visualization library that displays graphics right in your browser. It can consume geographic information which is widely available these days. With some additional data, D3 can make compelling geovisualizations like choropleths, and dot density maps.&lt;/p&gt;
-
-&lt;h2&gt;Preparing the Data&lt;/h2&gt;
-
-&lt;p&gt;There is a lot of spatial data that is free to use on the internet. For this post I am using the free country level data provided by &lt;a href=&quot;https://www.diva-gis.org/gdata&quot;&gt;DIVA-GIS.&lt;/a&gt; Spatial data is often separated into a few components then compressed into a zip file. D3 cannot work with the data in this format.&lt;/p&gt;
-
-&lt;p&gt;Thankfully there are tools online that convert spatial data zip files to GeoJSON, a format that is D3 friendly. My go to is &lt;a href=&quot;https://mapshaper.org/&quot;&gt;Mapshaper&lt;/a&gt;. Import the entire zip file. Mapshaper has a simplify feature which makes the file smaller but the lines less precise. I like to play with it and pretend I'm making minimalist art or something. Anyways when you're finished export the data as a GeoJSON file.&lt;/p&gt;
-
-&lt;h2&gt;Display the Spatial Data&lt;/h2&gt;   
-
-&lt;p&gt;Projections make it possible to display a 3D object on a 2D surface. There are a handful of projections each with their strengths and differences. GeoJSON coordinates can be transformed by a projection function then displayed using a line generator.&lt;/p&gt;
-     
-&lt;a href=&quot;https://github.com/jchakko/Ultimate_Finals&quot;&gt;Get the GML file from my Git Hub&lt;/a&gt;</content><author><name></name></author><category term="blog" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/media/D3_Maps/Germany_Roads.png" /><media:content medium="image" url="http://localhost:4000/media/D3_Maps/Germany_Roads.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+&lt;p&gt;The main hurdle with making a graph file that is suitable for analysis is not the technical aspect. It lies in finding a subject that lends itself well to the graph format. One of the classic examples is a graph that depicts the relationships between the characters in Victor Hugo's Les Miz. When two characters appear in the same chapter, they are connected by an edge. This works well as a graph file because there are many characters and chapters to create separation. In my first attempts at creating a analyzable graph file there were either too few nodes overall or they all interacted too often so there was no meaningful distinctions in the graph.&lt;/p&gt;
+
+&lt;p&gt;After some thought I remembered a subject I believed would make for an interesting graph file: the documents of &lt;a href=&quot;https://founders.archives.gov/&quot;&gt;Founders Online&lt;/a&gt;. The website archives over 184,000 writings of historical American figures from the Founding era. For the purpose of creating a graph file, I want the correspondence sent among the founders. This will be a directed graph where the source node is the author and the target node is the recipient.&lt;/p&gt;
+
+
+&lt;p&gt;The API page provided a good starting point with the full metadata in JSON format. From here I have creative freedom to extract the relevevant entries and transform them into the CSV format to be used by Gephi. I parsed through the JSON file and extracted the authors and recipients from each entry and placed them into a list of dictionaries. While parsing I removed entries with multiple recipients or another issue like an anonymous author or letters without a recipient. Next I wrote the list of dictionaries to a CSV file. The Python code I wrote to transform the data is short and can be found at my &lt;a href=&quot;https://github.com/jchakko/Founders_Network&quot;&gt;GitHub&lt;/a&gt;.&lt;p&gt;
+
+&lt;p&gt;Image&lt;/p&gt;
+
+&lt;p&gt;Its time to load the transformed data into Gephi and begin analyzing the network. Gephi will take the entire output CSV file and display the network as a big loaf of tofu on the screen. In order to make the network interpretable I applied layout and sizing effects. Yifan Hu and Force Atlas are my go to layouts for networks with tens of thousands of nodes. As is the case with many networks, the majority of connections belong to a small number of entities. The result is cones of nodes that lead to the most prolific authors who in this case, are also the most popular recipients.&lt;/p&gt;
+
+&lt;p&gt;Visualizing this graph allowed me to better understand the communication patterns of the Founding era. I hope this will inspire you to build your own network science file. You can find the GML file on this &lt;a href=&quot;https://www.kaggle.com/cynical909/american-founders-correspondence-network&quot;&gt;Kaggle page&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="blog" /><summary type="html"></summary></entry><entry><title type="html">SQL</title><link href="http://localhost:4000/reference/2020/11/16/SQL.html" rel="alternate" type="text/html" title="SQL" /><published>2020-11-16T00:00:00-05:00</published><updated>2020-11-16T00:00:00-05:00</updated><id>http://localhost:4000/reference/2020/11/16/%20SQL</id><content type="html" xml:base="http://localhost:4000/reference/2020/11/16/SQL.html">&lt;h3&gt;Slice a String in half&lt;/h3&gt;
+
+&lt;p&gt;text[:len(text) // 2]&lt;/p&gt;
+
+&lt;p&gt;python3 -m http.server&lt;/p&gt;</content><author><name></name></author><category term="reference" /><summary type="html">Slice a String in half</summary></entry><entry><title type="html">Python</title><link href="http://localhost:4000/reference/2020/11/16/Python.html" rel="alternate" type="text/html" title="Python" /><published>2020-11-16T00:00:00-05:00</published><updated>2020-11-16T00:00:00-05:00</updated><id>http://localhost:4000/reference/2020/11/16/%20Python</id><content type="html" xml:base="http://localhost:4000/reference/2020/11/16/Python.html">&lt;h3&gt;Slice a String in half&lt;/h3&gt;
+
+&lt;p&gt;text[:len(text) // 2]&lt;/p&gt;
+
+&lt;p&gt;python3 -m http.server&lt;/p&gt;</content><author><name></name></author><category term="reference" /><summary type="html">Slice a String in half</summary></entry><entry><title type="html">Piano</title><link href="http://localhost:4000/reference/2020/11/16/Piano.html" rel="alternate" type="text/html" title="Piano" /><published>2020-11-16T00:00:00-05:00</published><updated>2020-11-16T00:00:00-05:00</updated><id>http://localhost:4000/reference/2020/11/16/%20Piano</id><content type="html" xml:base="http://localhost:4000/reference/2020/11/16/Piano.html">&lt;div class = &quot;PostListing&quot;&gt;
+&lt;h1&gt;Joseph Chakko&lt;/h1&gt;
+	
+	
+&lt;div class = &quot;PostListing&quot;&gt;
+  
+    &lt;hr&gt;
+    &lt;a href=&quot;/piano/2021/02/01/All_of_the_Lights.html&quot;&gt;
+    &lt;div class = &quot;entry&quot;&gt;
+
+	  &lt;h1&gt;All of the Lights&lt;/h1&gt;
+	  &lt;h2&gt;1 February 2021&lt;/h2&gt;
+      &lt;p&gt;SAMPLE TEXT&lt;/p&gt;
+	  
+	  &lt;!-- &lt;img src=&quot;&quot;&gt; --&gt;
+
+
+	&lt;/div&gt;
+	&lt;/a&gt;
+	&lt;/hr&gt;
+  
+    &lt;hr&gt;
+    &lt;a href=&quot;/piano/2021/02/01/All_of_the_Lights.html&quot;&gt;
+    &lt;div class = &quot;entry&quot;&gt;
+
+	  &lt;h1&gt;All of the Lights&lt;/h1&gt;
+	  &lt;h2&gt;1 February 2021&lt;/h2&gt;
+      &lt;p&gt;SAMPLE TEXT&lt;/p&gt;
+	  
+	  &lt;!-- &lt;img src=&quot;&quot;&gt; --&gt;
+
+
+	&lt;/div&gt;
+	&lt;/a&gt;
+	&lt;/hr&gt;
+  
+    &lt;hr&gt;
+    &lt;a href=&quot;/piano/2021/01/26/Tainted_Love.html&quot;&gt;
+    &lt;div class = &quot;entry&quot;&gt;
+
+	  &lt;h1&gt;Tainted Love&lt;/h1&gt;
+	  &lt;h2&gt;26 January 2021&lt;/h2&gt;
+      &lt;p&gt;SAMPLE TEXT&lt;/p&gt;
+	  
+	  &lt;!-- &lt;img src=&quot;&quot;&gt; --&gt;
+
+
+	&lt;/div&gt;
+	&lt;/a&gt;
+	&lt;/hr&gt;
+  
+    &lt;hr&gt;
+    &lt;a href=&quot;/piano/2021/01/26/Tainted_Love.html&quot;&gt;
+    &lt;div class = &quot;entry&quot;&gt;
+
+	  &lt;h1&gt;Tainted Love&lt;/h1&gt;
+	  &lt;h2&gt;26 January 2021&lt;/h2&gt;
+      &lt;p&gt;SAMPLE TEXT&lt;/p&gt;
+	  
+	  &lt;!-- &lt;img src=&quot;&quot;&gt; --&gt;
+
+
+	&lt;/div&gt;
+	&lt;/a&gt;
+	&lt;/hr&gt;
+  
+    &lt;hr&gt;
+    &lt;a href=&quot;/piano/2020/11/11/Twinkling.html&quot;&gt;
+    &lt;div class = &quot;entry&quot;&gt;
+
+	  &lt;h1&gt;Twinkling&lt;/h1&gt;
+	  &lt;h2&gt;11 November 2020&lt;/h2&gt;
+      &lt;p&gt;SAMPLE TEXT&lt;/p&gt;
+	  
+	  &lt;!-- &lt;img src=&quot;&quot;&gt; --&gt;
+
+
+	&lt;/div&gt;
+	&lt;/a&gt;
+	&lt;/hr&gt;
+  
+&lt;/div&gt;</content><author><name></name></author><category term="reference" /><summary type="html">Joseph Chakko</summary></entry><entry><title type="html">Malayalam</title><link href="http://localhost:4000/reference/2020/11/16/Malayalam.html" rel="alternate" type="text/html" title="Malayalam" /><published>2020-11-16T00:00:00-05:00</published><updated>2020-11-16T00:00:00-05:00</updated><id>http://localhost:4000/reference/2020/11/16/%20Malayalam</id><content type="html" xml:base="http://localhost:4000/reference/2020/11/16/Malayalam.html">&lt;h1&gt;Needs Checking&lt;/h1&gt;
+  &lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;English&lt;/th&gt;
+    &lt;th&gt;Malayalam&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;When you were little did you like math?&lt;/td&gt;
+    &lt;td&gt;നിങ്ങൾ ചെറുതായിരിക്കുമ്പോൾ നിങ്ങൾക്ക് കണക്ക് ഇഷ്ടപ്പെട്ടോ?&lt;/td&gt;
+  &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;This is the first time I have spent this much money&lt;/td&gt;
+    &lt;td&gt;ഇതാദ്യമായാണ് ഞാൻ ഇത്രയും പൈസ​ ചിലവഴിക്കുന്നത്&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;I went to the store two or three times weekly&lt;/td&gt;
+    &lt;td&gt;ഞാൻ ആഴ്ചയിൽ രണ്ടോ മൂന്നോ തവണ കടയിൽ പോയി&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;The two countries are different&lt;/td&gt;
+    &lt;td&gt;ഇരു രാജ്യങ്ങളും വ്യത്യസ്തമാണ്&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;I am incorrect and you are correct&lt;/td&gt;
+    &lt;td&gt;ഞാൻ തെറ്റാണ്, നിങ്ങൾ പറഞ്ഞത് ശരിയാണ്&lt;/td&gt;
+  &lt;/tr&gt;  
+  &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;People won't go outside when it rains&lt;/td&gt;
+    &lt;td&gt;ആളുകൾ മഴയെത്തി പുറത്തു ഇറങ്ങില്ല&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;In the past 10 years many changes have come to home appliances&lt;/td&gt;
+    &lt;td&gt;കഴിഞ്ഞ പത്ത് വർഷങ്ങളിൽ വീട്ടുപകരണങ്ങൾ കുറെ മാറ്റിങ്ങൽ വന്നിരിതുണ്ട്&lt;/td&gt;
+  &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;The house by the pond is blue&lt;/td&gt;
+    &lt;td&gt;കുളത്തിനരികയ് വീട് നീലയാണ്&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;While walking outside I saw a fox&lt;/td&gt;
+    &lt;td&gt;പുറത്തേക്ക് നടക്കുമ്പോൾ ഞാൻ ഒരു കുറുക്കനെ കണ്ടു&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;The two books are different&lt;/td&gt;
+    &lt;td&gt;രണ്ട് പുസ്തകങ്ങളും വ്യത്യസ്തമാണ്&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Every exam is the same&lt;/td&gt;
+    &lt;td&gt;എല്ലാ പരീക്ഷയും ഒന്നുതന്നെയാണ്&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;  
+  
+  
+
+&lt;/table&gt;
+
+  &lt;div class=&quot;narration&quot;&gt; 
+  &lt;h1&gt;Phrases&lt;/h1&gt;
+  &lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;English&lt;/th&gt;
+    &lt;th&gt;Malayalam&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Where did you go?&lt;/td&gt;
+    &lt;td&gt;നിങ്ങൾ എവിടെപ്പോയി?&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;I forgot, but when I looked at the book I remembered&lt;/td&gt;
+    &lt;td&gt;ഞാൻ പെട്ടെന്ന് മറന്നു, പക്ഷേ പുസ്തകം നോക്കിയപ്പോൾ എനിക്ക് ഓർമ്മ വന്നു&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;How was the place you went to yesterday?&lt;/td&gt;
+    &lt;td&gt;ഇന്നലെ പോയ സ്ഥലം എങ്ങനെയായിരുന്നു?&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;I still wake up at seven every morning&lt;/td&gt;
+    &lt;td&gt;ഞാൻ ഇപ്പോഴും എല്ലാ ദിവസവും രാവിലെ ഏഴ് മണിക്ക് എഴുന്നേൽക്കും&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;I am going to walk outside&lt;/td&gt;
+    &lt;td&gt;ഞാൻ പുറത്ത് നടക്കാൻ പോകുന്നു&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;When you were little did you like math?&lt;/td&gt;
+    &lt;td&gt;നിങ്ങൾ ചെറുതായിരിക്കുമ്പോൾ നിങ്ങൾക്ക് കണക്ക് ഇഷ്ടപ്പെട്ടോ?&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;A teacher's salary is low&lt;/td&gt;
+    &lt;td&gt;അധ്യാപകന്റെ ശമ്പളം കുറവാണ്&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Good Question&lt;/td&gt;
+    &lt;td&gt;നല്ല ചോദ്യം&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Good Question&lt;/td&gt;
+    &lt;td&gt;നല്ല ചോദ്യം&lt;/td&gt;
+  &lt;/tr&gt;
+  
+  
+&lt;/table&gt;
+
+  &lt;h1&gt;Verbs&lt;/h1&gt;
+  &lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;English&lt;/th&gt;
+    &lt;th&gt;Malayalam&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Use&lt;/td&gt;
+    &lt;td&gt;ഉപയോകിക്കുക&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Feel&lt;/td&gt;
+    &lt;td&gt;തോന്നുക&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Think&lt;/td&gt;
+    &lt;td&gt;വിചാരിക്കുക&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Think&lt;/td&gt;
+    &lt;td&gt;ആലോചിക്കുക&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Notice&lt;/td&gt;
+    &lt;td&gt;ശ്രദ്ധിക്കുക&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;  
+  
+&lt;/table&gt;
+  
+	
+    &lt;h3&gt;Harikan elipum ano atho vishamum ano&lt;/h3&gt;
+	
+	&lt;h3&gt;Kanik' ishtamano&lt;/h3&gt;
+	
+	&lt;h3&gt;Porthi' nadakkan pokunnu&lt;/h3&gt;
+	
+	&lt;h3&gt;Ipporum piano classina ponda&lt;/h3&gt;
+	
+	&lt;h3&gt;Ningal evide poyirunnu&lt;/h3&gt;
+	
+	&lt;h3&gt;Stallam engane&lt;/h3&gt;
+	
+	&lt;h3&gt;Pettana marranu. Pakshe pusthagam nokiappol ormavunnu&lt;/h3&gt;
+	
+	&lt;h3&gt;Schoolil ayirunapol Kanik' ishtamayiruno atho vishamumayiruno. Cheriya kutty ayirunappol ishtamayirunnu. Pakshe high school ethiyapol corachi veshamum ayi. Tutoring poyirunnu. Ippol njan oru tutor annu.&lt;/h3&gt;
+	
+	&lt;h3&gt;Graduation-cayar joli thudiniyal tutoring cheyumo. Chelappo arachil ora divasum&lt;/h3&gt;
+	
+	&lt;h3&gt;Teachers shambalam coravani&lt;/h3&gt;
+	
+	&lt;h3&gt;Nala chothiyum&lt;/h3&gt;
+	
+	&lt;h3&gt;Sheraki&lt;/h3&gt;
+	
+	&lt;h3&gt;Ella stallam vithiyasannu&lt;/h3&gt;
+	
+	&lt;h3&gt;Ellavarum Comp Sci major avum ennane njan vijayachithi, pakshe valera corachi paar' mathrum aanu CS Major&lt;/h3&gt;
+	
+	&lt;h3&gt;Ippo ellavarum vidil nikkan avulo&lt;/h3&gt;
+	
+	&lt;h3&gt;Oh-pa-yo-gam&lt;/h3&gt;
+	
+	&lt;h3&gt;Apartmentil ninne anja miniti nadakannam&lt;/h3&gt;
+	
+	&lt;h3&gt;Miamiilninne Orlandoilke nali manicure car oodikanam&lt;/h3&gt;
+	
+	&lt;h1&gt;Bhasha&lt;/h1&gt;
+	
+	&lt;h3&gt;Ente abiprayathil puthiya bhasha padikunathinu, nali gatangal undu: vayakkuka, eruthuka, srathikuka, samsarikuka. Athil samsarikuuka aanu atavum vishimam ulathi. Samsarikunadinekalum, srathikunadana elappam. Athe pole thanne, vayikunathanne eruthunathane elupam. Eniku malayalam vakunathinekal kelkunathanne elupam.&lt;/h3&gt;
+	
+	&lt;h3&gt;എന്റെ അഭിപ്രായത്തിൽ പുതിയ ഭാഷ പഠിക്കുന്നതിനു നാല് ഘട്ടങ്ങൾ ഉണ്ട്: വായിക്കുക, എഴുതുക, ശ്ര‌‌‌‌‌ദ്ധി‌‌‌‌ക്കുക, സംസാരിക്കുക.  അതിൽ സംസാരിക്കുന്നതാണു് ഏറ്റവും വിഷമം. സംസാരിക്കുന്നതിനേക്കാളും, ശ്രദ്ധിക്കുന്നതാണു് എളുപ്പം.  അതെ പോലെ തന്നെ, വായിക്കുന്നതിനേക്കാളും എഴുതുന്നതാണ് എളുപ്പം. എനിക്ക് മലയാളം വായിക്കുന്നതിനേക്കാൾ കേൾക്കുന്നതാണു് എളുപ്പം.&lt;/h3&gt;
+	
+	&lt;h1&gt;Supermarket&lt;/h1&gt;
+	
+	&lt;h3&gt;Athiyeta supermarketil ithrayum pisa chellavkunuathu. Sadarana vela coravi nokiannu sadanamgal vangunadu. Arachil rando munno thanava cadayil pokumayirunno. Ippol cadayil pokunadath' ethrayam curacuvan pareesramikugayani'. Athu caranam Pokumbol kure sadanamkal oru miche vangunu.&lt;/h3&gt;
+	
+	&lt;h3&gt;ആദ്യമായിട്ടാണു സൂപ്പർമാർക്കറ്റിൽ ഇത്രയും പൈസ ചെലവഴിക്കുന്നത്. സാധാരണ വില കുറവ് നോക്കിയാണ് സാധനങ്ങൾ വാങ്ങുന്നതു്. ആഴ്ചയിൽ രണ്ടോ മൂന്നോ തവണ കടയിൽ പോകാറുണ്ടായിരുന്നു. ഇപ്പോൾ കടയിൽ പോകുനത് എത്രയും കുറയ്ക്കാൻ പരിശ്രമിക്കുകയാണ്. അത് കാരണം പോകുമ്പോൾ കുറെ സാധനങ്ങൾ ഒരു മിച്ച് വാങ്ങുന്നു.&lt;/h3&gt;
+	
+	&lt;h1&gt;Indiayilayum Americayilayum&lt;/h1&gt;
+	
+	&lt;h3&gt;Indiayilayum Americayilayum bakshanareethi valere vithyasham aanu. Indiayil chori chapathi aanu prathana bakshanam athinthe koode pala tharam currygaloom. Currygalekal chori chapathi aanu kudathil kareekunathu. Ellam kuudee cherthanu kareekunathi. Athinu veebareethamayi Americayil prathana bakshanam uruchi aanu. Pachacurrygal, chori, kirunugal corachi mathram karekunnu. Aathe koodathe avar ellam thane vare vare ayi karakunu.&lt;/h3&gt;
+	
+	&lt;h3&gt;ഇന്ത്യയിലും അമേരിക്കയിലും ഭക്ഷണരീതി വളരെ വ്യത്യസ്തമാണ്. ഇന്ത്യയിൽ ചോറ് ചപ്പാത്തി ആണ് പ്രധാന ഭക്ഷണം അതിൻെറ കൂടെ പല തരം കാറികളും. കറികളേക്കാൾ ചോറ് ചപ്പാത്തി ആണ് കൂടുതൽ കഴിക്കുന്നത് . എല്ലാം കൂടി ചേർത്താണു് കഴിക്കുന്നതു്. അതിനു വീപരീതമായി അമേരിക്കയിൽ പ്രധാന ഭക്ഷണം ഇറച്ചി ആണ്. പച്ചക്കറികൾ, ചോറ്, കിഴങ്ങുകൾ കുറച്ച് മാത്രം കഴിക്കുന്നു.  അതു് കൂടാതെ അവർ എല്ലാം തന്നെ വേറെ വേറെ ആയി ആണു് കഴിക്കുന്നതു് .&lt;/h3&gt;
+	
+	&lt;h1&gt;Jenmanitham&lt;/h1&gt;
+	
+	&lt;h3&gt;Innale ente ammattude jemathinam ayirunnu. Calithi cudumbathile ellavrum video callulude jenmanitham ashamsichu. Appol chechiude kuttykal kude callical callichu. Pala tharam sangeetha ubagaranjagal cudee pathugal padee. Aana raathri njan padichukondiricumbol ammayum appayum purtha ninne, Bakshanam vangi kondu vunnu. Njangal muune paarum koodi bakshanam carachu. Mathyvum undayirunnu. Njangalke ipporum mathuram kittyitilya. Atha vare divasum vangicunum.&lt;/h3&gt;
+	
+	&lt;h3&gt;ഇന്നലെ എന്റെ അമ്മയുടെ ജന്മദിനം ആയിരുന്നു. കാലത്ത് കുടുംബത്തിലെ എല്ലാവരും വീഡിയോ കോളിൽ ജന്മദിനം ആശംസിച്ചു. അപ്പോൾ ചേച്ചിയുടെ കുട്ടികൾ  കളികൾ കളിച്ചു. പല തരം സംഗീതോപകരണങ്ങൾ കൂടെ പാട്ടുകൾ പാടി. ആ രാത്രി ഞാൻ പഠിച്ചുകൊണ്ടിരിക്കുമ്പോൾ അമ്മയും അപ്പയും പുറത്തുനിന്ന് ഭക്ഷണം വാങ്ങി കൊണ്ടുവന്നു. ഞങ്ങൾ മൂന്ന് പേരും കൂടെ ഭക്ഷണം കഴിച്ചു.  മദ്യം ഉണ്ടായിരുന്നു. ഞങ്ങൾക്ക് ഇപ്പോഴും മധുരം കിട്ടിയില്ല. അത് വേറെ ദിവസം വാങ്ങും.&lt;/h3&gt;
+	
+	&lt;h1&gt;Munsoon&lt;/h1&gt;
+	
+	&lt;h3&gt;Munsoon seasonil chelappol rando munno divasatheyki suryaenne kannagukilyal caranum nirthathey mazha agirikum. Alokal mazraethi porthi erungikilya. Asugankal padichiti alugal porthi pokunailiya. Keralathil mazhakhalathil tourisathinuvandi prathiyiyega paripadikal undu. Poratha unnum cheyan patillilengilum ayurveda chigilsaki pattiy samiyam aanu.&lt;/h3&gt;
+	
+	&lt;h3&gt;മൺസൂൺ സീസണിൽ ചിലപ്പോൾ രണ്ടോ മൂന്നോ ദിവസത്തേയ്ക്ക്  സൂരൃനെ കാണുകയില്ല കാരണം നിർത്താതെ മഴ ആയിരിക്കും. ആളുകൾ മഴയത്ത് പുറത്ത് ഇറങ്ങില്ല. അസുഗങ്ങൾ പേടിച്ചിട്ട് ആളുകൾ പുറത്ത് പോകാറില്ല. കേരളത്തിൽ മഴക്കാലത്തിൽ ടൂറിസത്തിനുവേണ്ടി  പ്രതേൃയേഗ  പരിപാടികൾ  ഉണ്ട്. പുറത്ത് ഒന്നും ചെയ്യാൻ പറ്റില്ലെങ്കിലും ആയുർവേദ ചികിത്സക്ക് പറ്റിയ സമയമാണ്.&lt;/h3&gt;
+	
+	&lt;h1&gt;Upakaranangal&lt;/h1&gt;
+	
+	&lt;h3&gt;Karina patha kollathil vida upakaranangal core mattingal vunithundi. Puthiya vidi upakaranangal valippum kudiyathum pala kariangal cheyan kariv' ulathi aanu. Ithi palapporum nalatha aganamennillya. Adhunikam upakaranangal ubiyogeekam vishimum koodoothil ullathan athe samiyam pata paadi naduppole shabdamgal cheyyum.&lt;h3&gt;
+	
+	&lt;h3&gt;കഴിഞ്ഞ പത്ത് കൊല്ലത്തിൽ വീട് ഉപകരണങ്ങൾ കൊറയ മാറ്റങ്ങൾ വന്നുതുണ്ടി. പുതിയത് വീട് ഉപകരണങ്ങൾ വലുപ്പം കുടിയതാം പല കരിങ്കൽ ചെയ്യാൻ കരവിരുന്നു. ഇത് പലപ്പോരും നാളത്തെ ആകണമെന്നില്ല്യ. ആധുനികം ഉപകരണങ്ങൾ ഉപയോഗം വിഷിമും കൂടൂതൽ ഉള്ളതാണ് അത് സമയം പാട്ട് പാടു നടുപ്പോലെ ശബ്ദങ്ങൾ ചെയ്യും.&lt;h3&gt;
+	
+	&lt;h3&gt;എൻെറ&lt;/h3&gt;
+	
+	&lt;h1&gt;Easter&lt;/h1&gt;
+	
+	&lt;h3&gt;Ella kollavum Easterine njangalude vitile ellavarum Deering Estatile suryiodayum koorbaanakane pogaare. E kollam ellavarum vitilullil idukuganyaanalo. Atha kondi Easter koorbana computeril aanu kandathi. Ithu adithyati sheniarchile Easter Vigil koorbana kanudathi. Puthiya thi undakkki meruguthiri kathikugayum. Ah velichathil nali Bible vayanayyum undayirunnu. Koorbaanayude idduke veche lightikal iddathu.&lt;/h3&gt;
+	
+	&lt;h3&gt;എല്ലാ കൊല്ലവും ഈസ്റ്ററിനായി ഞങ്ങളുടെ വീട്ടിൽ എല്ലാവരും ഡീറിംഗ് എസ്റ്റേറ്റിൽ സൂര്യോദയം കൂർബാനകനെ പോക്കർ. ഈകൊല്ലം എല്ലാവരും വീട്ടിലുളിൽ ഇടുക്കുകയനാലോ. അതി കൊണ്ടി ഈസ്റ്റർ കുർബാന കമ്പ്യൂട്ടറിലാണ് കണ്ടത്തി. ഇത് ആദ്യത്തേത് ശനിയാഴചിലി ഈസ്റ്റർ ജാഗ്രത കുർബാന കണ്‌ടെത്തി. പുതിയതി ഉണ്ടാക്കി മെഴുകുതിരി കത്തിക്കുകയും. ആ വെളിച്ചത്തിൽ നാല് ബൈബിൾ വായനയ്‌യം ഉണ്ടായിരുന്നു. കുർബാനയുടെ ഇടുക്ക വെച്ചേ ലൈറ്റികൾ ഇഡ്ഢത്.&lt;/h3&gt;
+	
+	&lt;h1&gt;Comedy&lt;/h1&gt;
+	
+	&lt;h3&gt;Munnu kootokar Thrissuril ninne Munnarileke yathra pokukayayirunni. Chirichum varthamanam parinu avar yathra asuthagaayirunnu. Idiku vetchi petrol thiruni poyi.&lt;br&gt;
+	Adathi petrol bungakki koray vare nadakanam. Aditheya karilyundayruna vellam edithu. Randamatheyal bukshanam kayil iduthu. Munamatheyal korachi narum alochichethum shesham karinde vathil parchithinu. Kootukarke onnam thane manisilayilya.&lt;br&gt;
+	Koray duram nadakan ulle karanam njangal vellavum bakshanal kaiya iduthi. Pakshe ni enthianu kar dooor parichithunu njangalke manisilya. Kootakaran chude vanal namake karinde jennal tharathivekkan aanu enne a kootakaran oru bhava vithyamasilthe paranju.&lt;/h3&gt;
+	
+	&lt;h3&gt;മൂന്ന് കൂട്ടുകാർ തൃശൂരിൽ നിന്നെ മുന്നാറിലേ യാത്ര പോകുകയായിരുന്നു. ചിരിച്ചും വർത്തമാനം പറഞ്ഞു അവർ യാത്ര അശുദ്ധഗായിരുന്നു. ഇടിവു വെച്ചി പെട്രോൾ തിരുനിപോയി.&lt;br&gt; അടുത്തത് പെട്രോൾ ബാങ്കാക്കി കൊറയ വരെ നടക്കണം. ആടിത്തീയാ കാറിലിയുണ്ടായിരുന്ന വെള്ളം എടുത്തു. രണ്ടാമത്തെയാൾ ഭക്ഷണം കയ്യിൽ എടുത്തു. മൂന്നാമത്തെയാൾ കൊറച്ചി നറും ആലോചിച്ചെത്തും ശേഷം കാറിന്റെ വാതിൽ പറച്ചിതിനു. കൂട്ടുകാർക്ക് ഒന്നാം താനെ മാനിസിലായില്യ.&lt;br&gt; കൊറയ ദൂരം നടക്കാൻ അല്ലെ കാരണം ഞങ്ങൾ വെള്ളവും ഭക്ഷണൽ കൈ എടുത്തു. പക്ഷേ നീ എന്തിയനുകർ ഡോർ പരിചിതനു ഞങ്ങൾക്ക് മാനിസിലിയ. കൂട്ടുകാരൻ ചുടു വന്നാൽ നമക്ക് കാറിന്റെ ജേണൽ താരത്തിവെക്കാൻ ആണ് എന്നെ ആ കൂട്ടുകാരൻ ഒരു ഭാവ വിത്യമാസില്തെ പറഞ്ഞു.&lt;/h3&gt;
+	
+	&lt;h1&gt;Hair Cut&lt;/h1&gt;
+	
+	&lt;h3&gt;Innale athiyamayi njan thane ente mudee veti. Athu kandappol, dadinum moodee vettan oru asha. Moodee vetti theran patumon' dad enodu chothichu. Athu kettappol eniku valere athisheyam thoni. Athiyatil dadine oru cheriya paydee undayirunnu. Enti polathethane haircut agumone. Pakshe moodee vettan thodaneyappol a padee matee poyi. Ellam cayiranppol dadine moodee vetti nala ishtamayi.&lt;/h3&gt;
+	
+	&lt;h3&gt;ഇന്നലെ athiyamayi ഞാൻ തന്നെ എന്റെ മുടി veti. Athu kandappol, dadinum moodee vettan oru asha. മുടി vetti theran patumon' dad enodu chothichu. Athu kettappol eniku valere athisheyam thoni. Athiyatil dadine oru cheriya paydee undayirunnu. Enti polathethane haircut agumone. Pakshe moodee vettan thodaneyappol a padee matee poyi. Ellam cayiranppol dadine മുടി vetti nala ishtamayi.&lt;/h3&gt;
+	
+	&lt;h1&gt;Joke 2&lt;/h1&gt;
+	
+	&lt;h3&gt;Thrissuril oru bhisagaran puthiya oru chiklsalayum thorungnoo. Nooru rooba fees ennane. Ella rogum sugapetuthikodakam ennane doctor paryinathi. Rogum sugapetilingil cashi thirichutherum ennane doctor parayunathi. Oru abibhashakan ithu kandappol oru bhudi thoni. Doctorenne patikkan thirimanichu. &lt;br&gt; Aditha divasum clinicil poyi doctorode &quot;eniku onam thane ruchikan pettuniliya&quot; enne doctorode parannu. Abibhsakanude atha oru presnumalla enne paranne oru minite avide irikan avushepetu. Doctor cheriya oru kapu'ayi thirichivannu abibhasakan athi kuddukan avushepettu. Korachi kudachu vari athi thuppee kalanoo enete doctorodee parannu ithi manana aanu. Doctor paranju ningalku ruchi thirichukitirrukunu. Odan thane ente fees tharega. Abibhashagan visama thode erungi poyi. &lt;br&gt; Aditha aracha abhibasakan veendum doctorinde clinicil ethi. Ikkuri maravi ayirunni rogam. &quot;Eniku onam thane orkan pettunillya&quot; enne doctorode paranju. Valere shandamayi doctor oru miniti avide idikkan aushapettu.
+	&lt;br&gt; Doctor oru cup' ayi athirichuvannu. Kudeekam aushapettu. Aiyo ithe mananne alle ennu chothichu. Appol doctor chirichikondu paranju ningalude ormashathi thirichikittiurikunnuu. Odanthane ente fees tharega. Abishekgan dayshamthode irungepoyi. Veedam verumenne thirumanum edithirunnu. Ayyal puthiya varigal alojhichu kondo irukayirunnu. Korachi divisumungakal sheshum abibhasakkan veendum doctorinte clinicilethi. Ithavana oru uunoo vadee ayathani puli vanathi. Doctorode paranu &quot;eniku onam thane kanaan petanilya&quot;. Koracha coravi eniku sokanpedatha pettiyilya. Athe konde fees thirichipettunu.&lt;br&gt; Abibhasakan punthichirichu kondu doctor kodatha cashi noki &quot;Ithi thangal pranja thuga illalo enne doctorode paranju&quot;. Doctor nungalude karcha thirichikittirunnu. Odanthane ente fees tharega.&lt;/h3&gt;
+	
+	&lt;h3&gt;Thrissuril oru bhisagaran puthiya oru chiklsalayum thorungnoo. Nooru rooba fees ennane. Ella rogum sugapetuthikodakam ennane doctor paryinathi. Rogum sugapetilingil cashi thirichutherum ennane doctor parayunathi. Oru abibhashakan ithu kandappol oru bhudi thoni. Doctorenne patikkan thirimanichu. &lt;br&gt; Aditha divasum clinicil poyi doctorode &quot;eniku onam thane ruchikan pettuniliya&quot; enne doctorode parannu. Abibhsakanude atha oru presnumalla enne paranne oru minite avide irikan avushepetu. Doctor cheriya oru kapu'ayi thirichivannu abibhasakan athi kuddukan avushepettu. Korachi kudachu vari athi thuppee kalanoo enete doctorodee parannu ithi manana aanu. Doctor paranju ningalku ruchi thirichukitirrukunu. Odan thane ente fees tharega. Abibhashagan visama thode erungi poyi. &lt;br&gt; Aditha aracha abhibasakan veendum doctorinde clinicil ethi. Ikkuri maravi ayirunni rogam. &quot;Eniku onam thane orkan pettunillya&quot; enne doctorode paranju. Valere shandamayi doctor oru miniti avide idikkan aushapettu.
+	&lt;br&gt; Doctor oru cup' ayi athirichuvannu. Kudeekam aushapettu. Aiyo ithe mananne alle ennu chothichu. Appol doctor chirichikondu paranju ningalude ormashathi thirichikittiurikunnuu. Odanthane ente fees tharega. Abishekgan dayshamthode irungepoyi. Veedam verumenne thirumanum edithirunnu. Ayyal puthiya varigal alojhichu kondo irukayirunnu. Korachi divisumungakal sheshum abibhasakkan veendum doctorinte clinicilethi. Ithavana oru uunoo vadee ayathani puli vanathi. Doctorode paranu &quot;eniku onam thane kanaan petanilya&quot;. Koracha coravi eniku sokanpedatha pettiyilya. Athe konde fees thirichipettunu.&lt;br&gt; Abibhasakan punthichirichu kondu doctor kodatha cashi noki &quot;Ithi thangal pranja thuga illalo enne doctorode paranju&quot;. Doctor nungalude karcha thirichikittirunnu. Odanthane ente fees tharega.&lt;/h3&gt;
+	
+
+                    
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</content><author><name></name></author><category term="reference" /><summary type="html">Needs Checking English Malayalam When you were little did you like math? നിങ്ങൾ ചെറുതായിരിക്കുമ്പോൾ നിങ്ങൾക്ക് കണക്ക് ഇഷ്ടപ്പെട്ടോ? This is the first time I have spent this much money ഇതാദ്യമായാണ് ഞാൻ ഇത്രയും പൈസ​ ചിലവഴിക്കുന്നത് I went to the store two or three times weekly ഞാൻ ആഴ്ചയിൽ രണ്ടോ മൂന്നോ തവണ കടയിൽ പോയി The two countries are different ഇരു രാജ്യങ്ങളും വ്യത്യസ്തമാണ് I am incorrect and you are correct ഞാൻ തെറ്റാണ്, നിങ്ങൾ പറഞ്ഞത് ശരിയാണ് People won't go outside when it rains ആളുകൾ മഴയെത്തി പുറത്തു ഇറങ്ങില്ല In the past 10 years many changes have come to home appliances കഴിഞ്ഞ പത്ത് വർഷങ്ങളിൽ വീട്ടുപകരണങ്ങൾ കുറെ മാറ്റിങ്ങൽ വന്നിരിതുണ്ട് The house by the pond is blue കുളത്തിനരികയ് വീട് നീലയാണ് While walking outside I saw a fox പുറത്തേക്ക് നടക്കുമ്പോൾ ഞാൻ ഒരു കുറുക്കനെ കണ്ടു The two books are different രണ്ട് പുസ്തകങ്ങളും വ്യത്യസ്തമാണ് Every exam is the same എല്ലാ പരീക്ഷയും ഒന്നുതന്നെയാണ്</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/stackedarea_thumbnail.png" /><media:content medium="image" url="http://localhost:4000/stackedarea_thumbnail.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Java</title><link href="http://localhost:4000/reference/2020/11/16/Java.html" rel="alternate" type="text/html" title="Java" /><published>2020-11-16T00:00:00-05:00</published><updated>2020-11-16T00:00:00-05:00</updated><id>http://localhost:4000/reference/2020/11/16/%20Java</id><content type="html" xml:base="http://localhost:4000/reference/2020/11/16/Java.html">&lt;h1&gt;Java Interview Questions&lt;/h1&gt;
+
+&lt;h2&gt;First Non Repeating Char (Index v Last index)&lt;/h2&gt;
+&lt;h2&gt;Fizz Buzz (Tom Scott)&lt;/h2&gt;
+&lt;h2&gt;Reverse Array&lt;/h2&gt;
+&lt;h2&gt;Unique Characters Stream&lt;/h2&gt;
+&lt;h2&gt;Swap Without Temp&lt;/h2&gt;
+&lt;h2&gt;Primes (Sieve of Eratos)&lt;/h2&gt;
+&lt;h2&gt;Reverse String&lt;/h2&gt;
+&lt;h2&gt;Palindrome Check&lt;/h2&gt;
+&lt;h2&gt;Anagram&lt;/h2&gt;
+&lt;h2&gt;Read Files line by line&lt;/h2&gt;
+&lt;h2&gt;Fibonaci Sequence&lt;/h2&gt;
+&lt;h2&gt;Hash Maps&lt;/h2&gt;
+&lt;h2&gt;Linked List&lt;/h2&gt;
+&lt;h2&gt;Sorting&lt;/h2&gt;</content><author><name></name></author><category term="reference" /><summary type="html">Java Interview Questions</summary></entry></feed>

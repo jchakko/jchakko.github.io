@@ -1,25 +1,35 @@
 ---
-title: Playing with Graph Files
+title: How to Create a Network Science File
 layout: post
 category: blog
 ---
 
 <figure>
-  <img src="/media/D3_Maps/Manhattan.png">
+  <img src="/media/Founders_Network/Founders_Network.png">
 </figure>
 
-<h2>Let's have a go at it</h2>
+
+2. simple csv to graph image
+4. Network description for kaggle
+8. And vice versa
+
 
 <p>Network Science is the study of two components: nodes and edges. Related nodes are connected by edges and these combinations form a graph. The base of network science is easy to understand but don't be fooled, it is a deeply mathematical field. Network Science PhD programs and deep learning graph libraries have already arrived and there is plenty of room for advances in the field.</p>
 
-<p>When I studied this discipline I had difficulty finding datasets to play with and analyze. This surprised me because a graph files are simple to create and can model a variety of fun relationships. I use Gephi to create graph files by importing a CSV and exporting the resulting output in a format like ___. Data in this format can be accessed by other graph analysis software. The input CSV file is straightforward to create. The cell entries are nodes. Nodes that appear in the same row will have an edge that connects them.</p>
+<p>When I studied this discipline I had difficulty finding datasets to play with and analyze. This surprised me because a graph files are simple to create and can model a variety of fun relationships. I use Gephi to create graph files by importing a CSV and exporting the resulting output in a format like Graph Modeling Language (GML). Data in this format can be accessed by other graph analysis software. The input CSV file is straightforward to create. The cell entries are nodes. Nodes that appear in the same row will have an edge that connects them.</p>
 
 <p>Image</p>
 
-<p>The main hurdle with making a graph file that is suitable for analysis is not the technical aspect. It lies in finding a subject that lends itself well to the graph format. One of the classic examples is a graph that depicts the relationships between the characters in Victor Hugo's Les Miz. When two characters appear in the same chapter, they are connected by an edge. This works well as a graph file because there are many characters and chapters to create separation. In my first attempts at creating a analyzable graph file there were either too few nodes overall or they all interacted too often so there was no meaningful separations in the graph.</p>
+<p>The main hurdle with making a graph file that is suitable for analysis is not the technical aspect. It lies in finding a subject that lends itself well to the graph format. One of the classic examples is a graph that depicts the relationships between the characters in Victor Hugo's Les Miz. When two characters appear in the same chapter, they are connected by an edge. This works well as a graph file because there are many characters and chapters to create separation. In my first attempts at creating a analyzable graph file there were either too few nodes overall or they all interacted too often so there was no meaningful distinctions in the graph.</p>
 
-<p>After some thought I remembered a subject I believed would make for an interesting graph file: the documents of link FOUNDERSLINK. The website archives NUMBER writings of historical American figures from the ____ to ____ era. For the purpose of creating a graph file, I want the correspondance between the founders. This will be a directed graph where the source node is the author and the target node is the recipient.</p>
+<p>After some thought I remembered a subject I believed would make for an interesting graph file: the documents of <a href="https://founders.archives.gov/">Founders Online</a>. The website archives over 184,000 writings of historical American figures from the Founding era. For the purpose of creating a graph file, I want the correspondence sent among the founders. This will be a directed graph where the source node is the author and the target node is the recipient.</p>
 
-<p>The API page provided a good starting point with the full metadata in JSON format. From here I have creative freedom to extract the relevevant entries and transform them into the CSV format to be used by Gephi.<p>
+
+<p>The API page provided a good starting point with the full metadata in JSON format. From here I have creative freedom to extract the relevevant entries and transform them into the CSV format to be used by Gephi. I parsed through the JSON file and extracted the authors and recipients from each entry and placed them into a list of dictionaries. While parsing I removed entries with multiple recipients or another issue like an anonymous author or letters without a recipient. Next I wrote the list of dictionaries to a CSV file. The Python code I wrote to transform the data is short and can be found at my <a href="https://github.com/jchakko/Founders_Network">GitHub</a>.<p>
+
+<p>Image</p>
+
+<p>Its time to load the transformed data into Gephi and begin analyzing the network. Gephi will take the entire output CSV file and display the network as a big loaf of tofu on the screen. In order to make the network interpretable I applied layout and sizing effects. Yifan Hu and Force Atlas are my go to layouts for networks with tens of thousands of nodes. As is the case with many networks, the majority of connections belong to a small number of entities. The result is cones of nodes that lead to the most prolific authors who in this case, are also the most popular recipients.</p>
+
+<p>Visualizing this graph allowed me to better understand the communication patterns of the Founding era. I hope this will inspire you to build your own network science file. You can find the GML file on this <a href="https://www.kaggle.com/cynical909/american-founders-correspondence-network">Kaggle page</a>.</p>
      
-<a href="https://github.com/jchakko/D3_Manhattan">Link's up!</a>
